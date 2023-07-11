@@ -1,0 +1,17 @@
+site_logo: null
+contact_details:
+  tel: null
+  fax: null
+  email: aaron@thelonelypixel.co.uk
+  address: |-
+    Address Line 1 Here
+    Address Line 2 Here
+social_details:
+  twitter_link: https://twitter.com/
+  facebook_link: https://facebook.com/
+  instagram_link: https://instagram.com/
+footer_images:
+  - image: null
+    link: https://google.co.uk/
+  - image: null
+    link: https://google.co.uk/
