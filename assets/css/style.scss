@@ -1,8 +1,9 @@
 ---
 # Front Matter
 ---
+
 // Font settings
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Lato&family=Space+Grotesk&family=Space+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Lato&family=Space+Grotesk&family=Space+Mono&display=swap");
 
 // Load settings
 @import "settings";
@@ -21,6 +22,7 @@
 @import "components/forms";
 @import "components/lists";
 @import "components/tables";
+@import "components/accordions";
 
 // Import layout styles
 @import "layouts/header";
@@ -32,3 +34,6 @@
 // Import block styles
 @import "blocks/blocks";
 @import "blocks/hero";
+@import "blocks/media-text";
+@import "blocks/paper";
+@import "blocks/accordions";

@@ -1,6 +1,254 @@
 .block__hero {
-    min-height: 200px;
-    padding: 2rem 0 4rem 0;
-    // background-color: $blue;
-    background: yellow;
+  padding: 10rem 0 4rem 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: $pink;
+  overflow: hidden;
+
+  @include bp(tablet) {
+    min-height: 100vh;
+    padding: 15rem 0 5rem 0;
+  }
+
+  @include bp(desktop) {
+    padding: 12.5rem 0 5rem 0;
+  }
+
+  &.in-view {
+    .hero__shape {
+      &.hero__shape-1 {
+        clip-path: ellipse(110% 110% at 0% 0%);
+      }
+
+      &.hero__shape-2 {
+        clip-path: ellipse(110% 110% at 100% 0%);
+      }
+
+      &.hero__shape-3 {
+        clip-path: ellipse(110% 110% at 0% 100%);
+      }
+
+      &.hero__shape-4 {
+        clip-path: ellipse(110% 110% at 100% 100%);
+      }
+    }
+
+    .hero__search {
+      @include animate(400ms, 2s, fadeInDown);
+      opacity: 1;
+    }
+
+    .hero__content {
+      @include animate(400ms, 400ms, fadeIn);
+      opacity: 1;
+    }
+
+    .hero__image {
+      @include animate(400ms, 700ms, fadeIn);
+      opacity: 1;
+    }
+  }
+
+  .hero__shape {
+    position: absolute;
+
+    img,
+    svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    &.hero__shape-1 {
+      width: 140px;
+      top: 0;
+      left: 0;
+      clip-path: ellipse(0% 0% at 0% 0%);
+      transition: 1.7s $cubic;
+      transition-delay: 500ms;
+
+      @include bp(tablet) {
+        width: 270px;
+      }
+
+      @include bp(desktop-xl) {
+        width: 380px;
+      }
+    }
+
+    &.hero__shape-2 {
+      width: 80px;
+      top: 0;
+      right: 0;
+      clip-path: ellipse(0% 0% at 100% 0%);
+      transition: 1.2s $cubic;
+      transition-delay: 900ms;
+
+      @include bp(tablet) {
+        width: 220px;
+      }
+
+      @include bp(desktop-xl) {
+        width: 280px;
+      }
+    }
+
+    &.hero__shape-3 {
+      width: 120px;
+      bottom: 0;
+      left: 0;
+      clip-path: ellipse(0% 0% at 0% 100%);
+      transition: 1.5s $cubic;
+      transition-delay: 800ms;
+
+      @include bp(tablet) {
+        width: 220px;
+      }
+
+      @include bp(desktop-xl) {
+        width: 330px;
+      }
+    }
+
+    &.hero__shape-4 {
+      width: 180px;
+      bottom: 0;
+      right: 0;
+      clip-path: ellipse(0% 0% at 100% 100%);
+      transition: 1.3s $cubic;
+      transition-delay: 700ms;
+
+      @include bp(tablet) {
+        width: 270px;
+      }
+
+      @include bp(desktop-xl) {
+        width: 380px;
+      }
+    }
+  }
+
+  .hero__search {
+    width: 90%;
+    max-width: $global-width;
+    height: 60px;
+    padding: 1.5rem 1.5rem 1.5rem 2rem;
+    position: absolute;
+    top: 2rem;
+    left: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $lightest;
+    border-radius: 50px;
+    box-shadow: 0 0 20px rgba($darkest, 0.3);
+    opacity: 0;
+    z-index: 2;
+
+    @include bp(tablet) {
+      height: 75px;
+      top: 4rem;
+    }
+
+    @include bp(desktop) {
+      height: 100px;
+      top: 4rem;
+      padding: 2rem 2rem 2rem 4rem;
+    }
+
+    img {
+      width: 80px;
+      height: auto;
+      display: block;
+
+      @include bp(tablet) {
+        width: 100px;
+      }
+
+      @include bp(desktop) {
+        width: 180px;
+      }
+    }
+
+    .button.button--standard {
+      margin: 0;
+      padding: 0.75rem 1.4rem;
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+
+      @include bp(tablet) {
+        padding: 1rem 2rem;
+        font-size: 2rem;
+        line-height: 2.5rem;
+      }
+    }
+  }
+
+  .container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 2;
+  }
+
+  .hero__content {
+    width: 100%;
+    opacity: 0;
+
+    @include bp(desktop) {
+      width: 50%;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 4rem;
+      color: $dark-blue;
+
+      @include bp(tablet) {
+        font-size: 3.8rem;
+        line-height: 5rem;
+      }
+    }
+
+    p {
+      font-size: 1.8rem;
+      line-height: 2.4rem;
+
+      @include bp(tablet) {
+        font-size: 2rem;
+        line-height: 3rem;
+      }
+    }
+  }
+
+  .hero__image {
+    width: 100%;
+    margin-top: 2rem;
+    opacity: 0;
+
+    @include bp(tablet) {
+      margin-top: 3rem;
+    }
+
+    @include bp(desktop) {
+      width: calc(50% - 5rem);
+      margin-top: 0;
+    }
+
+    @include bp(desktop) {
+      width: calc(50% - 10rem);
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 20px;
+      box-shadow: 0px 2px 30px rgba($darkest, 0.3);
+    }
+  }
 }

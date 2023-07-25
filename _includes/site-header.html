@@ -1,17 +1,44 @@
-<header role="banner">
-    <div class="nav-topbar-upper">
-        <div class="container">
-            <div class="row row--justified row--middle">
-                <a class="university-of-cambridge" href="{{ site.data.nav.top_bar.link }}" target="_blank" rel="noreferrer">
-                    <img src="{{ site.data.nav.top_bar.image }}" alt="University of Cambridge">
-                </a>
-                <a class="cambridge-uni-quicklinks-footer" href="#cambridge-uni-quicklinks-footer">Cambridge quick links</a>
-                <div class="cambridge-uni-quicklinks">
-                    {% for item in site.data.nav.top_bar.top_bar_nav %}
-                        <a href="{{ item.link }}" target="_blank" rel="noreferrer">{{ item.label }}</a>
-                    {% endfor %}
-                </div>
-            </div>
+<header role="banner" class="obsv">
+  <div class="nav-topbar-upper">
+    <div class="container">
+      <div class="row row--justified row--middle">
+        <a
+          class="university-of-cambridge"
+          href="#"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <img
+            alt="University of Cambridge"
+            src="../assets/images/cambridge-university.png"
+          />
+        </a>
+        <a
+          class="cambridge-uni-quicklinks-footer"
+          href="#cambridge-uni-quicklinks-footer"
+          >Cambridge quick links</a
+        >
+        <div class="cambridge-uni-quicklinks">
+          <a
+            href="https://www.cam.ac.uk/about-the-university#study-at-cambridge/"
+            rel="noreferrer"
+            target="_blank"
+            >Study at Cambridge</a
+          >
+          <a
+            href="https://www.cam.ac.uk/about-the-university#about-the-university/"
+            rel="noreferrer"
+            target="_blank"
+            >About the University</a
+          >
+          <a
+            href="https://www.cam.ac.uk/research/"
+            rel="noreferrer"
+            target="_blank"
+            >Research at Cambridge</a
+          >
         </div>
+      </div>
     </div>
+  </div>
 </header>
