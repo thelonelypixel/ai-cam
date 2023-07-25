@@ -6,7 +6,7 @@
         opacity: 1;
       }
       .media-text__media-image--floating {
-        @include animate(400ms, 1100ms, fadeInDown);
+        @include animate(400ms, 900ms, fadeInDown);
         opacity: 1;
       }
     }
