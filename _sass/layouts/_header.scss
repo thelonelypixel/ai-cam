@@ -1,8 +1,8 @@
 header[role="banner"] {
   width: 100%;
   height: auto;
-  position: fixed;
-  top: 0;
+  position: sticky;
+  top: -90px;
   left: 0;
   background-color: $darkest;
   z-index: 9999;
