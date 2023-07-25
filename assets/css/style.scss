@@ -3,7 +3,20 @@
 ---
 
 // Font settings
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Lato&family=Space+Grotesk&family=Space+Mono&display=swap");
+@font-face {
+  font-family: "Mark W01 Regular";
+  src: url("../fonts/6215362/be19d19f-d253-4979-a6d6-fd5c51d10387.woff2")
+      format("woff2"),
+    url("../fonts/6215362/e478d528-f58a-473a-bf84-d8b21b7f7107.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Mark W01 Bold";
+  src: url("../fonts/6460613/da4f22ef-a1b6-401a-8a40-56954ce5141d.woff2")
+      format("woff2"),
+    url("../fonts/6460613/c061ab4d-74ab-4c1c-9399-152de03f973d.woff")
+      format("woff");
+}
 
 // Load settings
 @import "settings";

@@ -1,17 +1,27 @@
 header[role="banner"] {
   width: 100%;
   height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
   background-color: $darkest;
   z-index: 9999;
 
   &.in-view {
-    .nav-topbar-upper {
+    .header__upper {
       @include animate(400ms, 1s, fadeIn);
       opacity: 1;
     }
+
+    .header__nav {
+      &-inner {
+        @include animate(400ms, 2s, fadeInDown);
+        opacity: 1;
+      }
+    }
   }
 
-  .nav-topbar-upper {
+  .header__upper {
     padding: 1.5rem 0;
     opacity: 0;
 
@@ -75,22 +85,68 @@ header[role="banner"] {
     }
   }
 
-  .nav-topbar-lower {
-    padding: 2rem 0;
-    transition: 400ms;
-    will-change: padding-top;
+  .header__nav {
+    width: 90%;
+    max-width: $global-width;
 
-    @include bp(desktop) {
-      padding: 3rem 0 2rem 0;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -2rem;
+    left: 0;
+    right: 0;
+    transform: translateY(100%);
+    z-index: 2;
+
+    @include bp(tablet) {
+      bottom: -3rem;
     }
 
-    .brand img {
-      width: 160px;
-      height: auto;
-      display: block;
+    &-inner {
+      width: 100%;
+      height: 60px;
+      padding: 1.5rem 1.5rem 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: $lightest;
+      border-radius: 50px;
+      box-shadow: 0 0 20px rgba($darkest, 0.3);
+      opacity: 0;
+
+      @include bp(tablet) {
+        height: 75px;
+      }
 
       @include bp(desktop) {
-        width: 210px;
+        height: 100px;
+        padding: 2rem 2rem 2rem 4rem;
+      }
+
+      img {
+        width: 80px;
+        height: auto;
+        display: block;
+
+        @include bp(tablet) {
+          width: 100px;
+        }
+
+        @include bp(desktop) {
+          width: 180px;
+        }
+      }
+
+      .button.button--standard {
+        margin: 0;
+        padding: 0.75rem 1.4rem;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+
+        @include bp(tablet) {
+          padding: 1rem 2rem;
+          font-size: 2rem;
+          line-height: 2.5rem;
+        }
       }
     }
   }

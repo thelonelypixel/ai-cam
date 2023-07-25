@@ -34,11 +34,6 @@
       }
     }
 
-    .hero__search {
-      @include animate(400ms, 2s, fadeInDown);
-      opacity: 1;
-    }
-
     .hero__content {
       @include animate(400ms, 400ms, fadeIn);
       opacity: 1;
@@ -125,62 +120,6 @@
 
       @include bp(desktop-xl) {
         width: 380px;
-      }
-    }
-  }
-
-  .hero__search {
-    width: 90%;
-    max-width: $global-width;
-    height: 60px;
-    padding: 1.5rem 1.5rem 1.5rem 2rem;
-    margin: 0 auto;
-    position: absolute;
-    top: 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: $lightest;
-    border-radius: 50px;
-    box-shadow: 0 0 20px rgba($darkest, 0.3);
-    opacity: 0;
-    z-index: 2;
-
-    @include bp(tablet) {
-      height: 75px;
-      top: 4rem;
-    }
-
-    @include bp(desktop) {
-      height: 100px;
-      top: 4rem;
-      padding: 2rem 2rem 2rem 4rem;
-    }
-
-    img {
-      width: 80px;
-      height: auto;
-      display: block;
-
-      @include bp(tablet) {
-        width: 100px;
-      }
-
-      @include bp(desktop) {
-        width: 180px;
-      }
-    }
-
-    .button.button--standard {
-      margin: 0;
-      padding: 0.75rem 1.4rem;
-      font-size: 1.4rem;
-      line-height: 1.8rem;
-
-      @include bp(tablet) {
-        padding: 1rem 2rem;
-        font-size: 2rem;
-        line-height: 2.5rem;
       }
     }
   }
