@@ -12,13 +12,6 @@ header[role="banner"] {
       @include animate(400ms, 1s, fadeIn);
       opacity: 1;
     }
-
-    .header__nav {
-      &-inner {
-        @include animate(400ms, 2s, fadeInDown);
-        opacity: 1;
-      }
-    }
   }
 
   .header__upper {
@@ -88,7 +81,6 @@ header[role="banner"] {
   .header__nav {
     width: 90%;
     max-width: $global-width;
-
     margin: 0 auto;
     position: absolute;
     bottom: -2rem;
@@ -99,6 +91,13 @@ header[role="banner"] {
 
     @include bp(tablet) {
       bottom: -3rem;
+    }
+
+    &.in-view {
+      .header__nav-inner {
+        @include animate(400ms, 2s, fadeInDown);
+        opacity: 1;
+      }
     }
 
     &-inner {
