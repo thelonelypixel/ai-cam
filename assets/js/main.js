@@ -30,7 +30,7 @@
 
                 // Smooth scroll to links
                 $('a[href*="#"]:not([href="#"])').click(function () {
-                    var offset = -250; // <-- change the value here
+                    var offset = -65; // <-- change the value here
                     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
                         var target = $(this.hash);
                         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
