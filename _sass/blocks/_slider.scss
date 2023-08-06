@@ -33,11 +33,19 @@
 
   .slider__main {
     display: flex;
+    // Update
+    flex-wrap: wrap;
   }
 
   .slider__slide {
-    width: calc(50% - 1.5rem);
-    margin-right: 3rem;
+    // Update
+    width: 100%;
+    margin-bottom: 2rem;
+
+    @include bp(tablet) {
+      width: calc(50% - 1.5rem);
+      margin-right: 3rem;
+    }
 
     &:last-of-type {
       margin-right: 0;

@@ -11,8 +11,13 @@
 // Posts Grid
 .posts__grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 3rem;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+
+  @include bp(tablet) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3rem;
+  }
 }
 
 // Post Grid Item
@@ -30,8 +35,12 @@
 
     &::before {
       content: "";
-      padding-top: 65%;
+      padding-top: 50%;
       display: block;
+
+      @include bp(tablet) {
+        padding-top: 65%;
+      }
     }
 
     img {
@@ -46,28 +55,49 @@
   }
 
   &-content {
-    padding: 3rem;
+    padding: 1.5rem;
+
+    @include bp(tablet) {
+      padding: 3rem;
+    }
 
     .category {
-      margin-bottom: 1.5rem;
+      margin-bottom: 0.5rem;
       display: block;
       font-family: $header-font-family;
-      font-size: 2rem;
-      line-height: 2.5rem;
+      font-size: 1.4rem;
+      line-height: 2rem;
       text-transform: uppercase;
       color: $blue;
+
+      @include bp(tablet) {
+        margin-bottom: 1.5rem;
+        font-size: 2rem;
+        line-height: 2.5rem;
+      }
     }
 
     h3 {
       margin-bottom: 0;
-      font-size: 2.8rem;
-      line-height: 3.5rem;
+      font-size: 2rem;
+      line-height: 2.4rem;
+
+      @include bp(tablet) {
+        font-size: 2.8rem;
+        line-height: 3.5rem;
+      }
     }
 
     .button.button--simple {
-      margin-top: 5rem;
-      font-size: 2.4rem;
-      line-height: 3rem;
+      margin-top: 2rem;
+      font-size: 1.6rem;
+      line-height: 2.2rem;
+
+      @include bp(tablet) {
+        margin-top: 5rem;
+        font-size: 2.4rem;
+        line-height: 3rem;
+      }
     }
   }
 }

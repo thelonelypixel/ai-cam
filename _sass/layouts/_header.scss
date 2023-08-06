@@ -105,7 +105,7 @@ header[role="banner"] {
     &-inner {
       width: 100%;
       height: 60px;
-      padding: 1.5rem 1.5rem 1.5rem 2rem;
+      padding: 1rem 1rem 1rem 1.5rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -116,6 +116,7 @@ header[role="banner"] {
 
       @include bp(tablet) {
         height: 75px;
+        padding: 1.5rem 1.5rem 1.5rem 2rem;
       }
 
       @include bp(desktop) {
@@ -124,7 +125,7 @@ header[role="banner"] {
       }
 
       img {
-        width: 80px;
+        width: 60px;
         height: auto;
         display: block;
 
@@ -142,15 +143,21 @@ header[role="banner"] {
         align-items: center;
 
         a {
-          margin-left: 2rem;
+          margin-left: 1rem;
           font-family: $header-font-family;
-          font-size: 2rem;
-          line-height: 2.5rem;
+          font-size: 1.4rem;
+          line-height: 2rem;
           text-decoration: none;
           color: $dark-blue;
 
+          @include bp(tablet) {
+            margin-left: 2rem;
+          }
+
           @include bp(desktop) {
             margin-left: 4rem;
+            font-size: 2rem;
+            line-height: 2.5rem;
           }
 
           @include bp(desktop-xl) {
@@ -160,12 +167,13 @@ header[role="banner"] {
       }
 
       .button.button--standard {
-        margin: 0 0 0 2rem;
+        margin: 0 0 0 1rem;
         padding: 0.75rem 1.4rem;
         font-size: 1.4rem;
         line-height: 1.8rem;
 
         @include bp(tablet) {
+          margin: 0 0 0 2rem;
           padding: 1rem 2rem;
           font-size: 2rem;
           line-height: 2.5rem;
