@@ -34,9 +34,10 @@ header[role="banner"] {
 
     .cambridge-uni-quicklinks-footer {
       display: block;
+      font-family: $header-font-family;
       font-size: 1.2rem;
       line-height: normal;
-      font-weight: 700;
+      // font-weight: 700;
       text-decoration: none;
       color: $lightest;
 
@@ -54,9 +55,10 @@ header[role="banner"] {
 
       a {
         display: inline-block;
+        font-family: $header-font-family;
         font-size: 1.2rem;
         line-height: normal;
-        font-weight: 700;
+        // font-weight: 700;
         color: $lightest;
         text-decoration: none;
 
@@ -135,8 +137,30 @@ header[role="banner"] {
         }
       }
 
+      nav {
+        display: flex;
+        align-items: center;
+
+        a {
+          margin-left: 2rem;
+          font-family: $header-font-family;
+          font-size: 2rem;
+          line-height: 2.5rem;
+          text-decoration: none;
+          color: $dark-blue;
+
+          @include bp(desktop) {
+            margin-left: 4rem;
+          }
+
+          @include bp(desktop-xl) {
+            margin-left: 5rem;
+          }
+        }
+      }
+
       .button.button--standard {
-        margin: 0;
+        margin: 0 0 0 2rem;
         padding: 0.75rem 1.4rem;
         font-size: 1.4rem;
         line-height: 1.8rem;
@@ -145,6 +169,15 @@ header[role="banner"] {
           padding: 1rem 2rem;
           font-size: 2rem;
           line-height: 2.5rem;
+        }
+
+        @include bp(desktop) {
+          margin: 0 0 0 4rem;
+          padding: 1.5rem 2rem;
+        }
+
+        @include bp(desktop-xl) {
+          margin: 0 0 0 5rem;
         }
       }
     }

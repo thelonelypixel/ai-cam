@@ -1,18 +1,19 @@
 .block__hero {
-  padding: 10rem 0 4rem 0;
   position: relative;
   display: flex;
   align-items: center;
   background: $pink;
   overflow: hidden;
 
-  @include bp(tablet) {
-    min-height: 100vh;
-    padding: 15rem 0 5rem 0;
-  }
+  &.block--bg-blue {
+    background-color: $dark-blue;
 
-  @include bp(desktop) {
-    padding: 12.5rem 0 5rem 0;
+    .hero__content {
+      h1,
+      p {
+        color: $lightest;
+      }
+    }
   }
 
   &.in-view {
@@ -42,6 +43,48 @@
     .hero__image {
       @include animate(400ms, 700ms, fadeIn);
       opacity: 1;
+    }
+  }
+
+  &.block__hero--large {
+    padding: 10rem 0 4rem 0;
+
+    @include bp(tablet) {
+      min-height: 100vh;
+      padding: 15rem 0 5rem 0;
+    }
+
+    @include bp(desktop) {
+      padding: 12.5rem 0 5rem 0;
+    }
+  }
+
+  &.block__hero--standard {
+    padding: 10rem 0 4rem 0;
+
+    @include bp(tablet) {
+      min-height: 540px;
+      padding: 15rem 0 5rem 0;
+    }
+
+    @include bp(desktop) {
+      padding: 12.5rem 0 5rem 0;
+    }
+
+    @include bp(desktop-xl) {
+      min-height: 640px;
+    }
+  }
+
+  &.block__hero--archive {
+    padding: 10rem 0 5rem 0;
+
+    @include bp(tablet) {
+      padding: 15rem 0 7.5rem 0;
+    }
+
+    @include bp(desktop) {
+      padding: 20rem 0 7.5rem 0;
     }
   }
 
@@ -142,14 +185,24 @@
     }
 
     h1 {
+      margin-bottom: 1rem;
       font-size: 3rem;
-      font-weight: 700;
       line-height: 4rem;
       color: $dark-blue;
 
       @include bp(tablet) {
         font-size: 3.8rem;
         line-height: 5rem;
+      }
+
+      @include bp(desktop) {
+        font-size: 5.4rem;
+        line-height: 6.6rem;
+      }
+
+      @include bp(desktop-xl) {
+        font-size: 6.8rem;
+        line-height: 8rem;
       }
     }
 
@@ -160,6 +213,15 @@
       @include bp(tablet) {
         font-size: 2rem;
         line-height: 3rem;
+      }
+
+      @include bp(desktop) {
+        font-size: 2.2rem;
+        line-height: 3.4rem;
+      }
+      @include bp(desktop-xl) {
+        font-size: 2.4rem;
+        line-height: 3.8rem;
       }
     }
   }

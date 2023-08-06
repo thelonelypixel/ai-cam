@@ -1,0 +1,25 @@
+.block__latest-overview {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+  }
+
+  .latest-overview__column {
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+      font-size: 2.8rem;
+      line-height: 3.5rem;
+    }
+
+    .post {
+      margin-bottom: 3rem;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
