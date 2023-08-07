@@ -21,7 +21,7 @@
         width: 100%;
         margin-bottom: 2rem;
 
-        @include bp(tablet) {
+        @include bp(desktop) {
           order: unset;
           width: calc(50% - 3rem);
         }
@@ -64,7 +64,7 @@
         width: 100%;
         margin-bottom: 2rem;
 
-        @include bp(tablet) {
+        @include bp(desktop) {
           order: unset;
           width: calc(50% - 3rem);
           margin-bottom: 0;

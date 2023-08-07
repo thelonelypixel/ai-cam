@@ -4,7 +4,7 @@
     grid-template-columns: 1fr;
     grid-gap: 20px;
 
-    @include bp(tablet) {
+    @include bp(desktop) {
       grid-template-columns: 1fr 1fr;
       grid-gap: 30px;
     }

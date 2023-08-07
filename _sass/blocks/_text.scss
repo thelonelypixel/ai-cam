@@ -11,7 +11,7 @@
       width: 100%;
       margin-bottom: 2rem;
 
-      @include bp(tablet) {
+      @include bp(desktop) {
         width: 50%;
         margin-bottom: 0;
       }
@@ -36,7 +36,7 @@
     .text__content {
       width: 100%;
 
-      @include bp(tablet) {
+      @include bp(desktop) {
         width: calc(50% - 7.5rem);
       }
 

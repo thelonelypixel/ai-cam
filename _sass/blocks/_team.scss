@@ -10,7 +10,7 @@
       width: 100%;
       margin-bottom: 2rem;
 
-      @include bp(tablet) {
+      @include bp(desktop) {
         width: 75%;
         max-width: 930px;
         margin-bottom: 0;
@@ -21,7 +21,7 @@
         font-size: 3rem;
         line-height: 4rem;
 
-        @include bp(tablet) {
+        @include bp(desktop) {
           font-size: 4.8rem;
           line-height: 8rem;
         }
@@ -33,7 +33,7 @@
         line-height: 2.4rem;
         color: $dark-blue;
 
-        @include bp(tablet) {
+        @include bp(desktop) {
           font-size: 2rem;
           line-height: 2.6rem;
         }
@@ -55,8 +55,11 @@
     flex-wrap: wrap;
 
     @include bp(tablet) {
-      margin-bottom: 6rem;
       flex-direction: row;
+    }
+
+    @include bp(desktop) {
+      margin-bottom: 6rem;
     }
 
     button {
@@ -72,7 +75,7 @@
 
       @include bp(tablet) {
         margin-bottom: 2rem;
-        margin-right: 7.5rem;
+        margin-right: 5rem;
         font-size: 3.8rem;
         line-height: 8rem;
       }
@@ -92,7 +95,7 @@
     grid-template-columns: 1fr;
     grid-gap: 20px;
 
-    @include bp(tablet) {
+    @include bp(desktop) {
       grid-template-columns: 1fr 1fr;
       grid-gap: 30px;
     }
@@ -106,6 +109,10 @@
       grid-template-columns: 1fr;
 
       @include bp(tablet) {
+        grid-template-columns: 1fr;
+      }
+
+      @include bp(desktop) {
         grid-template-columns: 1fr 1fr 1fr;
       }
 
@@ -114,6 +121,14 @@
 
         .team__member-image {
           margin-right: 2rem;
+
+          @include bp(tablet) {
+            margin-right: 5rem;
+          }
+
+          @include bp(desktop) {
+            margin-right: 2rem;
+          }
         }
 
         .team__member-content {
@@ -121,6 +136,16 @@
             margin: 5px 0;
             font-size: 2.4rem;
             line-height: 3rem;
+
+            @include bp(tablet) {
+              font-size: 2.6rem;
+              line-height: 3.4rem;
+            }
+
+            @include bp(desktop) {
+              font-size: 2.4rem;
+              line-height: 3rem;
+            }
 
             @include bp(desktop-xl) {
               font-size: 2.6rem;
@@ -131,6 +156,17 @@
           p {
             font-size: 1.4rem;
             line-height: 1.8rem;
+
+            @include bp(tablet) {
+              font-size: 1.6rem;
+              line-height: 2rem;
+            }
+
+            @include bp(desktop) {
+              font-size: 1.4rem;
+              line-height: 1.8rem;
+            }
+
             @include bp(desktop-xl) {
               font-size: 1.6rem;
               line-height: 2rem;
@@ -155,12 +191,11 @@
         position: relative;
 
         @include bp(tablet) {
-          width: 30%;
           margin-right: 5rem;
         }
 
-        @include bp(desktop-xl) {
-          margin-right: 5rem;
+        @include bp(desktop) {
+          width: 30%;
         }
 
         &::before {
