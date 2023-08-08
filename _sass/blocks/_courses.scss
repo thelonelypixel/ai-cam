@@ -1,24 +1,53 @@
 .block__courses {
   .courses__table {
-    width: 100%;
+    width: auto;
     display: block;
+    overflow: scroll;
+
+    @include bp(tablet) {
+      width: 100%;
+    }
 
     thead {
-      width: 100%;
-      margin-bottom: 6rem;
+      width: auto;
+      margin-bottom: 4rem;
       display: block;
       background-color: transparent;
+
+      @include bp(tablet) {
+        width: 100%;
+      }
+
+      @include bp(desktop-xl) {
+        margin-bottom: 6rem;
+      }
     }
 
     tbody {
-      width: 100%;
+      width: auto;
       display: block;
       background-color: transparent;
 
+      @include bp(tablet) {
+        width: 100%;
+      }
+
       tr {
-        margin-bottom: 4rem;
-        padding-bottom: 4rem;
+        width: 200vw;
+        min-width: 200vw;
+        margin-bottom: 3rem;
+        padding-bottom: 3rem;
         border-bottom: 2px solid $darkest;
+
+        @include bp(tablet) {
+          width: auto;
+          min-width: unset;
+        }
+
+        @include bp(desktop-xl) {
+          margin-bottom: 4rem;
+          padding-bottom: 4rem;
+        }
 
         &:last-of-type {
           margin-bottom: 0;
@@ -29,28 +58,56 @@
     }
 
     tr {
-      width: 100%;
+      width: auto;
       display: flex;
       background-color: transparent;
 
+      @include bp(tablet) {
+        width: 100%;
+      }
+
       th:nth-child(1),
       td:nth-child(1) {
-        width: 32.5%;
+        width: 50vw;
+        min-width: 50vw;
+
+        @include bp(tablet) {
+          width: 32.5%;
+          min-width: unset;
+        }
       }
 
       th:nth-child(2),
       td:nth-child(2) {
-        width: 32.5%;
+        width: 50vw;
+        min-width: 50vw;
+
+        @include bp(tablet) {
+          width: 32.5%;
+          min-width: unset;
+        }
       }
 
       th:nth-child(3),
       td:nth-child(3) {
-        width: 20%;
+        width: 50vw;
+        min-width: 50vw;
+
+        @include bp(tablet) {
+          width: 20%;
+          min-width: unset;
+        }
       }
 
       th:nth-child(4),
       td:nth-child(4) {
-        width: 15%;
+        width: 50vw;
+        min-width: 50vw;
+
+        @include bp(tablet) {
+          width: 15%;
+          min-width: unset;
+        }
       }
     }
 
@@ -68,18 +125,28 @@
     &-headings {
       h3 {
         margin: 0;
-        font-size: 2.8rem;
-        line-height: 3.5rem;
+        font-size: 2.4rem;
+        line-height: 3rem;
         text-align: left;
+
+        @include bp(desktop-xl) {
+          font-size: 2.8rem;
+          line-height: 3.5rem;
+        }
       }
     }
 
     &-course {
       p {
         margin: 0;
-        font-size: 2rem;
-        line-height: 2.5rem;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
         color: $dark-blue;
+
+        @include bp(desktop-xl) {
+          font-size: 2rem;
+          line-height: 2.5rem;
+        }
       }
 
       .button.button--standard {
