@@ -17,15 +17,39 @@
 
   <div class="header__nav obsv">
     <div class="header__nav-inner">
-      <img alt="Logo" src="../assets/images/logo.png"/>
-      <nav>
-        <a href="/about/">About</a>
-        <a href="/news/">News</a>
-        <a href="#">Incentives</a>
-        <a href="#">AI at Cambridge</a>
-        <a href="/blog/">Blog</a>
-        <a class="button button--standard button--blue" href="#">Community</a>
-      </nav>
+      <div class="header__nav-inner__main">
+        <div class="nav-inner__main-search">
+          <form action="">
+            <input type="text" name="search" id="">
+            <button type="submit" class="button button--standard">
+              Search
+              <svg class="w-6 h-6" fill="none" stroke-width="2" stroke="#05385e" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </form>
+          
+        </div>
+        <div class="nav-inner__main-nav">
+          <img alt="Logo" src="../assets/images/logo.png" />
+          <nav>
+            <a href="/about/">About</a>
+            <a href="/news/">News</a>
+            <a href="#">Incentives</a>
+            <a href="#">AI at Cambridge</a>
+            <a href="/blog/">Blog</a>
+            <a class="button button--standard button--blue" href="#">Community</a>
+          </nav>
+        </div>
+      </div>
+
+      <button class="header__nav-inner__toggle">
+        <svg class="w-6 h-6" fill="none" stroke-width="2" stroke="#000" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <span></span>
+      </button>
+      
     </div>
   </nav>
 </header>

@@ -121,10 +121,15 @@
                  *
                  */
 
+                //  Header Search Bar
+                $('.header__nav-inner__toggle').click(function(){
+                    $(this).closest('.header__nav-inner').toggleClass('search-open');
+                });
+
                 // Accordions
 				$('.accordions__item button').click(function(){
 					$(this).closest('.accordions__item').toggleClass('open');
-				});
+                });
 
                 /*
                  *
