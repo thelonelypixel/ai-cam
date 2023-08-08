@@ -8,8 +8,12 @@
     flex-wrap: wrap;
 
     @include bp(tablet) {
-      margin: 0 -1.5rem -3rem -1.5rem;
+      margin: 0 -1rem -2rem -1rem;
       flex-direction: row;
+    }
+
+    @include bp(desktop) {
+      margin: 0 -1.5rem -3rem -1.5rem;
     }
   }
 
@@ -30,8 +34,13 @@
     color: $dark-blue;
 
     @include bp(tablet) {
-      width: calc(33.33% - 3rem);
+      width: calc(33.33% - 2rem);
       height: 80px;
+      margin: 0 1rem 2rem 1rem;
+    }
+
+    @include bp(desktop) {
+      width: calc(33.33% - 3rem);
       margin: 0 1.5rem 3rem 1.5rem;
       font-size: 3.2rem;
       line-height: 6rem;

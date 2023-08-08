@@ -4,7 +4,7 @@
     display: block;
     overflow: scroll;
 
-    @include bp(tablet) {
+    @include bp(desktop) {
       width: 100%;
     }
 
@@ -14,7 +14,7 @@
       display: block;
       background-color: transparent;
 
-      @include bp(tablet) {
+      @include bp(desktop) {
         width: 100%;
       }
 
@@ -28,7 +28,7 @@
       display: block;
       background-color: transparent;
 
-      @include bp(tablet) {
+      @include bp(desktop) {
         width: 100%;
       }
 
@@ -39,7 +39,7 @@
         padding-bottom: 3rem;
         border-bottom: 2px solid $darkest;
 
-        @include bp(tablet) {
+        @include bp(desktop) {
           width: auto;
           min-width: unset;
         }
@@ -62,7 +62,7 @@
       display: flex;
       background-color: transparent;
 
-      @include bp(tablet) {
+      @include bp(desktop) {
         width: 100%;
       }
 
@@ -71,7 +71,7 @@
         width: 50vw;
         min-width: 50vw;
 
-        @include bp(tablet) {
+        @include bp(desktop) {
           width: 32.5%;
           min-width: unset;
         }
@@ -82,7 +82,7 @@
         width: 50vw;
         min-width: 50vw;
 
-        @include bp(tablet) {
+        @include bp(desktop) {
           width: 32.5%;
           min-width: unset;
         }
@@ -93,7 +93,7 @@
         width: 50vw;
         min-width: 50vw;
 
-        @include bp(tablet) {
+        @include bp(desktop) {
           width: 20%;
           min-width: unset;
         }
@@ -104,7 +104,7 @@
         width: 50vw;
         min-width: 50vw;
 
-        @include bp(tablet) {
+        @include bp(desktop) {
           width: 15%;
           min-width: unset;
         }
