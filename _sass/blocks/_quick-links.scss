@@ -1,0 +1,30 @@
+.block__quick-links {
+  .quick-links__grid {
+    margin: 0 -1.5rem -3rem -1.5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .quick-links__link {
+    width: 33.33%;
+    height: 80px;
+    margin: 0 1.5rem 3rem 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $pink;
+    border-radius: 100px;
+    font-family: $header-font-family;
+    font-size: 3.2rem;
+    line-height: 6rem;
+    text-align: center;
+    text-decoration: none;
+    color: $dark-blue;
+
+    @include bp(desktop-xl) {
+      height: 100px;
+      font-size: 4.2rem;
+      line-height: 8rem;
+    }
+  }
+}
