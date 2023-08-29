@@ -9,11 +9,9 @@ hero:
     - link: /
       text: Find out more
 latest_overview:
-  heading: a
-  content: a
-  buttons:
-    - link: a
-      text: a
+  heading: ""
+  content: ""
+  buttons: []
 media_text:
   heading: About AI@CAM
   content: Curabitur risus urna, ornare sed pretium vel, mattis et metus. Sed
