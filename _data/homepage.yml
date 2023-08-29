@@ -1,8 +1,49 @@
 hero:
   title: Advancing scientific discovery with machine learning
-  content: Accelerate Science pursues research at the interface of AI and the
-    sciences, generating new scientific insights and developing AI methods that
-    can be deployed to advance scientific knowledge. This research is carried
-    out in partnership with a community of scientists and AI specialists
-    passionate about the use of AI to benefit science and society.
+  content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fringilla
+    dapibus lectus vel pharetra. Integer condimentum malesuada condimentum.
   link: null
+  heading: AI@CAM Mission Heading Goes Here
+  image: /assets/uploads/placeholder-1.jpg
+  buttons:
+    - link: /
+      text: Find out more
+latest_overview:
+  heading: a
+  content: a
+  buttons:
+    - link: a
+      text: a
+media_text:
+  heading: About AI@CAM
+  content: Curabitur risus urna, ornare sed pretium vel, mattis et metus. Sed
+    scelerisque elit nec euismod ultricies. Sed nisl leo, laoreet a mauris
+    vitae, ultrices varius augue. Fusce ac risus sollicitudin, posuere ante at,
+    faucibus odio. Nunc sollicitudin metus ut est pulvinar ultricies quis nec
+    sapien.
+  buttons:
+    - link: /
+      text: Read More
+  image: /assets/uploads/lander-media-2.png
+  image_small: /assets/uploads/lander-media-1.png
+slider:
+  slider_items:
+    - heading: What we do
+      content: AI@Cam is building an infrastructure for interdisciplinary innovation
+        that serves science and society through research, education, and
+        innovation programmes that leverage world- leading research from across
+        the University and connect this to real-world needs.
+      link: /
+      image: /assets/uploads/placeholder-1.jpg
+    - content: AI@Cam is building an infrastructure for interdisciplinary innovation
+        that serves science and society through research, education, and
+        innovation programmes that leverage world- leading research from across
+        the University and connect this to real-world needs.
+      link: /
+      image: /assets/uploads/placeholder-2.jpg
+      heading: Challenge-led AI innovation
+  content: a
+  heading: a
+  buttons:
+    - link: a
+      text: a
