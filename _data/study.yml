@@ -1,0 +1,63 @@
+hero:
+  content: The University provides a range of courses relating to AI, its use as
+    part of a range of disciplines, and its critical evaluation. Explore where
+    you can find AI in our courses more at the links below.
+  heading: Study
+media_text_undergraduate:
+  content: Curabitur risus urna, ornare sed pretium vel, mattis et metus. Sed
+    scelerisque elit nec euismod ultricies. Sed nisl leo, laoreet a mauris
+    vitae, ultrices varius augue. Fusce ac risus sollicitudin, posuere ante at,
+    faucibus odio. Nunc sollicitudin metus ut est pulvinar ultricies quis nec
+    sapien.
+  heading: Undergraduate Heading goes in here and takes up two lines
+  quick_links: []
+  buttons:
+    - link: /
+      text: Contact us
+  image: /assets/uploads/lander-media-2.png
+  image_small: /assets/uploads/lander-media-1.png
+courses_undergraduate:
+  courses_list:
+    - name: Computer Science
+      department: |-
+        
+        Computer Science and Technology
+      link: /
+media_text_postgraduate:
+  heading: Postgraduate Heading goes in here and takes up two lines
+  content: Curabitur risus urna, ornare sed pretium vel, mattis et metus. Sed
+    scelerisque elit nec euismod ultricies. Sed nisl leo, laoreet a mauris
+    vitae, ultrices varius augue. Fusce ac risus sollicitudin, posuere ante at,
+    faucibus odio. Nunc sollicitudin metus ut est pulvinar ultricies quis nec
+    sapien.
+  buttons:
+    - link: /
+      text: Contact us
+  image: /assets/uploads/lander-media-2.png
+  image_small: /assets/uploads/lander-media-1.png
+courses_postgraduate:
+  courses_list:
+    - name: Computer Science
+      department: |-
+        
+        Computer Science and Technology
+      link: /
+media_text_executive:
+  heading: Executive Heading goes in here and takes up two lines
+  content: Curabitur risus urna, ornare sed pretium vel, mattis et metus. Sed
+    scelerisque elit nec euismod ultricies. Sed nisl leo, laoreet a mauris
+    vitae, ultrices varius augue. Fusce ac risus sollicitudin, posuere ante at,
+    faucibus odio. Nunc sollicitudin metus ut est pulvinar ultricies quis nec
+    sapien.
+  buttons:
+    - link: /
+      text: Contact us
+  image: /assets/uploads/lander-media-2.png
+  image_small: /assets/uploads/lander-media-1.png
+courses_executive:
+  courses_list:
+    - name: Computer Science
+      department: |-
+        
+        Computer Science and Technology
+      link: /
