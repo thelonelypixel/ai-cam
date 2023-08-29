@@ -4,729 +4,1122 @@ backend:
 
 local_backend: true
 
-media_folder: 'assets/uploads'
+media_folder: "assets/uploads"
 
 collections:
-
   # General Website Settings
-  - name: 'website-settings'
-    label: 'Website Settings'
+  - name: "website-settings"
+    label: "Website Settings"
     files:
       # Website Settings
-      - label: 'Website Settings'
-        name: 'site'
-        file: '_data/site.yml'
+      - label: "Website Settings"
+        name: "site"
+        file: "_data/site.yml"
         editor:
           preview: false
         fields:
           # Site Logo
-          - label: 'Site Logo'
-            name: 'site_logo'
-            widget: 'image'
-          - label: 'Site Logo Dark'
-            name: 'site_logo_dark'
-            widget: 'image'
+          - label: "Site Logo"
+            name: "site_logo"
+            widget: "image"
           # Contact Details
-          - label: 'Contact Details'
-            name: 'contact_details'
+          - label: "Contact Details"
+            name: "contact_details"
             collapsed: true
-            widget: 'object'
+            widget: "object"
             fields:
-              - label: 'Address'
-                name: 'address'
-                widget: 'markdown'
-              - label: 'Tel'
-                name: 'tel'
-                widget: 'string'
-              - label: 'Fax'
-                name: 'fax'
-                widget: 'string'
-              - label: 'Email'
-                name: 'email'
-                widget: 'string'
+              - label: "Address"
+                name: "address"
+                widget: "markdown"
+              - label: "Tel"
+                name: "tel"
+                widget: "string"
+              - label: "Fax"
+                name: "fax"
+                widget: "string"
+              - label: "Email"
+                name: "email"
+                widget: "string"
           # Social Details
-          - label: 'Social Details'
-            name: 'social_details'
+          - label: "Social Details"
+            name: "social_details"
             collapsed: true
-            widget: 'object'
+            widget: "object"
             fields:
-              - label: 'Twitter'
-                name: 'twitter_link'
-                widget: 'string'
-              - label: 'Facebook'
-                name: 'facebook_link'
-                widget: 'string'
-              - label: 'Instagram'
-                name: 'instagram_link'
-                widget: 'string'
-          # Footer Settings
-          - label: 'Footer Images'
-            name: 'footer_images'
-            collapsed: true
-            widget: 'list'
-            required: false
-            fields: 
-              - label: 'Image'
-                name: 'image'
-                widget: 'image'
-              - label: 'Link'
-                name: 'link'
-                widget: 'string'
+              - label: "Twitter"
+                name: "twitter_link"
+                widget: "string"
+              - label: "Facebook"
+                name: "facebook_link"
+                widget: "string"
+              - label: "Instagram"
+                name: "instagram_link"
+                widget: "string"
       # Navigation Menus
-      - label: 'Navigation Menus'
-        name: 'navigation_menus'
-        file: '_data/nav.yml'
+      - label: "Navigation Menus"
+        name: "navigation_menus"
+        file: "_data/nav.yml"
         editor:
           preview: false
         fields:
           # Main Nav
-          - label: 'Main Nav'
-            name: 'main_nav'
+          - label: "Main Nav"
+            name: "main_nav"
             collapsed: true
             minimize_collapsed: true
-            widget: 'list'
+            widget: "list"
             required: false
-            fields: 
-              - label: 'Label'
-                name: 'label'
-                widget: 'string'
-              - label: 'Link'
-                name: 'link'
-                widget: 'string'
-              - label: 'Submenu Item'
-                name: 'submenu_item'
-                collapsed: true
-                minimize_collapsed: true
-                widget: 'list'
-                required: false
-                fields: 
-                  - label: 'Label'
-                    name: 'label'
-                    widget: 'string'
-                  - label: 'Link'
-                    name: 'link'
-                    widget: 'string'
-          # Footer Nav
-          - label: 'Footer Nav'
-            name: 'footer_nav'
-            collapsed: true
-            minimize_collapsed: true
-            widget: 'list'
-            required: false
-            fields: 
-              - label: 'Label'
-                name: 'label'
-                widget: 'string'
-              - label: 'Link'
-                name: 'link'
-                widget: 'string'
-              - label: 'Submenu Item'
-                name: 'submenu_item'
-                collapsed: true
-                minimize_collapsed: true
-                widget: 'list'
-                required: false
-                fields: 
-                  - label: 'Label'
-                    name: 'label'
-                    widget: 'string'
-                  - label: 'Link'
-                    name: 'link'
-                    widget: 'string'
-          # Top Nav
-          - label: 'Top Bar'
-            name: 'top_bar'
-            collapsed: true
-            widget: 'object'
             fields:
-              - label: 'Image'
-                name: 'image'
-                widget: 'image'
-              - label: 'Link'
-                name: 'link'
-                widget: 'string'
-              - label: 'Top Bar Nav'
-                name: 'top_bar_nav'
+              - label: "Label"
+                name: "label"
+                widget: "string"
+              - label: "Link"
+                name: "link"
+                widget: "string"
+              - label: "Submenu Item"
+                name: "submenu_item"
                 collapsed: true
                 minimize_collapsed: true
-                widget: 'list'
+                widget: "list"
                 required: false
-                fields: 
-                  - label: 'Label'
-                    name: 'label'
-                    widget: 'string'
-                  - label: 'Link'
-                    name: 'link'
-                    widget: 'string'
+                fields:
+                  - label: "Label"
+                    name: "label"
+                    widget: "string"
+                  - label: "Link"
+                    name: "link"
+                    widget: "string"
+          # Footer Nav
+          - label: "Footer Nav"
+            name: "footer_nav"
+            collapsed: true
+            minimize_collapsed: true
+            widget: "list"
+            required: false
+            fields:
+              - label: "Label"
+                name: "label"
+                widget: "string"
+              - label: "Link"
+                name: "link"
+                widget: "string"
+              - label: "Submenu Item"
+                name: "submenu_item"
+                collapsed: true
+                minimize_collapsed: true
+                widget: "list"
+                required: false
+                fields:
+                  - label: "Label"
+                    name: "label"
+                    widget: "string"
+                  - label: "Link"
+                    name: "link"
+                    widget: "string"
+          # Top Nav
+          - label: "Top Bar"
+            name: "top_bar"
+            collapsed: true
+            widget: "object"
+            fields:
+              - label: "Image"
+                name: "image"
+                widget: "image"
+              - label: "Link"
+                name: "link"
+                widget: "string"
+              - label: "Top Bar Nav"
+                name: "top_bar_nav"
+                collapsed: true
+                minimize_collapsed: true
+                widget: "list"
+                required: false
+                fields:
+                  - label: "Label"
+                    name: "label"
+                    widget: "string"
+                  - label: "Link"
+                    name: "link"
+                    widget: "string"
 
   # Pages
-  - name: 'pages'
-    label: 'Pages'
+  - label: "Pages"
+    name: "pages"
     files:
       # Homepage
-      - label: 'Homepage'
-        name: 'homepage'
-        file: '_data/homepage.yml'
+      - label: "Homepage"
+        name: "homepage"
+        file: "_data/homepage.yml"
         editor:
           preview: false
         fields:
-          # Hero Section
-          - label: 'Hero'
-            name: 'hero'
+          # Hero
+          - label: "Hero"
+            name: "hero"
             collapsed: true
-            widget: 'object'
+            widget: "object"
             fields:
-              - label: 'Title'
-                name: 'title'
-                widget: 'string'
-          # About Section
-          - label: 'About'
-            name: 'about'
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "text"
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                collapsed: true
+                fields:
+                  - { label: Link, name: link, widget: string, collapsed: true }
+                  - { label: Text, name: text, widget: string, collapsed: true }
+              - label: "Image"
+                name: "image"
+                widget: "image"
+          # Latest Overview
+          - label: "Latest Overview"
+            name: "latest_overview"
             collapsed: true
-            widget: 'object'
+            widget: "object"
             fields:
-              - label: 'Title'
-                name: 'title'
-                widget: 'string'
-              - label: 'Heading'
-                name: 'heading'
-                widget: 'string'
-              - label: 'Content'
-                name: 'content'
-                widget: 'text'
-              - label: 'Link Label'
-                name: 'link_label'
-                widget: 'string'
-              - label: 'Link URL'
-                name: 'link_url'
-                widget: 'string'
-              - label: 'Image'
-                name: 'image'
-                widget: 'image'
-          # Research Section
-          - label: 'Research'
-            name: 'research'
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "text"
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                collapsed: true
+                fields:
+                  - { label: Link, name: link, widget: string, collapsed: true }
+                  - { label: Text, name: text, widget: string, collapsed: true }
+          # Media Text
+          - label: "Media Text"
+            name: "media_text"
             collapsed: true
-            widget: 'object'
+            widget: "object"
             fields:
-              - label: 'Title'
-                name: 'title'
-                widget: 'string'
-              - label: 'Heading'
-                name: 'heading'
-                widget: 'string'
-              - label: 'Content'
-                name: 'content'
-                widget: 'text'
-              - label: 'Link Label'
-                name: 'link_label'
-                widget: 'string'
-              - label: 'Link URL'
-                name: 'link_url'
-                widget: 'string'
-              - label: 'Image'
-                name: 'image'
-                widget: 'image'
-          # Partners
-          - label: 'Partners'
-            name: 'partners'
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "text"
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                collapsed: true
+                fields:
+                  - { label: Link, name: link, widget: string, collapsed: true }
+                  - { label: Text, name: text, widget: string, collapsed: true }
+              - label: "Image"
+                name: "image"
+                widget: "image"
+              - label: "Image (Small)"
+                name: "image_small"
+                widget: "image"
+          # Slider
+          - label: "Slider"
+            name: "slider"
             collapsed: true
-            minimize_collapsed: true
-            widget: 'list'
-            fields: 
-              - label: 'Image'
-                name: 'image'
-                widget: 'image'
-              - label: 'Link'
-                name: 'link'
-                widget: 'string'
-      # About
-      - label: 'About'
-        name: 'about'
-        file: '_data/about.yml'
+            widget: "object"
+            fields:
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "text"
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                collapsed: true
+                fields:
+                  - { label: Link, name: link, widget: string, collapsed: true }
+                  - { label: Text, name: text, widget: string, collapsed: true }
+              - label: "Slider Items"
+                name: "slider_items"
+                widget: "list"
+                collapsed: true
+                fields:
+                  - { label: Heading, name: heading, widget: string }
+                  - { label: Content, name: content, widget: text }
+                  - { label: Link, name: link, widget: string }
+                  - { label: Image, name: image, widget: image }
+      # About Page
+      - label: "About"
+        name: "about"
+        file: "_data/about.yml"
         editor:
           preview: false
         fields:
-          # Hero Section
-          - label: 'Hero'
-            name: 'hero'
+          # Hero
+          - label: "Hero"
+            name: "hero"
             collapsed: true
-            widget: 'object'
+            widget: "object"
             fields:
-              - label: 'Title'
-                name: 'title'
-                widget: 'string'
-          # Content
-          - label: 'Body'
-            name: 'body'
-            widget: 'markdown'
-          # Partners
-          - label: 'Partners'
-            name: 'partners'
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "text"
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                collapsed: true
+                fields:
+                  - { label: Link, name: link, widget: string, collapsed: true }
+                  - { label: Text, name: text, widget: string, collapsed: true }
+              - label: "Image"
+                name: "image"
+                widget: "image"
+          # Text (Dual Column)
+          - label: "Text (Split)"
+            name: "text_split"
             collapsed: true
-            minimize_collapsed: true
-            widget: 'list'
-            fields: 
-              - label: 'Image'
-                name: 'image'
-                widget: 'image'
-              - label: 'Link'
-                name: 'link'
-                widget: 'string'
-          # Grid
-          - label: 'Grid'
-            name: 'grid'
-            collapsed: true
-            minimize_collapsed: true
-            widget: 'list'
+            widget: "object"
             fields:
-              - label: 'Title'
-                name: 'title'
-                widget: 'string'
-              - label: 'Description'
-                name: 'description'
-                widget: 'string'
-              - label: 'Link'
-                name: 'link'
-                widget: 'string'
-              - label: 'Image'
-                name: 'image'
-                widget: 'image'
-      # Contact
-      - label: 'Contact'
-        name: 'contact'
-        file: '_data/contact.yml'
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "text"
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                collapsed: true
+                fields:
+                  - { label: Link, name: link, widget: string, collapsed: true }
+                  - { label: Text, name: text, widget: string, collapsed: true }
+          # Slider
+          - label: "Slider"
+            name: "slider"
+            collapsed: true
+            widget: "object"
+            fields:
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "text"
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                collapsed: true
+                fields:
+                  - { label: Link, name: link, widget: string, collapsed: true }
+                  - { label: Text, name: text, widget: string, collapsed: true }
+              - label: "Slider Items"
+                name: "slider_items"
+                widget: "list"
+                collapsed: true
+                fields:
+                  - { label: Heading, name: heading, widget: string }
+                  - { label: Content, name: content, widget: text }
+                  - { label: Link, name: link, widget: string }
+                  - { label: Image, name: image, widget: image }
+          # Media Text
+          - label: "Media Text"
+            name: "media_text"
+            collapsed: true
+            widget: "object"
+            fields:
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "text"
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                collapsed: true
+                fields:
+                  - { label: Link, name: link, widget: string, collapsed: true }
+                  - { label: Text, name: text, widget: string, collapsed: true }
+              - label: "Image"
+                name: "image"
+                widget: "image"
+              - label: "Image (Small)"
+                name: "image_small"
+                widget: "image"
+      # Team Page
+      - label: "Team"
+        name: "team"
+        file: "_data/team.yml"
         editor:
           preview: false
         fields:
-          # Hero Section
-          - label: 'Hero'
-            name: 'hero'
+          # Hero
+          - label: "Hero"
+            name: "hero"
             collapsed: true
-            widget: 'object'
+            widget: "object"
             fields:
-              - label: 'Title'
-                name: 'title'
-                widget: 'string'
-          # Contact Details
-          - label: 'Contact Details'
-            name: 'contact_details'
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "text"
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                collapsed: true
+                fields:
+                  - { label: Link, name: link, widget: string, collapsed: true }
+                  - { label: Text, name: text, widget: string, collapsed: true }
+              - label: "Image"
+                name: "image"
+                widget: "image"
+          # Team
+          - label: "Team"
+            name: "team"
             collapsed: true
-            widget: 'object'
+            widget: "object"
             fields:
-              - label: 'Image'
-                name: 'image'
-                widget: 'image'
-      # Resources
-      - label: 'Resources'
-        name: 'resources'
-        file: '_data/resources.yml'
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "text"
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                collapsed: true
+                fields:
+                  - { label: Link, name: link, widget: string, collapsed: true }
+                  - { label: Text, name: text, widget: string, collapsed: true }
+      # Contact Page
+      - label: "Contact"
+        name: "contact"
+        file: "_data/contact.yml"
         editor:
           preview: false
         fields:
-          # Hero Section
-          - label: 'Hero'
-            name: 'hero'
+          # Hero
+          - label: "Hero"
+            name: "hero"
             collapsed: true
-            widget: 'object'
+            widget: "object"
             fields:
-              - label: 'Title'
-                name: 'title'
-                widget: 'string'
-          # Resources Section
-          - label: 'Resources'
-            name: 'resources'
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "text"
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                collapsed: true
+                fields:
+                  - { label: Link, name: link, widget: string, collapsed: true }
+                  - { label: Text, name: text, widget: string, collapsed: true }
+              - label: "Image"
+                name: "image"
+                widget: "image"
+          # Team
+          - label: "Contact"
+            name: "contact"
             collapsed: true
-            minimize_collapsed: true
-            widget: 'list'
+            widget: "object"
             fields:
-              - label: 'Title'
-                name: 'title'
-                widget: 'string'
-              - label: 'Category'
-                name: 'category'
-                widget: 'select'
-                options: ["Policy", "Teaching", "Software"]
-              - label: 'Link'
-                name: 'link'
-                widget: 'string'
-              - label: 'Icon'
-                name: 'icon'
-                widget: 'image'
-      # Assessor App
-      - label: 'Assessor App'
-        name: 'assessor_app'
-        file: '_data/assessor_app.yml'
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "text"
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                collapsed: true
+                fields:
+                  - { label: Link, name: link, widget: string, collapsed: true }
+                  - { label: Text, name: text, widget: string, collapsed: true }
+      # Opportunities Page
+      - label: "Opportunities"
+        name: "opportunities"
+        file: "_data/opportunities.yml"
         editor:
           preview: false
         fields:
-          # Hero Section
-          - label: 'Hero'
-            name: 'hero'
+          # Hero
+          - label: "Hero"
+            name: "hero"
             collapsed: true
-            widget: 'object'
+            widget: "object"
             fields:
-              - label: 'Title'
-                name: 'title'
-                widget: 'string'
-          # Content Section
-          - label: 'Content'
-            name: 'content'
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "text"
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                collapsed: true
+                fields:
+                  - { label: Link, name: link, widget: string, collapsed: true }
+                  - { label: Text, name: text, widget: string, collapsed: true }
+              - label: "Image"
+                name: "image"
+                widget: "image"
+          # Opportunities
+          - label: "Opportunities"
+            name: "opportunities"
             collapsed: true
-            widget: 'object'
+            widget: "object"
             fields:
-              - label: 'Body'
-                name: 'body'
-                widget: 'markdown'
-      # Privacy Policy
-      - label: 'Privacy Policy'
-        name: 'privacy_policy'
-        file: '_data/privacy_policy.yml'
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "text"
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                collapsed: true
+                fields:
+                  - { label: Link, name: link, widget: string, collapsed: true }
+                  - { label: Text, name: text, widget: string, collapsed: true }
+      # Partnerships Page
+      - label: "Partnerships"
+        name: "partnerships"
+        file: "_data/partnerships.yml"
         editor:
           preview: false
         fields:
-          # Hero Section
-          - label: 'Hero'
-            name: 'hero'
+          # Hero
+          - label: "Hero"
+            name: "hero"
             collapsed: true
-            widget: 'object'
+            widget: "object"
             fields:
-              - label: 'Title'
-                name: 'title'
-                widget: 'string'
-          # Content Section
-          - label: 'Content'
-            name: 'content'
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "text"
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                collapsed: true
+                fields:
+                  - { label: Link, name: link, widget: string, collapsed: true }
+                  - { label: Text, name: text, widget: string, collapsed: true }
+              - label: "Image"
+                name: "image"
+                widget: "image"
+          # Logo Grid
+          - label: "Academic & State Partners"
+            name: "academic_state_partners"
             collapsed: true
-            widget: 'object'
+            widget: "object"
             fields:
-              - label: 'Body'
-                name: 'body'
-                widget: 'markdown'
-      # Terms of Service
-      - label: 'Terms of Service'
-        name: 'terms_of_service'
-        file: '_data/terms_of_service.yml'
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "text"
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                collapsed: true
+                fields:
+                  - { label: Link, name: link, widget: string, collapsed: true }
+                  - { label: Text, name: text, widget: string, collapsed: true }
+              - label: "Logos"
+                name: "logos"
+                widget: "list"
+                collapsed: true
+                fields:
+                  - { label: Link, name: link, widget: string }
+                  - { label: Image, name: image, widget: image }
+          # Logo Grid
+          - label: "Industry Partners"
+            name: "industry_partners"
+            collapsed: true
+            widget: "object"
+            fields:
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "text"
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                collapsed: true
+                fields:
+                  - { label: Link, name: link, widget: string, collapsed: true }
+                  - { label: Text, name: text, widget: string, collapsed: true }
+              - label: "Logos"
+                name: "logos"
+                widget: "list"
+                collapsed: true
+                fields:
+                  - { label: Link, name: link, widget: string }
+                  - { label: Image, name: image, widget: image }
+          # Logo Grid
+          - label: "Supporters"
+            name: "supporters"
+            collapsed: true
+            widget: "object"
+            fields:
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "text"
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                collapsed: true
+                fields:
+                  - { label: Link, name: link, widget: string, collapsed: true }
+                  - { label: Text, name: text, widget: string, collapsed: true }
+              - label: "Logos"
+                name: "logos"
+                widget: "list"
+                collapsed: true
+                fields:
+                  - { label: Link, name: link, widget: string }
+                  - { label: Image, name: image, widget: image }
+      # Study Page
+      - label: "Study"
+        name: "study"
+        file: "_data/study.yml"
         editor:
           preview: false
         fields:
-          # Hero Section
-          - label: 'Hero'
-            name: 'hero'
+          # Hero
+          - label: "Hero"
+            name: "hero"
             collapsed: true
-            widget: 'object'
+            widget: "object"
             fields:
-              - label: 'Title'
-                name: 'title'
-                widget: 'string'
-          # Content Section
-          - label: 'Content'
-            name: 'content'
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "text"
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                collapsed: true
+                fields:
+                  - { label: Link, name: link, widget: string, collapsed: true }
+                  - { label: Text, name: text, widget: string, collapsed: true }
+              - label: "Image"
+                name: "image"
+                widget: "image"
+          # Media Text (Undergraduate)
+          - label: "Media Text (Undergraduate)"
+            name: "media_text_undergraduate"
             collapsed: true
-            widget: 'object'
+            widget: "object"
             fields:
-              - label: 'Body'
-                name: 'body'
-                widget: 'markdown'
-
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "text"
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                collapsed: true
+                fields:
+                  - { label: Link, name: link, widget: string, collapsed: true }
+                  - { label: Text, name: text, widget: string, collapsed: true }
+              - label: "Image"
+                name: "image"
+                widget: "image"
+              - label: "Image (Small)"
+                name: "image_small"
+                widget: "image"
+          # Courses (Undergraduate)
+          - label: "Courses (Undergraduate)"
+            name: "courses_undergraduate"
+            collapsed: true
+            widget: "object"
+            fields:
+              - label: "Courses List"
+                name: "courses_list"
+                widget: "list"
+                collapsed: true
+                fields:
+                  - { label: name, name: name, widget: string }
+                  - { label: Department, name: department, widget: text }
+                  - { label: Link, name: link, widget: string }
+          # Media Text (Postgraduate)
+          - label: "Media Text (Postgraduate)"
+            name: "media_text_postgraduate"
+            collapsed: true
+            widget: "object"
+            fields:
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "text"
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                collapsed: true
+                fields:
+                  - { label: Link, name: link, widget: string, collapsed: true }
+                  - { label: Text, name: text, widget: string, collapsed: true }
+              - label: "Image"
+                name: "image"
+                widget: "image"
+              - label: "Image (Small)"
+                name: "image_small"
+                widget: "image"
+          # Courses (Postgraduate)
+          - label: "Courses (Postgraduate)"
+            name: "courses_postgraduate"
+            collapsed: true
+            widget: "object"
+            fields:
+              - label: "Courses List"
+                name: "courses_list"
+                widget: "list"
+                collapsed: true
+                fields:
+                  - { label: name, name: name, widget: string }
+                  - { label: Department, name: department, widget: text }
+                  - { label: Link, name: link, widget: string }
+          # Media Text (Executive)
+          - label: "Media Text (Executive)"
+            name: "media_text_executive"
+            collapsed: true
+            widget: "object"
+            fields:
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "text"
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                collapsed: true
+                fields:
+                  - { label: Link, name: link, widget: string, collapsed: true }
+                  - { label: Text, name: text, widget: string, collapsed: true }
+              - label: "Image"
+                name: "image"
+                widget: "image"
+              - label: "Image (Small)"
+                name: "image_small"
+                widget: "image"
+          # Courses (Executive)
+          - label: "Courses (Executive)"
+            name: "courses_executive"
+            collapsed: true
+            widget: "object"
+            fields:
+              - label: "Courses List"
+                name: "courses_list"
+                widget: "list"
+                collapsed: true
+                fields:
+                  - { label: name, name: name, widget: string }
+                  - { label: Department, name: department, widget: text }
+                  - { label: Link, name: link, widget: string }
+      # Research Page
+      - label: "Research"
+        name: "research"
+        file: "_data/research.yml"
+        editor:
+          preview: false
+        fields:
+          # Hero
+          - label: "Hero"
+            name: "hero"
+            collapsed: true
+            widget: "object"
+            fields:
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "text"
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                collapsed: true
+                fields:
+                  - { label: Link, name: link, widget: string, collapsed: true }
+                  - { label: Text, name: text, widget: string, collapsed: true }
+              - label: "Image"
+                name: "image"
+                widget: "image"
+          # Text (Dual Column)
+          - label: "Text (Split)"
+            name: "text_split"
+            collapsed: true
+            widget: "object"
+            fields:
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "text"
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                collapsed: true
+                fields:
+                  - { label: Link, name: link, widget: string, collapsed: true }
+                  - { label: Text, name: text, widget: string, collapsed: true }
+          # Slider
+          - label: "Slider"
+            name: "slider"
+            collapsed: true
+            widget: "object"
+            fields:
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "text"
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                collapsed: true
+                fields:
+                  - { label: Link, name: link, widget: string, collapsed: true }
+                  - { label: Text, name: text, widget: string, collapsed: true }
+              - label: "Slider Items"
+                name: "slider_items"
+                widget: "list"
+                collapsed: true
+                fields:
+                  - { label: Heading, name: heading, widget: string }
+                  - { label: Content, name: content, widget: text }
+                  - { label: Link, name: link, widget: string }
+                  - { label: Image, name: image, widget: image }
+          # Researchers
+          - label: "Researchers"
+            name: "researchers"
+            collapsed: true
+            widget: "object"
+            fields:
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "text"
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                collapsed: true
+                fields:
+                  - { label: Link, name: link, widget: string, collapsed: true }
+                  - { label: Text, name: text, widget: string, collapsed: true }
+              - label: "Slider Items"
+                name: "slider_items"
+                widget: "list"
+                collapsed: true
+                fields:
+                  - { label: Heading, name: heading, widget: string }
+                  - { label: Content, name: content, widget: text }
+                  - { label: Link, name: link, widget: string }
+                  - { label: Image, name: image, widget: image }
+          # Media Text
+          - label: "Media Text"
+            name: "media_text"
+            collapsed: true
+            widget: "object"
+            fields:
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "text"
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                collapsed: true
+                fields:
+                  - { label: Link, name: link, widget: string, collapsed: true }
+                  - { label: Text, name: text, widget: string, collapsed: true }
+              - label: "Image"
+                name: "image"
+                widget: "image"
+              - label: "Image (Small)"
+                name: "image_small"
+                widget: "image"
+      # Blog Page
+      - label: "Blog"
+        name: "blog"
+        file: "_data/blog.yml"
+        editor:
+          preview: false
+        fields:
+          # Hero
+          - label: "Hero"
+            name: "hero"
+            collapsed: true
+            widget: "object"
+            fields:
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "text"
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                collapsed: true
+                fields:
+                  - { label: Link, name: link, widget: string, collapsed: true }
+                  - { label: Text, name: text, widget: string, collapsed: true }
+              - label: "Image"
+                name: "image"
+                widget: "image"
+      # News Page
+      - label: "News"
+        name: "news"
+        file: "_data/news.yml"
+        editor:
+          preview: false
+        fields:
+          # Hero
+          - label: "Hero"
+            name: "hero"
+            collapsed: true
+            widget: "object"
+            fields:
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "text"
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                collapsed: true
+                fields:
+                  - { label: Link, name: link, widget: string, collapsed: true }
+                  - { label: Text, name: text, widget: string, collapsed: true }
+              - label: "Image"
+                name: "image"
+                widget: "image"
+      # Events Page
+      - label: "Events"
+        name: "events"
+        file: "_data/events.yml"
+        editor:
+          preview: false
+        fields:
+          # Hero
+          - label: "Hero"
+            name: "hero"
+            collapsed: true
+            widget: "object"
+            fields:
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "text"
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                collapsed: true
+                fields:
+                  - { label: Link, name: link, widget: string, collapsed: true }
+                  - { label: Text, name: text, widget: string, collapsed: true }
+              - label: "Image"
+                name: "image"
+                widget: "image"
+      # Projects Page
+      - label: "Projects"
+        name: "projects"
+        file: "_data/projects.yml"
+        editor:
+          preview: false
+        fields:
+          # Hero
+          - label: "Hero"
+            name: "hero"
+            collapsed: true
+            widget: "object"
+            fields:
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "text"
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                collapsed: true
+                fields:
+                  - { label: Link, name: link, widget: string, collapsed: true }
+                  - { label: Text, name: text, widget: string, collapsed: true }
+              - label: "Image"
+                name: "image"
+                widget: "image"
 
   # Blog Collection
-  - label: 'Blog'
-    name: 'Blog'
-    folder: '_posts'
+  - label: "Blog"
+    name: "Blog"
+    folder: "_posts"
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     editor:
       preview: false
     fields:
-      - label: 'Layout'
-        name: 'layout'
-        widget: 'hidden'
-        default: 'blog-single'
-      - label: 'Title'
-        name: 'title'
-        widget: 'string'
-      - label: 'Excerpt'
-        name: 'excerpt'
-        widget: 'text'
-      - label: 'Featured Image'
-        name: 'featured_image'
-        widget: 'image'
-      - label: 'Body'
-        name: 'body'
-        widget: 'markdown'
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "blog-single"
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Excerpt"
+        name: "excerpt"
+        widget: "text"
+      - label: "Featured Image"
+        name: "featured_image"
+        widget: "image"
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
 
   # News Collection
-  - label: 'News'
-    name: 'News'
-    folder: '_news'
+  - label: "News"
+    name: "News"
+    folder: "_news"
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     editor:
       preview: false
     fields:
-      - label: 'Layout'
-        name: 'layout'
-        widget: 'hidden'
-        default: 'news-single'
-      - label: 'Title'
-        name: 'title'
-        widget: 'string'
-      - label: 'Excerpt'
-        name: 'excerpt'
-        widget: 'text'
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "news-single"
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Excerpt"
+        name: "excerpt"
+        widget: "text"
       - label: "Category"
         name: "category"
         widget: "select"
         multiple: true
         options:
-          - { label: "AI Deployment and System Design", value: "ai-deployment-and-system-design" }
-          - { label: "AI for Research and Innovation", value: "ai-for-research-and-innovation" }
-          - { label: "AI Policy and Data Governance", value: "ai-policy-and-data-governance" }
-          - { label: "Machine Learning Theory and Methods", value: "machine-learning-theory-and-methods" }
-      - label: 'Featured Image'
-        name: 'featured_image'
-        widget: 'image'
-      - label: 'Body'
-        name: 'body'
-        widget: 'markdown'
+          - {
+              label: "AI Deployment and System Design",
+              value: "ai-deployment-and-system-design",
+            }
+          - {
+              label: "AI for Research and Innovation",
+              value: "ai-for-research-and-innovation",
+            }
+          - {
+              label: "AI Policy and Data Governance",
+              value: "ai-policy-and-data-governance",
+            }
+          - {
+              label: "Machine Learning Theory and Methods",
+              value: "machine-learning-theory-and-methods",
+            }
+      - label: "Featured Image"
+        name: "featured_image"
+        widget: "image"
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
 
   # Events Collection
-  - label: 'Events'
-    name: 'events'
-    folder: '_events'
+  - label: "Events"
+    name: "events"
+    folder: "_events"
     create: true
-    slug: '{{slug}}'
+    slug: "{{slug}}"
     editor:
       preview: false
     fields:
-      - label: 'Layout'
-        name: 'layout'
-        widget: 'hidden'
-        default: 'event-single'
-      - label: 'Title'
-        name: 'title'
-        widget: 'string'
-      - label: 'Event Date'
-        name: 'event_date'
-        widget: 'date'
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "event-single"
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Event Date"
+        name: "event_date"
+        widget: "date"
         date_format: "DD.MM.YYYY"
-      - label: 'Excerpt'
-        name: 'excerpt'
-        widget: 'text'
-      - label: 'Featured Image'
-        name: 'featured_image'
-        widget: 'image'
-      - label: 'Body'
-        name: 'body'
-        widget: 'markdown'
-  
-  # People Collection
-  - label: 'People'
-    name: 'people'
-    folder: '_people/'
-    create: true
-    slug: '{{slug}}'
-    editor:
-      preview: false
-    fields:
-      - label: 'Layout'
-        name: 'layout'
-        widget: 'hidden'
-        default: 'team-single'
-      - label: 'Title'
-        name: 'title'
-        widget: 'string'
-      - label: 'Description'
-        name: 'description'
-        widget: 'text'
-      - label: 'Featured Image'
-        name: 'featured_image'
-        widget: 'image'
-      - label: 'LinkedIn'
-        name: 'linkedin'
-        widget: 'string'
-        required: false
-      - label: 'Twitter'
-        name: 'twitter'
-        widget: 'string'
-        required: false
-      - label: 'Facebook'
-        name: 'facebook'
-        widget: 'string'
-        required: false
-      - label: 'Email'
-        name: 'email'
-        widget: 'string'
-        required: false
-      - label: 'Biography'
-        name: 'biography'
-        widget: 'markdown'
-        required: false
-      - label: 'Related Publications'
-        name: 'publications'
-        widget: 'relation'
-        collection: 'Publications'
-        search_fields: ["title"]
-        value_field: "{{slug}}"
-        display_fields: ["title"]
-        multiple: true
-        required: false
+      - label: "Excerpt"
+        name: "excerpt"
+        widget: "text"
+      - label: "Featured Image"
+        name: "featured_image"
+        widget: "image"
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
 
-  # Research Collection
-  - label: 'Research'
-    name: 'research'
-    folder: '_research/'
+  # Projects Collection
+  - label: "Projects"
+    name: "projects"
+    folder: "_projects"
     create: true
-    slug: '{{slug}}'
+    slug: "{{slug}}"
     editor:
       preview: false
     fields:
-      - label: 'Layout'
-        name: 'layout'
-        widget: 'hidden'
-        default: 'research-single'
-      - label: 'Title'
-        name: 'title'
-        widget: 'string'
-      - label: 'Excerpt'
-        name: 'excerpt'
-        widget: 'text'
-      - label: 'Featured Image'
-        name: 'featured_image'
-        widget: 'image'
-      - label: 'Overview Short'
-        name: 'overview_short'
-        widget: 'markdown'
-      - label: 'Overview Long'
-        name: 'overview_long'
-        widget: 'markdown'
-        required: false
-      - label: 'Related Projects'
-        name: 'projects'
-        widget: 'relation'
-        collection: 'projects'
-        search_fields: ["title"]
-        value_field: "{{slug}}"
-        display_fields: ["title"]
-        multiple: true
-        required: false
-      - label: 'Related People'
-        name: 'people'
-        widget: 'relation'
-        collection: 'people'
-        search_fields: ["title"]
-        value_field: "{{slug}}"
-        display_fields: ["title"]
-        multiple: true
-        required: false
-
-  # Project Collection
-  - label: 'Projects'
-    name: 'projects'
-    folder: '_projects/'
-    create: true
-    slug: '{{slug}}'
-    editor:
-      preview: false
-    fields:
-      - label: 'Layout'
-        name: 'layout'
-        widget: 'hidden'
-        default: 'project-single'
-      - label: 'Title'
-        name: 'title'
-        widget: 'string'
-      - label: 'Excerpt'
-        name: 'excerpt'
-        widget: 'text'
-      - label: 'Featured Image'
-        name: 'featured_image'
-        widget: 'image'
-      - label: 'Body'
-        name: 'body'
-        widget: 'markdown'
-      - label: 'Project Funders'
-        name: 'project_funders'
-        collapsed: true
-        minimize_collapsed: true
-        required: false
-        widget: 'list'
-        fields: 
-          - label: 'Image'
-            name: 'image'
-            widget: 'image'
-          - label: 'Link'
-            name: 'link'
-            widget: 'string'
-      - label: 'Related People'
-        name: 'people'
-        widget: 'relation'
-        collection: 'people'
-        search_fields: ["title"]
-        value_field: "{{slug}}"
-        display_fields: ["title"]
-        multiple: true
-        required: false
-      - label: 'Related Publications'
-        name: 'publications'
-        widget: 'relation'
-        collection: 'Publications'
-        search_fields: ["title"]
-        value_field: "{{slug}}"
-        display_fields: ["title"]
-        multiple: true
-        required: false
-
-  # Publications Collection
-  - label: 'Publications'
-    name: 'Publications'
-    folder: '_publications'
-    create: true
-    slug: '{{slug}}'
-    editor:
-      preview: false
-    fields:
-      - label: 'Layout'
-        name: 'layout'
-        widget: 'hidden'
-        default: 'publication-single'
-      - label: 'Title'
-        name: 'title'
-        widget: 'string'
-      - label: 'Author'
-        name: 'author'
-        widget: 'string'
-      - label: 'References'
-        name: 'references'
-        widget: 'string'
-      - label: 'Featured Image'
-        name: 'featured_image'
-        widget: 'image'
-        required: false
-      - label: 'Body'
-        name: 'body'
-        widget: 'markdown'
-  
-  # Opportunities Collection
-  - label: 'Opportunities'
-    name: 'opportunities'
-    folder: '_opportunities/'
-    create: true
-    slug: '{{slug}}'
-    editor:
-      preview: false
-    fields:
-      - label: 'Layout'
-        name: 'layout'
-        widget: 'hidden'
-        default: 'opportunities-single'
-      - label: 'Title'
-        name: 'title'
-        widget: 'string'
-      - label: 'Excerpt'
-        name: 'excerpt'
-        widget: 'text'
-      - label: 'Body'
-        name: 'body'
-        widget: 'markdown'    
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "project-single"
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Event Date"
+        name: "event_date"
+        widget: "date"
+        date_format: "DD.MM.YYYY"
+      - label: "Excerpt"
+        name: "excerpt"
+        widget: "text"
+      - label: "Featured Image"
+        name: "featured_image"
+        widget: "image"
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
