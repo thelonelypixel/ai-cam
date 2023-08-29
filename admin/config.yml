@@ -162,16 +162,19 @@ collections:
               - label: "Heading"
                 name: "heading"
                 widget: "string"
+                required: false
               - label: "Content"
                 name: "content"
                 widget: "text"
+                required: false
               - label: "Buttons"
                 name: "buttons"
                 widget: "list"
+                required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, collapsed: true }
-                  - { label: Text, name: text, widget: string, collapsed: true }
+                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
+                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
               - label: "Image"
                 name: "image"
                 widget: "image"
@@ -184,16 +187,20 @@ collections:
               - label: "Heading"
                 name: "heading"
                 widget: "string"
+                required: false
+                required: false
               - label: "Content"
                 name: "content"
                 widget: "text"
+                required: false
               - label: "Buttons"
                 name: "buttons"
                 widget: "list"
+                required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, collapsed: true }
-                  - { label: Text, name: text, widget: string, collapsed: true }
+                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
+                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
           # Media Text
           - label: "Media Text"
             name: "media_text"
@@ -203,22 +210,27 @@ collections:
               - label: "Heading"
                 name: "heading"
                 widget: "string"
+                required: false
               - label: "Content"
                 name: "content"
                 widget: "text"
+                required: false
               - label: "Buttons"
                 name: "buttons"
                 widget: "list"
+                required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, collapsed: true }
-                  - { label: Text, name: text, widget: string, collapsed: true }
+                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
+                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
               - label: "Image"
                 name: "image"
                 widget: "image"
+                required: false
               - label: "Image (Small)"
                 name: "image_small"
                 widget: "image"
+                required: false
           # Slider
           - label: "Slider"
             name: "slider"
@@ -228,25 +240,29 @@ collections:
               - label: "Heading"
                 name: "heading"
                 widget: "string"
+                required: false
               - label: "Content"
                 name: "content"
                 widget: "text"
+                required: false
               - label: "Buttons"
                 name: "buttons"
                 widget: "list"
+                required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, collapsed: true }
-                  - { label: Text, name: text, widget: string, collapsed: true }
+                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
+                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
               - label: "Slider Items"
                 name: "slider_items"
                 widget: "list"
+                required: false
                 collapsed: true
                 fields:
-                  - { label: Heading, name: heading, widget: string }
-                  - { label: Content, name: content, widget: text }
-                  - { label: Link, name: link, widget: string }
-                  - { label: Image, name: image, widget: image }
+                  - { label: Heading, name: heading, widget: string, required: false }
+                  - { label: Content, name: content, widget: text, required: false }
+                  - { label: Link, name: link, widget: string, required: false }
+                  - { label: Image, name: image, widget: image, required: false }
       # About Page
       - label: "About"
         name: "about"
@@ -263,19 +279,23 @@ collections:
               - label: "Heading"
                 name: "heading"
                 widget: "string"
+                required: false
               - label: "Content"
                 name: "content"
                 widget: "text"
+                required: false
               - label: "Buttons"
                 name: "buttons"
                 widget: "list"
+                required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, collapsed: true }
-                  - { label: Text, name: text, widget: string, collapsed: true }
+                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
+                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
               - label: "Image"
                 name: "image"
                 widget: "image"
+                required: false
           # Text (Dual Column)
           - label: "Text (Split)"
             name: "text_split"
@@ -285,16 +305,19 @@ collections:
               - label: "Heading"
                 name: "heading"
                 widget: "string"
+                required: false
               - label: "Content"
                 name: "content"
                 widget: "text"
+                required: false
               - label: "Buttons"
                 name: "buttons"
                 widget: "list"
+                required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, collapsed: true }
-                  - { label: Text, name: text, widget: string, collapsed: true }
+                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
+                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
           # Slider
           - label: "Slider"
             name: "slider"
@@ -304,25 +327,29 @@ collections:
               - label: "Heading"
                 name: "heading"
                 widget: "string"
+                required: false
               - label: "Content"
                 name: "content"
                 widget: "text"
+                required: false
               - label: "Buttons"
                 name: "buttons"
                 widget: "list"
+                required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, collapsed: true }
-                  - { label: Text, name: text, widget: string, collapsed: true }
+                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
+                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
               - label: "Slider Items"
                 name: "slider_items"
                 widget: "list"
+                required: false
                 collapsed: true
                 fields:
-                  - { label: Heading, name: heading, widget: string }
-                  - { label: Content, name: content, widget: text }
-                  - { label: Link, name: link, widget: string }
-                  - { label: Image, name: image, widget: image }
+                  - { label: Heading, name: heading, widget: string, required: false }
+                  - { label: Content, name: content, widget: text, required: false }
+                  - { label: Link, name: link, widget: string, required: false }
+                  - { label: Image, name: image, widget: image, required: false }
           # Media Text
           - label: "Media Text"
             name: "media_text"
@@ -332,22 +359,27 @@ collections:
               - label: "Heading"
                 name: "heading"
                 widget: "string"
+                required: false
               - label: "Content"
                 name: "content"
                 widget: "text"
+                required: false
               - label: "Buttons"
                 name: "buttons"
                 widget: "list"
+                required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, collapsed: true }
-                  - { label: Text, name: text, widget: string, collapsed: true }
+                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
+                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
               - label: "Image"
                 name: "image"
                 widget: "image"
+                required: false
               - label: "Image (Small)"
                 name: "image_small"
                 widget: "image"
+                required: false
       # Team Page
       - label: "Team"
         name: "team"
@@ -386,16 +418,19 @@ collections:
               - label: "Heading"
                 name: "heading"
                 widget: "string"
+                required: false
               - label: "Content"
                 name: "content"
                 widget: "text"
+                required: false
               - label: "Buttons"
                 name: "buttons"
                 widget: "list"
+                required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, collapsed: true }
-                  - { label: Text, name: text, widget: string, collapsed: true }
+                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
+                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
       # Contact Page
       - label: "Contact"
         name: "contact"
@@ -412,19 +447,23 @@ collections:
               - label: "Heading"
                 name: "heading"
                 widget: "string"
+                required: false
               - label: "Content"
                 name: "content"
                 widget: "text"
+                required: false
               - label: "Buttons"
                 name: "buttons"
                 widget: "list"
+                required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, collapsed: true }
-                  - { label: Text, name: text, widget: string, collapsed: true }
+                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
+                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
               - label: "Image"
                 name: "image"
                 widget: "image"
+                required: false
           # Team
           - label: "Contact"
             name: "contact"
@@ -434,16 +473,19 @@ collections:
               - label: "Heading"
                 name: "heading"
                 widget: "string"
+                required: false
               - label: "Content"
                 name: "content"
                 widget: "text"
+                required: false
               - label: "Buttons"
                 name: "buttons"
                 widget: "list"
+                required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, collapsed: true }
-                  - { label: Text, name: text, widget: string, collapsed: true }
+                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
+                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
       # Opportunities Page
       - label: "Opportunities"
         name: "opportunities"
@@ -460,16 +502,19 @@ collections:
               - label: "Heading"
                 name: "heading"
                 widget: "string"
+                required: false
               - label: "Content"
                 name: "content"
                 widget: "text"
+                required: false
               - label: "Buttons"
                 name: "buttons"
                 widget: "list"
+                required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, collapsed: true }
-                  - { label: Text, name: text, widget: string, collapsed: true }
+                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
+                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
               - label: "Image"
                 name: "image"
                 widget: "image"
@@ -482,16 +527,19 @@ collections:
               - label: "Heading"
                 name: "heading"
                 widget: "string"
+                required: false
               - label: "Content"
                 name: "content"
                 widget: "text"
+                required: false
               - label: "Buttons"
                 name: "buttons"
                 widget: "list"
+                required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, collapsed: true }
-                  - { label: Text, name: text, widget: string, collapsed: true }
+                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
+                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
       # Partnerships Page
       - label: "Partnerships"
         name: "partnerships"
@@ -508,19 +556,23 @@ collections:
               - label: "Heading"
                 name: "heading"
                 widget: "string"
+                required: false
               - label: "Content"
                 name: "content"
                 widget: "text"
+                required: false
               - label: "Buttons"
                 name: "buttons"
                 widget: "list"
+                required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, collapsed: true }
-                  - { label: Text, name: text, widget: string, collapsed: true }
+                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
+                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
               - label: "Image"
                 name: "image"
                 widget: "image"
+                required: false
           # Logo Grid
           - label: "Academic & State Partners"
             name: "academic_state_partners"
@@ -530,23 +582,27 @@ collections:
               - label: "Heading"
                 name: "heading"
                 widget: "string"
+                required: false
               - label: "Content"
                 name: "content"
                 widget: "text"
+                required: false
               - label: "Buttons"
                 name: "buttons"
                 widget: "list"
+                required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, collapsed: true }
-                  - { label: Text, name: text, widget: string, collapsed: true }
+                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
+                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
               - label: "Logos"
                 name: "logos"
                 widget: "list"
+                required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string }
-                  - { label: Image, name: image, widget: image }
+                  - { label: Link, name: link, widget: string, required: false }
+                  - { label: Image, name: image, widget: image, required: false }
           # Logo Grid
           - label: "Industry Partners"
             name: "industry_partners"
@@ -556,23 +612,27 @@ collections:
               - label: "Heading"
                 name: "heading"
                 widget: "string"
+                required: false
               - label: "Content"
                 name: "content"
                 widget: "text"
+                required: false
               - label: "Buttons"
                 name: "buttons"
                 widget: "list"
+                required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, collapsed: true }
-                  - { label: Text, name: text, widget: string, collapsed: true }
+                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
+                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
               - label: "Logos"
                 name: "logos"
                 widget: "list"
+                required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string }
-                  - { label: Image, name: image, widget: image }
+                  - { label: Link, name: link, widget: string, required: false }
+                  - { label: Image, name: image, widget: image, required: false }
           # Logo Grid
           - label: "Supporters"
             name: "supporters"
@@ -582,23 +642,27 @@ collections:
               - label: "Heading"
                 name: "heading"
                 widget: "string"
+                required: false
               - label: "Content"
                 name: "content"
                 widget: "text"
+                required: false
               - label: "Buttons"
                 name: "buttons"
                 widget: "list"
+                required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, collapsed: true }
-                  - { label: Text, name: text, widget: string, collapsed: true }
+                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
+                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
               - label: "Logos"
                 name: "logos"
                 widget: "list"
+                required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string }
-                  - { label: Image, name: image, widget: image }
+                  - { label: Link, name: link, widget: string, required: false }
+                  - { label: Image, name: image, widget: image, required: false }
       # Study Page
       - label: "Study"
         name: "study"
@@ -615,19 +679,23 @@ collections:
               - label: "Heading"
                 name: "heading"
                 widget: "string"
+                required: false
               - label: "Content"
                 name: "content"
                 widget: "text"
+                required: false
               - label: "Buttons"
                 name: "buttons"
                 widget: "list"
+                required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, collapsed: true }
-                  - { label: Text, name: text, widget: string, collapsed: true }
+                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
+                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
               - label: "Image"
                 name: "image"
                 widget: "image"
+                required: false
           # Media Text (Undergraduate)
           - label: "Media Text (Undergraduate)"
             name: "media_text_undergraduate"
@@ -637,22 +705,27 @@ collections:
               - label: "Heading"
                 name: "heading"
                 widget: "string"
+                required: false
               - label: "Content"
                 name: "content"
                 widget: "text"
+                required: false
               - label: "Buttons"
                 name: "buttons"
                 widget: "list"
+                required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, collapsed: true }
-                  - { label: Text, name: text, widget: string, collapsed: true }
+                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
+                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
               - label: "Image"
                 name: "image"
                 widget: "image"
+                required: false
               - label: "Image (Small)"
                 name: "image_small"
                 widget: "image"
+                required: false
           # Courses (Undergraduate)
           - label: "Courses (Undergraduate)"
             name: "courses_undergraduate"
@@ -662,11 +735,12 @@ collections:
               - label: "Courses List"
                 name: "courses_list"
                 widget: "list"
+                required: false
                 collapsed: true
                 fields:
-                  - { label: name, name: name, widget: string }
-                  - { label: Department, name: department, widget: text }
-                  - { label: Link, name: link, widget: string }
+                  - { label: name, name: name, widget: string, required: false }
+                  - { label: Department, name: department, widget: text, required: false }
+                  - { label: Link, name: link, widget: string, required: false }
           # Media Text (Postgraduate)
           - label: "Media Text (Postgraduate)"
             name: "media_text_postgraduate"
@@ -676,22 +750,27 @@ collections:
               - label: "Heading"
                 name: "heading"
                 widget: "string"
+                required: false
               - label: "Content"
                 name: "content"
                 widget: "text"
+                required: false
               - label: "Buttons"
                 name: "buttons"
                 widget: "list"
+                required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, collapsed: true }
-                  - { label: Text, name: text, widget: string, collapsed: true }
+                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
+                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
               - label: "Image"
                 name: "image"
                 widget: "image"
+                required: false
               - label: "Image (Small)"
                 name: "image_small"
                 widget: "image"
+                required: false
           # Courses (Postgraduate)
           - label: "Courses (Postgraduate)"
             name: "courses_postgraduate"
@@ -701,11 +780,12 @@ collections:
               - label: "Courses List"
                 name: "courses_list"
                 widget: "list"
+                required: false
                 collapsed: true
                 fields:
-                  - { label: name, name: name, widget: string }
-                  - { label: Department, name: department, widget: text }
-                  - { label: Link, name: link, widget: string }
+                  - { label: name, name: name, widget: string, required: false }
+                  - { label: Department, name: department, widget: text, required: false }
+                  - { label: Link, name: link, widget: string, required: false }
           # Media Text (Executive)
           - label: "Media Text (Executive)"
             name: "media_text_executive"
@@ -715,22 +795,27 @@ collections:
               - label: "Heading"
                 name: "heading"
                 widget: "string"
+                required: false
               - label: "Content"
                 name: "content"
                 widget: "text"
+                required: false
               - label: "Buttons"
                 name: "buttons"
                 widget: "list"
+                required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, collapsed: true }
-                  - { label: Text, name: text, widget: string, collapsed: true }
+                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
+                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
               - label: "Image"
                 name: "image"
                 widget: "image"
+                required: false
               - label: "Image (Small)"
                 name: "image_small"
                 widget: "image"
+                required: false
           # Courses (Executive)
           - label: "Courses (Executive)"
             name: "courses_executive"
@@ -740,11 +825,12 @@ collections:
               - label: "Courses List"
                 name: "courses_list"
                 widget: "list"
+                required: false
                 collapsed: true
                 fields:
-                  - { label: name, name: name, widget: string }
-                  - { label: Department, name: department, widget: text }
-                  - { label: Link, name: link, widget: string }
+                  - { label: name, name: name, widget: string, required: false }
+                  - { label: Department, name: department, widget: text, required: false }
+                  - { label: Link, name: link, widget: string, required: false }
       # Research Page
       - label: "Research"
         name: "research"
@@ -761,19 +847,23 @@ collections:
               - label: "Heading"
                 name: "heading"
                 widget: "string"
+                required: false
               - label: "Content"
                 name: "content"
                 widget: "text"
+                required: false
               - label: "Buttons"
                 name: "buttons"
                 widget: "list"
+                required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, collapsed: true }
-                  - { label: Text, name: text, widget: string, collapsed: true }
+                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
+                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
               - label: "Image"
                 name: "image"
                 widget: "image"
+                required: false
           # Text (Dual Column)
           - label: "Text (Split)"
             name: "text_split"
@@ -783,16 +873,19 @@ collections:
               - label: "Heading"
                 name: "heading"
                 widget: "string"
+                required: false
               - label: "Content"
                 name: "content"
                 widget: "text"
+                required: false
               - label: "Buttons"
                 name: "buttons"
                 widget: "list"
+                required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, collapsed: true }
-                  - { label: Text, name: text, widget: string, collapsed: true }
+                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
+                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
           # Slider
           - label: "Slider"
             name: "slider"
@@ -802,25 +895,29 @@ collections:
               - label: "Heading"
                 name: "heading"
                 widget: "string"
+                required: false
               - label: "Content"
                 name: "content"
                 widget: "text"
+                required: false
               - label: "Buttons"
                 name: "buttons"
                 widget: "list"
+                required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, collapsed: true }
-                  - { label: Text, name: text, widget: string, collapsed: true }
+                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
+                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
               - label: "Slider Items"
                 name: "slider_items"
                 widget: "list"
+                required: false
                 collapsed: true
                 fields:
-                  - { label: Heading, name: heading, widget: string }
-                  - { label: Content, name: content, widget: text }
-                  - { label: Link, name: link, widget: string }
-                  - { label: Image, name: image, widget: image }
+                  - { label: Heading, name: heading, widget: string, required: false }
+                  - { label: Content, name: content, widget: text, required: false }
+                  - { label: Link, name: link, widget: string, required: false }
+                  - { label: Image, name: image, widget: image, required: false }
           # Researchers
           - label: "Researchers"
             name: "researchers"
@@ -830,25 +927,29 @@ collections:
               - label: "Heading"
                 name: "heading"
                 widget: "string"
+                required: false
               - label: "Content"
                 name: "content"
                 widget: "text"
+                required: false
               - label: "Buttons"
                 name: "buttons"
                 widget: "list"
+                required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, collapsed: true }
-                  - { label: Text, name: text, widget: string, collapsed: true }
+                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
+                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
               - label: "Slider Items"
                 name: "slider_items"
                 widget: "list"
+                required: false
                 collapsed: true
                 fields:
-                  - { label: Heading, name: heading, widget: string }
-                  - { label: Content, name: content, widget: text }
-                  - { label: Link, name: link, widget: string }
-                  - { label: Image, name: image, widget: image }
+                  - { label: Heading, name: heading, widget: string, required: false }
+                  - { label: Content, name: content, widget: text, required: false }
+                  - { label: Link, name: link, widget: string, required: false }
+                  - { label: Image, name: image, widget: image, required: false }
           # Media Text
           - label: "Media Text"
             name: "media_text"
@@ -858,22 +959,27 @@ collections:
               - label: "Heading"
                 name: "heading"
                 widget: "string"
+                required: false
               - label: "Content"
                 name: "content"
                 widget: "text"
+                required: false
               - label: "Buttons"
                 name: "buttons"
                 widget: "list"
+                required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, collapsed: true }
-                  - { label: Text, name: text, widget: string, collapsed: true }
+                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
+                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
               - label: "Image"
                 name: "image"
                 widget: "image"
+                required: false
               - label: "Image (Small)"
                 name: "image_small"
                 widget: "image"
+                required: false
       # Blog Page
       - label: "Blog"
         name: "blog"
@@ -890,19 +996,23 @@ collections:
               - label: "Heading"
                 name: "heading"
                 widget: "string"
+                required: false
               - label: "Content"
                 name: "content"
                 widget: "text"
+                required: false
               - label: "Buttons"
                 name: "buttons"
                 widget: "list"
+                required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, collapsed: true }
-                  - { label: Text, name: text, widget: string, collapsed: true }
+                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
+                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
               - label: "Image"
                 name: "image"
                 widget: "image"
+                required: false
       # News Page
       - label: "News"
         name: "news"
@@ -919,19 +1029,23 @@ collections:
               - label: "Heading"
                 name: "heading"
                 widget: "string"
+                required: false
               - label: "Content"
                 name: "content"
                 widget: "text"
+                required: false
               - label: "Buttons"
                 name: "buttons"
                 widget: "list"
+                required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, collapsed: true }
-                  - { label: Text, name: text, widget: string, collapsed: true }
+                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
+                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
               - label: "Image"
                 name: "image"
                 widget: "image"
+                required: false
       # Events Page
       - label: "Events"
         name: "events"
@@ -948,19 +1062,23 @@ collections:
               - label: "Heading"
                 name: "heading"
                 widget: "string"
+                required: false
               - label: "Content"
                 name: "content"
                 widget: "text"
+                required: false
               - label: "Buttons"
                 name: "buttons"
                 widget: "list"
+                required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, collapsed: true }
-                  - { label: Text, name: text, widget: string, collapsed: true }
+                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
+                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
               - label: "Image"
                 name: "image"
                 widget: "image"
+                required: false
       # Projects Page
       - label: "Projects"
         name: "projects"
@@ -977,19 +1095,23 @@ collections:
               - label: "Heading"
                 name: "heading"
                 widget: "string"
+                required: false
               - label: "Content"
                 name: "content"
                 widget: "text"
+                required: false
               - label: "Buttons"
                 name: "buttons"
                 widget: "list"
+                required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, collapsed: true }
-                  - { label: Text, name: text, widget: string, collapsed: true }
+                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
+                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
               - label: "Image"
                 name: "image"
                 widget: "image"
+                required: false
 
   # Blog Collection
   - label: "Blog"
