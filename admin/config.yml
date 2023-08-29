@@ -1080,7 +1080,7 @@ collections:
                   - {
                       label: Department,
                       name: department,
-                      widget: text,
+                      widget: string,
                       required: false,
                     }
                   - { label: Link, name: link, widget: string, required: false }
@@ -1162,7 +1162,7 @@ collections:
                   - {
                       label: Department,
                       name: department,
-                      widget: text,
+                      widget: string,
                       required: false,
                     }
                   - { label: Link, name: link, widget: string, required: false }
@@ -1244,7 +1244,7 @@ collections:
                   - {
                       label: Department,
                       name: department,
-                      widget: text,
+                      widget: string,
                       required: false,
                     }
                   - { label: Link, name: link, widget: string, required: false }
