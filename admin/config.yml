@@ -238,6 +238,26 @@ collections:
                 name: "content"
                 widget: "text"
                 required: false
+              - label: "Quick Links"
+                name: "quick_links"
+                widget: "list"
+                required: false
+                collapsed: true
+                fields:
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
               - label: "Buttons"
                 name: "buttons"
                 widget: "list"
@@ -477,6 +497,26 @@ collections:
                 name: "content"
                 widget: "text"
                 required: false
+              - label: "Quick Links"
+                name: "quick_links"
+                widget: "list"
+                required: false
+                collapsed: true
+                fields:
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
               - label: "Buttons"
                 name: "buttons"
                 widget: "list"
@@ -970,6 +1010,26 @@ collections:
                 name: "content"
                 widget: "text"
                 required: false
+              - label: "Quick Links"
+                name: "quick_links"
+                widget: "list"
+                required: false
+                collapsed: true
+                fields:
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
               - label: "Buttons"
                 name: "buttons"
                 widget: "list"
@@ -1032,6 +1092,26 @@ collections:
                 name: "content"
                 widget: "text"
                 required: false
+              - label: "Quick Links"
+                name: "quick_links"
+                widget: "list"
+                required: false
+                collapsed: true
+                fields:
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
               - label: "Buttons"
                 name: "buttons"
                 widget: "list"
@@ -1094,6 +1174,26 @@ collections:
                 name: "content"
                 widget: "text"
                 required: false
+              - label: "Quick Links"
+                name: "quick_links"
+                widget: "list"
+                required: false
+                collapsed: true
+                fields:
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
               - label: "Buttons"
                 name: "buttons"
                 widget: "list"
@@ -1353,6 +1453,26 @@ collections:
                 name: "content"
                 widget: "text"
                 required: false
+              - label: "Quick Links"
+                name: "quick_links"
+                widget: "list"
+                required: false
+                collapsed: true
+                fields:
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
               - label: "Buttons"
                 name: "buttons"
                 widget: "list"
