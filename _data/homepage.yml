@@ -42,8 +42,6 @@ slider:
       link: /
       image: /assets/uploads/placeholder-2.jpg
       heading: Challenge-led AI innovation
-  content: a
-  heading: a
-  buttons:
-    - link: a
-      text: a
+  content: ""
+  heading: ""
+  buttons: []
