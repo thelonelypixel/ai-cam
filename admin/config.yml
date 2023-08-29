@@ -173,8 +173,20 @@ collections:
                 required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
-                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
               - label: "Image"
                 name: "image"
                 widget: "image"
@@ -188,7 +200,6 @@ collections:
                 name: "heading"
                 widget: "string"
                 required: false
-                required: false
               - label: "Content"
                 name: "content"
                 widget: "text"
@@ -199,8 +210,20 @@ collections:
                 required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
-                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
           # Media Text
           - label: "Media Text"
             name: "media_text"
@@ -221,8 +244,20 @@ collections:
                 required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
-                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
               - label: "Image"
                 name: "image"
                 widget: "image"
@@ -251,18 +286,45 @@ collections:
                 required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
-                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
               - label: "Slider Items"
                 name: "slider_items"
                 widget: "list"
                 required: false
                 collapsed: true
                 fields:
-                  - { label: Heading, name: heading, widget: string, required: false }
-                  - { label: Content, name: content, widget: text, required: false }
+                  - {
+                      label: Heading,
+                      name: heading,
+                      widget: string,
+                      required: false,
+                    }
+                  - {
+                      label: Content,
+                      name: content,
+                      widget: text,
+                      required: false,
+                    }
                   - { label: Link, name: link, widget: string, required: false }
-                  - { label: Image, name: image, widget: image, required: false }
+                  - {
+                      label: Image,
+                      name: image,
+                      widget: image,
+                      required: false,
+                    }
       # About Page
       - label: "About"
         name: "about"
@@ -290,8 +352,20 @@ collections:
                 required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
-                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
               - label: "Image"
                 name: "image"
                 widget: "image"
@@ -316,8 +390,20 @@ collections:
                 required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
-                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
           # Slider
           - label: "Slider"
             name: "slider"
@@ -338,18 +424,45 @@ collections:
                 required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
-                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
               - label: "Slider Items"
                 name: "slider_items"
                 widget: "list"
                 required: false
                 collapsed: true
                 fields:
-                  - { label: Heading, name: heading, widget: string, required: false }
-                  - { label: Content, name: content, widget: text, required: false }
+                  - {
+                      label: Heading,
+                      name: heading,
+                      widget: string,
+                      required: false,
+                    }
+                  - {
+                      label: Content,
+                      name: content,
+                      widget: text,
+                      required: false,
+                    }
                   - { label: Link, name: link, widget: string, required: false }
-                  - { label: Image, name: image, widget: image, required: false }
+                  - {
+                      label: Image,
+                      name: image,
+                      widget: image,
+                      required: false,
+                    }
           # Media Text
           - label: "Media Text"
             name: "media_text"
@@ -370,8 +483,20 @@ collections:
                 required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
-                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
               - label: "Image"
                 name: "image"
                 widget: "image"
@@ -429,8 +554,20 @@ collections:
                 required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
-                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
       # Contact Page
       - label: "Contact"
         name: "contact"
@@ -458,8 +595,20 @@ collections:
                 required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
-                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
               - label: "Image"
                 name: "image"
                 widget: "image"
@@ -484,8 +633,20 @@ collections:
                 required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
-                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
       # Opportunities Page
       - label: "Opportunities"
         name: "opportunities"
@@ -513,8 +674,20 @@ collections:
                 required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
-                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
               - label: "Image"
                 name: "image"
                 widget: "image"
@@ -538,8 +711,20 @@ collections:
                 required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
-                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
       # Partnerships Page
       - label: "Partnerships"
         name: "partnerships"
@@ -567,8 +752,20 @@ collections:
                 required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
-                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
               - label: "Image"
                 name: "image"
                 widget: "image"
@@ -593,8 +790,20 @@ collections:
                 required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
-                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
               - label: "Logos"
                 name: "logos"
                 widget: "list"
@@ -602,7 +811,12 @@ collections:
                 collapsed: true
                 fields:
                   - { label: Link, name: link, widget: string, required: false }
-                  - { label: Image, name: image, widget: image, required: false }
+                  - {
+                      label: Image,
+                      name: image,
+                      widget: image,
+                      required: false,
+                    }
           # Logo Grid
           - label: "Industry Partners"
             name: "industry_partners"
@@ -623,8 +837,20 @@ collections:
                 required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
-                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
               - label: "Logos"
                 name: "logos"
                 widget: "list"
@@ -632,7 +858,12 @@ collections:
                 collapsed: true
                 fields:
                   - { label: Link, name: link, widget: string, required: false }
-                  - { label: Image, name: image, widget: image, required: false }
+                  - {
+                      label: Image,
+                      name: image,
+                      widget: image,
+                      required: false,
+                    }
           # Logo Grid
           - label: "Supporters"
             name: "supporters"
@@ -653,8 +884,20 @@ collections:
                 required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
-                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
               - label: "Logos"
                 name: "logos"
                 widget: "list"
@@ -662,7 +905,12 @@ collections:
                 collapsed: true
                 fields:
                   - { label: Link, name: link, widget: string, required: false }
-                  - { label: Image, name: image, widget: image, required: false }
+                  - {
+                      label: Image,
+                      name: image,
+                      widget: image,
+                      required: false,
+                    }
       # Study Page
       - label: "Study"
         name: "study"
@@ -690,8 +938,20 @@ collections:
                 required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
-                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
               - label: "Image"
                 name: "image"
                 widget: "image"
@@ -716,8 +976,20 @@ collections:
                 required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
-                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
               - label: "Image"
                 name: "image"
                 widget: "image"
@@ -739,7 +1011,12 @@ collections:
                 collapsed: true
                 fields:
                   - { label: name, name: name, widget: string, required: false }
-                  - { label: Department, name: department, widget: text, required: false }
+                  - {
+                      label: Department,
+                      name: department,
+                      widget: text,
+                      required: false,
+                    }
                   - { label: Link, name: link, widget: string, required: false }
           # Media Text (Postgraduate)
           - label: "Media Text (Postgraduate)"
@@ -761,8 +1038,20 @@ collections:
                 required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
-                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
               - label: "Image"
                 name: "image"
                 widget: "image"
@@ -784,7 +1073,12 @@ collections:
                 collapsed: true
                 fields:
                   - { label: name, name: name, widget: string, required: false }
-                  - { label: Department, name: department, widget: text, required: false }
+                  - {
+                      label: Department,
+                      name: department,
+                      widget: text,
+                      required: false,
+                    }
                   - { label: Link, name: link, widget: string, required: false }
           # Media Text (Executive)
           - label: "Media Text (Executive)"
@@ -806,8 +1100,20 @@ collections:
                 required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
-                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
               - label: "Image"
                 name: "image"
                 widget: "image"
@@ -829,7 +1135,12 @@ collections:
                 collapsed: true
                 fields:
                   - { label: name, name: name, widget: string, required: false }
-                  - { label: Department, name: department, widget: text, required: false }
+                  - {
+                      label: Department,
+                      name: department,
+                      widget: text,
+                      required: false,
+                    }
                   - { label: Link, name: link, widget: string, required: false }
       # Research Page
       - label: "Research"
@@ -858,8 +1169,20 @@ collections:
                 required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
-                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
               - label: "Image"
                 name: "image"
                 widget: "image"
@@ -884,8 +1207,20 @@ collections:
                 required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
-                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
           # Slider
           - label: "Slider"
             name: "slider"
@@ -906,18 +1241,45 @@ collections:
                 required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
-                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
               - label: "Slider Items"
                 name: "slider_items"
                 widget: "list"
                 required: false
                 collapsed: true
                 fields:
-                  - { label: Heading, name: heading, widget: string, required: false }
-                  - { label: Content, name: content, widget: text, required: false }
+                  - {
+                      label: Heading,
+                      name: heading,
+                      widget: string,
+                      required: false,
+                    }
+                  - {
+                      label: Content,
+                      name: content,
+                      widget: text,
+                      required: false,
+                    }
                   - { label: Link, name: link, widget: string, required: false }
-                  - { label: Image, name: image, widget: image, required: false }
+                  - {
+                      label: Image,
+                      name: image,
+                      widget: image,
+                      required: false,
+                    }
           # Researchers
           - label: "Researchers"
             name: "researchers"
@@ -938,18 +1300,45 @@ collections:
                 required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
-                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
               - label: "Slider Items"
                 name: "slider_items"
                 widget: "list"
                 required: false
                 collapsed: true
                 fields:
-                  - { label: Heading, name: heading, widget: string, required: false }
-                  - { label: Content, name: content, widget: text, required: false }
+                  - {
+                      label: Heading,
+                      name: heading,
+                      widget: string,
+                      required: false,
+                    }
+                  - {
+                      label: Content,
+                      name: content,
+                      widget: text,
+                      required: false,
+                    }
                   - { label: Link, name: link, widget: string, required: false }
-                  - { label: Image, name: image, widget: image, required: false }
+                  - {
+                      label: Image,
+                      name: image,
+                      widget: image,
+                      required: false,
+                    }
           # Media Text
           - label: "Media Text"
             name: "media_text"
@@ -970,8 +1359,20 @@ collections:
                 required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
-                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
               - label: "Image"
                 name: "image"
                 widget: "image"
@@ -1007,8 +1408,20 @@ collections:
                 required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
-                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
               - label: "Image"
                 name: "image"
                 widget: "image"
@@ -1040,8 +1453,20 @@ collections:
                 required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
-                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
               - label: "Image"
                 name: "image"
                 widget: "image"
@@ -1073,8 +1498,20 @@ collections:
                 required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
-                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
               - label: "Image"
                 name: "image"
                 widget: "image"
@@ -1106,8 +1543,20 @@ collections:
                 required: false
                 collapsed: true
                 fields:
-                  - { label: Link, name: link, widget: string, required: false, collapsed: true }
-                  - { label: Text, name: text, widget: string, required: false, collapsed: true }
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
               - label: "Image"
                 name: "image"
                 widget: "image"
