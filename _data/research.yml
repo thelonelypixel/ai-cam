@@ -1,0 +1,42 @@
+hero:
+  content: AI@Cam’s mission is to drive a new wave of AI innovation that serves
+    science, citizens, and society.
+  heading: Research
+text_split:
+  heading: Research heading goes in here and takes up around two lines of space
+  content: AI@Cam will build this infrastructure through research, education, and
+    innovation programmes that leverage the world-leading research already
+    taking place across the University and connecting this to real-world needs.
+slider:
+  heading: ""
+  slider_items:
+    - heading: Research Centre 1
+      content: AI@Cam is building an infrastructure for interdisciplinary innovation
+        that serves science and society through research, education, and
+        innovation programmes that leverage world- leading research from across
+        the University and connect this to real-world needs.
+      image: /assets/uploads/placeholder-1.jpg
+    - heading: Research Centre 2
+      content: AI@Cam is building an infrastructure for interdisciplinary innovation
+        that serves science and society through research, education, and
+        innovation programmes that leverage world- leading research from across
+        the University and connect this to real-world needs.
+      image: /assets/uploads/placeholder-2.jpg
+researchers:
+  content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+    euismod, ante condimentum accumsan lacinia, nibh ipsum fermentum libero, id
+    feugiat odio mauris ac libero. Etiam in ligula ante. Vestibulum in magna in
+    magna pellentesque venenatis ac eu ex.
+  heading: Researchers
+media_text:
+  heading: Are you a University of Cambridge researcher?
+  content: Curabitur risus urna, ornare sed pretium vel, mattis et metus. Sed
+    scelerisque elit nec euismod ultricies. Sed nisl leo, laoreet a mauris
+    vitae, ultrices varius augue. Fusce ac risus sollicitudin, posuere ante at,
+    faucibus odio. Nunc sollicitudin metus ut est pulvinar ultricies quis nec
+    sapien.
+  buttons:
+    - link: /
+      text: Contact us
+  image: /assets/uploads/lander-media-2.png
+  image_small: /assets/uploads/lander-media-1.png
