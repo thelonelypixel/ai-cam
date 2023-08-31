@@ -3,12 +3,34 @@ layout: "page"
 title: "Study"
 ---
 
+{% assign hero = site.data.study.hero %}
 <section class="block block--bg-blue block__hero block__hero--standard" id="hero">
   <div class="container">
     <div class="hero__content">
-      <h1>Study</h1>
-      <p>The University provides a range of courses relating to AI, its use as part of a range of disciplines, and its critical evaluation. Explore where you can find AI in our courses more at the links below.</p>
+      {% if hero.heading != nil and hero.heading != '' %}
+        <h1>{{ hero.heading }}</h1>
+      {% endif %}
+
+      {% if hero.content != nil and hero.content != '' %}
+        {{ hero.content | markdownify }}
+      {% endif %}
+
+      {% if hero.buttons != nil and hero.buttons.size > 0 %}
+        <div class="button-box">
+          {% for item in hero.buttons %}
+            {% if item.link != nil and item.link != '' %}
+              <a class="button button--standard button--standard-anchor" href="{{ item.link }}">{{ item.text }}</a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
     </div>
+
+    {% if hero.image != nil and hero.image != '' %}
+      <div class="hero__image">
+        <img alt="" src="{{ hero.image }}"/>
+      </div>
+    {% endif %}
   </div>
 </section>
 
@@ -22,268 +44,330 @@ title: "Study"
   </div>
 </section>
 
-<section id="undergraduate" class="block block--bg-pink block__media-text" id="find-out-more">
+
+{% assign media_text_undergraduate = site.data.study.media_text_undergraduate %}
+<section class="block block--bg-pink block__media-text" id="undergraduate">
   <div class="container">
-    <div class="media-text__media media-text__media--two">
-      <img alt="" class="media-text__media-image" src="../assets/images/lander-media-2.png"/>
-      <img alt="" class="media-text__media-image--floating" src="../assets/images/lander-media-1.png"/>
-    </div>
+    {% if (media_text_undergraduate.image != nil and media_text_undergraduate.image != '') or (media_text_undergraduate.image_small != nil and media_text_undergraduate.image_small != '') %}
+      <div class="media-text__media {% if media_text_undergraduate.image_small != nil and media_text_undergraduate.image_small != '' %} media-text__media--two {% endif %}">
+        {% if media_text_undergraduate.image != nil and media_text_undergraduate.image != '' %}
+          <img class="media-text__media-image" src="{{ media_text_undergraduate.image }}"/>
+        {% endif %}
+
+        {% if media_text_undergraduate.image_small != nil and media_text_undergraduate.image_small != '' %}
+          <img class="media-text__media-image--floating" src="{{ media_text_undergraduate.image_small }}"/>
+        {% endif %}
+      </div>
+    {% endif %}
 
     <div class="media-text__content">
-      <h2>Undergraduate Heading goes in here and takes up two lines</h2>
-      <p>Curabitur risus urna, ornare sed pretium vel, mattis et metus. Sed scelerisque elit nec euismod ultricies. Sed nisl leo, laoreet a mauris vitae, ultrices varius augue. Fusce ac risus sollicitudin, posuere ante at, faucibus odio. Nunc sollicitudin metus ut est pulvinar ultricies quis nec sapien.</p>
-      <div class="button-box">
-        <a class="button button--standard" href="#">Contact us</a>
+      {% if media_text_undergraduate.heading != nil and media_text_undergraduate.heading != '' %}
+        <h2>{{ media_text_undergraduate.heading }}</h2>
+      {% endif %}
+      {% if media_text_undergraduate.content != nil and media_text_undergraduate.content != '' %}
+        {{ media_text_undergraduate.content | markdownify }}
+      {% endif %}
+
+      <!-- Quick Links -->
+      {% if media_text_undergraduate.quick_links != nil and media_text_undergraduate.quick_links.size > 0 %}
+        <ul class="media-text__content-quicklinks">
+          {% for item in media_text_undergraduate.quick_links %}
+            {% if item.link != nil and item.link != '' %}
+              <li>
+                <a href="{{ item.link }}">
+                  {{ item.text }}
+                  <svg height="24px" version="1.1" viewbox="0 0 20.0930233 24" width="20.0930233px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                    <g fill-rule="evenodd" fill="none" id="Page-1" stroke-width="1" stroke="none">
+                      <g fill-rule="nonzero" fill="#000000" id="Landing-Page" transform="translate(-422.9535, -676.0465)">
+                        <g id="Group" transform="translate(0.4741, 80)">
+                          <g id="CTA" transform="translate(254.5259, 577)">
+                            <g id="right-arrow" transform="translate(178, 31.0465) rotate(-270) translate(-178, -31.0465)translate(166, 21)">
+                              <path d="M23.6163882,9.10811199 L14.9491435,0.385649066 C14.7017309,0.136665861 14.3719776,0 14.0203708,0 C13.6683737,0 13.3388155,0.13686222 13.0914029,0.385649066 L12.3044827,1.17776125 C12.0572652,1.42635174 11.9210712,1.7583948 11.9210712,2.11243007 C11.9210712,2.46626898 12.0572652,2.8095045 12.3044827,3.05809499 L17.3608307,8.15773445 L1.29657454,8.15773445 C0.572287906,8.15773445 0,8.72835369 0,9.45743464 L0,10.57727 C0,11.3063509 0.572287906,11.9345034 1.29657454,11.9345034 L17.4181961,11.9345034 L12.3046778,17.0626149 C12.0574603,17.3115981 11.9212664,17.6346086 11.9212664,17.9886439 C11.9212664,18.3422865 12.0574603,18.6700096 12.3046778,18.9187965 L13.091598,19.708356 C13.3390106,19.9573392 13.6685688,20.0930233 14.0205659,20.0930233 C14.3721727,20.0930233 14.7019261,19.955572 14.9493386,19.7065888 L23.6165834,10.9843222 C23.8645813,10.7345535 24.0009704,10.401136 24,10.046708 C24.0007753,9.69110185 23.8645813,9.35748791 23.6163882,9.10811199 Z" id="Path"></path>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      {% endif %}
+
+      {% if media_text_undergraduate.buttons != nil and media_text_undergraduate.buttons.size > 0 %}
+        <div class="button-box">
+          {% for item in media_text_undergraduate.buttons %}
+            {% if item.link != nil and item.link != '' %}
+              <a class="button button--standard" href="{{ item.link }}">{{ item.text }}</a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% assign courses_undergraduate = site.data.study.courses_undergraduate %}
+{% if courses_undergraduate.courses_list != nil and courses_undergraduate.courses_list.size > 0 %}
+  <section class="block block--bg-pink block__courses">
+    <div class="container">
+      <table class="courses__table no-stripe">
+        <thead>
+          <tr class="courses__table-headings">
+            <th>
+              <h3>Course name</h3>
+            </th>
+            <th>
+              <h3>Department</h3>
+            </th>
+            <th>
+              <h3>Link to site</h3>
+            </th>
+            <th>
+              <h3>Department</h3>
+            </th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {% for item in courses_undergraduate.courses_list %}
+            {% if item.name != nil and item.name != '' %}
+              <tr class="courses__table-course">
+                <td>
+                  <p>{{ item.name }}</p>
+                </td>
+                <td>
+                  <p>{{ item.department }}</p>
+                </td>
+                <td>
+                  <a class="button button--standard" href="{{ item.link }}" target="_blank">View course</a>
+                </td>
+                <td></td>
+              </tr>
+            {% endif %}
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </section>
+{% endif %}
+
+
+{% assign media_text_postgraduate = site.data.study.media_text_postgraduate %}
+<section class="block block__media-text" id="postgraduate">
+  <div class="container">
+    {% if (media_text_postgraduate.image != nil and media_text_postgraduate.image != '') or (media_text_postgraduate.image_small != nil and media_text_postgraduate.image_small != '') %}
+      <div class="media-text__media {% if media_text_postgraduate.image_small != nil and media_text_postgraduate.image_small != '' %} media-text__media--two {% endif %}">
+        {% if media_text_postgraduate.image != nil and media_text_postgraduate.image != '' %}
+          <img class="media-text__media-image" src="{{ media_text_postgraduate.image }}"/>
+        {% endif %}
+
+        {% if media_text_postgraduate.image_small != nil and media_text_postgraduate.image_small != '' %}
+          <img class="media-text__media-image--floating" src="{{ media_text_postgraduate.image_small }}"/>
+        {% endif %}
       </div>
-    </div>
-  </div>
-</section>
-
-<section class="block block--bg-pink block__courses">
-  <div class="container">
-    <table class="courses__table no-stripe">
-      <thead>
-        <tr class="courses__table-headings">
-          <th><h3>Course name</h3></th>
-          <th><h3>Department</h3></th>
-          <th><h3>Link to site</h3></th>
-          <th><h3>Department</h3></th>
-        </tr>
-      </thead>
-      
-      <tbody>
-        <tr class="courses__table-course">
-          <td><p>Computer Science</p></td>
-          <td><p>Computer Science and Technology</p></td>
-          <td><a href="#" target="_blank" class="button button--standard">View course</a></td>
-          <td></td>
-        </tr>
-
-        <tr class="courses__table-course">
-          <td><p>Engineering</p></td>
-          <td><p>Engineering</p></td>
-          <td><a href="#" target="_blank" class="button button--standard">View course</a></td>
-          <td></td>
-        </tr>
-
-        <tr class="courses__table-course">
-          <td><p>Chemical Engineering and Biotechnology</p></td>
-          <td><p>Chemical Engineering and Biotechnology</p></td>
-          <td><a href="#" target="_blank" class="button button--standard">View course</a></td>
-          <td></td>
-        </tr>
-
-        <tr class="courses__table-course">
-          <td><p>Natural Sciences</p></td>
-          <td><p>School of Biological Sciences</p></td>
-          <td><a href="#" target="_blank" class="button button--standard">View course</a></td>
-          <td></td>
-        </tr>
-
-        <tr class="courses__table-course">
-          <td><p>Mathematics</p></td>
-          <td><p>Faculty of Mathematics</p></td>
-          <td><a href="#" target="_blank" class="button button--standard">View course</a></td>
-          <td></td>
-        </tr>
-      </tbody>
-      
-    </table>
-  </div>
-</section>
-
-<section id="postgraduate" class="block block__media-text" id="find-out-more">
-  <div class="container">
-    <div class="media-text__media media-text__media--two">
-      <img alt="" class="media-text__media-image" src="../assets/images/lander-media-2.png" />
-      <img alt="" class="media-text__media-image--floating" src="../assets/images/lander-media-1.png" />
-    </div>
+    {% endif %}
 
     <div class="media-text__content">
-      <h2>Postgraduate Heading goes in here and takes up two lines</h2>
-      <p>Curabitur risus urna, ornare sed pretium vel, mattis et metus. Sed scelerisque elit nec euismod ultricies. Sed nisl leo, laoreet a mauris vitae, ultrices varius augue. Fusce ac risus sollicitudin, posuere ante at, faucibus odio. Nunc sollicitudin metus ut est pulvinar ultricies quis nec sapien.</p>
-      <div class="button-box">
-        <a class="button button--standard" href="#">Contact us</a>
+      {% if media_text_postgraduate.heading != nil and media_text_postgraduate.heading != '' %}
+        <h2>{{ media_text_postgraduate.heading }}</h2>
+      {% endif %}
+      {% if media_text_postgraduate.content != nil and media_text_postgraduate.content != '' %}
+        {{ media_text_postgraduate.content | markdownify }}
+      {% endif %}
+      <!-- Quick Links -->
+      {% if media_text_postgraduate.quick_links != nil and media_text_postgraduate.quick_links.size > 0 %}
+        <ul class="media-text__content-quicklinks">
+          {% for item in media_text_postgraduate.quick_links %}
+            {% if item.link != nil and item.link != '' %}
+              <li>
+                <a href="{{ item.link }}">
+                  {{ item.text }}
+                  <svg height="24px" version="1.1" viewbox="0 0 20.0930233 24" width="20.0930233px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                    <g fill-rule="evenodd" fill="none" id="Page-1" stroke-width="1" stroke="none">
+                      <g fill-rule="nonzero" fill="#000000" id="Landing-Page" transform="translate(-422.9535, -676.0465)">
+                        <g id="Group" transform="translate(0.4741, 80)">
+                          <g id="CTA" transform="translate(254.5259, 577)">
+                            <g id="right-arrow" transform="translate(178, 31.0465) rotate(-270) translate(-178, -31.0465)translate(166, 21)">
+                              <path d="M23.6163882,9.10811199 L14.9491435,0.385649066 C14.7017309,0.136665861 14.3719776,0 14.0203708,0 C13.6683737,0 13.3388155,0.13686222 13.0914029,0.385649066 L12.3044827,1.17776125 C12.0572652,1.42635174 11.9210712,1.7583948 11.9210712,2.11243007 C11.9210712,2.46626898 12.0572652,2.8095045 12.3044827,3.05809499 L17.3608307,8.15773445 L1.29657454,8.15773445 C0.572287906,8.15773445 0,8.72835369 0,9.45743464 L0,10.57727 C0,11.3063509 0.572287906,11.9345034 1.29657454,11.9345034 L17.4181961,11.9345034 L12.3046778,17.0626149 C12.0574603,17.3115981 11.9212664,17.6346086 11.9212664,17.9886439 C11.9212664,18.3422865 12.0574603,18.6700096 12.3046778,18.9187965 L13.091598,19.708356 C13.3390106,19.9573392 13.6685688,20.0930233 14.0205659,20.0930233 C14.3721727,20.0930233 14.7019261,19.955572 14.9493386,19.7065888 L23.6165834,10.9843222 C23.8645813,10.7345535 24.0009704,10.401136 24,10.046708 C24.0007753,9.69110185 23.8645813,9.35748791 23.6163882,9.10811199 Z" id="Path"></path>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      {% endif %}
+
+      {% if media_text_postgraduate.buttons != nil and media_text_postgraduate.buttons.size > 0 %}
+        <div class="button-box">
+          {% for item in media_text_postgraduate.buttons %}
+            {% if item.link != nil and item.link != '' %}
+              <a class="button button--standard" href="{{ item.link }}">{{ item.text }}</a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% assign courses_postgraduate = site.data.study.courses_postgraduate %}
+{% if courses_postgraduate.courses_list != nil and courses_postgraduate.courses_list.size > 0 %}
+  <section class="block block__courses">
+    <div class="container">
+      <table class="courses__table no-stripe">
+        <thead>
+          <tr class="courses__table-headings">
+            <th>
+              <h3>Course name</h3>
+            </th>
+            <th>
+              <h3>Department</h3>
+            </th>
+            <th>
+              <h3>Link to site</h3>
+            </th>
+            <th>
+              <h3>Department</h3>
+            </th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {% for item in courses_postgraduate.courses_list %}
+            {% if item.name != nil and item.name != '' %}
+              <tr class="courses__table-course">
+                <td>
+                  <p>{{ item.name }}</p>
+                </td>
+                <td>
+                  <p>{{ item.department }}</p>
+                </td>
+                <td>
+                  <a class="button button--standard" href="{{ item.link }}" target="_blank">View course</a>
+                </td>
+                <td></td>
+              </tr>
+            {% endif %}
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </section>
+{% endif %}
+
+
+{% assign media_text_executive = site.data.study.media_text_executive %}
+<section class="block block--bg-pink block__media-text" id="executive">
+  <div class="container">media_text_executive
+    {% if (media_text_executive.image != nil and media_text_executive.image != '') or (media_text_executive.image_small != nil and media_text_executive.image_small != '') %}
+      <div class="media-text__media {% if media_text_executive.image_small != nil and media_text_executive.image_small != '' %} media-text__media--two {% endif %}">
+        {% if media_text_executive.image != nil and media_text_executive.image != '' %}
+          <img class="media-text__media-image" src="{{ media_text_executive.image }}"/>
+        {% endif %}
+
+        {% if media_text_executive.image_small != nil and media_text_executive.image_small != '' %}
+          <img class="media-text__media-image--floating" src="{{ media_text_executive.image_small }}"/>
+        {% endif %}
       </div>
-    </div>
-  </div>
-</section>
-
-<section class="block block__courses">
-  <div class="container">
-    <table class="courses__table no-stripe">
-      <thead>
-        <tr class="courses__table-headings">
-          <th>
-            <h3>Course name</h3>
-          </th>
-          <th>
-            <h3>Department</h3>
-          </th>
-          <th>
-            <h3>Link to site</h3>
-          </th>
-          <th>
-            <h3>Department</h3>
-          </th>
-        </tr>
-      </thead>
-
-      <tbody>
-        <tr class="courses__table-course">
-          <td>
-            <p>Computer Science</p>
-          </td>
-          <td>
-            <p>Computer Science and Technology</p>
-          </td>
-          <td><a href="#" target="_blank" class="button button--standard">View course</a></td>
-          <td></td>
-        </tr>
-
-        <tr class="courses__table-course">
-          <td>
-            <p>Engineering</p>
-          </td>
-          <td>
-            <p>Engineering</p>
-          </td>
-          <td><a href="#" target="_blank" class="button button--standard">View course</a></td>
-          <td></td>
-        </tr>
-
-        <tr class="courses__table-course">
-          <td>
-            <p>Chemical Engineering and Biotechnology</p>
-          </td>
-          <td>
-            <p>Chemical Engineering and Biotechnology</p>
-          </td>
-          <td><a href="#" target="_blank" class="button button--standard">View course</a></td>
-          <td></td>
-        </tr>
-
-        <tr class="courses__table-course">
-          <td>
-            <p>Natural Sciences</p>
-          </td>
-          <td>
-            <p>School of Biological Sciences</p>
-          </td>
-          <td><a href="#" target="_blank" class="button button--standard">View course</a></td>
-          <td></td>
-        </tr>
-
-        <tr class="courses__table-course">
-          <td>
-            <p>Mathematics</p>
-          </td>
-          <td>
-            <p>Faculty of Mathematics</p>
-          </td>
-          <td><a href="#" target="_blank" class="button button--standard">View course</a></td>
-          <td></td>
-        </tr>
-      </tbody>
-
-    </table>
-  </div>
-</section>
-
-<section id="executive" class="block block--bg-pink block__media-text" id="find-out-more">
-  <div class="container">
-    <div class="media-text__media media-text__media--two">
-      <img alt="" class="media-text__media-image" src="../assets/images/lander-media-2.png" />
-      <img alt="" class="media-text__media-image--floating" src="../assets/images/lander-media-1.png" />
-    </div>
+    {% endif %}
 
     <div class="media-text__content">
-      <h2>Executive Heading goes in here and takes up two lines</h2>
-      <p>Curabitur risus urna, ornare sed pretium vel, mattis et metus. Sed scelerisque elit nec euismod ultricies. Sed nisl leo, laoreet a mauris vitae, ultrices varius augue. Fusce ac risus sollicitudin, posuere ante at, faucibus odio. Nunc sollicitudin metus ut est pulvinar ultricies quis nec sapien.</p>
-      <div class="button-box">
-        <a class="button button--standard" href="#">Contact us</a>
-      </div>
+      {% if media_text_executive.heading != nil and media_text_executive.heading != '' %}
+        <h2>{{ media_text_executive.heading }}</h2>
+      {% endif %}
+      {% if media_text_executive.content != nil and media_text_executive.content != '' %}
+        {{ media_text_executive.content | markdownify }}
+      {% endif %}
+      <!-- Quick Links -->
+      {% if media_text_executive.quick_links != nil and media_text_executive.quick_links.size > 0 %}
+        <ul class="media-text__content-quicklinks">
+          {% for item in media_text_executive.quick_links %}
+            {% if item.link != nil and item.link != '' %}
+              <li>
+                <a href="{{ item.link }}">
+                  {{ item.text }}
+                  <svg height="24px" version="1.1" viewbox="0 0 20.0930233 24" width="20.0930233px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                    <g fill-rule="evenodd" fill="none" id="Page-1" stroke-width="1" stroke="none">
+                      <g fill-rule="nonzero" fill="#000000" id="Landing-Page" transform="translate(-422.9535, -676.0465)">
+                        <g id="Group" transform="translate(0.4741, 80)">
+                          <g id="CTA" transform="translate(254.5259, 577)">
+                            <g id="right-arrow" transform="translate(178, 31.0465) rotate(-270) translate(-178, -31.0465)translate(166, 21)">
+                              <path d="M23.6163882,9.10811199 L14.9491435,0.385649066 C14.7017309,0.136665861 14.3719776,0 14.0203708,0 C13.6683737,0 13.3388155,0.13686222 13.0914029,0.385649066 L12.3044827,1.17776125 C12.0572652,1.42635174 11.9210712,1.7583948 11.9210712,2.11243007 C11.9210712,2.46626898 12.0572652,2.8095045 12.3044827,3.05809499 L17.3608307,8.15773445 L1.29657454,8.15773445 C0.572287906,8.15773445 0,8.72835369 0,9.45743464 L0,10.57727 C0,11.3063509 0.572287906,11.9345034 1.29657454,11.9345034 L17.4181961,11.9345034 L12.3046778,17.0626149 C12.0574603,17.3115981 11.9212664,17.6346086 11.9212664,17.9886439 C11.9212664,18.3422865 12.0574603,18.6700096 12.3046778,18.9187965 L13.091598,19.708356 C13.3390106,19.9573392 13.6685688,20.0930233 14.0205659,20.0930233 C14.3721727,20.0930233 14.7019261,19.955572 14.9493386,19.7065888 L23.6165834,10.9843222 C23.8645813,10.7345535 24.0009704,10.401136 24,10.046708 C24.0007753,9.69110185 23.8645813,9.35748791 23.6163882,9.10811199 Z" id="Path"></path>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      {% endif %}
+
+      {% if media_text_executive.buttons != nil and media_text_executive.buttons.size > 0 %}
+        <div class="button-box">
+          {% for item in media_text_executive.buttons %}
+            {% if item.link != nil and item.link != '' %}
+              <a class="button button--standard" href="{{ item.link }}">{{ item.text }}</a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
     </div>
   </div>
 </section>
 
-<section class="block block--bg-pink block__courses">
-  <div class="container">
-    <table class="courses__table no-stripe">
-      <thead>
-        <tr class="courses__table-headings">
-          <th>
-            <h3>Course name</h3>
-          </th>
-          <th>
-            <h3>Department</h3>
-          </th>
-          <th>
-            <h3>Link to site</h3>
-          </th>
-          <th>
-            <h3>Department</h3>
-          </th>
-        </tr>
-      </thead>
+{% assign courses_executive = site.data.study.courses_executive %}
+{% if courses_executive.courses_list != nil and courses_executive.courses_list.size > 0 %}
+  <section class="block block--bg-pink block__courses">
+    <div class="container">
+      <table class="courses__table no-stripe">
+        <thead>
+          <tr class="courses__table-headings">
+            <th>
+              <h3>Course name</h3>
+            </th>
+            <th>
+              <h3>Department</h3>
+            </th>
+            <th>
+              <h3>Link to site</h3>
+            </th>
+            <th>
+              <h3>Department</h3>
+            </th>
+          </tr>
+        </thead>
 
-      <tbody>
-        <tr class="courses__table-course">
-          <td>
-            <p>Computer Science</p>
-          </td>
-          <td>
-            <p>Computer Science and Technology</p>
-          </td>
-          <td><a href="#" target="_blank" class="button button--standard">View course</a></td>
-          <td></td>
-        </tr>
-
-        <tr class="courses__table-course">
-          <td>
-            <p>Engineering</p>
-          </td>
-          <td>
-            <p>Engineering</p>
-          </td>
-          <td><a href="#" target="_blank" class="button button--standard">View course</a></td>
-          <td></td>
-        </tr>
-
-        <tr class="courses__table-course">
-          <td>
-            <p>Chemical Engineering and Biotechnology</p>
-          </td>
-          <td>
-            <p>Chemical Engineering and Biotechnology</p>
-          </td>
-          <td><a href="#" target="_blank" class="button button--standard">View course</a></td>
-          <td></td>
-        </tr>
-
-        <tr class="courses__table-course">
-          <td>
-            <p>Natural Sciences</p>
-          </td>
-          <td>
-            <p>School of Biological Sciences</p>
-          </td>
-          <td><a href="#" target="_blank" class="button button--standard">View course</a></td>
-          <td></td>
-        </tr>
-
-        <tr class="courses__table-course">
-          <td>
-            <p>Mathematics</p>
-          </td>
-          <td>
-            <p>Faculty of Mathematics</p>
-          </td>
-          <td><a href="#" target="_blank" class="button button--standard">View course</a></td>
-          <td></td>
-        </tr>
-      </tbody>
-
-    </table>
-  </div>
-</section>
+        <tbody>
+          {% for item in courses_executive.courses_list %}
+            {% if item.name != nil and item.name != '' %}
+              <tr class="courses__table-course">
+                <td>
+                  <p>{{ item.name }}</p>
+                </td>
+                <td>
+                  <p>{{ item.department }}</p>
+                </td>
+                <td>
+                  <a class="button button--standard" href="{{ item.link }}" target="_blank">View course</a>
+                </td>
+                <td></td>
+              </tr>
+            {% endif %}
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </section>
+{% endif %}

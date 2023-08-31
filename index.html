@@ -92,11 +92,11 @@ title: 'Home'
   <div class="container">
     <div class="hero__content">
       {% if hero.heading != nil and hero.heading != '' %}
-        <h1>{{ site.data.homepage.hero.heading }}</h1>
+        <h1>{{ hero.heading }}</h1>
       {% endif %}
-      
+
       {% if hero.content != nil and hero.content != '' %}
-        {{ site.data.homepage.hero.content | markdownify }}
+        {{ hero.content | markdownify }}
       {% endif %}
 
       {% if hero.buttons != nil and hero.buttons.size > 0 %}
@@ -318,11 +318,11 @@ title: 'Home'
         {% if slider.heading != nil and slider.heading != '' %}
           <h2>{{ slider.heading }}</h2>
         {% endif %}
-      
+
         {% if slider.content != nil and slider.content != '' %}
           {{ slider.content | markdownify }}
         {% endif %}
-      
+
         {% if slider.buttons != nil and slider.buttons.size > 0 %}
           <div class="button-box">
             {% for item in slider.buttons %}

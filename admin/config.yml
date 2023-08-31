@@ -146,7 +146,7 @@ collections:
   - label: "Pages"
     name: "pages"
     files:
-      # Homepage
+      # Homepage (Complete)
       - label: "Homepage"
         name: "homepage"
         file: "_data/homepage.yml"
@@ -346,7 +346,7 @@ collections:
                       widget: image,
                       required: false,
                     }
-      # About Page
+      # About Page (Complete)
       - label: "About"
         name: "about"
         file: "_data/about.yml"
@@ -546,7 +546,7 @@ collections:
                 name: "image_small"
                 widget: "image"
                 required: false
-      # Contact Page
+      # Contact Page (Complete)
       - label: "Contact"
         name: "contact"
         file: "_data/contact.yml"
@@ -625,7 +625,7 @@ collections:
                     name: "content"
                     widget: "text"
                     required: false
-      # Partnerships Page
+      # Partnerships Page (Complete)
       - label: "Partnerships"
         name: "partnerships"
         file: "_data/partnerships.yml"
@@ -811,7 +811,7 @@ collections:
                       widget: image,
                       required: false,
                     }
-      # Study Page
+      # Study Page (Complete)
       - label: "Study"
         name: "study"
         file: "_data/study.yml"

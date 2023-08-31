@@ -7,19 +7,53 @@ APP STYLES
 
 */
 
-.error404 {
-    main {
-        min-height: 100vh; // offset by header and footer height combined
-        display: flex;
-        align-items: center;
-        justify-content: center;
+.block__404 {
+  height: calc(100vh - 54px);
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-        article {
-            text-align: center;
+  @include bp(tablet) {
+    height: calc(100vh - 57px);
+    padding: 0;
+  }
 
-            header span {
-                font-size: 8rem;
-            }
-        }
+  @include bp(desktop) {
+    height: calc(100vh - 75px);
+    padding: 0;
+  }
+
+  .container {
+    max-width: 920px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    margin-bottom: 2rem;
+    font-size: 5rem;
+    text-align: center;
+
+    @include bp(tablet) {
+      font-size: 8rem;
     }
+  }
+
+  p {
+    margin-top: 0;
+    font-size: 2.4rem;
+    text-align: center;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .button {
+    margin-top: 4rem;
+  }
 }
