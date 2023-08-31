@@ -1,17 +1,5 @@
 site_logo: /assets/uploads/logo.png
-contact_details:
-  tel: Temp
-  fax: Temp
-  email: Temp
-  address: |-
-    Address Line 1 Here
-    Address Line 2 Here
 social_details:
   twitter_link: https://twitter.com/
   facebook_link: https://facebook.com/
   instagram_link: https://instagram.com/
-footer_images:
-  - image: null
-    link: https://google.co.uk/
-  - image: null
-    link: https://google.co.uk/
