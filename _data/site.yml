@@ -1,5 +1,8 @@
 site_logo: /assets/uploads/logo.png
 site_logo_white: /assets/uploads/logo-white.png
+uoc_details:
+  logo: /assets/uploads/cambridge-university.png
+  link: https://www.cam.ac.uk/
 social_details:
   twitter_link: https://twitter.com/
   facebook_link: https://facebook.com/
