@@ -546,73 +546,6 @@ collections:
                 name: "image_small"
                 widget: "image"
                 required: false
-      # Team Page
-      - label: "Team"
-        name: "team"
-        file: "_data/team.yml"
-        editor:
-          preview: false
-        fields:
-          # Hero
-          - label: "Hero"
-            name: "hero"
-            collapsed: true
-            widget: "object"
-            fields:
-              - label: "Heading"
-                name: "heading"
-                widget: "string"
-                required: false
-              - label: "Content"
-                name: "content"
-                widget: "text"
-                required: false
-              - label: "Buttons"
-                name: "buttons"
-                widget: "list"
-                required: false
-                collapsed: true
-                fields:
-                  - { label: Link, name: link, widget: string, collapsed: true }
-                  - { label: Text, name: text, widget: string, collapsed: true }
-              - label: "Image"
-                name: "image"
-                widget: "image"
-                required: false
-          # Team
-          - label: "Team"
-            name: "team"
-            collapsed: true
-            widget: "object"
-            fields:
-              - label: "Heading"
-                name: "heading"
-                widget: "string"
-                required: false
-              - label: "Content"
-                name: "content"
-                widget: "text"
-                required: false
-              - label: "Buttons"
-                name: "buttons"
-                widget: "list"
-                required: false
-                collapsed: true
-                fields:
-                  - {
-                      label: Link,
-                      name: link,
-                      widget: string,
-                      required: false,
-                      collapsed: true,
-                    }
-                  - {
-                      label: Text,
-                      name: text,
-                      widget: string,
-                      required: false,
-                      collapsed: true,
-                    }
       # Contact Page
       - label: "Contact"
         name: "contact"
@@ -664,113 +597,34 @@ collections:
             collapsed: true
             widget: "object"
             fields:
-              - label: "Heading"
-                name: "heading"
-                widget: "string"
-                required: false
-              - label: "Content"
-                name: "content"
-                widget: "text"
-                required: false
-              - label: "Buttons"
-                name: "buttons"
-                widget: "list"
-                required: false
+              - label: "Get in touch"
+                name: "get_in_touch"
+                widget: "object"
                 collapsed: true
+                required: false
                 fields:
-                  - {
-                      label: Link,
-                      name: link,
-                      widget: string,
-                      required: false,
-                      collapsed: true,
-                    }
-                  - {
-                      label: Text,
-                      name: text,
-                      widget: string,
-                      required: false,
-                      collapsed: true,
-                    }
-      # Opportunities Page
-      - label: "Opportunities"
-        name: "opportunities"
-        file: "_data/opportunities.yml"
-        editor:
-          preview: false
-        fields:
-          # Hero
-          - label: "Hero"
-            name: "hero"
-            collapsed: true
-            widget: "object"
-            fields:
-              - label: "Heading"
-                name: "heading"
-                widget: "string"
-                required: false
-              - label: "Content"
-                name: "content"
-                widget: "text"
-                required: false
-              - label: "Buttons"
-                name: "buttons"
-                widget: "list"
-                required: false
+                  - label: "Heading"
+                    name: "heading"
+                    widget: "text"
+                    required: false
+                  - label: "Content"
+                    name: "content"
+                    widget: "text"
+                    required: false
+              - label: "Website update"
+                name: "website_update"
+                widget: "object"
                 collapsed: true
+                required: false
                 fields:
-                  - {
-                      label: Link,
-                      name: link,
-                      widget: string,
-                      required: false,
-                      collapsed: true,
-                    }
-                  - {
-                      label: Text,
-                      name: text,
-                      widget: string,
-                      required: false,
-                      collapsed: true,
-                    }
-              - label: "Image"
-                name: "image"
-                widget: "image"
-                required: false
-          # Opportunities
-          - label: "Opportunities"
-            name: "opportunities"
-            collapsed: true
-            widget: "object"
-            fields:
-              - label: "Heading"
-                name: "heading"
-                widget: "string"
-                required: false
-              - label: "Content"
-                name: "content"
-                widget: "text"
-                required: false
-              - label: "Buttons"
-                name: "buttons"
-                widget: "list"
-                required: false
-                collapsed: true
-                fields:
-                  - {
-                      label: Link,
-                      name: link,
-                      widget: string,
-                      required: false,
-                      collapsed: true,
-                    }
-                  - {
-                      label: Text,
-                      name: text,
-                      widget: string,
-                      required: false,
-                      collapsed: true,
-                    }
+                  - label: "Heading"
+                    name: "heading"
+                    widget: "text"
+                    required: false
+                  - label: "Content"
+                    name: "content"
+                    widget: "text"
+                    required: false
       # Partnerships Page
       - label: "Partnerships"
         name: "partnerships"
@@ -1248,7 +1102,333 @@ collections:
                       required: false,
                     }
                   - { label: Link, name: link, widget: string, required: false }
-      # Research Page
+      # Team Page (Archive for Team)
+      - label: "Team"
+        name: "team"
+        file: "_data/team.yml"
+        editor:
+          preview: false
+        fields:
+          # Hero
+          - label: "Hero"
+            name: "hero"
+            collapsed: true
+            widget: "object"
+            fields:
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+                required: false
+              - label: "Content"
+                name: "content"
+                widget: "text"
+                required: false
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                required: false
+                collapsed: true
+                fields:
+                  - { label: Link, name: link, widget: string, collapsed: true }
+                  - { label: Text, name: text, widget: string, collapsed: true }
+              - label: "Image"
+                name: "image"
+                widget: "image"
+                required: false
+          # Team
+          - label: "Team"
+            name: "team"
+            collapsed: true
+            widget: "object"
+            fields:
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+                required: false
+              - label: "Content"
+                name: "content"
+                widget: "text"
+                required: false
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                required: false
+                collapsed: true
+                fields:
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+      # Opportunities Page (Archive for Opportunities Teams)
+      - label: "Opportunities"
+        name: "opportunities"
+        file: "_data/opportunities.yml"
+        editor:
+          preview: false
+        fields:
+          # Hero
+          - label: "Hero"
+            name: "hero"
+            collapsed: true
+            widget: "object"
+            fields:
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+                required: false
+              - label: "Content"
+                name: "content"
+                widget: "text"
+                required: false
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                required: false
+                collapsed: true
+                fields:
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+              - label: "Image"
+                name: "image"
+                widget: "image"
+                required: false
+          # Opportunities
+          - label: "Opportunities"
+            name: "opportunities"
+            collapsed: true
+            widget: "object"
+            fields:
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+                required: false
+              - label: "Content"
+                name: "content"
+                widget: "text"
+                required: false
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                required: false
+                collapsed: true
+                fields:
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+      # Blog Page (Archive)
+      - label: "Blog"
+        name: "blog"
+        file: "_data/blog.yml"
+        editor:
+          preview: false
+        fields:
+          # Hero
+          - label: "Hero"
+            name: "hero"
+            collapsed: true
+            widget: "object"
+            fields:
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+                required: false
+              - label: "Content"
+                name: "content"
+                widget: "text"
+                required: false
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                required: false
+                collapsed: true
+                fields:
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+              - label: "Image"
+                name: "image"
+                widget: "image"
+                required: false
+      # News Page (Archive)
+      - label: "News"
+        name: "news"
+        file: "_data/news.yml"
+        editor:
+          preview: false
+        fields:
+          # Hero
+          - label: "Hero"
+            name: "hero"
+            collapsed: true
+            widget: "object"
+            fields:
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+                required: false
+              - label: "Content"
+                name: "content"
+                widget: "text"
+                required: false
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                required: false
+                collapsed: true
+                fields:
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+              - label: "Image"
+                name: "image"
+                widget: "image"
+                required: false
+      # Events Page (Archive)
+      - label: "Events"
+        name: "events"
+        file: "_data/events.yml"
+        editor:
+          preview: false
+        fields:
+          # Hero
+          - label: "Hero"
+            name: "hero"
+            collapsed: true
+            widget: "object"
+            fields:
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+                required: false
+              - label: "Content"
+                name: "content"
+                widget: "text"
+                required: false
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                required: false
+                collapsed: true
+                fields:
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+              - label: "Image"
+                name: "image"
+                widget: "image"
+                required: false
+      # Projects Page (Archive)
+      - label: "Projects"
+        name: "projects"
+        file: "_data/projects.yml"
+        editor:
+          preview: false
+        fields:
+          # Hero
+          - label: "Hero"
+            name: "hero"
+            collapsed: true
+            widget: "object"
+            fields:
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+                required: false
+              - label: "Content"
+                name: "content"
+                widget: "text"
+                required: false
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                required: false
+                collapsed: true
+                fields:
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+              - label: "Image"
+                name: "image"
+                widget: "image"
+                required: false
+      # Research Page (Archive for Research and Researchers)
       - label: "Research"
         name: "research"
         file: "_data/research.yml"
@@ -1507,186 +1687,6 @@ collections:
                 name: "image_small"
                 widget: "image"
                 required: false
-      # Blog Page
-      - label: "Blog"
-        name: "blog"
-        file: "_data/blog.yml"
-        editor:
-          preview: false
-        fields:
-          # Hero
-          - label: "Hero"
-            name: "hero"
-            collapsed: true
-            widget: "object"
-            fields:
-              - label: "Heading"
-                name: "heading"
-                widget: "string"
-                required: false
-              - label: "Content"
-                name: "content"
-                widget: "text"
-                required: false
-              - label: "Buttons"
-                name: "buttons"
-                widget: "list"
-                required: false
-                collapsed: true
-                fields:
-                  - {
-                      label: Link,
-                      name: link,
-                      widget: string,
-                      required: false,
-                      collapsed: true,
-                    }
-                  - {
-                      label: Text,
-                      name: text,
-                      widget: string,
-                      required: false,
-                      collapsed: true,
-                    }
-              - label: "Image"
-                name: "image"
-                widget: "image"
-                required: false
-      # News Page
-      - label: "News"
-        name: "news"
-        file: "_data/news.yml"
-        editor:
-          preview: false
-        fields:
-          # Hero
-          - label: "Hero"
-            name: "hero"
-            collapsed: true
-            widget: "object"
-            fields:
-              - label: "Heading"
-                name: "heading"
-                widget: "string"
-                required: false
-              - label: "Content"
-                name: "content"
-                widget: "text"
-                required: false
-              - label: "Buttons"
-                name: "buttons"
-                widget: "list"
-                required: false
-                collapsed: true
-                fields:
-                  - {
-                      label: Link,
-                      name: link,
-                      widget: string,
-                      required: false,
-                      collapsed: true,
-                    }
-                  - {
-                      label: Text,
-                      name: text,
-                      widget: string,
-                      required: false,
-                      collapsed: true,
-                    }
-              - label: "Image"
-                name: "image"
-                widget: "image"
-                required: false
-      # Events Page
-      - label: "Events"
-        name: "events"
-        file: "_data/events.yml"
-        editor:
-          preview: false
-        fields:
-          # Hero
-          - label: "Hero"
-            name: "hero"
-            collapsed: true
-            widget: "object"
-            fields:
-              - label: "Heading"
-                name: "heading"
-                widget: "string"
-                required: false
-              - label: "Content"
-                name: "content"
-                widget: "text"
-                required: false
-              - label: "Buttons"
-                name: "buttons"
-                widget: "list"
-                required: false
-                collapsed: true
-                fields:
-                  - {
-                      label: Link,
-                      name: link,
-                      widget: string,
-                      required: false,
-                      collapsed: true,
-                    }
-                  - {
-                      label: Text,
-                      name: text,
-                      widget: string,
-                      required: false,
-                      collapsed: true,
-                    }
-              - label: "Image"
-                name: "image"
-                widget: "image"
-                required: false
-      # Projects Page
-      - label: "Projects"
-        name: "projects"
-        file: "_data/projects.yml"
-        editor:
-          preview: false
-        fields:
-          # Hero
-          - label: "Hero"
-            name: "hero"
-            collapsed: true
-            widget: "object"
-            fields:
-              - label: "Heading"
-                name: "heading"
-                widget: "string"
-                required: false
-              - label: "Content"
-                name: "content"
-                widget: "text"
-                required: false
-              - label: "Buttons"
-                name: "buttons"
-                widget: "list"
-                required: false
-                collapsed: true
-                fields:
-                  - {
-                      label: Link,
-                      name: link,
-                      widget: string,
-                      required: false,
-                      collapsed: true,
-                    }
-                  - {
-                      label: Text,
-                      name: text,
-                      widget: string,
-                      required: false,
-                      collapsed: true,
-                    }
-              - label: "Image"
-                name: "image"
-                widget: "image"
-                required: false
 
   # Blog Collection
   - label: "Blog"
@@ -1820,3 +1820,8 @@ collections:
       - label: "Body"
         name: "body"
         widget: "markdown"
+  # Team Collection (To be made - No Single)
+  # Research Collection (To be made)
+  # Researchers Collection (To be made - No single)
+  # Opportunities Teams Collection (To be made - Opportunities Teams single to just display Opportunities Jobs with corresponding category)
+  # Opportunities Jobs Collection (To be made)

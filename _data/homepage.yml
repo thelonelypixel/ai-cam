@@ -1,9 +1,8 @@
 hero:
-  title: Advancing scientific discovery with machine learning
-  content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fringilla
-    dapibus lectus vel pharetra. Integer condimentum malesuada condimentum.
-  link: null
   heading: AI@CAM Mission Heading Goes Here
+  content:
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fringilla
+    dapibus lectus vel pharetra. Integer condimentum malesuada condimentum.
   image: /assets/uploads/placeholder-1.jpg
   buttons:
     - link: /
@@ -34,13 +33,15 @@ media_text:
 slider:
   slider_items:
     - heading: What we do
-      content: AI@Cam is building an infrastructure for interdisciplinary innovation
+      content:
+        AI@Cam is building an infrastructure for interdisciplinary innovation
         that serves science and society through research, education, and
         innovation programmes that leverage world- leading research from across
         the University and connect this to real-world needs.
       link: /
       image: /assets/uploads/placeholder-1.jpg
-    - content: AI@Cam is building an infrastructure for interdisciplinary innovation
+    - content:
+        AI@Cam is building an infrastructure for interdisciplinary innovation
         that serves science and society through research, education, and
         innovation programmes that leverage world- leading research from across
         the University and connect this to real-world needs.

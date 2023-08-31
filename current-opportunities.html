@@ -3,15 +3,38 @@ layout: 'page'
 title: 'Current Opportunities'
 ---
 
+{% assign hero = site.data.opportunities.hero %}
 <section class="block block__hero block__hero--standard" id="hero">
   <div class="container">
     <div class="hero__content">
-      <h1>Current Opportunities</h1>
-      <p>AI@Cam’s mission is to drive a new wave of AI innovation that serves science, citizens, and society.</p>
+      {% if hero.heading != nil and hero.heading != '' %}
+        <h1>{{ site.data.homepage.hero.heading }}</h1>
+      {% endif %}
+
+      {% if hero.content != nil and hero.content != '' %}
+        {{ site.data.homepage.hero.content | markdownify }}
+      {% endif %}
+
+      {% if hero.buttons != nil and hero.buttons.size > 0 %}
+        <div class="button-box">
+          {% for item in hero.buttons %}
+            {% if item.link != nil and item.link != '' %}
+              <a class="button button--standard button--standard-anchor" href="{{ item.link }}">{{ item.text }}</a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
     </div>
+
+    {% if hero.image != nil and hero.image != '' %}
+      <div class="hero__image">
+        <img alt="" src="{{ hero.image }}"/>
+      </div>
+    {% endif %}
   </div>
 </section>
 
+<!-- Update into collection with singles -->
 <section class="block block--bg-pink block--no-padding-top block__opportunities">
   <div class="container">
     <div class="opportunities__team">
@@ -47,7 +70,7 @@ title: 'Current Opportunities'
               </g>
             </svg>
           </a>
-          
+
           <a class="team-listings__opportunity" href="#">
             Apply to join the next Introducing Data Science for Research course
             <svg height="57.5342466px" version="1.1" viewbox="0 0 60 57.5342466" width="60px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
@@ -65,7 +88,7 @@ title: 'Current Opportunities'
               </g>
             </svg>
           </a>
-          
+
           <a class="team-listings__opportunity" href="#">
             Join our team! Applications open for a Senior Machine Learning Engineer to join the Accelerate Programme
             <svg height="57.5342466px" version="1.1" viewbox="0 0 60 57.5342466" width="60px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
@@ -83,7 +106,7 @@ title: 'Current Opportunities'
               </g>
             </svg>
           </a>
-          
+
           <a class="team-listings__opportunity" href="#">
             Join our team! Applications open for a Research Assistant/Research Associate in AI Interfaces to join the Accelerate Programme.
             <svg height="57.5342466px" version="1.1" viewbox="0 0 60 57.5342466" width="60px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
@@ -138,7 +161,7 @@ title: 'Current Opportunities'
               </g>
             </svg>
           </a>
-    
+
           <a class="team-listings__opportunity" href="#">
             Apply to join the next Introducing Data Science for Research course
             <svg height="57.5342466px" version="1.1" viewbox="0 0 60 57.5342466" width="60px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
@@ -156,7 +179,7 @@ title: 'Current Opportunities'
               </g>
             </svg>
           </a>
-    
+
           <a class="team-listings__opportunity" href="#">
             Join our team! Applications open for a Senior Machine Learning Engineer to join the Accelerate Programme
             <svg height="57.5342466px" version="1.1" viewbox="0 0 60 57.5342466" width="60px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
@@ -174,7 +197,7 @@ title: 'Current Opportunities'
               </g>
             </svg>
           </a>
-    
+
           <a class="team-listings__opportunity" href="#">
             Join our team! Applications open for a Research Assistant/Research Associate in AI Interfaces to join the Accelerate Programme.
             <svg height="57.5342466px" version="1.1" viewbox="0 0 60 57.5342466" width="60px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
@@ -229,7 +252,7 @@ title: 'Current Opportunities'
               </g>
             </svg>
           </a>
-    
+
           <a class="team-listings__opportunity" href="#">
             Apply to join the next Introducing Data Science for Research course
             <svg height="57.5342466px" version="1.1" viewbox="0 0 60 57.5342466" width="60px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
@@ -247,7 +270,7 @@ title: 'Current Opportunities'
               </g>
             </svg>
           </a>
-    
+
           <a class="team-listings__opportunity" href="#">
             Join our team! Applications open for a Senior Machine Learning Engineer to join the Accelerate Programme
             <svg height="57.5342466px" version="1.1" viewbox="0 0 60 57.5342466" width="60px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
@@ -265,7 +288,7 @@ title: 'Current Opportunities'
               </g>
             </svg>
           </a>
-    
+
           <a class="team-listings__opportunity" href="#">
             Join our team! Applications open for a Research Assistant/Research Associate in AI Interfaces to join the Accelerate Programme.
             <svg height="57.5342466px" version="1.1" viewbox="0 0 60 57.5342466" width="60px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">

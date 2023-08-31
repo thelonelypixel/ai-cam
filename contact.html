@@ -3,23 +3,52 @@ layout: 'page'
 title: 'Contact'
 ---
 
+{% assign hero = site.data.contact.hero %}
 <section class="block block__hero block__hero--standard" id="hero">
   <div class="container">
     <div class="hero__content">
-      <h1>Contact</h1>
-      <p>AI@Cam’s mission is to drive a new wave of AI innovation that serves science, citizens, and society.</p>
+      {% if hero.heading != nil and hero.heading != '' %}
+        <h1>{{ site.data.homepage.hero.heading }}</h1>
+      {% endif %}
+
+      {% if hero.content != nil and hero.content != '' %}
+        {{ site.data.homepage.hero.content | markdownify }}
+      {% endif %}
+
+      {% if hero.buttons != nil and hero.buttons.size > 0 %}
+        <div class="button-box">
+          {% for item in hero.buttons %}
+            {% if item.link != nil and item.link != '' %}
+              <a class="button button--standard button--standard-anchor" href="{{ item.link }}">{{ item.text }}</a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
     </div>
+
+    {% if hero.image != nil and hero.image != '' %}
+      <div class="hero__image">
+        <img alt="" src="{{ hero.image }}"/>
+      </div>
+    {% endif %}
   </div>
 </section>
 
+{% assign contact = site.data.contact.contact %}
 <section class="block block--bg-pink block--no-padding-top block__contact">
   <div class="container">
     <div class="contact__forms">
-      <form class="contact__form">
-        <div class="contact__form-intro">
-          <h3>Get in touch</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam est purus, pretium vitae pharetra eu, fermentum quis est.</p>
-        </div>
+      <form class="contact__form" name="Contact" netlify>
+        {% if (contact.get_in_touch.heading != nil and contact.get_in_touch.heading != '') or (contact.get_in_touch.content != nil and contact.get_in_touch.content != '') %}
+          <div class="contact__form-intro">
+            {% if contact.get_in_touch.heading != nil and contact.get_in_touch.heading != '' %}
+              <h3>{{ contact.get_in_touch.heading }}</h3>
+            {% endif %}
+            {% if contact.get_in_touch.content != nil and contact.get_in_touch.content != '' %}
+              {{ contact.get_in_touch.content | markdownify }}
+            {% endif %}
+          </div>
+        {% endif %}
 
         <label for="name">Your name:</label>
         <input name="name" type="text">
@@ -33,11 +62,17 @@ title: 'Contact'
         <button class="button button--standard" type="submit">Submit Message</button>
       </form>
 
-      <form class="contact__form">
-        <div class="contact__form-intro">
-          <h3>Suggest a website update</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam est purus, pretium vitae pharetra eu, fermentum quis est.</p>
-        </div>
+      <form class="contact__form" name="Website Update Suggestions" netlify>
+        {% if (contact.website_update.heading != nil and contact.website_update.heading != '') or (contact.website_update.content != nil and contact.website_update.content != '') %}
+          <div class="contact__form-intro">
+            {% if contact.website_update.heading != nil and contact.website_update.heading != '' %}
+              <h3>{{ contact.website_update.heading }}</h3>
+            {% endif %}
+            {% if contact.website_update.content != nil and contact.website_update.content != '' %}
+              {{ contact.website_update.content | markdownify }}
+            {% endif %}
+          </div>
+        {% endif %}
 
         <label for="name">Your name:</label>
         <input name="name" type="text">

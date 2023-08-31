@@ -2,3 +2,10 @@ hero:
   content: AI@Cam’s mission is to drive a new wave of AI innovation that serves
     science, citizens, and society.
   heading: Contact
+contact:
+  get_in_touch:
+    heading: Get in touch
+    content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam est purus, pretium vitae pharetra eu, fermentum quis est.
+  website_update:
+    heading: Suggest a website update
+    content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam est purus, pretium vitae pharetra eu, fermentum quis est.

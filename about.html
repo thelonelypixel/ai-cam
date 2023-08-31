@@ -3,99 +3,182 @@ layout: 'page'
 title: 'About'
 ---
 
+{% assign hero = site.data.about.hero %}
 <section class="block block__hero block__hero--standard" id="hero">
   <div class="container">
     <div class="hero__content">
-      <h1>About us</h1>
-      <p>AI@Cam’s mission is to drive a new wave of AI innovation that serves science, citizens, and society.</p>
+      {% if hero.heading != nil and hero.heading != '' %}
+        <h1>{{ site.data.homepage.hero.heading }}</h1>
+      {% endif %}
+
+      {% if hero.content != nil and hero.content != '' %}
+        {{ site.data.homepage.hero.content | markdownify }}
+      {% endif %}
+
+      {% if hero.buttons != nil and hero.buttons.size > 0 %}
+        <div class="button-box">
+          {% for item in hero.buttons %}
+            {% if item.link != nil and item.link != '' %}
+              <a class="button button--standard button--standard-anchor" href="{{ item.link }}">{{ item.text }}</a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
     </div>
+
+    {% if hero.image != nil and hero.image != '' %}
+      <div class="hero__image">
+        <img alt="" src="{{ hero.image }}"/>
+      </div>
+    {% endif %}
   </div>
 </section>
 
+{% assign text_split = site.data.about.text_split %}
 <section class="block block__text block__text--split">
   <div class="container">
-    <div class="text__heading">
-      <h2>The University of Cambridge’s vision is of a dynamic research and innovation community pursuing high-quality interdisciplinary collaborations that deliver benefits for science and society through partnerships that take AI from the lab to areas of need.</h2>
-    </div>
-    <div class="text__content">
-      <p>AI@Cam will build this infrastructure through research, education, and innovation programmes that leverage the world-leading research already taking place across the University and connecting this to real-world needs. Check out our AI@Cam programmes to find out more about our work, or explore our website to find out more about research, teaching, and collaborations at the University of Cambridge. AI@Cam is launching over Summer 2023, and this site will be updated as we launch.</p>
-    </div>
+    {% if text_split.heading != nil and text_split.heading != '' %}
+      <div class="text__heading">
+        <h2>{{ text_split.heading }}</h2>
+      </div>
+    {% endif %}
+
+    {% if text_split.content != nil and text_split.content != '' %}
+      <div class="text__content">
+        {{ text_split.content | markdownify }}
+      </div>
+    {% endif %}
   </div>
 </section>
 
+{% assign slider = site.data.about.slider %}
 <section class="block block__slider">
   <div class="container">
-    <div class="slider__main">
-      <div class="slider__slide">
-        <div class="slider__slide-image">
-          <img alt="" src="../assets/images/placeholder-1.jpg">
-        </div>
-        <div class="slider__slide-heading">
-          <h3>Programme 1</h3>
-          <a href="#">
-            <svg height="57.5342466px" version="1.1" viewbox="0 0 60 57.5342466" width="60px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
-              <g fill-rule="evenodd" fill="none" id="Page-1" stroke-width="1" stroke="none">
-                <g fill-rule="nonzero" id="Home-Concept-1b" transform="translate(-885, -3304)">
-                  <g id="Group-21" transform="translate(-33, 2625)">
-                    <g id="Group-20" transform="translate(288, 252)">
-                      <g id="squircle-arrow" transform="translate(630, 427)">
-                        <path d="M58.9920181,18.3392769 C62.5066565,29.1670278 56.5110969,43.0647159 45.9671819,50.7810442 C35.4232669,58.4973724 20.3309963,59.9908553 10.8621471,53.2286967 C1.39329794,46.4250524 -2.4521299,31.3657665 1.60004137,19.7912741 C5.65221264,8.2167817 17.601983,0.168568329 30.0479376,0.00262578552 C42.4938922,-0.163316758 55.4773798,7.55301152 58.9920181,18.3392769 Z" fill="#87E3C7" id="Path"></path>
-                        <path d="M42.6163882,28.108112 L33.9491435,19.3856491 C33.7017309,19.1366659 33.3719776,19 33.0203708,19 C32.6683737,19 32.3388155,19.1368622 32.0914029,19.3856491 L31.3044827,20.1777613 C31.0572652,20.4263517 30.9210712,20.7583948 30.9210712,21.1124301 C30.9210712,21.466269 31.0572652,21.8095045 31.3044827,22.058095 L36.3608307,27.1577345 L20.2965745,27.1577345 C19.5722879,27.1577345 19,27.7283537 19,28.4574346 L19,29.57727 C19,30.3063509 19.5722879,30.9345034 20.2965745,30.9345034 L36.4181961,30.9345034 L31.3046778,36.0626149 C31.0574603,36.3115981 30.9212664,36.6346086 30.9212664,36.9886439 C30.9212664,37.3422865 31.0574603,37.6700096 31.3046778,37.9187965 L32.091598,38.708356 C32.3390106,38.9573392 32.6685688,39.0930233 33.0205659,39.0930233 C33.3721727,39.0930233 33.7019261,38.955572 33.9493386,38.7065888 L42.6165834,29.9843222 C42.8645813,29.7345535 43.0009704,29.401136 43,29.046708 C43.0007753,28.6911018 42.8645813,28.3574879 42.6163882,28.108112 Z" fill="#05385E" id="Path"></path>
+    {% if (slider.heading != nil and slider.heading != '') or (slider.content != nil and slider.content != '') or (slider.buttons != nil and slider.buttons.size > 0) %}
+      <div class="latest-overview__intro intro">
+        {% if slider.heading != nil and slider.heading != '' %}
+          <h2>{{ slider.heading }}</h2>
+        {% endif %}
+
+        {% if slider.content != nil and slider.content != '' %}
+          {{ slider.content | markdownify }}
+        {% endif %}
+
+        {% if slider.buttons != nil and slider.buttons.size > 0 %}
+          <div class="button-box">
+            {% for item in slider.buttons %}
+              {% if item.link != nil and item.link != '' %}
+                <a class="button button--standard" href="{{ item.link }}">{{ item.text }}</a>
+              {% endif %}
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    {% if slider.slider_items != nil and slider.slider_items.size > 0 %}
+      <div class="slider__main">
+        {% for item in slider.slider_items %}
+          <div class="slider__slide">
+            {% if item.image != nil and item.image != '' %}
+              <div class="slider__slide-image">
+                <img src="{{ item.image }}">
+              </div>
+            {% endif %}
+            <div class="slider__slide-heading">
+              {% if item.heading != nil and item.heading != '' %}
+                <h3>{{ item.heading }}</h3>
+              {% endif %}
+              {% if item.link != nil and item.link != '' %}
+                <a href="{{ item.link }}">
+                  <svg height="57.5342466px" version="1.1" viewbox="0 0 60 57.5342466" width="60px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                    <g fill-rule="evenodd" fill="none" id="Page-1" stroke-width="1" stroke="none">
+                      <g fill-rule="nonzero" id="Home-Concept-1b" transform="translate(-885, -3304)">
+                        <g id="Group-21" transform="translate(-33, 2625)">
+                          <g id="Group-20" transform="translate(288, 252)">
+                            <g id="squircle-arrow" transform="translate(630, 427)">
+                              <path d="M58.9920181,18.3392769 C62.5066565,29.1670278 56.5110969,43.0647159 45.9671819,50.7810442 C35.4232669,58.4973724 20.3309963,59.9908553 10.8621471,53.2286967 C1.39329794,46.4250524 -2.4521299,31.3657665 1.60004137,19.7912741 C5.65221264,8.2167817 17.601983,0.168568329 30.0479376,0.00262578552 C42.4938922,-0.163316758 55.4773798,7.55301152 58.9920181,18.3392769 Z" fill="#87E3C7" id="Path"></path>
+                              <path d="M42.6163882,28.108112 L33.9491435,19.3856491 C33.7017309,19.1366659 33.3719776,19 33.0203708,19 C32.6683737,19 32.3388155,19.1368622 32.0914029,19.3856491 L31.3044827,20.1777613 C31.0572652,20.4263517 30.9210712,20.7583948 30.9210712,21.1124301 C30.9210712,21.466269 31.0572652,21.8095045 31.3044827,22.058095 L36.3608307,27.1577345 L20.2965745,27.1577345 C19.5722879,27.1577345 19,27.7283537 19,28.4574346 L19,29.57727 C19,30.3063509 19.5722879,30.9345034 20.2965745,30.9345034 L36.4181961,30.9345034 L31.3046778,36.0626149 C31.0574603,36.3115981 30.9212664,36.6346086 30.9212664,36.9886439 C30.9212664,37.3422865 31.0574603,37.6700096 31.3046778,37.9187965 L32.091598,38.708356 C32.3390106,38.9573392 32.6685688,39.0930233 33.0205659,39.0930233 C33.3721727,39.0930233 33.7019261,38.955572 33.9493386,38.7065888 L42.6165834,29.9843222 C42.8645813,29.7345535 43.0009704,29.401136 43,29.046708 C43.0007753,28.6911018 42.8645813,28.3574879 42.6163882,28.108112 Z" fill="#05385E" id="Path"></path>
+                            </g>
+                          </g>
+                        </g>
                       </g>
                     </g>
-                  </g>
-                </g>
-              </g>
-            </svg>
-          </a>
-        </div>
-        <div class="slider__slide-content">
-          <p>AI@Cam is building an infrastructure for interdisciplinary innovation that serves science and society through research, education, and innovation programmes that leverage world- leading research from across the University and connect this to real-world needs.</p>
-        </div>
+                  </svg>
+                </a>
+              {% endif %}
+            </div>
+            {% if item.content != nil and item.content != '' %}
+              <div class="slider__slide-content">
+                {{ item.content | markdownify }}
+              </div>
+            {% endif %}
+          </div>
+        {% endfor %}
       </div>
-
-      <div class="slider__slide">
-        <div class="slider__slide-image">
-          <img alt="" src="../assets/images/placeholder-2.jpg">
-        </div>
-        <div class="slider__slide-heading">
-          <h3>Programme 2</h3>
-          <a href="#">
-            <svg height="57.5342466px" version="1.1" viewbox="0 0 60 57.5342466" width="60px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
-              <g fill-rule="evenodd" fill="none" id="Page-1" stroke-width="1" stroke="none">
-                <g fill-rule="nonzero" id="Home-Concept-1b" transform="translate(-885, -3304)">
-                  <g id="Group-21" transform="translate(-33, 2625)">
-                    <g id="Group-20" transform="translate(288, 252)">
-                      <g id="squircle-arrow" transform="translate(630, 427)">
-                        <path d="M58.9920181,18.3392769 C62.5066565,29.1670278 56.5110969,43.0647159 45.9671819,50.7810442 C35.4232669,58.4973724 20.3309963,59.9908553 10.8621471,53.2286967 C1.39329794,46.4250524 -2.4521299,31.3657665 1.60004137,19.7912741 C5.65221264,8.2167817 17.601983,0.168568329 30.0479376,0.00262578552 C42.4938922,-0.163316758 55.4773798,7.55301152 58.9920181,18.3392769 Z" fill="#87E3C7" id="Path"></path>
-                        <path d="M42.6163882,28.108112 L33.9491435,19.3856491 C33.7017309,19.1366659 33.3719776,19 33.0203708,19 C32.6683737,19 32.3388155,19.1368622 32.0914029,19.3856491 L31.3044827,20.1777613 C31.0572652,20.4263517 30.9210712,20.7583948 30.9210712,21.1124301 C30.9210712,21.466269 31.0572652,21.8095045 31.3044827,22.058095 L36.3608307,27.1577345 L20.2965745,27.1577345 C19.5722879,27.1577345 19,27.7283537 19,28.4574346 L19,29.57727 C19,30.3063509 19.5722879,30.9345034 20.2965745,30.9345034 L36.4181961,30.9345034 L31.3046778,36.0626149 C31.0574603,36.3115981 30.9212664,36.6346086 30.9212664,36.9886439 C30.9212664,37.3422865 31.0574603,37.6700096 31.3046778,37.9187965 L32.091598,38.708356 C32.3390106,38.9573392 32.6685688,39.0930233 33.0205659,39.0930233 C33.3721727,39.0930233 33.7019261,38.955572 33.9493386,38.7065888 L42.6165834,29.9843222 C42.8645813,29.7345535 43.0009704,29.401136 43,29.046708 C43.0007753,28.6911018 42.8645813,28.3574879 42.6163882,28.108112 Z" fill="#05385E" id="Path"></path>
-                      </g>
-                    </g>
-                  </g>
-                </g>
-              </g>
-            </svg>
-          </a>
-        </div>
-        <div class="slider__slide-content">
-          <p>AI@Cam is building an infrastructure for interdisciplinary innovation that serves science and society through research, education, and innovation programmes that leverage world- leading research from across the University and connect this to real-world needs.</p>
-        </div>
-      </div>
-
-    </div>
+    {% endif %}
   </div>
 </section>
 
-<section class="block block--bg-pink block__media-text" id="find-out-more">
+{% assign media_text = site.data.about.media_text %}
+<section class="block block--bg-pink block__media-text">
   <div class="container">
-    <div class="media-text__media media-text__media--two">
-      <img alt="" class="media-text__media-image" src="../assets/images/lander-media-2.png"/>
-      <img alt="" class="media-text__media-image--floating" src="../assets/images/lander-media-1.png"/>
-    </div>
+    {% if (media_text.image != nil and media_text.image != '') or (media_text.image_small != nil and media_text.image_small != '') %}
+      <div class="media-text__media {% if media_text.image_small != nil and media_text.image_small != '' %} media-text__media--two {% endif %}">
+        {% if media_text.image != nil and media_text.image != '' %}
+          <img class="media-text__media-image" src="{{ media_text.image }}"/>
+        {% endif %}
+
+        {% if media_text.image_small != nil and media_text.image_small != '' %}
+          <img class="media-text__media-image--floating" src="{{ media_text.image_small }}"/>
+        {% endif %}
+      </div>
+    {% endif %}
 
     <div class="media-text__content">
-      <h2>We need a new infrastructure for interdisciplinary AI innovation.</h2>
-      <p>Amidst fevered conversations about progress in AI, the foundational work to connect technology development to public value is more important than ever. Progress in AI research and innovation can provide tools to help tackle the complex challenges society faces – in economic growth, health and social care, environment and wellbeing, and more. To deliver on this promise, AI research and development needs to connect to public interests, concerns, and areas of need.</p>
+      {% if media_text.heading != nil and media_text.heading != '' %}
+        <h2>{{ media_text.heading }}</h2>
+      {% endif %}
+      {% if media_text.content != nil and media_text.content != '' %}
+        {{ media_text.content | markdownify }}
+      {% endif %}
+      <!-- Quick Links -->
+      {% if media_text.quick_links != nil and media_text.quick_links.size > 0 %}
+        <ul class="media-text__content-quicklinks">
+          {% for item in media_text.quick_links %}
+            {% if item.link != nil and item.link != '' %}
+              <li>
+                <a href="{{ item.link }}">
+                  {{ item.text }}
+                  <svg height="24px" version="1.1" viewbox="0 0 20.0930233 24" width="20.0930233px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                    <g fill-rule="evenodd" fill="none" id="Page-1" stroke-width="1" stroke="none">
+                      <g fill-rule="nonzero" fill="#000000" id="Landing-Page" transform="translate(-422.9535, -676.0465)">
+                        <g id="Group" transform="translate(0.4741, 80)">
+                          <g id="CTA" transform="translate(254.5259, 577)">
+                            <g id="right-arrow" transform="translate(178, 31.0465) rotate(-270) translate(-178, -31.0465)translate(166, 21)">
+                              <path d="M23.6163882,9.10811199 L14.9491435,0.385649066 C14.7017309,0.136665861 14.3719776,0 14.0203708,0 C13.6683737,0 13.3388155,0.13686222 13.0914029,0.385649066 L12.3044827,1.17776125 C12.0572652,1.42635174 11.9210712,1.7583948 11.9210712,2.11243007 C11.9210712,2.46626898 12.0572652,2.8095045 12.3044827,3.05809499 L17.3608307,8.15773445 L1.29657454,8.15773445 C0.572287906,8.15773445 0,8.72835369 0,9.45743464 L0,10.57727 C0,11.3063509 0.572287906,11.9345034 1.29657454,11.9345034 L17.4181961,11.9345034 L12.3046778,17.0626149 C12.0574603,17.3115981 11.9212664,17.6346086 11.9212664,17.9886439 C11.9212664,18.3422865 12.0574603,18.6700096 12.3046778,18.9187965 L13.091598,19.708356 C13.3390106,19.9573392 13.6685688,20.0930233 14.0205659,20.0930233 C14.3721727,20.0930233 14.7019261,19.955572 14.9493386,19.7065888 L23.6165834,10.9843222 C23.8645813,10.7345535 24.0009704,10.401136 24,10.046708 C24.0007753,9.69110185 23.8645813,9.35748791 23.6163882,9.10811199 Z" id="Path"></path>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      {% endif %}
+
+      {% if media_text.buttons != nil and media_text.buttons.size > 0 %}
+        <div class="button-box">
+          {% for item in media_text.buttons %}
+            {% if item.link != nil and item.link != '' %}
+              <a class="button button--standard" href="{{ item.link }}">{{ item.text }}</a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
     </div>
   </div>
 </section>
