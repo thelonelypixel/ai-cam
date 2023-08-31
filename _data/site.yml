@@ -1,8 +1,8 @@
-site_logo: null
+site_logo: /assets/uploads/logo.png
 contact_details:
-  tel: null
-  fax: null
-  email: aaron@thelonelypixel.co.uk
+  tel: Temp
+  fax: Temp
+  email: Temp
   address: |-
     Address Line 1 Here
     Address Line 2 Here
