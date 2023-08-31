@@ -22,24 +22,9 @@ collections:
           - label: "Site Logo"
             name: "site_logo"
             widget: "image"
-          # Contact Details
-          - label: "Contact Details"
-            name: "contact_details"
-            collapsed: true
-            widget: "object"
-            fields:
-              - label: "Address"
-                name: "address"
-                widget: "markdown"
-              - label: "Tel"
-                name: "tel"
-                widget: "string"
-              - label: "Fax"
-                name: "fax"
-                widget: "string"
-              - label: "Email"
-                name: "email"
-                widget: "string"
+          - label: "Site Logo (White)"
+            name: "site_logo_white"
+            widget: "image"
           # Social Details
           - label: "Social Details"
             name: "social_details"
