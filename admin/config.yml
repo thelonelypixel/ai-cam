@@ -25,6 +25,9 @@ collections:
           - label: "Site Logo (White)"
             name: "site_logo_white"
             widget: "image"
+          - label: "Footer Description"
+            name: "footer_description"
+            widget: "text"
           # University of Cambridge Details
           - label: "University of Cambridge Details"
             name: "uoc_details"

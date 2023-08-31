@@ -6,18 +6,16 @@
           <a href="/">
             <img alt="Logo" src="{{ site.data.site.site_logo }}"/>
           </a>
+          <!-- Update -->
           <p>Curabitur risus urna, ornare sed pretium vel, mattis et metus. Sed scelerisque elit nec euismod ultricies. Sed nisl leo, laoreet a mauris vitae, ultrices varius augue.</p>
         </div>
         <div class="footer__ai-nav column-m-12-nest column-t-4">
           <nav>
-            <a href="/about/">About</a>
-            <a href="/research/">Research</a>
-            <a href="#">Connect</a>
-          </nav>
-          <nav>
-            <a href="#">Study</a>
-            <a href="#">Blog</a>
-            <a href="#">Community</a>
+            {% for item in site.data.nav.footer_nav %}
+              {% if item.label != nil and item.label != '' %}
+                <a href="{{ item.link }}">{{ item.label }}</a>
+              {% endif %}
+            {% endfor %}
           </nav>
         </div>
       </div>
@@ -96,25 +94,26 @@
     <div class="container">
       <div class="row row--justified row--middle">
         <div class="footer__logos">
-          <a href="https://www.cam.ac.uk/" target="_blank">
-            <img alt="Logo" src="../assets/images/cambridge-university.png"/>
+          <a href="{{ site.data.site.uoc_details.link }}" target="_blank">
+            <img alt="Logo" src="{{ site.data.site.uoc_details.logo }}"/>
           </a>
         </div>
       </div>
     </div>
   </div>
+  <!-- Update -->
   <div class="footer__lower">
     <div class="container">
       <div class="row row--justified">
         <div class="footer__navigation column-m-12-nest column-t-6 column-d-3">
           <ul>
-            <li><a href="https://www.cam.ac.uk/about-the-university/contact-the-university?ucam-ref=global-footer/" rel="noreferrer noopener" target="_blank">Contact the University</a></li>
-            <li><a href="https://www.cam.ac.uk/about-this-site/accessibility/" rel="noreferrer noopener" target="_blank">Accessibility statement</a></li>
-            <li><a href="https://www.information-compliance.admin.cam.ac.uk/foi?ucam-ref=global-footer/" rel="noreferrer noopener" target="_blank">Freedom of information</a></li>
-            <li><a href="https://www.cam.ac.uk/about-this-site/privacy-policy?ucam-ref=global-footer/" rel="noreferrer noopener" target="_blank">Privacy policy and cookies</a></li>
-            <li><a href="https://www.governanceandcompliance.admin.cam.ac.uk/governance-and-strategy/anti-slavery-and-anti-trafficking?ucam-ref=global-footer/" rel="noreferrer noopener" target="_blank">Statement on Modern Slavery</a></li>
-            <li><a href="https://www.cam.ac.uk/about-this-site/terms-and-conditions?ucam-ref=global-footer/" rel="noreferrer noopener" target="_blank">Terms and conditions</a></li>
-            <li><a href="https://www.cam.ac.uk/university-a-z?ucam-ref=global-footer/" rel="noreferrer noopener" target="_blank">University A-Z</a></li>
+            {% for item in site.data.nav.uoc_footer_nav.information %}
+              {% if item.label != nil and item.label != '' %}
+                <li>
+                  <a href="{{ item.link }}" rel="noreferrer noopener" target="_blank">{{ item.label }}</a>
+                </li>
+              {% endif %}
+            {% endfor %}
           </ul>
         </div>
 
@@ -123,11 +122,13 @@
             <a href="https://www.cam.ac.uk/study-at-cambridge?ucam-ref=global-footer/" rel="noreferrer noopener" target="_blank">Study at Cambridge</a>
           </h2>
           <ul>
-            <li><a href="https://www.undergraduate.study.cam.ac.uk/?ucam-ref=global-footer/" rel="noreferrer noopener" target="_blank">Undergraduate</a></li>
-            <li><a href="https://www.postgraduate.study.cam.ac.uk/?ucam-ref=global-footer/" rel="noreferrer noopener" target="_blank">Postgraduate</a></li>
-            <li><a href="https://www.ice.cam.ac.uk/?ucam-ref=global-footer/" rel="noreferrer noopener" target="_blank">Continuing education</a></li>
-            <li><a href="https://www.cam.ac.uk/study-at-cambridge/executive-and-professional-education/?ucam-ref=global-footer/" rel="noreferrer noopener" target="_blank">Executive and professional education</a></li>
-            <li><a href="https://www.educ.cam.ac.uk/?ucam-ref=global-footer/" rel="noreferrer noopener" target="_blank">Courses in education</a></li>
+            {% for item in site.data.nav.uoc_footer_nav.study_at_cambridge %}
+              {% if item.label != nil and item.label != '' %}
+                <li>
+                  <a href="{{ item.link }}" rel="noreferrer noopener" target="_blank">{{ item.label }}</a>
+                </li>
+              {% endif %}
+            {% endfor %}
           </ul>
         </div>
 
@@ -136,11 +137,13 @@
             <a href="https://www.cam.ac.uk/about-the-university?ucam-ref=global-footer" rel="noreferrer noopener" target="_blank">About the University</a>
           </h2>
           <ul>
-            <li><a href="https://www.cam.ac.uk/about-the-university/how-the-university-and-colleges-work?ucam-ref=global-footer/" rel="noreferrer noopener" target="_blank">How the University and Colleges work</a></li>
-            <li><a href="https://www.philanthropy.cam.ac.uk/give-now?ucam-ref=global-footer/" rel="noreferrer noopener" target="_blank">Give to Cambridge</a></li>
-            <li><a href="https://www.cam.ac.uk/jobs/" rel="noreferrer noopener" target="_blank">Jobs</a></li>
-            <li><a href="https://map.cam.ac.uk/?ucam-ref=global-footer/" rel="noreferrer noopener" target="_blank">Maps</a></li>
-            <li><a href="https://www.cam.ac.uk/about-the-university/visiting-the-university?ucam-ref=global-footer/" rel="noreferrer noopener" target="_blank">Visiting the University</a></li>
+            {% for item in site.data.nav.uoc_footer_nav.about_the_university %}
+              {% if item.label != nil and item.label != '' %}
+                <li>
+                  <a href="{{ item.link }}" rel="noreferrer noopener" target="_blank">{{ item.label }}</a>
+                </li>
+              {% endif %}
+            {% endfor %}
           </ul>
         </div>
 
@@ -149,10 +152,13 @@
             <a href="https://www.cam.ac.uk/research?ucam-ref=global-footer" rel="noreferrer noopener" target="_blank">Research at Cambridge</a>
           </h2>
           <ul>
-            <li><a href="https://www.cam.ac.uk/research/news?ucam-ref=global-footer/" rel="noreferrer noopener" target="_blank">Research news</a></li>
-            <li><a href="https://www.cam.ac.uk/research/research-at-cambridge?ucam-ref=global-footer/" rel="noreferrer noopener" target="_blank">About research at Cambridge</a></li>
-            <li><a href="https://www.cam.ac.uk/public-engagement?ucam-ref=global-footer/" rel="noreferrer noopener" target="_blank">Public engagement</a></li>
-            <li><a href="https://www.cam.ac.uk/research/spotlights-on?ucam-ref=global-footer/" rel="noreferrer noopener" target="_blank">Spotlight on...</a></li>
+            {% for item in site.data.nav.uoc_footer_nav.research_at_cambridge %}
+              {% if item.label != nil and item.label != '' %}
+                <li>
+                  <a href="{{ item.link }}" rel="noreferrer noopener" target="_blank">{{ item.label }}</a>
+                </li>
+              {% endif %}
+            {% endfor %}
           </ul>
         </div>
       </div>

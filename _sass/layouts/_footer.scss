@@ -84,16 +84,9 @@ footer[role="contentinfo"] {
       }
 
       nav {
-        margin-right: 5rem;
-        display: flex;
-        flex-direction: column;
-
-        @include bp(desktop) {
-          margin-right: 10rem;
-        }
-
-        &:last-of-type {
-          margin-right: 0;
+        @include bp(tablet) {
+          column-count: 2;
+          column-gap: 100px;
         }
 
         a {
@@ -126,7 +119,11 @@ footer[role="contentinfo"] {
 
     &-credits {
       display: flex;
-      justify-content: flex-end;
+
+      @include bp(tablet) {
+        justify-content: flex-end;
+      }
+
       a.credits {
         margin: 0;
         position: relative;
