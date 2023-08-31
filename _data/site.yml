@@ -1,5 +1,8 @@
 site_logo: /assets/uploads/logo.png
 site_logo_white: /assets/uploads/logo-white.png
+footer_description: Curabitur risus urna, ornare sed pretium vel, mattis et
+  metus. Sed scelerisque elit nec euismod ultricies. Sed nisl leo, laoreet a
+  mauris vitae, ultrices varius augue.
 uoc_details:
   logo: /assets/uploads/cambridge-university.png
   link: https://www.cam.ac.uk/
