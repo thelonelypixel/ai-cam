@@ -76,19 +76,6 @@ collections:
               - label: "Link"
                 name: "link"
                 widget: "string"
-              - label: "Submenu Item"
-                name: "submenu_item"
-                collapsed: true
-                minimize_collapsed: true
-                widget: "list"
-                required: false
-                fields:
-                  - label: "Label"
-                    name: "label"
-                    widget: "string"
-                  - label: "Link"
-                    name: "link"
-                    widget: "string"
           # Footer Nav
           - label: "Footer Nav"
             name: "footer_nav"
@@ -103,19 +90,6 @@ collections:
               - label: "Link"
                 name: "link"
                 widget: "string"
-              - label: "Submenu Item"
-                name: "submenu_item"
-                collapsed: true
-                minimize_collapsed: true
-                widget: "list"
-                required: false
-                fields:
-                  - label: "Label"
-                    name: "label"
-                    widget: "string"
-                  - label: "Link"
-                    name: "link"
-                    widget: "string"
           # Top Nav
           - label: "Top Bar"
             name: "top_bar"
