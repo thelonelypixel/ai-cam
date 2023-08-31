@@ -1,0 +1,34 @@
+main_nav:
+  - label: About
+    link: /about/
+  - label: News
+    link: /news/
+  - label: Incentives
+    link: /incentives/
+  - label: AI at Cambridge
+    link: /ai-at-cambridge/
+  - label: Blog
+    link: /blog/
+footer_nav:
+  - label: About
+    link: /about/
+  - label: Research
+    link: /research/
+  - label: Connect
+    link: /connect/
+  - label: Study
+    link: /study/
+  - label: Blog
+    link: /blog/
+  - label: Community
+    link: /community/
+top_bar:
+  top_bar_nav:
+    - label: Study at Cambridge
+      link: https://www.cam.ac.uk/about-the-university#study-at-cambridge/
+    - label: About the University
+      link: https://www.cam.ac.uk/about-the-university#about-the-university/
+    - label: Research at Cambridge
+      link: https://www.cam.ac.uk/research/
+  image: /assets/uploads/cambridge-university.png
+  link: https://www.cam.ac.uk/
