@@ -25,6 +25,18 @@ collections:
           - label: "Site Logo (White)"
             name: "site_logo_white"
             widget: "image"
+          # University of Cambridge Details
+          - label: "University of Cambridge Details"
+            name: "uoc_details"
+            collapsed: true
+            widget: "object"
+            fields:
+              - label: "Logo"
+                name: "logo"
+                widget: "image"
+              - label: "Link"
+                name: "link"
+                widget: "string"
           # Social Details
           - label: "Social Details"
             name: "social_details"
@@ -47,8 +59,22 @@ collections:
         editor:
           preview: false
         fields:
+          # Top Bar Nav
+          - label: "Top Bar Navigation"
+            name: "top_bar"
+            collapsed: true
+            minimize_collapsed: true
+            widget: "list"
+            required: false
+            fields:
+              - label: "Label"
+                name: "label"
+                widget: "string"
+              - label: "Link"
+                name: "link"
+                widget: "string"
           # Main Nav
-          - label: "Main Nav"
+          - label: "Main Navigation"
             name: "main_nav"
             collapsed: true
             minimize_collapsed: true
@@ -62,7 +88,7 @@ collections:
                 name: "link"
                 widget: "string"
           # Footer Nav
-          - label: "Footer Nav"
+          - label: "Footer Navigation"
             name: "footer_nav"
             collapsed: true
             minimize_collapsed: true
@@ -75,20 +101,53 @@ collections:
               - label: "Link"
                 name: "link"
                 widget: "string"
-          # Top Nav
-          - label: "Top Bar"
-            name: "top_bar"
+          # University of Cambridge Footer Nav
+          - label: "University of Cambridge Footer Nav"
+            name: "uoc_footer_nav"
             collapsed: true
             widget: "object"
             fields:
-              - label: "Image"
-                name: "image"
-                widget: "image"
-              - label: "Link"
-                name: "link"
-                widget: "string"
-              - label: "Top Bar Nav"
-                name: "top_bar_nav"
+              - label: "Information"
+                name: "information"
+                collapsed: true
+                minimize_collapsed: true
+                widget: "list"
+                required: false
+                fields:
+                  - label: "Label"
+                    name: "label"
+                    widget: "string"
+                  - label: "Link"
+                    name: "link"
+                    widget: "string"
+              - label: "Study at Cambridge"
+                name: "study_at_cambridge"
+                collapsed: true
+                minimize_collapsed: true
+                widget: "list"
+                required: false
+                fields:
+                  - label: "Label"
+                    name: "label"
+                    widget: "string"
+                  - label: "Link"
+                    name: "link"
+                    widget: "string"
+              - label: "About the University"
+                name: "about_the_university"
+                collapsed: true
+                minimize_collapsed: true
+                widget: "list"
+                required: false
+                fields:
+                  - label: "Label"
+                    name: "label"
+                    widget: "string"
+                  - label: "Link"
+                    name: "link"
+                    widget: "string"
+              - label: "Research at Cambridge"
+                name: "research_at_cambridge"
                 collapsed: true
                 minimize_collapsed: true
                 widget: "list"
