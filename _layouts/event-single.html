@@ -24,7 +24,7 @@
             {% if page.date != nil %}
               <p>{{ page.date | date: '%d %B %Y' }}</p>
             {% endif %}
-            <a href="{{site.url}}/blog/" class="button button--standard">Back to blog</a>
+            <a href="{{site.url}}/events/" class="button button--standard">Back to events</a>
           </div>
         </div>
       </section>
@@ -77,7 +77,7 @@
           </div>
 
           <div class="posts__grid">
-            {% assign blog_entries = site.posts %}
+            {% assign events_entries = site.events %}
 
             {% assign count_check = false %}
             {% for item in site.posts limit:4 %}
@@ -87,7 +87,7 @@
             {% endfor %}
 
             {% if count_check == false %}
-              {% for post in blog_entries limit:4 %}
+              {% for post in events_entries limit:4 %}
                 <a class="posts__item" href="{{ post.url }}">
                   <div class="posts__item-thumbnail">
                     {% if post.featured_image != nil %}
@@ -104,7 +104,7 @@
                 </a>
               {% endfor %}
             {% else %}
-              {% for post in blog_entries limit:5 %}
+              {% for post in events_entries limit:5 %}
                 {% if post.url != page.url %}
                   <a class="posts__item" href="{{ post.url }}">
                     <div class="posts__item-thumbnail">
