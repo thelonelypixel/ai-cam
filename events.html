@@ -15,131 +15,23 @@ title: 'Events'
 <section class="block block--bg-pink block--no-padding-top block__posts">
   <div class="container">
     <div class="posts__grid">
-      <a class="posts__item" href="#">
-        <div class="posts__item-thumbnail">
-          <img alt="" src="../assets/images/placeholder-1.jpg">
-        </div>
-        <div class="posts__item-content">
-          <span class="category">Category Name</span>
-          <h3>Latest research heading goes in here and takes up about this much space.</h3>
-
-          <span class="button button--simple">
-            Read more
-          </span>
-        </div>
-      </a>
-
-      <a class="posts__item" href="#">
-        <div class="posts__item-thumbnail">
-          <img alt="" src="../assets/images/placeholder-1.jpg">
-        </div>
-        <div class="posts__item-content">
-          <span class="category">Category Name</span>
-          <h3>Latest research heading goes in here and takes up about this much space.</h3>
-
-          <span class="button button--simple">
-            Read more
-          </span>
-        </div>
-      </a>
-
-      <a class="posts__item" href="#">
-        <div class="posts__item-thumbnail">
-          <img alt="" src="../assets/images/placeholder-1.jpg">
-        </div>
-        <div class="posts__item-content">
-          <span class="category">Category Name</span>
-          <h3>Latest research heading goes in here and takes up about this much space.</h3>
-
-          <span class="button button--simple">
-            Read more
-          </span>
-        </div>
-      </a>
-
-      <a class="posts__item" href="#">
-        <div class="posts__item-thumbnail">
-          <img alt="" src="../assets/images/placeholder-1.jpg">
-        </div>
-        <div class="posts__item-content">
-          <span class="category">Category Name</span>
-          <h3>Latest research heading goes in here and takes up about this much space.</h3>
-
-          <span class="button button--simple">
-            Read more
-          </span>
-        </div>
-      </a>
-
-      <a class="posts__item" href="#">
-        <div class="posts__item-thumbnail">
-          <img alt="" src="../assets/images/placeholder-1.jpg">
-        </div>
-        <div class="posts__item-content">
-          <span class="category">Category Name</span>
-          <h3>Latest research heading goes in here and takes up about this much space.</h3>
-
-          <span class="button button--simple">
-            Read more
-          </span>
-        </div>
-      </a>
-
-      <a class="posts__item" href="#">
-        <div class="posts__item-thumbnail">
-          <img alt="" src="../assets/images/placeholder-1.jpg">
-        </div>
-        <div class="posts__item-content">
-          <span class="category">Category Name</span>
-          <h3>Latest research heading goes in here and takes up about this much space.</h3>
-
-          <span class="button button--simple">
-            Read more
-          </span>
-        </div>
-      </a>
-
-      <a class="posts__item" href="#">
-        <div class="posts__item-thumbnail">
-          <img alt="" src="../assets/images/placeholder-1.jpg">
-        </div>
-        <div class="posts__item-content">
-          <span class="category">Category Name</span>
-          <h3>Latest research heading goes in here and takes up about this much space.</h3>
-
-          <span class="button button--simple">
-            Read more
-          </span>
-        </div>
-      </a>
-
-      <a class="posts__item" href="#">
-        <div class="posts__item-thumbnail">
-          <img alt="" src="../assets/images/placeholder-1.jpg">
-        </div>
-        <div class="posts__item-content">
-          <span class="category">Category Name</span>
-          <h3>Latest research heading goes in here and takes up about this much space.</h3>
-
-          <span class="button button--simple">
-            Read more
-          </span>
-        </div>
-      </a>
-
-      <a class="posts__item" href="#">
-        <div class="posts__item-thumbnail">
-          <img alt="" src="../assets/images/placeholder-1.jpg">
-        </div>
-        <div class="posts__item-content">
-          <span class="category">Category Name</span>
-          <h3>Latest research heading goes in here and takes up about this much space.</h3>
-
-          <span class="button button--simple">
-            Read more
-          </span>
-        </div>
-      </a>
+      {% assign events_entries = site.events %}
+      {% for post in events_entries %}
+        <a class="posts__item" href="{{ post.url }}">
+          <div class="posts__item-thumbnail">
+            {% if post.featured_image != nil %}
+              <img src="{{ post.featured_image }}">
+            {% else %}
+              <img alt="" src="../assets/images/placeholder-1.jpg"/>
+            {% endif %}
+          </div>
+          <div class="posts__item-content">
+            <span class="category">{{ post.categories | replace: "-", " " | replace: "[", "" | replace: "]", "" | replace: '"', "" }}</span>
+            <h3>{{ post.title }}</h3>
+            <span class="button button--simple">Read more</span>
+          </div>
+        </a>
+      {% endfor %}
     </div>
   </div>
 </section>

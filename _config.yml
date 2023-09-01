@@ -43,8 +43,6 @@ collections:
     output: true
   research:
     output: true
-  researchers:
-    output: true
   opportunities:
     output: true
 

@@ -1863,10 +1863,11 @@ collections:
       - label: "Category"
         name: "category"
         widget: "select"
-        multiple: false
+        multiple: true
         options:
           - { label: "Team", value: "team" }
           - { label: "Steering Group", value: "steering-group" }
+          - { label: "Researcher", value: "researcher" }
       - label: "Body"
         name: "body"
         widget: "markdown"
@@ -1896,29 +1897,6 @@ collections:
       - label: "Body"
         name: "body"
         widget: "markdown"
-
-  # Researchers Collection (No Single)
-  - label: "Researchers"
-    name: "researchers"
-    folder: "_researchers"
-    create: true
-    slug: "{{slug}}"
-    editor:
-      preview: false
-    fields:
-      - label: "Layout"
-        name: "layout"
-        widget: "hidden"
-        default: "researcher-single"
-      - label: "Title"
-        name: "title"
-        widget: "string"
-      - label: "Excerpt"
-        name: "excerpt"
-        widget: "text"
-      - label: "Image"
-        name: "image"
-        widget: "image"
 
   # Opportunities (Jobs)
   - label: "Opportunities"

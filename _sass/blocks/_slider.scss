@@ -38,9 +38,9 @@
   }
 
   .slider__slide {
-    // Update
     width: 100%;
     margin-bottom: 2rem;
+    text-decoration: none;
 
     @include bp(tablet) {
       width: calc(50% - 1.5rem);
