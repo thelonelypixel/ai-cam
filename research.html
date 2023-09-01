@@ -78,8 +78,8 @@ title: "Research"
     <div class="team__grid team__grid--basic">
       {% assign team_entries = site.team %}
       {% for post in team_entries limit:3 %}
-        {% if post.category == 'researcher' %}
-          <div class="team__member">
+        {% if post.category contains 'researcher' %}
+          <a href="{{ post.url }}" class="team__member">
             <div class="team__member-image">
               {% if post.featured_image != nil %}
                 <img src="{{ post.featured_image }}">
@@ -91,7 +91,7 @@ title: "Research"
               <h3>{{ post.title }}</h3>
               <p>{{ post.excerpt }}</p>
             </div>
-          </div>
+          </a>
         {% endif %}
       {% endfor %}
     </div>

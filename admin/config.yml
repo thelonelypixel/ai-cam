@@ -1812,32 +1812,6 @@ collections:
         name: "body"
         widget: "markdown"
 
-  # Projects Collection
-  - label: "Projects"
-    name: "projects"
-    folder: "_projects"
-    create: true
-    slug: "{{slug}}"
-    editor:
-      preview: false
-    fields:
-      - label: "Layout"
-        name: "layout"
-        widget: "hidden"
-        default: "project-single"
-      - label: "Title"
-        name: "title"
-        widget: "string"
-      - label: "Excerpt"
-        name: "excerpt"
-        widget: "text"
-      - label: "Featured Image"
-        name: "featured_image"
-        widget: "image"
-      - label: "Body"
-        name: "body"
-        widget: "markdown"
-
   # Team Collection (No Single)
   - label: "Team"
     name: "team"
