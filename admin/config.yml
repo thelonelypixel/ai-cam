@@ -1828,10 +1828,6 @@ collections:
       - label: "Title"
         name: "title"
         widget: "string"
-      - label: "Event Date"
-        name: "event_date"
-        widget: "date"
-        date_format: "DD.MM.YYYY"
       - label: "Excerpt"
         name: "excerpt"
         widget: "text"
@@ -1841,8 +1837,124 @@ collections:
       - label: "Body"
         name: "body"
         widget: "markdown"
-  # Team Collection (To be made - No Single)
-  # Research Collection (To be made)
-  # Researchers Collection (To be made - No single)
-  # Opportunities Teams Collection (To be made - Opportunities Teams single to just display Opportunities Jobs with corresponding category)
-  # Opportunities Jobs Collection (To be made)
+
+  # Team Collection (No Single)
+  - label: "Team"
+    name: "team"
+    folder: "_team"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "team-single"
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Excerpt"
+        name: "excerpt"
+        widget: "text"
+      - label: "Featured Image"
+        name: "featured_image"
+        widget: "image"
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+
+  # Research Collection
+  - label: "Research"
+    name: "research"
+    folder: "_research"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "research-single"
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Excerpt"
+        name: "excerpt"
+        widget: "text"
+      - label: "Featured Image"
+        name: "featured_image"
+        widget: "image"
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+
+  # Researchers Collection (No Single)
+  - label: "Researchers"
+    name: "researchers"
+    folder: "_researchers"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "researcher-single"
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Excerpt"
+        name: "excerpt"
+        widget: "text"
+      - label: "Image"
+        name: "image"
+        widget: "image"
+
+  # Opportunities (Teams)
+  - label: "Opportunities (Teams)"
+    name: "opportunities_teams"
+    folder: "_opportunities-teams"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "opportunities-team-single"
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Excerpt"
+        name: "excerpt"
+        widget: "text"
+      - label: "Image"
+        name: "image"
+        widget: "image"
+
+  # Opportunities (Jobs)
+  - label: "Opportunities (Jobs)"
+    name: "opportunities_jobs"
+    folder: "/collections/_opportunities-jobs"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "opportunities-jobs-single"
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Excerpt"
+        name: "excerpt"
+        widget: "text"
+      - label: "Image"
+        name: "image"
+        widget: "image"
