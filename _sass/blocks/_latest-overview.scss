@@ -38,6 +38,7 @@
       flex-direction: column;
       border: 1px solid $pink;
       border-radius: 12px;
+      text-decoration: none;
       overflow: hidden;
 
       @include bp(desktop) {

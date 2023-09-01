@@ -1860,6 +1860,13 @@ collections:
       - label: "Featured Image"
         name: "featured_image"
         widget: "image"
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        multiple: false
+        options:
+          - { label: "Team", value: "team" }
+          - { label: "Steering Group", value: "steering-group" }
       - label: "Body"
         name: "body"
         widget: "markdown"
