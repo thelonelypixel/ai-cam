@@ -131,6 +131,25 @@
 					$(this).closest('.accordions__item').toggleClass('open');
                 });
 
+                // Team Tabs
+                $('.team__selector button').click(function(){
+                    if(!$(this).hasClass('active')) {
+                        $('.team__selector button').removeClass('active');
+                        $(this).addClass('active');
+
+                        var id = $(this).data('id');
+
+                        $('.team__grid').removeClass('active');
+                        $('.team__grid--' + id).addClass('active');
+                    };
+                });
+
+                // Current Opportunities
+                $('.toggle-opportunities').click(function(){
+                    $(this).toggleClass('open');
+                    $(this).closest('.opportunities__team').toggleClass('open');
+                });
+
                 /*
                  *
                  * Intersection Observer

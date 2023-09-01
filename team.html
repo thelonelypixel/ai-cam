@@ -19,28 +19,45 @@ title: 'Team'
       <button data-id="steering-group">Steering Group</button>
     </div>
 
+    {% assign team_entries = site.team %}
     <div class="team__grid team__grid--team active">
-      <div class="team__member">
-        <div class="team__member-image">
-          <img alt="" src="../assets/images/placeholder-1.jpg">
-        </div>
-        <div class="team__member-content">
-          <h3>Neil Lawrence</h3>
-          <p>Chair, DeepMind Professor of Machine Learning, Department of Computer Science</p>
-        </div>
-      </div>
-
-      <div class="team__member">
-        <div class="team__member-image">
-          <img alt="" src="../assets/images/placeholder-1.jpg">
-        </div>
-        <div class="team__member-content">
-          <h3>Jessica Montgomery</h3>
-          <p>Director</p>
-        </div>
-      </div>
+      {% for post in team_entries limit:3 %}
+        {% if post.category == 'team' %}
+          <div class="team__member">
+            <div class="team__member-image">
+              {% if post.featured_image != nil %}
+                <img src="{{ post.featured_image }}">
+              {% else %}
+                <img alt="" src="../assets/images/placeholder-1.jpg"/>
+              {% endif %}
+            </div>
+            <div class="team__member-content">
+              <h3>{{ post.title }}</h3>
+              <p>{{ post.excerpt }}</p>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
     </div>
 
-    <div class="team__grid team__grid--steering-group"></div>
+    <div class="team__grid team__grid--steering-group">
+      {% for post in team_entries limit:3 %}
+        {% if post.category == 'steering-group' %}
+          <div class="team__member">
+            <div class="team__member-image">
+              {% if post.featured_image != nil %}
+                <img src="{{ post.featured_image }}">
+              {% else %}
+                <img alt="" src="../assets/images/placeholder-1.jpg"/>
+              {% endif %}
+            </div>
+            <div class="team__member-content">
+              <h3>{{ post.title }}</h3>
+              <p>{{ post.excerpt }}</p>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
   </div>
 </section>

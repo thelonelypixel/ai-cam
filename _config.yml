@@ -45,9 +45,7 @@ collections:
     output: true
   researchers:
     output: true
-  opportunities_teams:
-    output: true
-  opportunities_jobs:
+  opportunities:
     output: true
 
 # Build settings

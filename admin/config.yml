@@ -1920,33 +1920,10 @@ collections:
         name: "image"
         widget: "image"
 
-  # Opportunities (Teams)
-  - label: "Opportunities (Teams)"
-    name: "opportunities_teams"
-    folder: "_opportunities-teams"
-    create: true
-    slug: "{{slug}}"
-    editor:
-      preview: false
-    fields:
-      - label: "Layout"
-        name: "layout"
-        widget: "hidden"
-        default: "opportunities-team-single"
-      - label: "Title"
-        name: "title"
-        widget: "string"
-      - label: "Excerpt"
-        name: "excerpt"
-        widget: "text"
-      - label: "Image"
-        name: "image"
-        widget: "image"
-
   # Opportunities (Jobs)
-  - label: "Opportunities (Jobs)"
-    name: "opportunities_jobs"
-    folder: "_opportunities-jobs"
+  - label: "Opportunities"
+    name: "opportunities"
+    folder: "_opportunities"
     create: true
     slug: "{{slug}}"
     editor:
