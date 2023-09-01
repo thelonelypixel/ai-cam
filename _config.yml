@@ -29,6 +29,27 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username: jekyll
 
+# Collections
+collections:
+  blog:
+    output: true
+  news:
+    output: true
+  events:
+    output: true
+  projects:
+    output: true
+  team:
+    output: true
+  research:
+    output: true
+  researchers:
+    output: true
+  opportunities_teams:
+    output: true
+  opportunities_jobs:
+    output: true
+
 # Build settings
 plugins:
   - jekyll-feed

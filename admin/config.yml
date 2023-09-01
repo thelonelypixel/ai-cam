@@ -1712,7 +1712,7 @@ collections:
   # Blog Collection
   - label: "Blog"
     name: "Blog"
-    folder: "/collections/_posts"
+    folder: "_posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     editor:
@@ -1738,7 +1738,7 @@ collections:
   # News Collection
   - label: "News"
     name: "News"
-    folder: "/collections/_news"
+    folder: "_news"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     editor:
@@ -1785,7 +1785,7 @@ collections:
   # Events Collection
   - label: "Events"
     name: "events"
-    folder: "/collections/_events"
+    folder: "_events"
     create: true
     slug: "{{slug}}"
     editor:
@@ -1815,7 +1815,7 @@ collections:
   # Projects Collection
   - label: "Projects"
     name: "projects"
-    folder: "/collections/_projects"
+    folder: "_projects"
     create: true
     slug: "{{slug}}"
     editor:
@@ -1841,7 +1841,7 @@ collections:
   # Team Collection (No Single)
   - label: "Team"
     name: "team"
-    folder: "/collections/_team"
+    folder: "_team"
     create: true
     slug: "{{slug}}"
     editor:
@@ -1867,7 +1867,7 @@ collections:
   # Research Collection
   - label: "Research"
     name: "research"
-    folder: "/collections/_research"
+    folder: "_research"
     create: true
     slug: "{{slug}}"
     editor:
@@ -1893,7 +1893,7 @@ collections:
   # Researchers Collection (No Single)
   - label: "Researchers"
     name: "researchers"
-    folder: "/collections/_researchers"
+    folder: "_researchers"
     create: true
     slug: "{{slug}}"
     editor:
@@ -1916,7 +1916,7 @@ collections:
   # Opportunities (Teams)
   - label: "Opportunities (Teams)"
     name: "opportunities_teams"
-    folder: "/collections/_opportunities-teams"
+    folder: "_opportunities-teams"
     create: true
     slug: "{{slug}}"
     editor:
@@ -1939,7 +1939,7 @@ collections:
   # Opportunities (Jobs)
   - label: "Opportunities (Jobs)"
     name: "opportunities_jobs"
-    folder: "/collections/_opportunities-jobs"
+    folder: "_opportunities-jobs"
     create: true
     slug: "{{slug}}"
     editor:
@@ -1963,15 +1963,6 @@ collections:
         widget: "select"
         multiple: false
         options:
-          - {
-              label: "Team 1",
-              value: "team-1",
-            }
-          - {
-              label: "Team 2",
-              value: "team-2",
-            }
-          - {
-              label: "Team 3",
-              value: "team-3",
-            }
+          - { label: "Team 1", value: "team-1" }
+          - { label: "Team 2", value: "team-2" }
+          - { label: "Team 3", value: "team-3" }

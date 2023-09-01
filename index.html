@@ -143,38 +143,25 @@ title: 'Home'
       </div>
     {% endif %}
     <div class="latest-overview__column latest-overview__column--research">
-      <!-- Update -->
       <h3>Latest Research</h3>
-      <div class="post post--small">
-        <div class="post__thumbnail">
-          <img alt="" src="../assets/images/placeholder-1.jpg"/>
-        </div>
-        <div class="post__content">
-          <span class="category">Category Name</span>
-          <h4>Latest research heading goes in here and takes up about this much space.</h4>
-          <span class="button button--simple">Read more</span>
-        </div>
-      </div>
-      <div class="post post--small">
-        <div class="post__thumbnail">
-          <img alt="" src="../assets/images/placeholder-1.jpg"/>
-        </div>
-        <div class="post__content">
-          <span class="category">Category Name</span>
-          <h4>Latest research heading goes in here and takes up about this much space.</h4>
-          <span class="button button--simple">Read more</span>
-        </div>
-      </div>
-      <div class="post post--small">
-        <div class="post__thumbnail">
-          <img alt="" src="../assets/images/placeholder-1.jpg"/>
-        </div>
-        <div class="post__content">
-          <span class="category">Category Name</span>
-          <h4>Latest research heading goes in here and takes up about this much space.</h4>
-          <span class="button button--simple">Read more</span>
-        </div>
-      </div>
+      {% assign research_entries = site.research %}
+      {% for post in research_entries limit:3 %}
+        <a href="{{ post.url }}" class="post post--small">
+          <div class="post__thumbnail">
+            {% if post.featured_image != nil %}
+              <img src="{{ post.featured_image }}">
+            {% else %}
+              <img alt="" src="../assets/images/placeholder-1.jpg"/>
+            {% endif %}
+          </div>
+
+          <div class="post__content">
+            <span class="category">Category Name</span>
+            <h4>Latest research heading goes in here and takes up about this much space.</h4>
+            <span class="button button--simple">Read more</span>
+          </div>
+        </a>
+      {% endfor %}
     </div>
     <div class="latest-overview__column latest-overview__column--news">
       <!-- Update -->
