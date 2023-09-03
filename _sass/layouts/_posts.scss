@@ -168,6 +168,10 @@
       border: 1px solid $dark-blue;
       border-radius: 3px;
 
+      &.selected {
+        background-color: $lightest;
+      }
+
       &.previous,
       &.next {
         border: none;
