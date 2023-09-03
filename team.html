@@ -23,7 +23,7 @@ title: 'Team'
     <div class="team__grid team__grid--team active">
       {% for post in team_entries limit:3 %}
         {% if post.category contains 'team' %}
-          <div class="team__member">
+          <a href="{{ post.url }}" class="team__member">
             <div class="team__member-image">
               {% if post.image != nil %}
                 <img src="{{ post.image }}">
@@ -35,7 +35,7 @@ title: 'Team'
               <h3>{{ post.name }}</h3>
               <p>{{ post.position }}</p>
             </div>
-          </div>
+          </a>
         {% endif %}
       {% endfor %}
     </div>
@@ -43,7 +43,7 @@ title: 'Team'
     <div class="team__grid team__grid--steering-group">
       {% for post in team_entries limit:3 %}
         {% if post.category contains 'steering-group' %}
-          <div class="team__member">
+          <a href="{{ post.url }}" class="team__member">
             <div class="team__member-image">
               {% if post.image != nil %}
                 <img src="{{ post.image }}">
@@ -55,7 +55,7 @@ title: 'Team'
               <h3>{{ post.name }}</h3>
               <p>{{ post.position }}</p>
             </div>
-          </div>
+          </a>
         {% endif %}
       {% endfor %}
     </div>

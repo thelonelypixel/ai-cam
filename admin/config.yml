@@ -1865,6 +1865,7 @@ collections:
     folder: "_team"
     create: true
     slug: "{{slug}}"
+    identifier_field: "name"
     editor:
       preview: false
     fields:
