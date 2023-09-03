@@ -176,42 +176,37 @@ collections:
         fields:
           # Hero
           - label: "Hero (Slider)"
-            name: "hero"
+            name: "hero_slider"
+            widget: "list"
+            required: false
             collapsed: true
-            widget: "object"
             fields:
-              - label: "Hero Slides"
-                name: "hero_slides"
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+                required: false
+              - label: "Content"
+                name: "content"
+                widget: "text"
+                required: false
+              - label: "Buttons"
+                name: "buttons"
                 widget: "list"
                 required: false
                 collapsed: true
                 fields:
-                  - label: "Heading"
-                    name: "heading"
+                  - label: "Link"
+                    name: "link"
                     widget: "string"
                     required: false
-                  - label: "Content"
-                    name: "content"
-                    widget: "text"
+                  - label: "Text"
+                    name: "text"
+                    widget: "string"
                     required: false
-                  - label: "Buttons"
-                    name: "buttons"
-                    widget: "list"
-                    required: false
-                    collapsed: true
-                    fields:
-                      - label: "Link"
-                        name: "link"
-                        widget: "string"
-                        required: false
-                      - label: "Text"
-                        name: "text"
-                        widget: "string"
-                        required: false
-                  - label: "Image"
-                    name: "image"
-                    widget: "image"
-                    required: false
+              - label: "Image"
+                name: "image"
+                widget: "image"
+                required: false
 
           # Latest Overview
           - label: "Latest Overview"
