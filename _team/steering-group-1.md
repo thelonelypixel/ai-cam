@@ -1,5 +1,5 @@
 ---
-layout: person
+layout: team-single
 name: Steering Group 1
 biography: This is the biography
 image: /assets/uploads/placeholder-1.jpg
