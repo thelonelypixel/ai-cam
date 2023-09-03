@@ -19,6 +19,5 @@ department: test
 position: Director
 category:
   - team
-  - researcher
 supervisor: test
 ---
