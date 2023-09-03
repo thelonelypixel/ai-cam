@@ -180,14 +180,6 @@ collections:
             collapsed: true
             widget: "object"
             fields:
-              - label: "Heading"
-                name: "heading"
-                widget: "string"
-                required: false
-              - label: "Content"
-                name: "content"
-                widget: "text"
-                required: false
               - label: "Buttons"
                 name: "buttons"
                 widget: "list"
@@ -195,23 +187,46 @@ collections:
                 collapsed: true
                 fields:
                   - {
-                      label: Link,
-                      name: link,
-                      widget: string,
-                      required: false,
-                      collapsed: true,
+                      label: "Heading",
+                      name: "heading",
+                      widget: "string",
+                      required: false
                     }
                   - {
-                      label: Text,
-                      name: text,
-                      widget: string,
-                      required: false,
-                      collapsed: true,
+                      label: "Content",
+                      name: "content",
+                      widget: "text",
+                      required: false
                     }
-              - label: "Image"
-                name: "image"
-                widget: "image"
-                required: false
+                  - {
+                    label: "Buttons",
+                    name: "buttons",
+                    widget: "list",
+                    required: false,
+                    collapsed: true,
+                    fields:
+                      - {
+                          label: Link,
+                          name: link,
+                          widget: string,
+                          required: false,
+                          collapsed: true,
+                        }
+                      - {
+                          label: Text,
+                          name: text,
+                          widget: string,
+                          required: false,
+                          collapsed: true,
+                        }
+                    }
+                  - {
+                    - label: "Image",
+                      name: "image",
+                      widget: "image",
+                      required: false,
+                    }
+              
           # Latest Overview
           - label: "Latest Overview"
             name: "latest_overview"
