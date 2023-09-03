@@ -2001,7 +2001,7 @@ collections:
       - label: "Layout"
         name: "layout"
         widget: "hidden"
-        default: "opportunities-jobs-single"
+        default: "opportunities-single"
       - label: "Title"
         name: "title"
         widget: "string"

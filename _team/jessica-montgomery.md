@@ -3,9 +3,9 @@ layout: team-single
 name: Jessica Montgomery
 biography: This is the biography
 image: /assets/uploads/placeholder-1.jpg
-email: test
-url: test
-website: test
+email: test@test.co.uk
+url: htps://www.testweb.co.uk/
+website: htps://www.testweb.co.uk/
 twitter: test
 github: test
 linkedin: test
