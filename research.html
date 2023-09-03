@@ -81,15 +81,15 @@ title: "Research"
         {% if post.category contains 'researcher' %}
           <a href="{{ post.url }}" class="team__member">
             <div class="team__member-image">
-              {% if post.featured_image != nil %}
-                <img src="{{ post.featured_image }}">
+              {% if post.image != nil %}
+                <img src="{{ post.image }}">
               {% else %}
                 <img alt="" src="../assets/images/placeholder-1.jpg"/>
               {% endif %}
             </div>
             <div class="team__member-content">
-              <h3>{{ post.title }}</h3>
-              <p>{{ post.excerpt }}</p>
+              <h3>{{ post.name }}</h3>
+              <p>{{ post.position }}</p>
             </div>
           </a>
         {% endif %}

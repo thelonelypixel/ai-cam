@@ -1728,6 +1728,18 @@ collections:
       - label: "Excerpt"
         name: "excerpt"
         widget: "text"
+      - label: "Author/s"
+        name: "author"
+        widget: "string"
+        required: false
+      - label: "Publish Date"
+        name: "date"
+        widget: "datetime"
+        default: ""
+        date_format: "DD/MM/YYYY" # e.g. 24.12.2021
+        time_format: "HH:mm" # e.g. 21:07
+        format: "LLL"
+        picker_utc: false
       - label: "Featured Image"
         name: "featured_image"
         widget: "image"
@@ -1754,6 +1766,18 @@ collections:
       - label: "Excerpt"
         name: "excerpt"
         widget: "text"
+      - label: "Author/s"
+        name: "author"
+        widget: "string"
+        required: false
+      - label: "Publish Date"
+        name: "date"
+        widget: "datetime"
+        default: ""
+        date_format: "DD/MM/YYYY" # e.g. 24.12.2021
+        time_format: "HH:mm" # e.g. 21:07
+        format: "LLL"
+        picker_utc: false
       - label: "Category"
         name: "category"
         widget: "select"
@@ -1798,19 +1822,42 @@ collections:
       - label: "Title"
         name: "title"
         widget: "string"
-      - label: "Event Date"
-        name: "event_date"
-        widget: "date"
-        date_format: "DD.MM.YYYY"
-      - label: "Excerpt"
-        name: "excerpt"
+      - label: "Start Date & Time"
+        name: "start"
+        widget: "datetime"
+        default: ""
+        date_format: "DD/MM/YYYY" # e.g. 24.12.2021
+        time_format: "HH:mm" # e.g. 21:07
+        format: "LLL"
+        picker_utc: false
+      - label: "End Date & Time"
+        name: "end"
+        widget: "datetime"
+        default: ""
+        date_format: "DD/MM/YYYY" # e.g. 24.12.2021
+        time_format: "HH:mm" # e.g. 21:07
+        format: "LLL"
+        picker_utc: false
+      - label: "Description"
+        name: "desc"
         widget: "text"
-      - label: "Featured Image"
-        name: "featured_image"
+        required: false
+      - label: "Image"
+        name: "image"
         widget: "image"
+        required: false
+      - label: "Class"
+        name: "class"
+        widget: "string"
+        required: false
+      - label: "External Event Link"
+        name: "link_to"
+        widget: "string"
+        required: false
       - label: "Body"
         name: "body"
         widget: "markdown"
+        required: false
 
   # Team Collection (No Single)
   - label: "Team"
@@ -1824,16 +1871,83 @@ collections:
       - label: "Layout"
         name: "layout"
         widget: "hidden"
-        default: "team-single"
-      - label: "Title"
-        name: "title"
+        default: "person"
+      - label: "Name"
+        name: "name"
         widget: "string"
-      - label: "Excerpt"
-        name: "excerpt"
+      - label: Prefix
+        hint: "e.g. de, von, van"
+        name: prefix
+        required: false
+        widget: string
+      - label: Suffix
+        name: suffix
+        widget: string
+        required: false
+      - label: "Biography"
+        name: "biography"
         widget: "text"
-      - label: "Featured Image"
-        name: "featured_image"
+        required: false
+      - label: "Image"
+        name: "image"
         widget: "image"
+        required: false
+      - label: "Email"
+        name: "email"
+        widget: "string"
+        required: false
+      - label: "URL"
+        name: "url"
+        widget: "string"
+        required: false
+      - label: "Website"
+        name: "website"
+        widget: "string"
+        required: false
+      - label: "Twitter"
+        name: "twitter"
+        widget: "string"
+        required: false
+      - label: "Github"
+        name: "github"
+        widget: "string"
+        required: false
+      - label: "LinkedIn"
+        name: "linkedin"
+        widget: "string"
+        required: false
+      - label: "Scholar"
+        name: "scholar"
+        widget: "string"
+        required: false
+      - label: "CRSID"
+        name: "crsid"
+        widget: "string"
+        required: false
+      - label: "ORCID"
+        name: "orcid"
+        widget: "string"
+        required: false
+      - label: "Start Date"
+        name: "start"
+        widget: "string"
+        required: false
+      - label: "End Date"
+        name: "end"
+        widget: "string"
+        required: false
+      - label: "Institution"
+        name: "institution"
+        widget: "string"
+        required: false
+      - label: "Department"
+        name: "department"
+        widget: "string"
+        required: false
+      - label: "Position"
+        name: "position"
+        widget: "string"
+        required: false
       - label: "Category"
         name: "category"
         widget: "select"
@@ -1842,9 +1956,11 @@ collections:
           - { label: "Team", value: "team" }
           - { label: "Steering Group", value: "steering-group" }
           - { label: "Researcher", value: "researcher" }
-      - label: "Body"
-        name: "body"
-        widget: "markdown"
+        required: false
+      - label: "Supervisor"
+        name: "supervisor"
+        widget: "string"
+        required: false
 
   # Research Collection
   - label: "Research"
