@@ -1822,7 +1822,7 @@ collections:
         name: "start"
         widget: "datetime"
         default: ""
-        date_format: "DD/MM/YYYY" # e.g. 24.12.2021
+        date_format: "YYYY-MM-DD" # Adjust to YYYY-MM-DD format
         time_format: "HH:mm" # e.g. 21:07
         format: "LLL"
         picker_utc: false
@@ -1830,7 +1830,7 @@ collections:
         name: "end"
         widget: "datetime"
         default: ""
-        date_format: "DD/MM/YYYY" # e.g. 24.12.2021
+        date_format: "YYYY-MM-DD" # Adjust to YYYY-MM-DD format
         time_format: "HH:mm" # e.g. 21:07
         format: "LLL"
         picker_utc: false
