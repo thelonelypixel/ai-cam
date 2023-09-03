@@ -1,20 +1,14 @@
-hero:
-  heading: AI@CAM Mission Heading Goes Here
-  content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fringilla
-    dapibus lectus vel pharetra. Integer condimentum malesuada condimentum.
-  image: /assets/uploads/placeholder-1.jpg
-  buttons:
-    - link: /
-      text: Find out more
 hero_slider:
   - heading: AI@CAM Mission Heading Goes Here
-    content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fringilla
+    content:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fringilla
       dapibus lectus vel pharetra. Integer condimentum malesuada condimentum.
     image: /assets/uploads/placeholder-1.jpg
     buttons:
       - link: /
         text: Read More
-  - content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fringilla
+  - content:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fringilla
       dapibus lectus vel pharetra. Integer condimentum malesuada condimentum.
     heading: AI@CAM Mission Heading Goes Here
     image: /assets/uploads/placeholder-2.jpg
@@ -47,19 +41,29 @@ media_text:
 slider:
   slider_items:
     - heading: What we do
-      content: AI@Cam is building an infrastructure for interdisciplinary innovation
+      content:
+        AI@Cam is building an infrastructure for interdisciplinary innovation
         that serves science and society through research, education, and
         innovation programmes that leverage world- leading research from across
         the University and connect this to real-world needs.
       link: /
       image: /assets/uploads/placeholder-1.jpg
-    - content: AI@Cam is building an infrastructure for interdisciplinary innovation
+    - content:
+        AI@Cam is building an infrastructure for interdisciplinary innovation
         that serves science and society through research, education, and
         innovation programmes that leverage world- leading research from across
         the University and connect this to real-world needs.
       link: /
       image: /assets/uploads/placeholder-2.jpg
       heading: Challenge-led AI innovation
+    - content:
+        AI@Cam is building an infrastructure for interdisciplinary innovation
+        that serves science and society through research, education, and
+        innovation programmes that leverage world- leading research from across
+        the University and connect this to real-world needs.
+      link: /
+      image: /assets/uploads/placeholder-1.jpg
+      heading: Challenge-led AI innovation
   content: ""
-  heading: ""
+  heading: "Explore AI@CAM"
   buttons: []

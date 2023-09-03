@@ -8,7 +8,8 @@ title: "Research"
   <div class="container">
     <div class="hero__content">
       <h1>Research</h1>
-      <p>AI@Cam’s mission is to drive a new wave of AI innovation that serves science, citizens, and society.</p>
+      <p>AI@Cam’s mission is to drive a new wave of AI innovation that serves
+                science, citizens, and society.</p>
     </div>
   </div>
 </section>
@@ -16,10 +17,14 @@ title: "Research"
 <section class="block block--bg-pink block--no-padding-bottom block__text block__text--split">
   <div class="container">
     <div class="text__heading">
-      <h2>Research heading goes in here and takes up around two lines of space</h2>
+      <h2>Research heading goes in here and takes up around two lines of
+                space</h2>
     </div>
     <div class="text__content">
-      <p>AI@Cam will build this infrastructure through research, education, and innovation programmes that leverage the world-leading research already taking place across the University and connecting this to real-world needs.</p>
+      <p>AI@Cam will build this infrastructure through research, education, and
+                innovation programmes that leverage the world-leading research already
+                taking place across the University and connecting this to real-world
+                needs.</p>
     </div>
   </div>
 </section>
@@ -27,12 +32,13 @@ title: "Research"
 {% assign research_entries = site.research %}
 <section class="block block--bg-pink block__slider">
   <div class="container">
+    <p class="slider__notice">Drag to explore</p>
     <div class="slider__main">
       {% for post in research_entries %}
         <a href="{{ post.url }}" class="slider__slide">
           <div class="slider__slide-image">
             {% if post.featured_image != nil %}
-              <img src="{{ post.featured_image }}">
+              <img src="{{ post.featured_image }}"/>
             {% else %}
               <img alt="" src="../assets/images/placeholder-1.jpg"/>
             {% endif %}
@@ -69,7 +75,10 @@ title: "Research"
     <div class="team__intro">
       <div class="team__intro-content">
         <h2>Researchers</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, ante condimentum accumsan lacinia, nibh ipsum fermentum libero, id feugiat odio mauris ac libero. Etiam in ligula ante. Vestibulum in magna in magna pellentesque venenatis ac eu ex.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+                    euismod, ante condimentum accumsan lacinia, nibh ipsum fermentum
+                    libero, id feugiat odio mauris ac libero. Etiam in ligula ante.
+                    Vestibulum in magna in magna pellentesque venenatis ac eu ex.</p>
       </div>
       <div class="team__intro-filters">
         <button class="button button--filters">Show Filters</button>
@@ -77,12 +86,13 @@ title: "Research"
     </div>
     <div class="team__grid team__grid--basic">
       {% assign team_entries = site.team %}
-      {% for post in team_entries limit:3 %}
+      {% for post in team_entries limit:3
+      %}
         {% if post.category contains 'researcher' %}
           <a href="{{ post.url }}" class="team__member">
             <div class="team__member-image">
               {% if post.image != nil %}
-                <img src="{{ post.image }}">
+                <img src="{{ post.image }}"/>
               {% else %}
                 <img alt="" src="../assets/images/placeholder-1.jpg"/>
               {% endif %}
@@ -107,7 +117,11 @@ title: "Research"
 
     <div class="media-text__content">
       <h2>Are you a University of Cambridge researcher?</h2>
-      <p>Curabitur risus urna, ornare sed pretium vel, mattis et metus. Sed scelerisque elit nec euismod ultricies. Sed nisl leo, laoreet a mauris vitae, ultrices varius augue. Fusce ac risus sollicitudin, posuere ante at, faucibus odio. Nunc sollicitudin metus ut est pulvinar ultricies quis nec sapien.</p>
+      <p>Curabitur risus urna, ornare sed pretium vel, mattis et metus. Sed
+                scelerisque elit nec euismod ultricies. Sed nisl leo, laoreet a mauris
+                vitae, ultrices varius augue. Fusce ac risus sollicitudin, posuere ante
+                at, faucibus odio. Nunc sollicitudin metus ut est pulvinar ultricies
+                quis nec sapien.</p>
       <div class="button-box">
         <a class="button button--standard" href="#">Contact us</a>
       </div>

@@ -152,6 +152,30 @@
 
                 /*
                  *
+                 * Slick Sliders
+                 *
+                 */
+
+                $('.hero__slider').slick({
+                    infinite: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    dots: true,
+                });
+
+                $('.slider__main').slick({
+                    infinite: false,
+                    loop: false,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    draggable: true,
+                    arrows: false,
+                    dots: false,
+                });
+
+                /*
+                 *
                  * Intersection Observer
                  *
                  */
