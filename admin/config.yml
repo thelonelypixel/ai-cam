@@ -175,58 +175,44 @@ collections:
           preview: false
         fields:
           # Hero
-          - label: "Hero"
+          - label: "Hero (Slider)"
             name: "hero"
             collapsed: true
             widget: "object"
             fields:
-              - label: "Buttons"
-                name: "buttons"
+              - label: "Hero Slides"
+                name: "hero_slides"
                 widget: "list"
                 required: false
                 collapsed: true
                 fields:
-                  - {
-                      label: "Heading",
-                      name: "heading",
-                      widget: "string",
-                      required: false
-                    }
-                  - {
-                      label: "Content",
-                      name: "content",
-                      widget: "text",
-                      required: false
-                    }
-                  - {
-                      label: "Buttons",
-                      name: "buttons",
-                      widget: "list",
-                      required: false,
-                      collapsed: true,
-                      fields:
-                        - {
-                            label: Link,
-                            name: link,
-                            widget: string,
-                            required: false,
-                            collapsed: true,
-                          }
-                        - {
-                            label: Text,
-                            name: text,
-                            widget: string,
-                            required: false,
-                            collapsed: true,
-                          }
-                    }
-                  - {
-                      label: "Image",
-                      name: "image",
-                      widget: "image",
-                      required: false,
-                    }
-              
+                  - label: "Heading"
+                    name: "heading"
+                    widget: "string"
+                    required: false
+                  - label: "Content"
+                    name: "content"
+                    widget: "text"
+                    required: false
+                  - label: "Buttons"
+                    name: "buttons"
+                    widget: "list"
+                    required: false
+                    collapsed: true
+                    fields:
+                      - label: "Link"
+                        name: "link"
+                        widget: "string"
+                        required: false
+                      - label: "Text"
+                        name: "text"
+                        widget: "string"
+                        required: false
+                  - label: "Image"
+                    name: "image"
+                    widget: "image"
+                    required: false
+
           # Latest Overview
           - label: "Latest Overview"
             name: "latest_overview"
