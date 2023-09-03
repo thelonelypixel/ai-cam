@@ -12,7 +12,21 @@
           <h1>News</h1>
         </div>
     
-        <div class="hero__filters"></div>
+        <div class="hero__filters">
+          <button class="button button--standard toggle-filters">
+            <span class="inactive">Show filter</span>
+            <span class="active">Hide filters</span>
+          </button>
+          <div class="hero__filters-selection">
+            <div class="hero__filters-selection-inner">
+              <a href="{{ site.url }}/news/">All</a>
+              <a href="{{ site.url }}/news/category/ai-deployment-and-system-design/">AI Deployment and System Design</a>
+              <a href="{{ site.url }}/news/category/ai-for-research-and-innovation/">AI for Research and Innovation</a>
+              <a href="{{ site.url }}/news/category/ai-policy-and-data-governance/">AI Policy and Data Governance</a>
+              <a href="{{ site.url }}/news/category/machine-learning-theory-and-methods/">Machine Learning Theory and Methods</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 

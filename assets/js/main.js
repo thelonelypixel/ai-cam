@@ -150,6 +150,12 @@
                     $(this).closest('.opportunities__team').toggleClass('open');
                 });
 
+                // Hero Filter
+                $('.hero__filters button').click(function(){
+                    $(this).toggleClass('open');
+                    $(this).closest('.hero__filters').toggleClass('open');
+                })
+
                 /*
                  *
                  * Slick Sliders

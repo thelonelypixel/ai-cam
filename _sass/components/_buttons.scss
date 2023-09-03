@@ -20,6 +20,7 @@
     line-height: 2.5rem;
     text-decoration: none;
     color: $dark-blue;
+    cursor: pointer;
 
     @include bp(tablet) {
       padding: 2rem;

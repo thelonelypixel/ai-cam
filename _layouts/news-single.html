@@ -87,7 +87,7 @@
             {% endfor %}
 
             {% if count_check == false %}
-            {% for post in news_entries limit:4 %}
+            {% for post in news_entries limit:3 %}
             <a class="posts__item" href="{{ post.url }}">
               <div class="posts__item-thumbnail">
                 {% if post.image != nil %}
