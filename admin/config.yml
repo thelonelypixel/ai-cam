@@ -199,29 +199,29 @@ collections:
                       required: false
                     }
                   - {
-                    label: "Buttons",
-                    name: "buttons",
-                    widget: "list",
-                    required: false,
-                    collapsed: true,
-                    fields:
-                      - {
-                          label: Link,
-                          name: link,
-                          widget: string,
-                          required: false,
-                          collapsed: true,
-                        }
-                      - {
-                          label: Text,
-                          name: text,
-                          widget: string,
-                          required: false,
-                          collapsed: true,
-                        }
+                      label: "Buttons",
+                      name: "buttons",
+                      widget: "list",
+                      required: false,
+                      collapsed: true,
+                      fields:
+                        - {
+                            label: Link,
+                            name: link,
+                            widget: string,
+                            required: false,
+                            collapsed: true,
+                          }
+                        - {
+                            label: Text,
+                            name: text,
+                            widget: string,
+                            required: false,
+                            collapsed: true,
+                          }
                     }
                   - {
-                    - label: "Image",
+                      label: "Image",
                       name: "image",
                       widget: "image",
                       required: false,
