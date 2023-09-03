@@ -1,44 +1,44 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
-{% include head.html %}
+  {% include head.html %}
 
-<body class="layout-{{ page.layout }}{% if page.title %}  {{ page.title | slugify }}{% endif %}">
-  {% include site-header.html %}
+  <body class="layout-{{ page.layout }}{% if page.title %}  {{ page.title | slugify }}{% endif %}">
+    {% include site-header.html %}
 
-  <main class="main">
-    <section class="block block__hero block__hero--archive" id="hero">
-      <div class="container">
-        <div class="hero__content">
-          <h1>News</h1>
-        </div>
-    
-        <div class="hero__filters">
-          <button class="button button--standard toggle-filters">
-            <span class="inactive">Show filter</span>
-            <span class="active">Hide filters</span>
-          </button>
-          <div class="hero__filters-selection">
-            <div class="hero__filters-selection-inner">
-              <a href="{{ site.url }}/news/">All</a>
-              <a href="{{ site.url }}/news/category/ai-deployment-and-system-design/">AI Deployment and System Design</a>
-              <a href="{{ site.url }}/news/category/ai-for-research-and-innovation/">AI for Research and Innovation</a>
-              <a href="{{ site.url }}/news/category/ai-policy-and-data-governance/">AI Policy and Data Governance</a>
-              <a href="{{ site.url }}/news/category/machine-learning-theory-and-methods/">Machine Learning Theory and Methods</a>
+    <main class="main">
+      <section class="block block__hero block__hero--archive" id="hero">
+        <div class="container">
+          <div class="hero__content">
+            <h1>News</h1>
+          </div>
+
+          <div class="hero__filters">
+            <button class="button button--standard toggle-filters">
+              <span class="inactive">Show filter</span>
+              <span class="active">Hide filters</span>
+            </button>
+            <div class="hero__filters-selection">
+              <div class="hero__filters-selection-inner">
+                <a href="{{ site.url }}/news/">All</a>
+                <a href="{{ site.url }}/news/category/ai-deployment-and-system-design/">AI Deployment and System Design</a>
+                <a href="{{ site.url }}/news/category/ai-for-research-and-innovation/">AI for Research and Innovation</a>
+                <a href="{{ site.url }}/news/category/ai-policy-and-data-governance/">AI Policy and Data Governance</a>
+                <a href="{{ site.url }}/news/category/machine-learning-theory-and-methods/">Machine Learning Theory and Methods</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="block block--bg-pink block--no-padding-top block__posts">
-      <div class="container">
-        {{ content }}
-      </div>
-    </section>
-  </main>
+      <section class="block block--bg-pink block--no-padding-top block__posts">
+        <div class="container">
+          {{ content }}
+        </div>
+      </section>
+    </main>
 
-  {% include site-footer.html %}
-  <script type="text/javascript" src="{{site.baseurl}}/assets/js/main.js"></script>
-</body>
+    {% include site-footer.html %}
+    <script type="text/javascript" src="{{site.baseurl}}/assets/js/main.js"></script>
+  </body>
 
 </html>
