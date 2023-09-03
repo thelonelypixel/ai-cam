@@ -3,7 +3,6 @@
         var searchResults = document.getElementById('search-results');
 
         if (results.length) { // Are there any results?
-            console.log(results.length);
             var appendString = '';
 
             for (var i = 0; i < results.length; i++) { // Iterate over the results
@@ -14,9 +13,9 @@
                 if (itemImage.length) {
                     itemImageUrl = itemImage.replace('[', '').replace(']', '');
                 } else {
-                    itemImageUrl = "/assets/images/accelerate-question-mark.jpeg"
+                    itemImageUrl = "/assets/images/placeholder-1.jpg"
                 }
-                appendString += `<a class="post__post post__post--standard" href="${item.url}"><div class="post__post-thumbnail"><img src="${itemImageUrl}"></div><div class="post__post-content"><h3>${item.title}</h3><span class="button">Read More</span></div></a>`;
+                appendString += `<a class="posts__item" href="${item.url}"><div class="posts__item-thumbnail"><img src="${itemImageUrl}"></div><div class="posts__item-content"><h3>${item.title}</h3><span class="button button--simple">Read More</span></div></a>`;
             };
 
             searchResults.innerHTML = appendString;

@@ -26,8 +26,8 @@ title: 'Events'
         {% if eventEnd >= currentDate and eventStart >= currentTime %}
           <a class="posts__item" href="{{ event.url }}">
             <div class="posts__item-thumbnail">
-              {% if event.featured_image != nil %}
-                <img src="{{ event.featured_image }}">
+              {% if event.image != nil %}
+                <img src="{{ event.image }}">
               {% else %}
                 <img alt="" src="../assets/images/placeholder-1.jpg"/>
               {% endif %}
@@ -60,8 +60,8 @@ title: 'Events'
         {% if eventEnd < currentDate %}
           <a class="posts__item" href="{{ event.url }}">
             <div class="posts__item-thumbnail">
-              {% if event.featured_image != nil %}
-                <img src="{{ event.featured_image }}">
+              {% if event.image != nil %}
+                <img src="{{ event.image }}">
               {% else %}
                 <img alt="" src="../assets/images/placeholder-1.jpg"/>
               {% endif %}

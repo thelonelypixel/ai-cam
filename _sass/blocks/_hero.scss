@@ -143,7 +143,8 @@
     }
   }
 
-  &.block__hero--archive {
+  &.block__hero--archive,
+  &.block__hero--search {
     padding: 10rem 0 5rem 0;
 
     @include bp(tablet) {
@@ -171,6 +172,15 @@
 
       .button {
         margin: 3rem 0 0 0;
+      }
+    }
+  }
+
+  &.block__hero--search {
+    .hero__content {
+      form {
+        margin-top: 2rem;
+        width: 500px;
       }
     }
   }

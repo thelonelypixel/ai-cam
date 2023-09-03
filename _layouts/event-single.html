@@ -88,8 +88,8 @@
             {% for post in events_entries limit:4 %}
             <a class="posts__item" href="{{ post.url }}">
               <div class="posts__item-thumbnail">
-                {% if post.featured_image != nil %}
-                <img src="{{ post.featured_image }}">
+                {% if post.image != nil %}
+                <img src="{{ post.image }}">
                 {% else %}
                 <img alt="" src="../assets/images/placeholder-1.jpg" />
                 {% endif %}
@@ -106,8 +106,8 @@
             {% if post.url != page.url %}
             <a class="posts__item" href="{{ post.url }}">
               <div class="posts__item-thumbnail">
-                {% if post.featured_image != nil %}
-                <img src="{{ post.featured_image }}">
+                {% if post.image != nil %}
+                <img src="{{ post.image }}">
                 {% else %}
                 <img alt="" src="../assets/images/placeholder-1.jpg" />
                 {% endif %}

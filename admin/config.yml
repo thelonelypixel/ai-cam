@@ -1737,7 +1737,7 @@ collections:
         format: "LLL"
         picker_utc: false
       - label: "Featured Image"
-        name: "featured_image"
+        name: "image"
         widget: "image"
       - label: "Body"
         name: "body"
@@ -1796,7 +1796,7 @@ collections:
               value: "machine-learning-theory-and-methods",
             }
       - label: "Featured Image"
-        name: "featured_image"
+        name: "image"
         widget: "image"
       - label: "Body"
         name: "body"
@@ -1979,7 +1979,7 @@ collections:
         name: "excerpt"
         widget: "text"
       - label: "Featured Image"
-        name: "featured_image"
+        name: "image"
         widget: "image"
       - label: "Body"
         name: "body"

@@ -64,7 +64,7 @@ pagination:
             </div>
         </div>
 
-        <div class="posts__grid post__grid postContainer">
+        <div class="posts__grid post__grid">
             {% for post in site.posts %}
             <a class="post__post post__post--standard" data-category="{{ post.categories[0] | replace: " ", "-" | replace: "[", "" | replace: "]", "" | replace: '"', "" | downcase }}" href="{{ post.url }}">
                 <div class="post__post-thumbnail">
