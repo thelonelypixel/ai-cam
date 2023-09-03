@@ -6,7 +6,6 @@
           <a href="/">
             <img alt="Logo" src="{{ site.data.site.site_logo }}"/>
           </a>
-          <!-- Update -->
           {{ site.data.site.footer_description | markdownify }}
         </div>
         <div class="footer__ai-nav column-m-12-nest column-t-4">
@@ -21,8 +20,8 @@
       </div>
       <div class="row row--justified row--middle">
         <div class="footer__ai-socials column-m-12-nest column-t-6">
-          {% if site.data.site.twitter_link != nil and site.data.site.twitter_link != '' %}
-            <a href="{{ site.data.site.twitter_link }}" rel="noreferrer" target="_blank">
+          {% if site.data.site.social_details.twitter_link != nil and site.data.site.social_details.twitter_link != '' %}
+            <a href="{{ site.data.site.social_details.twitter_link }}" rel="noreferrer" target="_blank">
               <svg height="57.5342466px" version="1.1" viewbox="0 0 60 57.5342466" width="60px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
                 <g fill-rule="evenodd" fill="none" id="Page-1" stroke-width="1" stroke="none">
                   <g fill-rule="nonzero" id="Home-Concept-1b" transform="translate(-255, -4625)">
@@ -40,8 +39,8 @@
             </a>
           {% endif %}
 
-          {% if site.data.site.facebook_link != nil and site.data.site.facebook_link != '' %}
-            <a href="{{ site.data.site.facebook_link }}" rel="noreferrer" target="_blank">
+          {% if site.data.site.social_details.facebook_link != nil and site.data.site.social_details.facebook_link != '' %}
+            <a href="{{ site.data.site.social_details.facebook_link }}" rel="noreferrer" target="_blank">
               <svg height="57.2727273px" version="1.1" viewbox="0 0 60 57.2727273" width="60px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
                 <g fill-rule="evenodd" fill="none" id="Page-1" stroke-width="1" stroke="none">
                   <g fill-rule="nonzero" id="Home-Concept-1b" transform="translate(-337, -4624)">
@@ -59,8 +58,8 @@
             </a>
           {% endif %}
 
-          {% if site.data.site.instagram_link != nil and site.data.site.instagram_link != '' %}
-            <a href="{{ site.data.site.instagram_link }}" rel="noreferrer" target="_blank">
+          {% if site.data.site.social_details.instagram_link != nil and site.data.site.social_details.instagram_link != '' %}
+            <a href="{{ site.data.site.social_details.instagram_link }}" rel="noreferrer" target="_blank">
               <svg height="58.1479863px" version="1.1" viewbox="0 0 60 58.1479863" width="60px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
                 <g fill-rule="evenodd" fill="none" id="Page-1" stroke-width="1" stroke="none">
                   <g fill-rule="nonzero" id="Home-Concept-1b" transform="translate(-419, -4623)">
