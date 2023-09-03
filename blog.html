@@ -1,37 +1,44 @@
 ---
-layout: 'page'
+layout: 'archive-blog'
 title: 'Blog'
+permalink: '/blog/'
+pagination:
+  enabled: true
+  collection: posts
 ---
 
-<section class="block block__hero block__hero--archive" id="hero">
-  <div class="container">
-    <div class="hero__content">
-      <h1>Blog</h1>
-    </div>
-    <div class="hero__filters"></div>
-  </div>
-</section>
+<div class="posts__grid">
+  {% for post in paginator.posts %}
+    <a class="posts__item" href="{{ post.url }}">
+      <div class="posts__item-thumbnail">
+        {% if post.image != nil %}
+          <img src="{{ post.image }}">
+        {% else %}
+          <img alt="" src="../assets/images/placeholder-1.jpg"/>
+        {% endif %}
+      </div>
+      <div class="posts__item-content">
+        <span class="category">{{ post.categories | replace: "-", " " | replace: "[", "" | replace: "]", "" | replace: '"', "" }}</span>
+        <h3>{{ post.title }}</h3>
+        <span class="button button--simple">Read more</span>
+      </div>
+    </a>
+  {% endfor %}
+</div>
 
-<section class="block block--bg-pink block--no-padding-top block__posts">
-  <div class="container">
-    <div class="posts__grid">
-      {% assign blog_entries = site.posts %}
-      {% for post in blog_entries %}
-        <a class="posts__item" href="{{ post.url }}">
-          <div class="posts__item-thumbnail">
-            {% if post.image != nil %}
-              <img src="{{ post.image }}">
-            {% else %}
-              <img alt="" src="../assets/images/placeholder-1.jpg"/>
-            {% endif %}
-          </div>
-          <div class="posts__item-content">
-            <span class="category">{{ post.categories | replace: "-", " " | replace: "[", "" | replace: "]", "" | replace: '"', "" }}</span>
-            <h3>{{ post.title }}</h3>
-            <span class="button button--simple">Read more</span>
-          </div>
-        </a>
-      {% endfor %}
-    </div>
+{% if paginator.total_pages > 1 %}
+  <div class="posts__pagination"></div>
+    <ul class="pager">
+      {% if paginator.previous_page %}
+        <li class="previous">
+          <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+        </li>
+      {% endif %}
+      {% if paginator.next_page %}
+        <li class="next">
+          <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+        </li>
+      {% endif %}
+    </ul>
   </div>
-</section>
+{% endif %}
