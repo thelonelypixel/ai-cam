@@ -30,6 +30,12 @@
                 <div class="column-m-12-nest column-d-1"></div>
                 <div class="post-single__body-content column-m-12-nest column-t-10 column-d-8">
                   {{ content }}
+
+                  {% if page.apply_link != nil %}
+                    <div class="button-box">
+                      <a href="{{ page.apply_link }}" rel="noreferrer" target="_blank" class="button button--standard">Apply here</a>
+                    </div>
+                  {% endif %}
                 </div>
                 <div class="post-single__body-socials column-m-12-nest column-t-2">
                   <a href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}" target="_blank">

@@ -2008,9 +2008,6 @@ collections:
       - label: "Excerpt"
         name: "excerpt"
         widget: "text"
-      - label: "Image"
-        name: "image"
-        widget: "image"
       - label: "Team"
         name: "team"
         widget: "select"
@@ -2019,3 +2016,9 @@ collections:
           - { label: "Team 1", value: "team-1" }
           - { label: "Team 2", value: "team-2" }
           - { label: "Team 3", value: "team-3" }
+      - label: "Apply Link"
+        name: "apply_link"
+        widget: "string"
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
