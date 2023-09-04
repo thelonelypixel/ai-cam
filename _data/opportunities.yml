@@ -3,3 +3,33 @@ hero:
   content: AI@Cam’s mission is to drive a new wave of AI innovation that serves
     science, citizens, and society.
   image: ""
+opportunities_team_one:
+  heading: Team 1 heading goes in here
+  content: >-
+    Curabitur risus urna, ornare sed pretium vel, mattis et metus. Sed
+    scelerisque elit nec euismod ultricies. Sed nisl leo, laoreet a mauris
+    vitae, ultrices varius augue. Fusce ac risus sollicitudin, posuere ante at,
+    faucibus odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+
+    In elementum consectetur ante, non rhoncus lorem vehicula eget. Pellentesque ac condimentum ex. Sed ultrices sapien sem. Pellentesque non diam massa. Vivamus viverra non turpis in porttitor. Nam gravida urna diam, non finibus felis blandit sit amet.
+opportunities_team_two:
+  content: >-
+    Curabitur risus urna, ornare sed pretium vel, mattis et metus. Sed
+    scelerisque elit nec euismod ultricies. Sed nisl leo, laoreet a mauris
+    vitae, ultrices varius augue. Fusce ac risus sollicitudin, posuere ante at,
+    faucibus odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+
+    In elementum consectetur ante, non rhoncus lorem vehicula eget. Pellentesque ac condimentum ex. Sed ultrices sapien sem. Pellentesque non diam massa. Vivamus viverra non turpis in porttitor. Nam gravida urna diam, non finibus felis blandit sit amet.
+  heading: Team 2 heading goes in here
+opportunities_team_three:
+  content: >-
+    Curabitur risus urna, ornare sed pretium vel, mattis et metus. Sed
+    scelerisque elit nec euismod ultricies. Sed nisl leo, laoreet a mauris
+    vitae, ultrices varius augue. Fusce ac risus sollicitudin, posuere ante at,
+    faucibus odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+
+    In elementum consectetur ante, non rhoncus lorem vehicula eget. Pellentesque ac condimentum ex. Sed ultrices sapien sem. Pellentesque non diam massa. Vivamus viverra non turpis in porttitor. Nam gravida urna diam, non finibus felis blandit sit amet.
+  heading: Team 3 heading goes in here
