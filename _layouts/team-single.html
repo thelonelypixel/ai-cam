@@ -27,7 +27,8 @@
       <section class="block block__team-profile">
         <div class="container">
           <div class="row row--justified">
-            <div class="column-m-12 column-t-7 column-d-8">
+            <div class="column-m-12-nest column-d-1"></div>
+            <div class="column-m-12 column-t-7 column-d-7">
               <div class="team-profile__biography">
                 <h2 class="section-heading section-heading--left">Biography</h2>
                 {{ page.biography | markdownify }}
@@ -125,6 +126,7 @@
               </div>
               {% endif %}
             </div>
+            <div class="column-m-12-nest column-d-1"></div>
           </div>
         </div>
       </section>

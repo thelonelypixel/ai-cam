@@ -29,8 +29,6 @@ pagination:
 {% if paginator.total_pages > 1 %}
   <div class="posts__pagination">
     <ul class="pager">
-
-
       {% if paginator.previous_page %}
         <li class="previous">
           <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
