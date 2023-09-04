@@ -207,7 +207,6 @@ collections:
                 name: "image"
                 widget: "image"
                 required: false
-
           # Latest Overview
           - label: "Latest Overview"
             name: "latest_overview"
@@ -1420,7 +1419,7 @@ collections:
                 name: "image"
                 widget: "image"
                 required: false
-      # Projects Page (Archive)
+      # Projects Page
       - label: "Projects"
         name: "projects"
         file: "_data/projects.yml"
@@ -1465,6 +1464,164 @@ collections:
                 name: "image"
                 widget: "image"
                 required: false
+          # Media Text
+          - label: "Media Text"
+            name: "media_text"
+            collapsed: true
+            widget: "object"
+            fields:
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+                required: false
+              - label: "Content"
+                name: "content"
+                widget: "text"
+                required: false
+              - label: "Quick Links"
+                name: "quick_links"
+                widget: "list"
+                required: false
+                collapsed: true
+                fields:
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                required: false
+                collapsed: true
+                fields:
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+              - label: "Image"
+                name: "image"
+                widget: "image"
+                required: false
+              - label: "Image (Small)"
+                name: "image_small"
+                widget: "image"
+                required: false
+          # Paper Submissions
+          - label: "Paper Submissions"
+            name: "paper_submissions"
+            collapsed: true
+            widget: "object"
+            fields:
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+                required: false
+              - label: "Content"
+                name: "content"
+                widget: "text"
+                required: false
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                required: false
+                collapsed: true
+                fields:
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+              - label: "Submission Instructions"
+                name: "submission_instructions"
+                widget: "markdown"
+                required: false
+              - label: "Submission Link"
+                name: "submission_link"
+                widget: "string"
+                required: false
+          # FAQs
+          - label: "FAQs"
+            name: "faqs"
+            collapsed: true
+            widget: "object"
+            fields:
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+                required: false
+              - label: "Content"
+                name: "content"
+                widget: "text"
+                required: false
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                required: false
+                collapsed: true
+                fields:
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+              - label: "FAQs"
+                name: "faqs"
+                widget: "list"
+                required: false
+                collapsed: true
+                fields:
+                  - {
+                      label: Heading,
+                      name: heading,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Content,
+                      name: content,
+                      widget: markdown,
+                      required: false,
+                      collapsed: true,
+                    }
       # Research Page (Archive for Research and Researchers)
       - label: "Research"
         name: "research"
