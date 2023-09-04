@@ -1245,26 +1245,6 @@ collections:
                 name: "content"
                 widget: "text"
                 required: false
-              - label: "Buttons"
-                name: "buttons"
-                widget: "list"
-                required: false
-                collapsed: true
-                fields:
-                  - {
-                      label: Link,
-                      name: link,
-                      widget: string,
-                      required: false,
-                      collapsed: true,
-                    }
-                  - {
-                      label: Text,
-                      name: text,
-                      widget: string,
-                      required: false,
-                      collapsed: true,
-                    }
           # Team 2 - Rename this later
           - label: "Team 2 (Rename this later)"
             name: "opportunities_team_two"
@@ -1279,26 +1259,6 @@ collections:
                 name: "content"
                 widget: "text"
                 required: false
-              - label: "Buttons"
-                name: "buttons"
-                widget: "list"
-                required: false
-                collapsed: true
-                fields:
-                  - {
-                      label: Link,
-                      name: link,
-                      widget: string,
-                      required: false,
-                      collapsed: true,
-                    }
-                  - {
-                      label: Text,
-                      name: text,
-                      widget: string,
-                      required: false,
-                      collapsed: true,
-                    }
           # Team 3 - Rename this later
           - label: "Team 3 (Rename this later)"
             name: "opportunities_team_three"
@@ -1313,26 +1273,6 @@ collections:
                 name: "content"
                 widget: "text"
                 required: false
-              - label: "Buttons"
-                name: "buttons"
-                widget: "list"
-                required: false
-                collapsed: true
-                fields:
-                  - {
-                      label: Link,
-                      name: link,
-                      widget: string,
-                      required: false,
-                      collapsed: true,
-                    }
-                  - {
-                      label: Text,
-                      name: text,
-                      widget: string,
-                      required: false,
-                      collapsed: true,
-                    }
       # Blog Page (Archive)
       - label: "Blog"
         name: "blog"
