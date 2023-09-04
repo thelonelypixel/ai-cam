@@ -13,6 +13,7 @@ opportunities_team_one:
 
 
     In elementum consectetur ante, non rhoncus lorem vehicula eget. Pellentesque ac condimentum ex. Sed ultrices sapien sem. Pellentesque non diam massa. Vivamus viverra non turpis in porttitor. Nam gravida urna diam, non finibus felis blandit sit amet.
+  image: /assets/uploads/image-2.png
 opportunities_team_two:
   content: >-
     Curabitur risus urna, ornare sed pretium vel, mattis et metus. Sed
@@ -23,6 +24,7 @@ opportunities_team_two:
 
     In elementum consectetur ante, non rhoncus lorem vehicula eget. Pellentesque ac condimentum ex. Sed ultrices sapien sem. Pellentesque non diam massa. Vivamus viverra non turpis in porttitor. Nam gravida urna diam, non finibus felis blandit sit amet.
   heading: Team 2 heading goes in here
+  image: /assets/uploads/image-2.png
 opportunities_team_three:
   content: >-
     Curabitur risus urna, ornare sed pretium vel, mattis et metus. Sed
@@ -33,3 +35,4 @@ opportunities_team_three:
 
     In elementum consectetur ante, non rhoncus lorem vehicula eget. Pellentesque ac condimentum ex. Sed ultrices sapien sem. Pellentesque non diam massa. Vivamus viverra non turpis in porttitor. Nam gravida urna diam, non finibus felis blandit sit amet.
   heading: Team 3 heading goes in here
+  image: /assets/uploads/image-2.png
