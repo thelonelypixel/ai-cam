@@ -24,7 +24,7 @@ title: 'Events'
         {% assign eventEnd = event.end | date: '%Y-%m-%d %H:%M %p' %}
 
         {% if eventEnd >= currentDate and eventStart >= currentTime %}
-          <a class="posts__item" href="{{ event.url }}">
+          <a class="posts__item posts__item--event" href="{{ event.url }}">
             <div class="posts__item-thumbnail">
               {% if event.image != nil %}
                 <img src="{{ event.image }}">
@@ -35,6 +35,12 @@ title: 'Events'
             <div class="posts__item-content">
               <h3>{{ event.title }}</h3>
               <span class="button button--simple">Read more</span>
+            </div>
+            <div class="posts__item-date">
+              <p>
+                {{ event.start | date: '%d' }}
+                <span>{{ event.start | date: '%b' }}</span>
+              </p>
             </div>
           </a>
         {% endif %}
@@ -58,7 +64,7 @@ title: 'Events'
         {% assign eventEnd = event.end | date: '%Y-%m-%d %H:%M %p' %}
 
         {% if eventEnd < currentDate %}
-          <a class="posts__item" href="{{ event.url }}">
+          <a class="posts__item posts__item--event" href="{{ event.url }}">
             <div class="posts__item-thumbnail">
               {% if event.image != nil %}
                 <img src="{{ event.image }}">
@@ -69,6 +75,12 @@ title: 'Events'
             <div class="posts__item-content">
               <h3>{{ event.title }}</h3>
               <span class="button button--simple">Read more</span>
+            </div>
+            <div class="posts__item-date">
+              <p>
+                {{ event.start | date: '%d' }}
+                <span>{{ event.start | date: '%b' }}</span>
+              </p>
             </div>
           </a>
         {% endif %}

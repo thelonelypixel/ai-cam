@@ -106,9 +106,9 @@ permalink: '/'
 
               {% if item.buttons != nil and item.buttons.size > 0 %}
                 <div class="button-box">
-                  {% for item in hero.buttons %}
+                  {% for item in item.buttons %}
                     {% if item.link != nil and item.link != '' %}
-                      <a class="button button--standard button--standard-anchor" href="{{ item.link }}">{{ item.text }}</a>
+                      <a class="button button--standard" href="{{ item.link }}">{{ item.text }}</a>
                     {% endif %}
                   {% endfor %}
                 </div>
