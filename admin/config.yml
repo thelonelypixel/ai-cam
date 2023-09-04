@@ -1917,6 +1917,14 @@ collections:
         time_format: "HH:mm" # e.g. 21:07
         format: "LLL"
         picker_utc: false
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        multiple: true
+        options:
+          - { label: "Category one", value: "category-one" }
+          - { label: "Category two", value: "category-two" }
+          - { label: "Category three", value: "category-three" }
       - label: "Featured Image"
         name: "image"
         widget: "image"
