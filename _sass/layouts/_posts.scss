@@ -220,6 +220,10 @@
       &.next {
         border: none;
 
+        &:hover {
+          background-color: transparent;
+        }
+
         a,
         button {
           width: auto;

@@ -4,28 +4,51 @@ title: "Research"
 ---
 
 <!-- Update -->
+{% assign hero = site.data.research.hero %}
 <section class="block block--bg-blue block__hero block__hero--standard" id="hero">
   <div class="container">
     <div class="hero__content">
-      <h1>Research</h1>
-      <p>AI@Cam’s mission is to drive a new wave of AI innovation that serves
-                science, citizens, and society.</p>
+      {% if hero.heading != nil and hero.heading != '' %}
+        <h1>{{ hero.heading }}</h1>
+      {% endif %}
+      {% if hero.content != nil and hero.content != '' %}
+        {{
+      hero.content | markdownify }}
+      {% endif %}
+      {% if hero.buttons != nil and
+      hero.buttons.size > 0 %}
+        <div class="button-box">
+          {% for item in hero.buttons %}
+            {% if item.link != nil and item.link !=
+        '' %}
+              <a class="button button--standard button--standard-anchor" href="{{ item.link }}">{{ item.text }}</a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
     </div>
+
+    {% if hero.image != nil and hero.image != '' %}
+      <div class="hero__image">
+        <img alt="" src="{{ hero.image }}"/>
+      </div>
+    {% endif %}
   </div>
 </section>
 
+{% assign text_split = site.data.research.text_split %}
 <section class="block block--bg-pink block--no-padding-bottom block__text block__text--split">
   <div class="container">
-    <div class="text__heading">
-      <h2>Research heading goes in here and takes up around two lines of
-                space</h2>
-    </div>
-    <div class="text__content">
-      <p>AI@Cam will build this infrastructure through research, education, and
-                innovation programmes that leverage the world-leading research already
-                taking place across the University and connecting this to real-world
-                needs.</p>
-    </div>
+    {% if text_split.heading != nil and text_split.heading != '' %}
+      <div class="text__heading">
+        <h2>{{ text_split.heading }}</h2>
+      </div>
+    {% endif %}
+    {% if text_split.content != nil and text_split.content != '' %}
+      <div class="text__content">
+        {{ text_split.content | markdownify }}
+      </div>
+    {% endif %}
   </div>
 </section>
 
@@ -69,15 +92,24 @@ title: "Research"
   </div>
 </section>
 
+{% assign researchers = site.data.research.researchers %}
 <section class="block block__team block__team--basic">
   <div class="container">
     <div class="team__intro">
       <div class="team__intro-content">
-        <h2>Researchers</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-                    euismod, ante condimentum accumsan lacinia, nibh ipsum fermentum
-                    libero, id feugiat odio mauris ac libero. Etiam in ligula ante.
-                    Vestibulum in magna in magna pellentesque venenatis ac eu ex.</p>
+        <h2>{{ researchers.heading }}</h2>
+        {{ researchers.content | markdownify }}
+        {% if researchers.buttons != nil
+        and researchers.buttons.size > 0 %}
+          <div class="button-box">
+            {% for item in researchers.buttons %}
+              {% if item.link != nil and
+          item.link != '' %}
+                <a class="button button--standard button--standard-anchor" href="{{ item.link }}">{{ item.text }}</a>
+              {% endif %}
+            {% endfor %}
+          </div>
+        {% endif %}
       </div>
       <div class="team__intro-filters">
         <button class="button button--filters">Show Filters</button>
@@ -107,23 +139,69 @@ title: "Research"
   </div>
 </section>
 
-<section class="block block--bg-pink block--increase-padding-bottom block__media-text" id="find-out-more">
+{% assign media_text = site.data.research.media_text %}
+<section class="block block--bg-pink block--increase-padding-bottom block__media-text">
   <div class="container">
-    <div class="media-text__media media-text__media--two">
-      <img alt="" class="media-text__media-image" src="../assets/images/lander-media-2.png"/>
-      <img alt="" class="media-text__media-image--floating" src="../assets/images/lander-media-1.png"/>
-    </div>
+    {% if (media_text.image != nil and media_text.image != '') or
+    (media_text.image_small != nil and media_text.image_small != '') %}
+      <div class="media-text__media {% if media_text.image_small != nil and media_text.image_small != '' %} media-text__media--two {% endif %}">
+        {% if media_text.image != nil and media_text.image != '' %}
+          <img class="media-text__media-image" src="{{ media_text.image }}"/>
+        {% endif %}
+        {% if media_text.image_small != nil and media_text.image_small
+      != '' %}
+          <img class="media-text__media-image--floating" src="{{ media_text.image_small }}"/>
+        {% endif %}
+      </div>
+    {% endif %}
 
     <div class="media-text__content">
-      <h2>Are you a University of Cambridge researcher?</h2>
-      <p>Curabitur risus urna, ornare sed pretium vel, mattis et metus. Sed
-                scelerisque elit nec euismod ultricies. Sed nisl leo, laoreet a mauris
-                vitae, ultrices varius augue. Fusce ac risus sollicitudin, posuere ante
-                at, faucibus odio. Nunc sollicitudin metus ut est pulvinar ultricies
-                quis nec sapien.</p>
-      <div class="button-box">
-        <a class="button button--standard" href="#">Contact us</a>
-      </div>
+      {% if media_text.heading != nil and media_text.heading != '' %}
+        <h2>{{ media_text.heading }}</h2>
+      {% endif %}
+      {% if media_text.content != nil and media_text.content != ''
+      %}
+        {{ media_text.content | markdownify }}
+      {% endif %}
+      <!-- Quick Links -->
+      {% if media_text.quick_links != nil and media_text.quick_links.size > 0 %}
+        <ul class="media-text__content-quicklinks">
+          {% for item in media_text.quick_links %}
+            {% if item.link != nil and
+        item.link != '' %}
+              <li>
+                <a href="{{ item.link }}">
+                  {{ item.text }}
+                  <svg height="24px" version="1.1" viewbox="0 0 20.0930233 24" width="20.0930233px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                    <g fill-rule="evenodd" fill="none" id="Page-1" stroke-width="1" stroke="none">
+                      <g fill-rule="nonzero" fill="#000000" id="Landing-Page" transform="translate(-422.9535, -676.0465)">
+                        <g id="Group" transform="translate(0.4741, 80)">
+                          <g id="CTA" transform="translate(254.5259, 577)">
+                            <g id="right-arrow" transform="translate(178, 31.0465) rotate(-270) translate(-178, -31.0465)translate(166, 21)">
+                              <path d="M23.6163882,9.10811199 L14.9491435,0.385649066 C14.7017309,0.136665861 14.3719776,0 14.0203708,0 C13.6683737,0 13.3388155,0.13686222 13.0914029,0.385649066 L12.3044827,1.17776125 C12.0572652,1.42635174 11.9210712,1.7583948 11.9210712,2.11243007 C11.9210712,2.46626898 12.0572652,2.8095045 12.3044827,3.05809499 L17.3608307,8.15773445 L1.29657454,8.15773445 C0.572287906,8.15773445 0,8.72835369 0,9.45743464 L0,10.57727 C0,11.3063509 0.572287906,11.9345034 1.29657454,11.9345034 L17.4181961,11.9345034 L12.3046778,17.0626149 C12.0574603,17.3115981 11.9212664,17.6346086 11.9212664,17.9886439 C11.9212664,18.3422865 12.0574603,18.6700096 12.3046778,18.9187965 L13.091598,19.708356 C13.3390106,19.9573392 13.6685688,20.0930233 14.0205659,20.0930233 C14.3721727,20.0930233 14.7019261,19.955572 14.9493386,19.7065888 L23.6165834,10.9843222 C23.8645813,10.7345535 24.0009704,10.401136 24,10.046708 C24.0007753,9.69110185 23.8645813,9.35748791 23.6163882,9.10811199 Z" id="Path"></path>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      {% endif %}
+      {% if media_text.buttons != nil and media_text.buttons.size >
+      0 %}
+        <div class="button-box">
+          {% for item in media_text.buttons %}
+            {% if item.link != nil and
+        item.link != '' %}
+              <a class="button button--standard" href="{{ item.link }}">{{ item.text }}</a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
     </div>
   </div>
 </section>

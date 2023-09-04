@@ -1231,9 +1231,77 @@ collections:
                 name: "image"
                 widget: "image"
                 required: false
-          # Opportunities
-          - label: "Opportunities"
-            name: "opportunities"
+          # Team 1 - Rename this later
+          - label: "Team 1 (Rename this later)"
+            name: "opportunities_team_one"
+            collapsed: true
+            widget: "object"
+            fields:
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+                required: false
+              - label: "Content"
+                name: "content"
+                widget: "text"
+                required: false
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                required: false
+                collapsed: true
+                fields:
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+          # Team 2 - Rename this later
+          - label: "Team 2 (Rename this later)"
+            name: "opportunities_team_two"
+            collapsed: true
+            widget: "object"
+            fields:
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+                required: false
+              - label: "Content"
+                name: "content"
+                widget: "text"
+                required: false
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                required: false
+                collapsed: true
+                fields:
+                  - {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: string,
+                      required: false,
+                      collapsed: true,
+                    }
+          # Team 3 - Rename this later
+          - label: "Team 3 (Rename this later)"
+            name: "opportunities_team_three"
             collapsed: true
             widget: "object"
             fields:
