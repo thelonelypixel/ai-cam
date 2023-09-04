@@ -197,6 +197,19 @@
       form {
         margin-top: 2rem;
         width: 500px;
+
+        input {
+          margin: 0;
+          padding: 1rem 2rem;
+          background-color: $lightest;
+          border-radius: 30px;
+          color: $primary;
+
+          &:placeholder-shown,
+          &::placeholder {
+            color: $primary;
+          }
+        }
       }
     }
   }
