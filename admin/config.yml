@@ -1245,6 +1245,10 @@ collections:
                 name: "content"
                 widget: "text"
                 required: false
+              - label: "Image"
+                name: "image"
+                widget: "image"
+                required: false
           # Team 2 - Rename this later
           - label: "Team 2 (Rename this later)"
             name: "opportunities_team_two"
@@ -1259,6 +1263,10 @@ collections:
                 name: "content"
                 widget: "text"
                 required: false
+              - label: "Image"
+                name: "image"
+                widget: "image"
+                required: false
           # Team 3 - Rename this later
           - label: "Team 3 (Rename this later)"
             name: "opportunities_team_three"
@@ -1272,6 +1280,10 @@ collections:
               - label: "Content"
                 name: "content"
                 widget: "text"
+                required: false
+              - label: "Image"
+                name: "image"
+                widget: "image"
                 required: false
       # Blog Page (Archive)
       - label: "Blog"

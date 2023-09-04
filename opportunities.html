@@ -37,12 +37,16 @@ title: 'Opportunities'
 {% assign opportunities_entries = site.opportunities %}
 <section class="block block--bg-pink block--no-padding-top block__opportunities">
   <div class="container">
+    {% assign opportunities_team_one = site.data.opportunities.opportunities_team_one %}
     <div class="opportunities__team">
       <div class="opportunities__team-upper">
         <div class="team-upper__content">
-          <h3>Team 1 heading goes in here</h3>
-          <p>Curabitur risus urna, ornare sed pretium vel, mattis et metus. Sed scelerisque elit nec euismod ultricies. Sed nisl leo, laoreet a mauris vitae, ultrices varius augue. Fusce ac risus sollicitudin, posuere ante at, faucibus odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <p>In elementum consectetur ante, non rhoncus lorem vehicula eget. Pellentesque ac condimentum ex. Sed ultrices sapien sem. Pellentesque non diam massa. Vivamus viverra non turpis in porttitor. Nam gravida urna diam, non finibus felis blandit sit amet.</p>
+          {% if opportunities_team_one.heading != nil and opportunities_team_one.heading != '' %}
+            <h3>{{ opportunities_team_one.heading }}</h3>
+          {% endif %}
+          {% if opportunities_team_one.content != nil and opportunities_team_one.content != '' %}
+            {{ opportunities_team_one.content | markdownify }}
+          {% endif %}
           <button class="button button--standard toggle-opportunities">
             <span class="inactive">Show opportunities</span>
             <span class="active">Hide opportunities</span>
@@ -61,8 +65,11 @@ title: 'Opportunities'
             </svg>
           </button>
         </div>
+
         <div class="team-upper__image">
-          <img alt="" src="../assets/images/placeholder-1.jpg">
+          {% if opportunities_team_one.image != nil and opportunities_team_one.image != '' %}
+            <img alt="" src="{{ opportunities_team_one.image }}"/>
+          {% endif %}
         </div>
       </div>
       <div class="opportunities__team-listings">
@@ -92,12 +99,16 @@ title: 'Opportunities'
       </div>
     </div>
 
+    {% assign opportunities_team_two = site.data.opportunities.opportunities_team_two %}
     <div class="opportunities__team">
       <div class="opportunities__team-upper">
         <div class="team-upper__content">
-          <h3>Team 2 heading goes in here</h3>
-          <p>Curabitur risus urna, ornare sed pretium vel, mattis et metus. Sed scelerisque elit nec euismod ultricies. Sed nisl leo, laoreet a mauris vitae, ultrices varius augue. Fusce ac risus sollicitudin, posuere ante at, faucibus odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <p>In elementum consectetur ante, non rhoncus lorem vehicula eget. Pellentesque ac condimentum ex. Sed ultrices sapien sem. Pellentesque non diam massa. Vivamus viverra non turpis in porttitor. Nam gravida urna diam, non finibus felis blandit sit amet.</p>
+          {% if opportunities_team_two.heading != nil and opportunities_team_two.heading != '' %}
+            <h3>{{ opportunities_team_two.heading }}</h3>
+          {% endif %}
+          {% if opportunities_team_two.content != nil and opportunities_team_two.content != '' %}
+            {{ opportunities_team_two.content | markdownify }}
+          {% endif %}
           <button class="button button--standard toggle-opportunities">
             <span class="inactive">Show opportunities</span>
             <span class="active">Hide opportunities</span>
@@ -117,7 +128,9 @@ title: 'Opportunities'
           </button>
         </div>
         <div class="team-upper__image">
-          <img alt="" src="../assets/images/placeholder-1.jpg">
+          {% if opportunities_team_two.image != nil and opportunities_team_two.image != '' %}
+            <img alt="" src="{{ opportunities_team_two.image }}"/>
+          {% endif %}
         </div>
       </div>
       <div class="opportunities__team-listings">
@@ -147,12 +160,16 @@ title: 'Opportunities'
       </div>
     </div>
 
+    {% assign opportunities_team_three = site.data.opportunities.opportunities_team_three %}
     <div class="opportunities__team">
       <div class="opportunities__team-upper">
         <div class="team-upper__content">
-          <h3>Team 3 heading goes in here</h3>
-          <p>Curabitur risus urna, ornare sed pretium vel, mattis et metus. Sed scelerisque elit nec euismod ultricies. Sed nisl leo, laoreet a mauris vitae, ultrices varius augue. Fusce ac risus sollicitudin, posuere ante at, faucibus odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <p>In elementum consectetur ante, non rhoncus lorem vehicula eget. Pellentesque ac condimentum ex. Sed ultrices sapien sem. Pellentesque non diam massa. Vivamus viverra non turpis in porttitor. Nam gravida urna diam, non finibus felis blandit sit amet.</p>
+          {% if opportunities_team_three.heading != nil and opportunities_team_three.heading != '' %}
+            <h3>{{ opportunities_team_three.heading }}</h3>
+          {% endif %}
+          {% if opportunities_team_three.content != nil and opportunities_team_three.content != '' %}
+            {{ opportunities_team_three.content | markdownify }}
+          {% endif %}
           <button class="button button--standard toggle-opportunities">
             <span class="inactive">Show opportunities</span>
             <span class="active">Hide opportunities</span>
@@ -172,7 +189,9 @@ title: 'Opportunities'
           </button>
         </div>
         <div class="team-upper__image">
-          <img alt="" src="../assets/images/placeholder-1.jpg">
+          {% if opportunities_team_three.image != nil and opportunities_team_three.image != '' %}
+            <img alt="" src="{{ opportunities_team_three.image }}"/>
+          {% endif %}
         </div>
       </div>
       <div class="opportunities__team-listings">
