@@ -262,9 +262,8 @@ title: 'AI-deas'
 <section class="block block__accordions">
   <div class="container container--narrow">
     <div class="accordions__intro">
-      <h2 class="section-heading">FAQs</h2>
       {% if faqs.heading != nil and faqs.heading != '' %}
-        <h2>{{ faqs.heading }}</h2>
+        <h2 class="section-heading">{{ faqs.heading }}</h2>
       {% endif %}
       {% if faqs.content != nil and faqs.content != '' %}
         {{ faqs.content | markdownify }}
