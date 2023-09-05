@@ -67,6 +67,7 @@ collections:
           - label: "Community Link"
             name: "community_link"
             widget: "string"
+            required: false
           # Top Bar Nav
           - label: "Top Bar Navigation"
             name: "top_bar"
