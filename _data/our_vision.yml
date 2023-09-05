@@ -1,5 +1,5 @@
 hero:
-  heading: About us
+  heading: Our vision
   content: AI@Cam’s mission is to drive a new wave of AI innovation that serves
     science, citizens, and society.
 text_split:
@@ -7,13 +7,13 @@ text_split:
     innovation community pursuing high-quality interdisciplinary collaborations
     that deliver benefits for science and society through partnerships that take
     AI from the lab to areas of need.
-  content: AI@Cam will build this infrastructure through research, education, and
+  content: >-
+    AI@Cam will build this infrastructure through research, education, and
     innovation programmes that leverage the world-leading research already
-    taking place across the University and connecting this to real-world needs.
-    Check out our AI@Cam programmes to find out more about our work, or explore
-    our website to find out more about research, teaching, and collaborations at
-    the University of Cambridge. AI@Cam is launching over Summer 2023, and this
-    site will be updated as we launch.
+    taking place across the University and connecting this to real-world needs. 
+
+
+    Check out our AI@Cam programmes to find out more about our work, or explore our website to find out more about research, teaching, and collaborations at the University of Cambridge. AI@Cam is launching over Summer 2023, and this site will be updated as we launch.
 slider:
   slider_items:
     - heading: Programme 1
