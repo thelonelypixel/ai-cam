@@ -2,7 +2,7 @@
 layout: team-single
 name: Jessica Montgomery
 biography: This is the biography
-image: /assets/uploads/placeholder-2.jpg
+image: /assets/uploads/jessica-montgomery.jpeg
 email: test@test.co.uk
 url: htps://www.testweb.co.uk/
 website: htps://www.testweb.co.uk/
