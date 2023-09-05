@@ -8,7 +8,7 @@ top_bar:
     link: https://www.cam.ac.uk/research/
 main_nav:
   - label: About
-    link: a
+    link: ""
     submenu:
       - label: Our Vision
         link: /our-vision/
