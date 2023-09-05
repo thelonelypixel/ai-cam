@@ -49,7 +49,8 @@ faqs:
   heading: FAQs
   faqs:
     - heading: What is AI@Cam?
-      content: AI@Cam is the University of Cambridge’s new flagship mission to create
+      content:
+        AI@Cam is the University of Cambridge’s new flagship mission to create
         AI technologies that serve science, citizens, and society. We’ll be
         launching a website in September with further information about our
         work, but in the meantime you can read the review that led to our
@@ -85,7 +86,8 @@ faqs:
 
         At this stage, we’re looking for concept papers that set out an idea for challenge-led research that could deliver positive real-world outcomes through AI. You don’t need a fully developed research proposal to apply. For example, you might have the idea, but not yet have access to the tools or collaborators to develop and implement it. Alternatively, if you’d like to be involved in developing a challenge but don’t have a clear area of focus, check out the FAQ below about how you can get involved.
     - heading: Wait, what is this process?
-      content: "Today, we’re launching the first of a two-step process. We’re inviting
+      content:
+        "Today, we’re launching the first of a two-step process. We’re inviting
         concept papers with ideas for research that can help deliver AI@Cam’s
         mission. The second step of this process will build research teams in
         thematic areas, scoping ambitious challenge-led programmes on those
@@ -95,7 +97,8 @@ faqs:
         always easy to find collaborators, and we hope to facilitate this
         process."
     - heading: I’m not a researcher at the University of Cambridge. Can I get involved?
-      content: While this first stage of expressions of interest is focused on the
+      content:
+        While this first stage of expressions of interest is focused on the
         research community within the University, we hope the resulting
         challenges will engage with external partners both in the UK and beyond.
         We’re particularly interested in engaging with communities affected by
@@ -107,7 +110,8 @@ faqs:
         us while we’re in set-up phase; responses may take a little longer than
         usual.
     - heading: What support will AI@Cam offer to these challenge-led programmes?
-      content: After our roadmapping sessions, AI@Cam will work with research teams to
+      content:
+        After our roadmapping sessions, AI@Cam will work with research teams to
         develop their idea into a challenge-led research initiative. We’ll start
         by providing start-up funding of up to £150k to help get the initiative
         off the ground. We expect this funding can be used flexibly, for example
@@ -118,9 +122,11 @@ faqs:
         exact package of support will be developed in collaboration with
         research teams as we develop the missions, and will flex over the two
         year period where we hope to help you launch your initiative.
-    - heading: What will happen to my concept paper? And what commitment is needed
+    - heading:
+        What will happen to my concept paper? And what commitment is needed
         from me at this stage?
-      content: At this stage, researchers are submitting ideas via the concept papers,
+      content:
+        At this stage, researchers are submitting ideas via the concept papers,
         with the expectation of a time commitment for workshops later in the
         project development process. Concept papers will be reviewed by the
         AI@Cam team and clustered into themes. We’ll then bring together
@@ -128,13 +134,15 @@ faqs:
         on the volume of interest in this call, this would be through either one
         or several workshops in the autumn and winter.
     - heading: What kind of funding do you expect to offer?
-      content: We anticipate offering start-up funds of £150k to selected challenges,
+      content:
+        We anticipate offering start-up funds of £150k to selected challenges,
         working with those challenges to generate further income. Depending on
         the scale of demand, we may also launch a small-projects start-up scheme
         later this year. We’ll be using the concept paper and challenge scoping
         process to assess whether there is demand for this.
     - heading: What type of programmes do you expect to fund?
-      content: AI@Cam’s mission is to develop AI technologies that serve science,
+      content:
+        AI@Cam’s mission is to develop AI technologies that serve science,
         citizens, and society, and our focus is interdisciplinary research that
         addresses real-world challenges. We’re interested in projects that have
         a focus on public benefit, are trying to work across the pipeline from
@@ -153,7 +161,7 @@ faqs:
       content: To submit a concept note, visit <https://forms.gle/e6jBHyUdbZ3wBV2f7>
     - heading: What should go in my concept note? What information do you need?
       content: >-
-        
+
 
         We’re looking for a short pitch that sets out your idea for using AI in the service of science, citizens, and society, alongside some details about you.
 
@@ -172,9 +180,11 @@ faqs:
         * Why Cambridge is positioned to act in this area (1000 characters).
 
         * What type of support you would need to develop this challenge (1000 characters).
-    - heading: What if I don’t have a concept paper, but I’d like to be involved in
+    - heading:
+        What if I don’t have a concept paper, but I’d like to be involved in
         developing a research programme?
-      content: If you’re not at the stage where you’d like to submit a concept paper,
+      content:
+        If you’re not at the stage where you’d like to submit a concept paper,
         but you’d like to be engaged in the development of AI@Cam’s AI
         challenges, please get in touch with Jess Montgomery
         ([jkm40@cam.ac.uk](mailto:jkm40@cam.ac.uk)) with a brief overview of

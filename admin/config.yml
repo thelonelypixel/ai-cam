@@ -1460,10 +1460,10 @@ collections:
                 name: "image"
                 widget: "image"
                 required: false
-      # Projects Page
-      - label: "Projects"
-        name: "projects"
-        file: "_data/projects.yml"
+      # AI-deas Page
+      - label: "AI-deas"
+        name: "ai_deas"
+        file: "_data/ai_deas.yml"
         editor:
           preview: false
         fields:

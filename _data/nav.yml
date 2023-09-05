@@ -25,7 +25,7 @@ main_nav:
     link: ""
     submenu:
       - label: AI-deas
-        link: /projects/
+        link: /ai-deas/
   - label: AI@Cambridge
     link: ""
     submenu:
