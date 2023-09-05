@@ -12,7 +12,9 @@ nav.nav-primary {
 
     li {
       margin-left: 1rem;
+      padding-bottom: 1rem;
       position: relative;
+      transform: translateY(5px);
 
       @include bp(tablet) {
         margin-left: 2rem;
@@ -51,7 +53,7 @@ nav.nav-primary {
         width: auto;
         min-width: 120px;
         height: auto;
-        padding: 1rem;
+        padding: 2rem;
         position: absolute;
         left: 50%;
         bottom: 0;
@@ -63,13 +65,11 @@ nav.nav-primary {
         opacity: 0;
         visibility: hidden;
         transition: 400ms $cubic;
-        box-shadow: 0 0 10px rgba($darkest, 1);
-        border-radius: 4px;
+        box-shadow: 0 3px 10px rgba($darkest, 0.3);
+        border-radius: 8px;
 
-        a,
-        button,
-        span {
-          margin-bottom: 0.5rem;
+        a {
+          margin-bottom: 1.5rem;
           font-family: $header-font-family;
           font-size: 1.4rem;
           line-height: 2rem;
@@ -81,6 +81,10 @@ nav.nav-primary {
           @include bp(desktop) {
             font-size: 2rem;
             line-height: 2.5rem;
+          }
+
+          &:last-of-type {
+            margin-bottom: 0;
           }
         }
       }

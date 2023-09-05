@@ -64,6 +64,9 @@ footer[role="contentinfo"] {
       margin-bottom: 7.5rem;
       padding: 5rem;
       background-color: $dark-blue;
+      background-image: url("../../assets/images/footer-form-bg.png");
+      background-repeat: no-repeat;
+      background-size: cover;
       border-radius: 20px;
 
       .ai-newsletter__inner {
