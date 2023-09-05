@@ -2,7 +2,7 @@
 layout: team-single
 name: Neil Lawrence
 biography: This is the biography
-image: /assets/uploads/placeholder-1.jpg
+image: /assets/uploads/neil-lawrence.png
 email: test
 url: test
 website: test
