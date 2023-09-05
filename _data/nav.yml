@@ -12,12 +12,29 @@ main_nav:
     submenu:
       - label: Our Vision
         link: /our-vision/
-  - label: News
-    link: /news/
-  - label: Incentives
-    link: /incentives/
-  - label: AI at Cambridge
-    link: /ai-at-cambridge/
+      - label: Team
+        link: /team/
+  - label: News & Events
+    link: ""
+    submenu:
+      - label: News
+        link: /news/
+      - label: Events
+        link: /events/
+  - label: Initiatives
+    link: ""
+    submenu:
+      - label: AI-deas
+        link: /projects/
+  - label: AI@Cambridge
+    link: ""
+    submenu:
+      - label: Research
+        link: /research/
+      - label: Study
+        link: /study/
+      - label: Collaborate
+        link: /collaborate/
   - label: Blog
     link: /blog/
 footer_nav:
