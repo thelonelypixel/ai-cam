@@ -142,10 +142,14 @@ title: "Study"
                   <p>{{ item.department }}</p>
                 </td>
                 <td>
-                  <a class="button button--standard" href="{{ item.link }}" target="_blank">View course</a>
+                  {% if item.link != nil and item.link != '' %}
+                    <a class="button button--standard" href="{{ item.link }}" target="_blank">View course</a>
+                  {% endif %}
                 </td>
                 <td>
-                  <a class="button button--standard" href="{{ item.department_link }}" target="_blank">View department</a>
+                  {% if item.department_link != nil and item.department_link != '' %}
+                    <a class="button button--standard" href="{{ item.department_link }}" target="_blank">View department</a>
+                  {% endif %}
                 </td>
               </tr>
             {% endif %}
@@ -253,10 +257,14 @@ title: "Study"
                   <p>{{ item.department }}</p>
                 </td>
                 <td>
-                  <a class="button button--standard" href="{{ item.link }}" target="_blank">View course</a>
+                  {% if item.link != nil and item.link != '' %}
+                    <a class="button button--standard" href="{{ item.link }}" target="_blank">View course</a>
+                  {% endif %}
                 </td>
                 <td>
-                  <a class="button button--standard" href="{{ item.department_link }}" target="_blank">View department</a>
+                  {% if item.department_link != nil and item.department_link != '' %}
+                    <a class="button button--standard" href="{{ item.department_link }}" target="_blank">View department</a>
+                  {% endif %}
                 </td>
               </tr>
             {% endif %}
@@ -364,10 +372,14 @@ title: "Study"
                   <p>{{ item.department }}</p>
                 </td>
                 <td>
-                  <a class="button button--standard" href="{{ item.link }}" target="_blank">View course</a>
+                  {% if item.link != nil and item.link != '' %}
+                    <a class="button button--standard" href="{{ item.link }}" target="_blank">View course</a>
+                  {% endif %}
                 </td>
                 <td>
-                  <a class="button button--standard" href="{{ item.department_link }}" target="_blank">View department</a>
+                  {% if item.department_link != nil and item.department_link != '' %}
+                    <a class="button button--standard" href="{{ item.department_link }}" target="_blank">View department</a>
+                  {% endif %}
                 </td>
               </tr>
             {% endif %}
