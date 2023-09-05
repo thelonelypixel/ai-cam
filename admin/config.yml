@@ -29,10 +29,6 @@ collections:
           - label: "Footer Description"
             name: "footer_description"
             widget: "text"
-          # Community Link
-          - label: "Community Link"
-            name: "community_link"
-            widget: "string"
           # University of Cambridge Details
           - label: "University of Cambridge Details"
             name: "uoc_details"
@@ -67,6 +63,10 @@ collections:
         editor:
           preview: false
         fields:
+          # Community Link
+          - label: "Community Link"
+            name: "community_link"
+            widget: "string"
           # Top Bar Nav
           - label: "Top Bar Navigation"
             name: "top_bar"
@@ -92,9 +92,11 @@ collections:
               - label: "Label"
                 name: "label"
                 widget: "string"
+                required: true
               - label: "Link"
                 name: "link"
                 widget: "string"
+                required: false
               - label: "Submenu"
                 name: "submenu"
                 collapsed: true
@@ -105,9 +107,11 @@ collections:
                   - label: "Label"
                     name: "label"
                     widget: "string"
+                    required: true
                   - label: "Link"
                     name: "link"
                     widget: "string"
+                    required: false
           # Footer Nav
           - label: "Footer Navigation"
             name: "footer_nav"
@@ -659,10 +663,10 @@ collections:
                     name: "content"
                     widget: "text"
                     required: false
-      # Partnerships Page (Complete)
-      - label: "Partnerships"
-        name: "partnerships"
-        file: "_data/partnerships.yml"
+      # Collaborate Page (Complete)
+      - label: "Collaborate"
+        name: "collaborate"
+        file: "_data/collaborate.yml"
         editor:
           preview: false
         fields:

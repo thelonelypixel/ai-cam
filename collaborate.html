@@ -1,9 +1,9 @@
 ---
 layout: "page"
-title: "Partnerships"
+title: "Collaborate"
 ---
 
-{% assign hero = site.data.partnerships.hero %}
+{% assign hero = site.data.collaborate.hero %}
 <section class="block block--bg-blue block__hero block__hero--standard" id="hero">
   <div class="container">
     <div class="hero__content">
@@ -34,7 +34,7 @@ title: "Partnerships"
   </div>
 </section>
 
-{% assign academic_state_partners = site.data.partnerships.academic_state_partners %}
+{% assign academic_state_partners = site.data.collaborate.academic_state_partners %}
 <section class="block block__bg-white block__logo-grid">
   <div class="container">
     {% if (academic_state_partners.heading != nil and academic_state_partners.heading != '') or (academic_state_partners.content != nil and academic_state_partners.content != '') or (academic_state_partners.buttons != nil and academic_state_partners.buttons.size > 0) %}
@@ -79,7 +79,7 @@ title: "Partnerships"
   </div>
 </section>
 
-{% assign industry_partners = site.data.partnerships.industry_partners %}
+{% assign industry_partners = site.data.collaborate.industry_partners %}
 <section class="block block__bg-white block__logo-grid">
   <div class="container">
     {% if (industry_partners.heading != nil and industry_partners.heading != '') or (industry_partners.content != nil and industry_partners.content != '') or (industry_partners.buttons != nil and industry_partners.buttons.size > 0) %}
@@ -124,7 +124,7 @@ title: "Partnerships"
   </div>
 </section>
 
-{% assign supporters = site.data.partnerships.supporters %}
+{% assign supporters = site.data.collaborate.supporters %}
 <section class="block block__bg-white block__logo-grid">
   <div class="container">
     {% if (supporters.heading != nil and supporters.heading != '') or (supporters.content != nil and supporters.content != '') or (supporters.buttons != nil and supporters.buttons.size > 0) %}
