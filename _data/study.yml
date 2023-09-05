@@ -1,7 +1,5 @@
 hero:
-  content: The University provides a range of courses relating to AI, its use as
-    part of a range of disciplines, and its critical evaluation. Explore where
-    you can find AI in our courses more at the links below.
+  content: The University of Cambridge is one of the world’s top five universities, and is home to a vibrant community of researchers and educators. The University provides a range of courses relating to AI, its use as part of a range of disciplines, and its critical evaluation. Explore where you can find AI in our courses more at the links below.
   heading: Study
 media_text_undergraduate:
   content: Curabitur risus urna, ornare sed pretium vel, mattis et metus. Sed
@@ -20,7 +18,7 @@ courses_undergraduate:
   courses_list:
     - name: Computer Science
       department: |-
-        
+
         Computer Science and Technology
       link: /
 media_text_postgraduate:
@@ -39,7 +37,7 @@ courses_postgraduate:
   courses_list:
     - name: Computer Science
       department: |-
-        
+
         Computer Science and Technology
       link: /
 media_text_executive:
@@ -58,6 +56,6 @@ courses_executive:
   courses_list:
     - name: Computer Science
       department: |-
-        
+
         Computer Science and Technology
       link: /

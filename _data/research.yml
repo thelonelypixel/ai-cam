@@ -1,23 +1,25 @@
 hero:
-  content: AI@Cam’s mission is to drive a new wave of AI innovation that serves
-    science, citizens, and society.
+  content: Research from the University of Cambridge is accelerating progress in AI’s core technical capabilities, enabling the application of AI technologies across sectors and disciplines, and building understandings of their impact and the levers to promote their ethical development.
   heading: Research
 text_split:
   heading: Research heading goes in here and takes up around two lines of space
-  content: AI@Cam will build this infrastructure through research, education, and
+  content:
+    AI@Cam will build this infrastructure through research, education, and
     innovation programmes that leverage the world-leading research already
     taking place across the University and connecting this to real-world needs.
 slider:
   heading: ""
   slider_items:
     - heading: Research Centre 1
-      content: AI@Cam is building an infrastructure for interdisciplinary innovation
+      content:
+        AI@Cam is building an infrastructure for interdisciplinary innovation
         that serves science and society through research, education, and
         innovation programmes that leverage world- leading research from across
         the University and connect this to real-world needs.
       image: /assets/uploads/placeholder-1.jpg
     - heading: Research Centre 2
-      content: AI@Cam is building an infrastructure for interdisciplinary innovation
+      content:
+        AI@Cam is building an infrastructure for interdisciplinary innovation
         that serves science and society through research, education, and
         innovation programmes that leverage world- leading research from across
         the University and connect this to real-world needs.

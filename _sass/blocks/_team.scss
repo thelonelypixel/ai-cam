@@ -223,13 +223,18 @@
         flex: 1;
 
         h3 {
-          margin: 0;
+          margin: 0 0 1rem 0;
           font-size: 2.4rem;
           line-height: 3.4rem;
 
           @include bp(tablet) {
+            font-size: 2.8rem;
+            line-height: 3.4rem;
+          }
+
+          @include bp(desktop-xl) {
             font-size: 3.2rem;
-            line-height: 6.5rem;
+            line-height: 4rem;
           }
         }
 
@@ -239,8 +244,13 @@
           line-height: 2rem;
 
           @include bp(tablet) {
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+          }
+
+          @include bp(desktop-xl) {
             font-size: 2rem;
-            line-height: 2.6rem;
+            line-height: 2.4rem;
           }
         }
       }

@@ -3,25 +3,47 @@ layout: 'page'
 title: 'Team'
 ---
 
+{% assign hero = site.data.team.hero %}
 <section class="block block__hero block__hero--standard" id="hero">
   <div class="container">
     <div class="hero__content">
-      <h1>Team</h1>
-      <p>AI@Cam’s mission is to drive a new wave of AI innovation that serves science, citizens, and society.</p>
+      {% if hero.heading != nil and hero.heading != '' %}
+        <h1>{{ hero.heading }}</h1>
+      {% endif %}
+
+      {% if hero.content != nil and hero.content != '' %}
+        {{ hero.content | markdownify }}
+      {% endif %}
+
+      {% if hero.buttons != nil and hero.buttons.size > 0 %}
+        <div class="button-box">
+          {% for item in hero.buttons %}
+            {% if item.link != nil and item.link != '' %}
+              <a class="button button--standard button--standard-anchor" href="{{ item.link }}">{{ item.text }}</a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
     </div>
+
+    {% if hero.image != nil and hero.image != '' %}
+      <div class="hero__image">
+        <img alt="" src="{{ hero.image }}"/>
+      </div>
+    {% endif %}
   </div>
 </section>
 
 <section class="block block__team">
   <div class="container">
     <div class="team__selector">
-      <button class="active" data-id="team">Team</button>
+      <button class="active" data-id="leadership">Leadership</button>
       <button data-id="steering-group">Steering Group</button>
     </div>
 
     {% assign team_entries = site.team %}
-    <div class="team__grid team__grid--team active">
-      {% for post in team_entries limit:3 %}
+    <div class="team__grid team__grid--leadership active">
+      {% for post in team_entries %}
         {% if post.category contains 'leadership' %}
           <a href="{{ post.url }}" class="team__member">
             <div class="team__member-image">
@@ -41,7 +63,7 @@ title: 'Team'
     </div>
 
     <div class="team__grid team__grid--steering-group">
-      {% for post in team_entries limit:3 %}
+      {% for post in team_entries %}
         {% if post.category contains 'steering-group' %}
           <a href="{{ post.url }}" class="team__member">
             <div class="team__member-image">

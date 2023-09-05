@@ -3,7 +3,6 @@ layout: "page"
 title: "Research"
 ---
 
-<!-- Update -->
 {% assign hero = site.data.research.hero %}
 <section class="block block--bg-blue block__hero block__hero--standard" id="hero">
   <div class="container">
@@ -117,8 +116,7 @@ title: "Research"
     </div>
     <div class="team__grid team__grid--basic">
       {% assign team_entries = site.team %}
-      {% for post in team_entries limit:3
-      %}
+      {% for post in team_entries %}
         {% if post.category contains 'researcher' %}
           <a href="{{ post.url }}" class="team__member">
             <div class="team__member-image">
