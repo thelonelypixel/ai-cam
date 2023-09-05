@@ -2166,7 +2166,7 @@ collections:
         widget: "select"
         multiple: true
         options:
-          - { label: "Team", value: "team" }
+          - { label: "Leadership", value: "leadership" }
           - { label: "Steering Group", value: "steering-group" }
           - { label: "Researcher", value: "researcher" }
         required: false

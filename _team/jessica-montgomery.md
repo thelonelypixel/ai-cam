@@ -18,6 +18,6 @@ institution: test
 department: test
 position: Director
 category:
-  - team
+  - leadership
 supervisor: test
 ---

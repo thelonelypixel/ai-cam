@@ -18,7 +18,7 @@ institution: test
 department: test
 position: Chair, DeepMind Professor of Machine Learning, Department of Computer Science
 category:
-  - team
+  - leadership
   - researcher
 supervisor: test
 ---

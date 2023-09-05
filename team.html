@@ -22,7 +22,7 @@ title: 'Team'
     {% assign team_entries = site.team %}
     <div class="team__grid team__grid--team active">
       {% for post in team_entries limit:3 %}
-        {% if post.category contains 'team' %}
+        {% if post.category contains 'leadership' %}
           <a href="{{ post.url }}" class="team__member">
             <div class="team__member-image">
               {% if post.image != nil %}
