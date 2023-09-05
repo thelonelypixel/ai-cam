@@ -977,6 +977,12 @@ collections:
                       required: false,
                     }
                   - { label: Link, name: link, widget: string, required: false }
+                  - {
+                      label: Department Link,
+                      name: department_link,
+                      widget: string,
+                      required: false,
+                    }
           # Media Text (Postgraduate)
           - label: "Media Text (Postgraduate)"
             name: "media_text_postgraduate"
@@ -1059,6 +1065,12 @@ collections:
                       required: false,
                     }
                   - { label: Link, name: link, widget: string, required: false }
+                  - {
+                      label: Department Link,
+                      name: department_link,
+                      widget: string,
+                      required: false,
+                    }
           # Media Text (Executive)
           - label: "Media Text (Executive)"
             name: "media_text_executive"
@@ -1141,6 +1153,12 @@ collections:
                       required: false,
                     }
                   - { label: Link, name: link, widget: string, required: false }
+                  - {
+                      label: Department Link,
+                      name: department_link,
+                      widget: string,
+                      required: false,
+                    }
       # Team Page (Archive for Team)
       - label: "Team"
         name: "team"

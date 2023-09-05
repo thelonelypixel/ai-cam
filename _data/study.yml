@@ -21,6 +21,7 @@ courses_undergraduate:
 
         Computer Science and Technology
       link: /
+      department_link: /
 media_text_postgraduate:
   heading: Postgraduate Heading goes in here and takes up two lines
   content: Curabitur risus urna, ornare sed pretium vel, mattis et metus. Sed
@@ -40,6 +41,7 @@ courses_postgraduate:
 
         Computer Science and Technology
       link: /
+      department_link: /
 media_text_executive:
   heading: Executive Heading goes in here and takes up two lines
   content: Curabitur risus urna, ornare sed pretium vel, mattis et metus. Sed
@@ -59,3 +61,4 @@ courses_executive:
 
         Computer Science and Technology
       link: /
+      department_link: /
