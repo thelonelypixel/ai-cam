@@ -28,10 +28,11 @@ nav.nav-primary {
         margin-left: 5rem;
       }
 
-      &:hover {
+      &:hover,
+      &:focus,
+      &:focus-within {
         .submenu {
           opacity: 1;
-          visibility: visible;
         }
       }
 
@@ -63,7 +64,6 @@ nav.nav-primary {
         align-items: center;
         background: $lightest;
         opacity: 0;
-        visibility: hidden;
         transition: 400ms $cubic;
         box-shadow: 0 3px 10px rgba($darkest, 0.3);
         border-radius: 8px;
