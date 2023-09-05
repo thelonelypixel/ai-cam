@@ -386,9 +386,9 @@ collections:
                       required: false,
                     }
       # About Page (Complete)
-      - label: "About"
-        name: "about"
-        file: "_data/about.yml"
+      - label: "Our Vision"
+        name: "our_vision"
+        file: "_data/our_vision.yml"
         editor:
           preview: false
         fields:

@@ -1,9 +1,9 @@
 ---
 layout: 'page'
-title: 'About'
+title: 'Our Vision'
 ---
 
-{% assign hero = site.data.about.hero %}
+{% assign hero = site.data.our_vision.hero %}
 <section class="block block__hero block__hero--standard" id="hero">
   <div class="container">
     <div class="hero__content">
@@ -34,7 +34,7 @@ title: 'About'
   </div>
 </section>
 
-{% assign text_split = site.data.about.text_split %}
+{% assign text_split = site.data.our_vision.text_split %}
 <section class="block block__text block__text--split">
   <div class="container">
     {% if text_split.heading != nil and text_split.heading != '' %}
@@ -51,7 +51,7 @@ title: 'About'
   </div>
 </section>
 
-{% assign slider = site.data.about.slider %}
+{% assign slider = site.data.our_vision.slider %}
 <section class="block block__slider">
   <div class="container">
     {% if (slider.heading != nil and slider.heading != '') or (slider.content != nil and slider.content != '') or (slider.buttons != nil and slider.buttons.size > 0) %}
@@ -120,7 +120,7 @@ title: 'About'
   </div>
 </section>
 
-{% assign media_text = site.data.about.media_text %}
+{% assign media_text = site.data.our_vision.media_text %}
 <section class="block block--bg-pink block__media-text">
   <div class="container">
     {% if (media_text.image != nil and media_text.image != '') or (media_text.image_small != nil and media_text.image_small != '') %}
