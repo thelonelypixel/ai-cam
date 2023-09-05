@@ -18,16 +18,21 @@ collections:
         editor:
           preview: false
         fields:
-          # Site Logo
+          # Site Logos
           - label: "Site Logo"
             name: "site_logo"
             widget: "image"
           - label: "Site Logo (White)"
             name: "site_logo_white"
             widget: "image"
+          # Footer Description
           - label: "Footer Description"
             name: "footer_description"
             widget: "text"
+          # Community Link
+          - label: "Community Link"
+            name: "community_link"
+            widget: "string"
           # University of Cambridge Details
           - label: "University of Cambridge Details"
             name: "uoc_details"
@@ -90,6 +95,19 @@ collections:
               - label: "Link"
                 name: "link"
                 widget: "string"
+              - label: "Submenu"
+                name: "submenu"
+                collapsed: true
+                minimize_collapsed: true
+                widget: "list"
+                required: false
+                fields:
+                  - label: "Label"
+                    name: "label"
+                    widget: "string"
+                  - label: "Link"
+                    name: "link"
+                    widget: "string"
           # Footer Nav
           - label: "Footer Navigation"
             name: "footer_nav"
