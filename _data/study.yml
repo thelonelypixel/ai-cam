@@ -22,7 +22,7 @@ courses_undergraduate:
   courses_list:
     - name: Computer Science
       department: |-
-
+        
         Computer Science and Technology
       link: https://www.undergraduate.study.cam.ac.uk/courses/computer-science
       department_link: ""
@@ -52,12 +52,105 @@ media_text_postgraduate:
   image_small: /assets/uploads/lander-media-1.png
 courses_postgraduate:
   courses_list:
-    - name: Computer Science
-      department: |-
-
-        Computer Science and Technology
-      link: /
-      department_link: /
+    - name: MPhil in Advanced Chemical Engineering
+      department: Chemical Engineering and Biotechnology
+      link: https://www.postgraduate.study.cam.ac.uk/courses/directory/egcempace
+      department_link: https://www.ceb.cam.ac.uk/postgraduates-tab/mphil-ace
+    - name: MPhil in Advanced Computer Science
+      department: Computer Science and Technology
+      link: https://www.postgraduate.study.cam.ac.uk/courses/directory/cscsmpacs
+      department_link: https://www.cst.cam.ac.uk/admissions/acs
+    - name: MASt in Applied Mathematics
+      department: Faculty of Mathematics
+      link: https://www.postgraduate.study.cam.ac.uk/courses/directory/maamasapm
+      department_link: https://www.maths.cam.ac.uk/postgrad/part-iii/prospective.html
+    - name: MPhil in Chemical Engineering and Biotechnology
+      department: Chemical Engineering and Biotechnology
+      link: https://www.postgraduate.study.cam.ac.uk/courses/directory/egcempceb
+      department_link: https://www.ceb.cam.ac.uk/postgraduates-tab/mphil-research
+    - name: MPhil in Computational Biology
+      department: Faculty of Mathematics
+      link: https://www.postgraduate.study.cam.ac.uk/courses/directory/maammpcbi
+      department_link: https://www.maths.cam.ac.uk/postgrad/mphil/prospective/compbio
+    - name: MPhil in Data Intensive Science
+      department: Department of Physics, the Institute of Astronomy and the Department
+        of Applied Mathematics and Theoretical Physics
+      link: https://www.postgraduate.study.cam.ac.uk/courses/directory/pcphmpdis
+      department_link: https://mphildis.bigdata.cam.ac.uk/
+    - name: MPhil in Digital Humanities
+      department: Faculty of English
+      link: https://www.postgraduate.study.cam.ac.uk/courses/directory/elelmpdgh
+      department_link: https://www.cdh.cam.ac.uk/about/
+    - name: MPhil in Engineering
+      department: Engineering
+      link: https://www.postgraduate.study.cam.ac.uk/courses/directory/egegmpmeg
+      department_link: http://www.eng.cam.ac.uk/postgraduates/postgraduate-courses/mphil-engineering
+    - name: MPhil in Engineering for Sustainable Development
+      department: Engineering
+      link: https://www.postgraduate.study.cam.ac.uk/courses/directory/egegmpesd
+      department_link: https://www-esdmphil.eng.cam.ac.uk/
+    - name: MPhil in Ethics of AI, Data and Algorithms
+      department: LCFI [host], Faculty of Philosophy
+      link: https://www.postgraduate.study.cam.ac.uk/courses/directory/phphmpead
+      department_link: http://lcfi.ac.uk/education/mphil-ai-ethics/
+    - name: MPhil in Machine Learning and Machine Intelligence
+      department: Engineering
+      link: https://www.postgraduate.study.cam.ac.uk/courses/directory/egegmpmsl
+      department_link: https://www.mlmi.eng.cam.ac.uk/
+    - name: MPhil in Mathematics
+      department: Faculty of Mathematics
+      link: https://www.postgraduate.study.cam.ac.uk/courses/directory/maammpmpm
+      department_link: https://www.maths.cam.ac.uk/postgrad/mphil/prospective
+    - name: MPhil in Scientific Computing
+      department: Physics [host], Materials and Metallurgy
+      link: https://www.postgraduate.study.cam.ac.uk/courses/directory/pcphmpscm
+    - name: MRes + PhD in Application of Artificial Intelligence to the study of
+        Environmental Risks
+      department: "Earth Sciences + multiple parters:
+        https://ai4er-cdt.esc.cam.ac.uk/about"
+      link: https://www.postgraduate.study.cam.ac.uk/courses/directory/eaespdaai
+      department_link: https://ai4er-cdt.esc.cam.ac.uk/
+    - name: PhD in Applied Mathematics and Theoretical Physics
+      department: Faculty of Mathematics
+      link: https://www.postgraduate.study.cam.ac.uk/courses/directory/maampdmtp
+      department_link: https://www.maths.cam.ac.uk/postgrad/damtp-phd-opportunities
+    - name: PhD in Automated Chemical Synthesis Enabled by Digital Molecular
+        Technologies (EPSRC CDT)
+      department: Chemistry [host], Chemical Engineering, Engineering, Computer
+        Sciences and Technology, Physics
+      department_link: https://www.syntechcdt.com/
+      link: https://www.postgraduate.study.cam.ac.uk/courses/directory/pcchpdacs
+    - name: CDT MPhil + PhD in Computational Methods for Materials Science
+      department: Physics [host] +
+      link: https://www.postgraduate.study.cam.ac.uk/courses/directory/pcphpdcms
+      department_link: https://www.csc.cam.ac.uk/academic/cmms/cmmsinfo
+    - name: PhD in Computation, Cognition and Language
+      department: Theoretical & Applied Linguistics +
+      link: https://www.postgraduate.study.cam.ac.uk/courses/directory/mmalpdccl
+      department_link: https://www.mmll.cam.ac.uk/dtal/postgraduates/study/phd-programmes-linguistics/phd-computation-cognition-language
+    - name: PhD in Computer Science
+      department: Computer Science and Technology
+      link: https://www.postgraduate.study.cam.ac.uk/courses/directory/cscspdpcs
+      department_link: https://www.cst.cam.ac.uk/admissions/phd
+    - name: PhD in Mathematics of Information (CDT)
+      department: Faculty of Mathematics
+      link: https://www.postgraduate.study.cam.ac.uk/courses/directory/mapmpdmal
+      department_link: https://www.maths.cam.ac.uk/postgrad/phd-mathematics-information/cmi
+    - name: MSt in AI Ethics and Society
+      department: LCFI [host], Faculty of Philosophy
+      link: http://lcfi.ac.uk/education/master-ai-ethics/
+    - name: MPhil in Finance and Economics
+      department: Faculty of Economincs
+      link: https://www.postgraduate.study.cam.ac.uk/courses/directory/ececmpmfe
+      department_link: https://www.econ.cam.ac.uk/postgraduate-studies/mphil-finance-and-economics
+    - name: MPhil in Economics
+      department: Faculty of Economincs
+      link: https://www.postgraduate.study.cam.ac.uk/courses/directory/ececmpmec
+      department_link: https://www.econ.cam.ac.uk/postgraduate-studies/mphil-economics
+    - name: MASt in Mathematical Statistics
+      department: Faculty of Mathematics
+      link: https://www.postgraduate.study.cam.ac.uk/courses/directory/mapmasmst
+      department_link: https://www.maths.cam.ac.uk/postgrad/part-iii/prospective.html
 media_text_executive:
   heading: Executive Heading goes in here and takes up two lines
   content: Curabitur risus urna, ornare sed pretium vel, mattis et metus. Sed
