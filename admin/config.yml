@@ -2219,6 +2219,50 @@ collections:
         name: "body"
         widget: "markdown"
 
+  # Projects Collection
+  - name: "projects"
+    label: "Projects"
+    folder: "_projects"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "projects-single"
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Excerpt"
+        name: "excerpt"
+        widget: "text"
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        multiple: true
+        options:
+          - { label: "Category 1", value: "category-1" }
+          - { label: "Category 2", value: "category-2" }
+      - label: "Featured Image"
+        name: "image"
+        widget: "image"
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+      - label: "Researchers"
+        name: "researchers"
+        widget: "relation"
+        collection: "team"
+        search_fields: ["name"]
+        value_field: "name"
+        display_fields: ["name"]
+        options_length: 999
+        multiple: true
+        required: false
+        collapsed: true
+
   # Opportunities (Jobs)
   - label: "Opportunities"
     name: "opportunities"
