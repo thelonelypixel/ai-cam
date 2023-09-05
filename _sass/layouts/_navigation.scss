@@ -1,121 +1,94 @@
 nav.nav-primary {
-  width: 100%;
-  position: absolute;
-  bottom: -25px;
-  left: 0;
-  transform: translateY(100%);
-  display: none;
-  justify-content: space-between;
-  // background-color: $dark-blue;
-  opacity: 0;
-  visibility: hidden;
-  z-index: -1;
-  transition: 400ms;
+  display: flex;
+  align-items: center;
 
-  @include bp(tablet) {
-    display: flex;
-  }
-
-  .mobile-menu-active & {
-    @include bp(tablet) {
-      opacity: 1;
-      visibility: visible;
-      z-index: 1;
-    }
-  }
-
-  span {
-    flex: 1;
-    max-width: 180px;
-    height: 4px;
-    margin-right: 4rem;
-    position: relative;
-    display: none;
-    background-color: $lightest;
-    transform: translateY(20px);
-
-    @include bp(desktop) {
-      flex: none;
-      width: 180px;
-      display: block;
-    }
-  }
-
-  // Top Level
   ul {
     margin: 0;
     padding: 0;
+    position: relative;
     display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    list-style-type: none;
+    align-items: center;
+    list-style: none;
 
     li {
-      margin-right: 1.5rem;
-      position: relative;
-      display: inline-block;
-      z-index: 10;
+      margin-left: 1rem;
 
       @include bp(tablet) {
-        margin-right: 2rem;
+        margin-left: 2rem;
       }
 
       @include bp(desktop) {
-        margin-right: 4rem;
+        margin-left: 4rem;
       }
 
-      &:last-of-type {
-        margin-right: 0;
+      @include bp(desktop-xl) {
+        margin-left: 5rem;
       }
 
       &:hover {
-        // Display Submenu
         .submenu {
-          opacity: 1;
+          clip-path: inset(0 0 0 0);
           visibility: visible;
+
+          a,
+          button,
+          span {
+            display: block;
+          }
         }
       }
 
-      a {
-        font-size: 1.8rem;
+      a,
+      span {
+        font-family: $header-font-family;
+        font-size: 1.4rem;
         line-height: 2rem;
-        color: $lightest;
         text-decoration: none;
-        white-space: nowrap;
-
-        @include bp(tablet) {
-          font-size: 2rem;
-          line-height: 2.6rem;
-        }
+        color: $dark-blue;
 
         @include bp(desktop) {
-          font-size: 2.8rem;
-          line-height: 3.7rem;
+          font-size: 2rem;
+          line-height: 2.5rem;
         }
       }
 
       .submenu {
-        padding-top: 1.5rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
-        padding-bottom: 2rem;
+        width: 100%;
+        height: 101%;
         position: absolute;
-        left: -2rem;
-        bottom: 0;
-        transform: translateY(100%);
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
         display: flex;
-        flex-direction: column;
-        background-color: $dark-blue;
-        opacity: 0;
-        visibility: hidden;
-        transition: 400ms;
+        justify-content: flex-start;
+        align-items: center;
+        background: rgba($lightest, 1);
+        clip-path: inset(0 100% 0 0);
+        transition: 400ms $cubic;
 
-        a {
-          margin: 0 0 1.5rem 0;
-          display: block;
+        a,
+        button,
+        span {
+          margin-left: 1rem;
+          font-family: $header-font-family;
+          font-size: 1.4rem;
+          line-height: 2rem;
+          text-decoration: none;
+          color: $dark-blue;
+          display: none;
 
-          &:last-child {
-            margin-bottom: 0;
+          @include bp(tablet) {
+            margin-left: 2rem;
+          }
+
+          @include bp(desktop) {
+            margin-left: 4rem;
+            font-size: 2rem;
+            line-height: 2.5rem;
+          }
+
+          @include bp(desktop-xl) {
+            margin-left: 5rem;
           }
         }
       }

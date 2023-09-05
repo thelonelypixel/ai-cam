@@ -36,23 +36,18 @@
           <a href="/">
             <img alt="Logo" src="{{ site.data.site.site_logo }}"/>
           </a>
-          <nav>
-            {% for item in site.data.nav.main_nav %}
-              {% if item.label != nil and item.label != '' %}
-                <a href="{{ item.link }}">{{ item.label }}</a>
-              {% endif %}
-            {% endfor %}
-            <a class="button button--standard button--blue" href="#">Community</a>
-          </nav>
+
+          <div class="nav-inner__main-nav__inner">
+            {% include nav-primary.html %}
+            <button class="header__nav-inner__toggle">
+              <svg class="w-6 h-6" fill="none" stroke-width="2" stroke="#000" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <span></span>
+            </button>
+          </div>
         </div>
       </div>
-
-      <button class="header__nav-inner__toggle">
-        <svg class="w-6 h-6" fill="none" stroke-width="2" stroke="#000" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <span></span>
-      </button>
 
     </div>
   </nav>

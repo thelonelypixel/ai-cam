@@ -217,32 +217,9 @@ header[role="banner"] {
             }
           }
 
-          nav {
+          .nav-inner__main-nav__inner {
             display: flex;
             align-items: center;
-
-            a {
-              margin-left: 1rem;
-              font-family: $header-font-family;
-              font-size: 1.4rem;
-              line-height: 2rem;
-              text-decoration: none;
-              color: $dark-blue;
-
-              @include bp(tablet) {
-                margin-left: 2rem;
-              }
-
-              @include bp(desktop) {
-                margin-left: 4rem;
-                font-size: 2rem;
-                line-height: 2.5rem;
-              }
-
-              @include bp(desktop-xl) {
-                margin-left: 5rem;
-              }
-            }
           }
 
           .button.button--standard {
