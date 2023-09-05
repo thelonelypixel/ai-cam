@@ -1,3 +1,4 @@
+community_link: https://google.co.uk/
 top_bar:
   - label: Study at Cambridge
     link: https://www.cam.ac.uk/about-the-university#study-at-cambridge/
@@ -7,7 +8,10 @@ top_bar:
     link: https://www.cam.ac.uk/research/
 main_nav:
   - label: About
-    link: /about/
+    link: a
+    submenu:
+      - label: Our Vision
+        link: /our-vision/
   - label: News
     link: /news/
   - label: Incentives
