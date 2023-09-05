@@ -24,8 +24,20 @@ courses_undergraduate:
       department: |-
         
         Computer Science and Technology
-      link: /
-      department_link: /
+      link: https://www.undergraduate.study.cam.ac.uk/courses/computer-science
+      department_link: ""
+    - name: Engineering
+      department: Engineering
+      link: https://www.undergraduate.study.cam.ac.uk/courses/engineering
+    - name: Chemical Engineering and Biotechnology
+      department: Chemical Engineering and Biotechnology
+      link: https://www.undergraduate.study.cam.ac.uk/courses/chemical-engineering
+    - name: Natural Sciences
+      department: School of Biological Sciences
+      link: https://www.undergraduate.study.cam.ac.uk/courses/natural-sciences
+    - name: Mathematics
+      department: Faculty of Mathematics
+      link: https://www.undergraduate.study.cam.ac.uk/courses/mathematics
 media_text_postgraduate:
   heading: Postgraduate Heading goes in here and takes up two lines
   content: Curabitur risus urna, ornare sed pretium vel, mattis et metus. Sed
