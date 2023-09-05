@@ -142,12 +142,12 @@ title: "Study"
                   <p>{{ item.department }}</p>
                 </td>
                 <td>
-                  {% if item.link != nil and item.link != '' %}
+                  {% if item.link != nil and item.link.size > 0 %}
                     <a class="button button--standard" href="{{ item.link }}" target="_blank">View course</a>
                   {% endif %}
                 </td>
                 <td>
-                  {% if item.department_link != nil and item.department_link != '' %}
+                  {% if item.department_link != nil and item.department_link.size > 0 %}
                     <a class="button button--standard" href="{{ item.department_link }}" target="_blank">View department</a>
                   {% endif %}
                 </td>
@@ -257,12 +257,12 @@ title: "Study"
                   <p>{{ item.department }}</p>
                 </td>
                 <td>
-                  {% if item.link != nil and item.link != '' %}
+                  {% if item.link != nil and item.link.size > 0 %}
                     <a class="button button--standard" href="{{ item.link }}" target="_blank">View course</a>
                   {% endif %}
                 </td>
                 <td>
-                  {% if item.department_link != nil and item.department_link != '' %}
+                  {% if item.department_link != nil and item.department_link.size > 0 %}
                     <a class="button button--standard" href="{{ item.department_link }}" target="_blank">View department</a>
                   {% endif %}
                 </td>
@@ -278,7 +278,7 @@ title: "Study"
 
 {% assign media_text_executive = site.data.study.media_text_executive %}
 <section class="block block--bg-pink block__media-text" id="executive">
-  <div class="container">media_text_executive
+  <div class="container">
     {% if (media_text_executive.image != nil and media_text_executive.image != '') or (media_text_executive.image_small != nil and media_text_executive.image_small != '') %}
       <div class="media-text__media {% if media_text_executive.image_small != nil and media_text_executive.image_small != '' %} media-text__media--two {% endif %}">
         {% if media_text_executive.image != nil and media_text_executive.image != '' %}
@@ -372,12 +372,12 @@ title: "Study"
                   <p>{{ item.department }}</p>
                 </td>
                 <td>
-                  {% if item.link != nil and item.link != '' %}
+                  {% if item.link != nil and item.link.size > 0 %}
                     <a class="button button--standard" href="{{ item.link }}" target="_blank">View course</a>
                   {% endif %}
                 </td>
                 <td>
-                  {% if item.department_link != nil and item.department_link != '' %}
+                  {% if item.department_link != nil and item.department_link.size > 0 %}
                     <a class="button button--standard" href="{{ item.department_link }}" target="_blank">View department</a>
                   {% endif %}
                 </td>

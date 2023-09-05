@@ -22,7 +22,7 @@ courses_undergraduate:
   courses_list:
     - name: Computer Science
       department: |-
-        
+
         Computer Science and Technology
       link: https://www.undergraduate.study.cam.ac.uk/courses/computer-science
       department_link: ""
@@ -54,7 +54,7 @@ courses_postgraduate:
   courses_list:
     - name: Computer Science
       department: |-
-        
+
         Computer Science and Technology
       link: /
       department_link: /
