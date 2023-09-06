@@ -101,10 +101,19 @@
 
 // Posts Pagination
 .posts__pagination {
-  margin-top: 10rem;
+  margin-top: 4rem;
+
+  @include bp(tablet) {
+    margin-top: 6rem;
+  }
+
+  @include bp(desktop) {
+    margin-top: 10rem;
+  }
 
   ul {
     margin: -1rem;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;

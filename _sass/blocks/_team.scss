@@ -49,7 +49,7 @@
   }
 
   .team__selector {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -64,14 +64,14 @@
     }
 
     button {
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
       display: block;
       background: transparent;
       border: none;
       box-shadow: none;
       font-family: $header-font-family;
-      font-size: 2.6rem;
-      line-height: 3.6rem;
+      font-size: 2.4rem;
+      line-height: 3rem;
       color: $violet;
       cursor: pointer;
 
@@ -95,7 +95,11 @@
   .team__grid {
     display: none;
     grid-template-columns: 1fr;
-    grid-gap: 20px;
+    grid-gap: 10px;
+
+    @include bp(tablet) {
+      grid-gap: 20px;
+    }
 
     @include bp(desktop) {
       grid-template-columns: 1fr 1fr;
@@ -179,13 +183,18 @@
     }
 
     .team__member {
-      padding: 1.2rem;
+      padding: 1rem;
       display: flex;
       justify-content: space-between;
-      align-items: flex-start;
+      align-items: center;
       border: 1px solid $pink;
       border-radius: 100px;
       text-decoration: none;
+
+      @include bp(tablet) {
+        padding: 1.5rem;
+        align-items: flex-start;
+      }
 
       &-image {
         width: 25%;
@@ -223,11 +232,12 @@
         flex: 1;
 
         h3 {
-          margin: 0 0 1rem 0;
-          font-size: 2.4rem;
-          line-height: 3.4rem;
+          margin: 0 0 5px 0;
+          font-size: 1.8rem;
+          line-height: 2.2rem;
 
           @include bp(tablet) {
+            margin: 0 0 1rem 0;
             font-size: 2.8rem;
             line-height: 3.4rem;
           }
@@ -240,8 +250,8 @@
 
         p {
           margin: 0;
-          font-size: 1.6rem;
-          line-height: 2rem;
+          font-size: 1.4rem;
+          line-height: 1.6rem;
 
           @include bp(tablet) {
             font-size: 1.8rem;

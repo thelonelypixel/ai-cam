@@ -2,10 +2,15 @@ header[role="banner"] {
   width: 100%;
   height: auto;
   position: sticky;
-  top: -90px;
+  top: -65px;
   left: 0;
   background-color: $darkest;
+  transition: 400ms $cubic;
   z-index: 9999;
+
+  @include bp(tablet) {
+    top: -90px;
+  }
 
   &.in-view {
     .header__upper {
@@ -202,9 +207,9 @@ header[role="banner"] {
         }
 
         .nav-inner__main-search {
-          width: calc(100% - 55px);
+          width: calc(100% - 40px);
           height: 100%;
-          padding: 2rem 1rem 2rem 2rem;
+          padding: 1rem 1rem 1rem 1.5rem;
           position: absolute;
           top: 0;
           left: 0;
@@ -212,6 +217,15 @@ header[role="banner"] {
           border-radius: 50px;
           clip-path: inset(0 0 0 100%);
           transition: 600ms $cubic;
+
+          @include bp(tablet) {
+            width: calc(100% - 50px);
+          }
+
+          @include bp(desktop) {
+            width: calc(100% - 55px);
+            padding: 2rem 1rem 2rem 2rem;
+          }
 
           form {
             width: 100%;
@@ -222,19 +236,37 @@ header[role="banner"] {
               flex: 1;
               width: auto;
               height: 100%;
-              padding: 2rem;
               margin: 0;
               border-radius: 50px;
+
+              @include bp(desktop) {
+                padding: 2rem;
+              }
             }
 
             button {
-              width: auto;
-              min-width: 150px;
-              height: 100%;
-              margin: 0 0 0 2rem;
+              width: 40px;
+              min-width: 40px;
+              height: 40px;
+              margin: 0 0 0 1rem;
+              padding: 0;
               display: flex;
-              justify-content: space-between;
+              justify-content: center;
               align-items: center;
+              font-size: 0;
+              line-height: 0;
+              color: transparent;
+
+              @include bp(tablet) {
+                min-width: 150px;
+                height: 100%;
+                margin: 0 0 0 2rem;
+                padding: 1rem 2rem;
+                justify-content: space-between;
+                font-size: 2rem;
+                line-height: 2.5rem;
+                color: $green;
+              }
 
               svg {
                 width: 25px;
@@ -247,13 +279,17 @@ header[role="banner"] {
       }
 
       .header__nav-inner__toggle {
-        margin-left: 2rem;
+        margin-left: 1rem;
         padding: 0;
         position: relative;
         background-color: transparent;
         border: none;
         box-shadow: none;
         cursor: pointer;
+
+        @include bp(tablet) {
+          margin-left: 2rem;
+        }
 
         svg {
           width: 25px;

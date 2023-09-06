@@ -46,7 +46,7 @@
                 // Mobile Trigger to open Mobile Menu
                 $('.menu-trigger').click(function () {
                     $(this).toggleClass('menu-open');
-                    $('body, .nav-mobile').toggleClass('mobile-menu-active');
+                    $('html, body, .nav-mobile').toggleClass('mobile-menu-active');
                 });
 
                 $('.mobile-menu-exit').click(function () {
@@ -178,6 +178,14 @@
                     draggable: true,
                     arrows: false,
                     dots: false,
+                    responsive: [
+                        {
+                            breakpoint: 767,
+                            settings: {
+                                slidesToShow: 1
+                            }
+                        }
+                    ]
                 });
 
                 /*

@@ -196,7 +196,11 @@
     .hero__content {
       form {
         margin-top: 2rem;
-        width: 500px;
+        width: 100%;
+
+        @include bp(tablet) {
+          width: 500px;
+        }
 
         input {
           margin: 0;
@@ -355,7 +359,7 @@
   .hero__image,
   .hero__filters {
     width: 100%;
-    margin-top: 2rem;
+    margin-top: 1rem;
     opacity: 0;
 
     @include bp(tablet) {
@@ -438,21 +442,17 @@
 
     .active {
       position: absolute;
-      left: 1rem;
+      left: 2rem;
       transform: translateY(200%);
       transition: 400ms $cubic;
-
-      @include bp(tablet) {
-        left: 2rem;
-      }
     }
   }
 
   .hero__filters-selection {
     width: auto;
-    padding: 2rem 2.5rem;
+    padding: 2rem 3rem;
     background-color: $lightest;
-    border-radius: 60px;
+    border-radius: 10px;
     position: absolute;
     right: 0;
     bottom: -1rem;
@@ -462,6 +462,11 @@
     visibility: hidden;
     transition: 400ms $cubic;
 
+    @include bp(tablet) {
+      padding: 2rem 2.5rem;
+      border-radius: 60px;
+    }
+
     @include bp(desktop-xl) {
       padding: 2.5rem 3rem;
     }
@@ -469,10 +474,12 @@
     &-inner {
       margin: 0 -1rem -1rem -1rem;
       display: flex;
-      justify-content: flex-end;
-      flex-wrap: wrap;
+      flex-direction: column;
 
       @include bp(desktop-xl) {
+        flex-direction: row;
+        justify-content: flex-end;
+        flex-wrap: wrap;
         margin: 0 -1.5rem -1.5rem -1.5rem;
       }
     }

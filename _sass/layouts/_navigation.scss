@@ -1,6 +1,10 @@
 nav.nav-primary {
-  display: flex;
+  display: none;
   align-items: center;
+
+  @include bp(desktop) {
+    display: flex;
+  }
 
   ul {
     margin: 0;
@@ -126,11 +130,20 @@ nav.nav-mobile {
 }
 
 .menu-trigger {
-  width: auto;
-  height: auto;
+  width: 30px;
+  height: 30px;
+  margin-left: 1rem;
   display: flex;
   align-items: center;
   cursor: pointer;
+
+  @include bp(tablet) {
+    margin-left: 2rem;
+  }
+
+  @include bp(desktop) {
+    display: none;
+  }
 
   &.menu-open {
     .menu-trigger__button {
@@ -149,7 +162,6 @@ nav.nav-mobile {
         &::before,
         &::after {
           top: 0;
-          background-color: $lightest;
         }
 
         &,
@@ -159,19 +171,6 @@ nav.nav-mobile {
             300ms transform $cubic 300ms;
         }
       }
-    }
-  }
-
-  p {
-    margin: 0 1rem 0 0;
-    display: block;
-    font-size: 2rem;
-    line-height: 2.6rem;
-    letter-spacing: 0.17px;
-    color: $lightest;
-
-    @include bp(tablet) {
-      margin: 0 2rem 0 0;
     }
   }
 
@@ -197,7 +196,7 @@ nav.nav-mobile {
         position: absolute;
         top: 50%;
         left: 0;
-        background: $lightest;
+        background: $dark-blue;
         transition: 300ms background $cubic, 300ms top $cubic 200ms,
           200ms transform $cubic;
       }
