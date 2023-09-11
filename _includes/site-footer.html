@@ -1,6 +1,7 @@
 <footer role="contentinfo">
   <div class="footer__ai">
     <div class="container">
+      {% if page.url == "/" or page.url == "/index.html" or page.url == "/contact/" %}
       <div class="footer__ai-newsletter">
         <div class="ai-newsletter__inner">
           <h3>Keep up to date with the latest AI news @ Cambridge</h3>
@@ -41,6 +42,8 @@
         </div>
 
       </div>
+      {% endif %}
+
       <div class="border row row--justified">
         <div class="footer__ai-main column-m-12-nest column-t-5">
           <a href="/">
