@@ -4,7 +4,12 @@ title: 'Contact'
 ---
 
 {% assign hero = site.data.contact.hero %}
-<section class="block block__hero block__hero--standard" id="hero">
+<section class="block block__hero block__hero--standard block__hero--overflow" id="hero">
+
+  <div class="hero__shape">
+    <img alt="" src="../assets/images/contact-bg.svg"/>
+  </div>
+
   <div class="container">
     <div class="hero__content">
       {% if hero.heading != nil and hero.heading != '' %}
@@ -35,7 +40,7 @@ title: 'Contact'
 </section>
 
 {% assign contact = site.data.contact.contact %}
-<section class="block block--bg-pink block--no-padding-top block__contact">
+<section class="block block--no-padding-top block__contact">
   <div class="container">
     <div class="contact__forms">
       <form class="contact__form" name="Contact" netlify>

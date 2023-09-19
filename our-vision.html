@@ -5,6 +5,11 @@ title: 'Our Vision'
 
 {% assign hero = site.data.our_vision.hero %}
 <section class="block block__hero block__hero--standard" id="hero">
+
+  <div class="hero__shape">
+    <img alt="" src="../assets/images/about-us-bg.svg"/>
+  </div>
+
   <div class="container">
     <div class="hero__content">
       {% if hero.heading != nil and hero.heading != '' %}
@@ -52,7 +57,7 @@ title: 'Our Vision'
 </section>
 
 {% assign slider = site.data.our_vision.slider %}
-<section class="block block__slider">
+<section class="block block__slider pt-0">
   <div class="container">
     {% if (slider.heading != nil and slider.heading != '') or (slider.content != nil and slider.content != '') or (slider.buttons != nil and slider.buttons.size > 0) %}
       <div class="slider__intro intro">

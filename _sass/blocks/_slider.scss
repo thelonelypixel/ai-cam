@@ -1,4 +1,6 @@
 .block__slider {
+  background: $lightest;
+  
   &.block--bg-dark-blue {
     .slider__slide {
       &-heading {

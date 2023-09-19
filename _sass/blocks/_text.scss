@@ -1,4 +1,6 @@
 .block__text {
+  background: $lightest;
+  
   &.block__text--split {
     .container {
       display: flex;
@@ -26,10 +28,10 @@
           line-height: 4.2rem;
         }
 
-        @include bp(desktop-xl) {
-          font-size: 3.6rem;
-          line-height: 4.8rem;
-        }
+        // @include bp(desktop-xl) {
+        //   font-size: 3.6rem;
+        //   line-height: 4.8rem;
+        // }
       }
     }
 

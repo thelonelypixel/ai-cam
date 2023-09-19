@@ -1,4 +1,6 @@
 .block__accordions {
+  background: $lightest;
+  
   &.in-view {
     .accordions__intro {
       @include animate(400ms, 400ms, fadeIn);

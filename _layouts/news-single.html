@@ -14,6 +14,11 @@
     {% include site-header.html %}
     <main class="main">
       <section class="block block__hero block__hero--archive" id="hero">
+
+        <div class="hero__shape">
+          <img alt="" src="../assets/images/news-bg.svg"/>
+        </div>
+        
         <div class="container">
           <div class="hero__content">
             <h1>{{page.title}}</h1>
@@ -34,7 +39,6 @@
           <article>
             <div class="post-single__body">
               <div class="row row--justified">
-                <div class="column-m-12-nest column-d-1"></div>
                 <div class="post-single__body-content column-m-12-nest column-t-10 column-d-8">
                   {{ content }}
                 </div>
@@ -70,7 +74,7 @@
         </div>
       </section>
 
-      <section class="block block--bg-pink block__posts">
+      <section class="block block__posts">
         <div class="container">
           <div class="posts__intro">
             <h2 class="section-heading section-heading--left">Related news</h2>

@@ -2,7 +2,6 @@
   position: relative;
   display: flex;
   align-items: center;
-  background: $pink;
   overflow: hidden;
 
   &.block--bg-blue {
@@ -127,6 +126,10 @@
     }
   }
 
+  &.block__hero--overflow {
+    overflow: visible;
+  }
+
   &.block__hero--standard {
     padding: 10rem 0 4rem 0;
 
@@ -141,6 +144,14 @@
 
     @include bp(desktop-xl) {
       min-height: 640px;
+    }
+
+    .hero__shape {
+      position: absolute;
+      top: 0;
+      right: 0;
+      @include animate(1s, 0, fadeIn);
+      z-index: 0;
     }
   }
 
@@ -158,6 +169,14 @@
 
     @include bp(desktop-xl) {
       padding: 20rem 0 12.5rem 0;
+    }
+
+    .hero__shape {
+      position: absolute;
+      top: 0;
+      right: 0;
+      @include animate(1s, 0, fadeIn);
+      z-index: -1;
     }
 
     .hero__content {
@@ -182,8 +201,7 @@
   }
 
   &.block__hero--archive {
-    z-index: 10;
-    overflow: visible;
+    // z-index: 10;
     .container {
       position: relative;
       display: flex;
@@ -326,14 +344,14 @@
       }
 
       @include bp(desktop) {
-        font-size: 5.4rem;
+        font-size: 5rem;
         line-height: 6.6rem;
       }
 
-      @include bp(desktop-xl) {
-        font-size: 6.8rem;
-        line-height: 8rem;
-      }
+      // @include bp(desktop-xl) {
+      //   font-size: 6.8rem;
+      //   line-height: 8rem;
+      // }
     }
 
     p {
@@ -349,10 +367,10 @@
         font-size: 2.2rem;
         line-height: 3.4rem;
       }
-      @include bp(desktop-xl) {
-        font-size: 2.4rem;
-        line-height: 3.8rem;
-      }
+      // @include bp(desktop-xl) {
+      //   font-size: 2.4rem;
+      //   line-height: 3.8rem;
+      // }
     }
   }
 

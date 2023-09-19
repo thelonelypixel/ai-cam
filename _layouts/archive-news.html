@@ -6,7 +6,12 @@
     {% include site-header.html %}
 
     <main class="main">
-      <section class="block block__hero block__hero--archive" id="hero">
+      <section class="block block__hero block__hero--archive block__hero--overflow" id="hero">
+
+        <div class="hero__shape">
+          <img alt="" src="../assets/images/news-bg.svg"/>
+        </div>
+
         <div class="container">
           <div class="hero__content">
             <h1>News</h1>
@@ -30,7 +35,7 @@
         </div>
       </section>
 
-      <section class="block block--bg-pink block--no-padding-top block__posts">
+      <section class="block block--no-padding-top block__posts">
         <div class="container">
           {% if paginator.posts.size > 0 %}
             <div class="posts__grid">

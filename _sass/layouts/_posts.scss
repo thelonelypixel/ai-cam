@@ -433,6 +433,8 @@
 
 // Post Single
 .block__post-single {
+  background: $lightest;
+  
   .post-single__body {
     &-content {
       p,

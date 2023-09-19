@@ -14,14 +14,12 @@ header[role="banner"] {
 
   &.in-view {
     .header__upper {
-      @include animate(400ms, 1s, fadeIn);
-      opacity: 1;
+  
     }
   }
 
   .header__upper {
     padding: 1.5rem 0;
-    opacity: 0;
 
     @include bp(desktop) {
       padding: 2rem 0;
@@ -102,7 +100,7 @@ header[role="banner"] {
 
     &.in-view {
       .header__nav-inner {
-        @include animate(400ms, 2s, fadeInDown);
+        @include animate(400ms, 600ms, fadeInDown);
         opacity: 1;
       }
     }

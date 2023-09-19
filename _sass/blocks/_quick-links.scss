@@ -1,4 +1,6 @@
 .block__quick-links {
+  background: $lightest;
+
   .quick-links__grid {
     margin: 0 0 -2rem 0;
     display: flex;
@@ -44,12 +46,6 @@
       margin: 0 1.5rem 3rem 1.5rem;
       font-size: 3.2rem;
       line-height: 6rem;
-    }
-
-    @include bp(desktop-xl) {
-      height: 100px;
-      font-size: 4.2rem;
-      line-height: 8rem;
     }
   }
 }

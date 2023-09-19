@@ -4,7 +4,12 @@ title: 'Opportunities'
 ---
 
 {% assign hero = site.data.opportunities.hero %}
-<section class="block block__hero block__hero--standard" id="hero">
+<section class="block block__hero block__hero--standard block__hero--overflow" id="hero">
+
+  <div class="hero__shape">
+    <img alt="" src="../assets/images/opportunities-bg.svg"/>
+  </div>
+
   <div class="container">
     <div class="hero__content">
       {% if hero.heading != nil and hero.heading != '' %}
@@ -35,7 +40,7 @@ title: 'Opportunities'
 </section>
 
 {% assign opportunities_entries = site.opportunities %}
-<section class="block block--bg-pink block--no-padding-top block__opportunities">
+<section class="block block--no-padding-top block__opportunities">
   <div class="container">
     {% assign opportunities_team_one = site.data.opportunities.opportunities_team_one %}
     <div class="opportunities__team">

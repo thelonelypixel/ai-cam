@@ -1,5 +1,7 @@
 .block {
+  position: relative;
   padding: 3rem 0;
+  z-index: 1;
 
   @include bp(tablet) {
     padding: 4rem 0;
@@ -27,6 +29,10 @@
 
   &.block--bg-pink {
     background-color: $pink;
+  }
+
+  &.block--bg-light {
+    background-color: $lightest;
   }
 
   // Padding Controls
