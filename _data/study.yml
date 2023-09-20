@@ -6,17 +6,15 @@ hero:
     where you can find AI in our courses more at the links below.
   heading: Study
 media_text_undergraduate:
-  content: Curabitur risus urna, ornare sed pretium vel, mattis et metus. Sed
-    scelerisque elit nec euismod ultricies. Sed nisl leo, laoreet a mauris
-    vitae, ultrices varius augue. Fusce ac risus sollicitudin, posuere ante at,
-    faucibus odio. Nunc sollicitudin metus ut est pulvinar ultricies quis nec
-    sapien.
-  heading: Undergraduate Heading goes in here and takes up two lines
+  content: The University offers 30 undergraduate courses covering more than 65
+    subject areas, many of which include opportunities to engage with computer
+    science and AI.
+  heading: Undergraduate study
   quick_links: []
   buttons:
     - link: /
       text: Contact us
-  image: /assets/uploads/lander-media-2.png
+  image: /assets/uploads/51404127043_87233a41c6_k.jpeg
   image_small: /assets/uploads/lander-media-1.png
 courses_undergraduate:
   courses_list:
@@ -39,16 +37,14 @@ courses_undergraduate:
       department: Faculty of Mathematics
       link: https://www.undergraduate.study.cam.ac.uk/courses/mathematics
 media_text_postgraduate:
-  heading: Postgraduate Heading goes in here and takes up two lines
-  content: Curabitur risus urna, ornare sed pretium vel, mattis et metus. Sed
-    scelerisque elit nec euismod ultricies. Sed nisl leo, laoreet a mauris
-    vitae, ultrices varius augue. Fusce ac risus sollicitudin, posuere ante at,
-    faucibus odio. Nunc sollicitudin metus ut est pulvinar ultricies quis nec
-    sapien.
+  heading: Postgraduate study
+  content: We offer more than 300 postgraduate courses at Cambridge, including
+    taught and research opportunities across an incredibly broad range of
+    academic disciplines, many of which include AI.
   buttons:
     - link: /
       text: Contact us
-  image: /assets/uploads/lander-media-2.png
+  image: /assets/uploads/carousel_students_0.jpg
   image_small: /assets/uploads/lander-media-1.png
 courses_postgraduate:
   courses_list:
@@ -152,16 +148,13 @@ courses_postgraduate:
       link: https://www.postgraduate.study.cam.ac.uk/courses/directory/mapmasmst
       department_link: https://www.maths.cam.ac.uk/postgrad/part-iii/prospective.html
 media_text_executive:
-  heading: Executive Heading goes in here and takes up two lines
-  content: Curabitur risus urna, ornare sed pretium vel, mattis et metus. Sed
-    scelerisque elit nec euismod ultricies. Sed nisl leo, laoreet a mauris
-    vitae, ultrices varius augue. Fusce ac risus sollicitudin, posuere ante at,
-    faucibus odio. Nunc sollicitudin metus ut est pulvinar ultricies quis nec
-    sapien.
+  heading: Executive education
+  content: Study open and bespoke professional and executive education courses at
+    the University of Cambridge.
   buttons:
     - link: /
       text: Contact us
-  image: /assets/uploads/lander-media-2.png
+  image: /assets/uploads/carousel.png
   image_small: /assets/uploads/lander-media-1.png
 courses_executive:
   courses_list:
