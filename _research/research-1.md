@@ -29,7 +29,7 @@ The researchers say that their techniques will allow data scientists to open the
 
 “We need to make sure that models are learning the right things, but machine learning for physics is an exciting field – there are lots of interesting maths and physics questions that AI can help us answer,” said Boullé.
 
- 
+*19 September 2023*
 
-***Reference:**\
+**\*Reference:**\
 Nicolas Boullé, Diana Halikias, and Alex Townsend. ‘[Elliptic PDE learning is provably data-efficient](https://www.pnas.org/doi/10.1073/pnas.2303904120).’ PNAS (2023). DOI: 10.1073/pnas.2303904120*
