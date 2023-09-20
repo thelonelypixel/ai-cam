@@ -5,7 +5,7 @@ excerpt: Biased artificial intelligence needs human help to avoid harmful
   climate action, Cambridge researchers say.
 image: /assets/uploads/noaa-uro88vocre-unsplash.jpeg
 ---
-Bias in the collection of data on which Artificial Intelligence (AI) computer programmes depend can limit the usefulness of this rapidly growing tool for climate scientists predicting future scenarios and guiding global action, according to a new paper by researchers at the University of Cambridge published in Nature’s [npj |Climate Action](https://www.nature.com/articles/s44168-023-00056-3) series. 
+Bias in the collection of data on which Artificial Intelligence (AI) computer programmes depend can limit the usefulness of this rapidly growing tool for climate scientists predicting future scenarios and guiding global action, according to a new paper by researchers at the University of Cambridge published in Nature’s [Climate Action](https://www.nature.com/articles/s44168-023-00056-3) series. 
 
 AI computer programmes used for climate science are trained to trawl through complex datasets looking for patterns and insightful information. However, missing information from certain locations on the planet, time periods or societal dynamics create “holes” in the data that can lead to unreliable climate predictions and misleading conclusions.
 
