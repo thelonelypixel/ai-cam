@@ -40,3 +40,5 @@ Less-biased AI will be critical to our understanding of how the climate is chang
  Professor Shuckburgh, who also leads the UK national research funding body’s (UKRI) Centre for Doctoral Training on the Application of AI to the study of Environmental Risks (AI4ER), said that recognising the issue of data justice is the first step to better outcomes.  
 
 “Only with an active awareness of this data injustice can we begin to tackle it, and consequently, to build better and more trustworthy AI-led climate solutions,” she said.
+
+*17 August 2023*
