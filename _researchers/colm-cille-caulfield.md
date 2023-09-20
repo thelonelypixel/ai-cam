@@ -44,7 +44,7 @@ biography: >-
 image: /assets/uploads/colm-cille-caulfield.jpeg
 website: https://www.damtp.cam.ac.uk/person/cpc12
 department: Department of Applied Mathematics and Theoretical Physics
-position: Professor of Environmental and Industrial Fluid Dynamics, Head of the
+position: Professor of Environmental and Industrial Fluid Dynamics; Head of the
   Department of Applied Mathematics and Theoretical Physics, and co-Chair, C2D3
 category:
   - steering-group
