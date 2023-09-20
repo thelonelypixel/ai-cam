@@ -1,34 +1,34 @@
 hero:
-  content: Research from the University of Cambridge is accelerating progress in AI’s core technical capabilities, enabling the application of AI technologies across sectors and disciplines, and building understandings of their impact and the levers to promote their ethical development.
+  content: Research from the University of Cambridge is accelerating progress in
+    AI’s core technical capabilities, enabling the application of AI
+    technologies across sectors and disciplines, and building understandings of
+    their impact and the levers to promote their ethical development.
   heading: Research
 text_split:
   heading: Research heading goes in here and takes up around two lines of space
-  content:
-    AI@Cam will build this infrastructure through research, education, and
+  content: AI@Cam will build this infrastructure through research, education, and
     innovation programmes that leverage the world-leading research already
     taking place across the University and connecting this to real-world needs.
 slider:
   heading: ""
   slider_items:
     - heading: Research Centre 1
-      content:
-        AI@Cam is building an infrastructure for interdisciplinary innovation
+      content: AI@Cam is building an infrastructure for interdisciplinary innovation
         that serves science and society through research, education, and
         innovation programmes that leverage world- leading research from across
         the University and connect this to real-world needs.
       image: /assets/uploads/placeholder-1.jpg
     - heading: Research Centre 2
-      content:
-        AI@Cam is building an infrastructure for interdisciplinary innovation
+      content: AI@Cam is building an infrastructure for interdisciplinary innovation
         that serves science and society through research, education, and
         innovation programmes that leverage world- leading research from across
         the University and connect this to real-world needs.
       image: /assets/uploads/placeholder-2.jpg
 researchers:
-  content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-    euismod, ante condimentum accumsan lacinia, nibh ipsum fermentum libero, id
-    feugiat odio mauris ac libero. Etiam in ligula ante. Vestibulum in magna in
-    magna pellentesque venenatis ac eu ex.
+  content: Cambridge University hosts a vibrant community of over 12,000 staff
+    across over 150 Departments. Researchers across disciplines are engaged in
+    developing, deploying, and understanding the impact of AI technologies. Find
+    out more about members of our AI research community here.
   heading: Researchers
 media_text:
   heading: Are you a University of Cambridge researcher?
