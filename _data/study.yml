@@ -31,10 +31,10 @@ courses_undergraduate:
       department: Chemical Engineering and Biotechnology
       link: https://www.undergraduate.study.cam.ac.uk/courses/chemical-engineering
     - name: Natural Sciences
-      department: School of Biological Sciences
+      department: 16 departments across the University
       link: https://www.undergraduate.study.cam.ac.uk/courses/natural-sciences
     - name: Mathematics
-      department: Faculty of Mathematics
+      department: Mathematics
       link: https://www.undergraduate.study.cam.ac.uk/courses/mathematics
 media_text_postgraduate:
   heading: Postgraduate study
