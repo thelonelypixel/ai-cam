@@ -31,12 +31,11 @@ researchers:
     out more about members of our AI research community here.
   heading: Researchers
 media_text:
-  heading: Are you a University of Cambridge researcher?
-  content: Curabitur risus urna, ornare sed pretium vel, mattis et metus. Sed
-    scelerisque elit nec euismod ultricies. Sed nisl leo, laoreet a mauris
-    vitae, ultrices varius augue. Fusce ac risus sollicitudin, posuere ante at,
-    faucibus odio. Nunc sollicitudin metus ut est pulvinar ultricies quis nec
-    sapien.
+  heading: Are you working on AI at Cambridge University?
+  content: "In such a dynamic field, it isn't easy to keep our researcher database
+    up to date. If you think you should be on the list above, submit a profile
+    via our website update form at the link below, or a pull request via our
+    GitHub repo. "
   buttons:
     - link: /
       text: Contact us
