@@ -120,23 +120,21 @@ title: "Research"
       </div>
     </div>
     <div class="team__grid team__grid--basic">
-      {% assign team_entries = site.team %}
-      {% for post in team_entries %}
-        {% if post.category contains 'researcher' %}
-          <a href="{{ post.url }}" class="team__member">
-            <div class="team__member-image">
-              {% if post.image != nil %}
-                <img src="{{ post.image }}"/>
-              {% else %}
-                <img alt="" src="../assets/images/placeholder-1.jpg"/>
-              {% endif %}
-            </div>
-            <div class="team__member-content">
-              <h3>{{ post.name }}</h3>
-              <p>{{ post.position }}</p>
-            </div>
-          </a>
-        {% endif %}
+      {% assign researchers_entries = site.researchers %}
+      {% for post in researchers_entries %}
+        <a href="{{ post.url }}" class="team__member">
+          <div class="team__member-image">
+            {% if post.image != nil %}
+              <img src="{{ post.image }}"/>
+            {% else %}
+              <img alt="" src="../assets/images/placeholder-1.jpg"/>
+            {% endif %}
+          </div>
+          <div class="team__member-content">
+            <h3>{{ post.name }}</h3>
+            <p>{{ post.position }}</p>
+          </div>
+        </a>
       {% endfor %}
     </div>
   </div>
