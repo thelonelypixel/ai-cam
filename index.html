@@ -153,7 +153,7 @@ permalink: '/'
     {% endif %}
     <div class="latest-overview__column latest-overview__column--research">
       <h3>Latest Research</h3>
-      {% assign research_entries = site.research %}
+      {% assign research_entries = site.research | sort: 'date' | reverse %}
       {% for post in research_entries limit:3 %}
         <a href="{{ post.url }}" class="post post--small">
           <div class="post__thumbnail">
@@ -165,9 +165,10 @@ permalink: '/'
           </div>
 
           <div class="post__content">
-            {% if post.category != nil and post.category != '' %}
+            <span class="category">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <!-- {% if post.category != nil and post.category != '' %}
               <span class="category">{{ post.category | replace: "-", " " | replace: "[", "" | replace: "]", "" | replace: '"', "" }}</span>
-            {% endif %}
+            {% endif %} -->
             <h4>{{ post.title }}</h4>
             <span class="button button--simple">Read more</span>
           </div>
@@ -176,7 +177,7 @@ permalink: '/'
     </div>
     <div class="latest-overview__column latest-overview__column--news">
       <h3>AI News</h3>
-      {% assign news_entries = site.news %}
+      {% assign news_entries = site.news | sort: 'date' | reverse %}
       {% for post in news_entries limit:3 %}
         <a href="{{ post.url }}" class="post post--small">
           <div class="post__thumbnail">
@@ -202,32 +203,46 @@ permalink: '/'
       {% assign currentTime = 'now' | date: '%H:%M %p' %}
       {% assign currentDate = 'now' | date: '%Y-%m-%d' %}
       {% assign upcomingEvents = site.events | sort: "start" %}
-
-      {% for post in upcomingEvents limit: 3 %}
+    
+      {% assign hasUpcomingEvent = false %}
+    
+      {% for post in upcomingEvents %}
         {% assign eventStart = post.start | date: '%Y-%m-%d %H:%M %p' %}
         {% assign eventEnd = post.end | date: '%Y-%m-%d %H:%M %p' %}
-
         {% if eventEnd >= currentDate and eventStart >= currentTime %}
-          <a href="{{ post.url }}" class="post post--small">
-            <div class="post__thumbnail">
-              {% if post.image != nil %}
-                <img src="{{ post.image }}">
-              {% else %}
-                <img alt="" src="../assets/images/placeholder-1.jpg"/>
-              {% endif %}
-            </div>
-
-            <div class="post__content">
-              {% if post.category != nil and post.category != '' %}
-                <span class="category">{{ post.category | replace: "-", " " | replace: "[", "" | replace: "]", "" | replace: '"', "" }}</span>
-              {% endif %}
-              <h4>{{ post.title }}</h4>
-              <span class="button button--simple">Read more</span>
-            </div>
-          </a>
+          {% assign hasUpcomingEvent = true %}
         {% endif %}
       {% endfor %}
+    
+      {% if hasUpcomingEvent %}
+        {% for post in upcomingEvents limit: 3 %}
+          {% assign eventStart = post.start | date: '%Y-%m-%d %H:%M %p' %}
+          {% assign eventEnd = post.end | date: '%Y-%m-%d %H:%M %p' %}
+          {% if eventEnd >= currentDate and eventStart >= currentTime %}
+            <a href="{{ post.url }}" class="post post--small">
+              <div class="post__thumbnail">
+                {% if post.image != nil %}
+                  <img src="{{ post.image }}">
+                {% else %}
+                  <img alt="" src="../assets/images/placeholder-1.jpg"/>
+                {% endif %}
+              </div>
+    
+              <div class="post__content">
+                {% if post.category != nil and post.category != '' %}
+                  <span class="category">{{ post.category | replace: "-", " " | replace: "[", "" | replace: "]", "" | replace: '"', "" }}</span>
+                {% endif %}
+                <h4>{{ post.title }}</h4>
+                <span class="button button--simple">Read more</span>
+              </div>
+            </a>
+          {% endif %}
+        {% endfor %}
+      {% else %}
+        <p>No upcoming events</p>
+      {% endif %}
     </div>
+    
   </div>
 </section>
 

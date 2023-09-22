@@ -6,6 +6,18 @@
     align-items: flex-start;
     flex-wrap: wrap;
 
+    &-filters {
+      position: sticky;
+      top: 100px;
+      width: 100%;
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid $dark-cream;
+      padding-bottom: 20px;
+    }
+
     &-content {
       width: 100%;
       margin-bottom: 2rem;

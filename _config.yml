@@ -39,6 +39,8 @@ collections:
     output: true
   team:
     output: true
+  researchers:
+    output: true
   research:
     output: true
   projects:

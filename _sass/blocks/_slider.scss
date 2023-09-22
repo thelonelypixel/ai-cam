@@ -1,5 +1,6 @@
 .block__slider {
   background: $lightest;
+  overflow: hidden;
   
   &.block--bg-dark-blue {
     .slider__slide {
@@ -53,6 +54,9 @@
   }
 
   .slider__main {
+    cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+
     .slick-list {
       margin: 0 -2rem;
       overflow: visible;
@@ -116,6 +120,7 @@
           margin: 0;
           font-size: 2.4rem;
           line-height: 3rem;
+          max-width: 85%;
 
           @include bp(tablet) {
             font-size: 3rem;

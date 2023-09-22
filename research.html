@@ -115,14 +115,32 @@ title: "Research"
           </div>
         {% endif %}
       </div>
+
       <div class="team__intro-filters">
-        <button class="button button--filters">Show Filters</button>
+        <p>Filter by:</p>
+        {% assign unique_departments = "" | split: "," %}
+    
+        {% for post in site.researchers %}
+          {% unless unique_departments contains post.department %}
+            {% assign unique_departments = unique_departments | push: post.department %}
+          {% endunless %}
+        {% endfor %}
+    
+        <!-- Select box for departments -->
+        <div class="department-filters">
+          <select id="departmentSelect" name="departments">
+            <option value="" selected>All</option>
+            {% for department in unique_departments %}
+              <option value="{{ department | downcase | replace: ' ', '-' }}">{{ department }}</option>
+            {% endfor %}
+          </select>
+        </div>
       </div>
     </div>
-    <div class="team__grid team__grid--basic">
+    <div class="team__grid team__grid--basic">    
       {% assign researchers_entries = site.researchers %}
       {% for post in researchers_entries %}
-        <a href="{{ post.url }}" class="team__member">
+        <a href="{{ post.url }}" class="team__member" data-src="{{ post.department | downcase | replace: ' ', '-' }}">
           <div class="team__member-image">
             {% if post.image != nil %}
               <img src="{{ post.image }}"/>
@@ -137,7 +155,7 @@ title: "Research"
         </a>
       {% endfor %}
     </div>
-  </div>
+      
 </section>
 
 {% assign media_text = site.data.research.media_text %}

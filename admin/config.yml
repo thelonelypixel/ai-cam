@@ -2014,20 +2014,24 @@ collections:
         multiple: true
         options:
           - {
-              label: "AI Deployment and System Design",
-              value: "ai-deployment-and-system-design",
+              label: "Research and innovation",
+              value: "research-and-innovation",
             }
           - {
-              label: "AI for Research and Innovation",
-              value: "ai-for-research-and-innovation",
+              label: "AI-deas",
+              value: "ai-deas",
             }
           - {
-              label: "AI Policy and Data Governance",
-              value: "ai-policy-and-data-governance",
+              label: "Events",
+              value: "events",
             }
           - {
-              label: "Machine Learning Theory and Methods",
-              value: "machine-learning-theory-and-methods",
+              label: "Policy",
+              value: "policy",
+            }
+          - {
+              label: "Education",
+              value: "education",
             }
       - label: "Featured Image"
         name: "image"
@@ -2198,6 +2202,7 @@ collections:
     name: "researchers"
     folder: "_researchers"
     create: true
+    output: true
     slug: "{{slug}}"
     identifier_field: "name"
     editor:

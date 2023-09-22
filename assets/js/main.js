@@ -144,6 +144,21 @@
                     };
                 });
 
+                // Filter Departments
+                $('#departmentSelect').on('change', function() {
+                    const selectedDepartment = $(this).val();
+            
+                    $('.team__member').each(function() {
+                        const memberDepartment = $(this).attr('data-src');
+            
+                        if (selectedDepartment === "" || memberDepartment === selectedDepartment) {
+                            $(this).show();
+                        } else {
+                            $(this).hide();
+                        }
+                    });
+                });
+
                 // Current Opportunities
                 $('.toggle-opportunities').click(function(){
                     $(this).toggleClass('open');
