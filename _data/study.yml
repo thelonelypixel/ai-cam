@@ -2,8 +2,8 @@ hero:
   content: The University of Cambridge is one of the world’s top five
     universities, and is home to a vibrant community of researchers and
     educators. The University provides a range of courses relating to AI, its
-    use as part of a range of disciplines, and its critical evaluation. Explore
-    where you can find AI in our courses more at the links below.
+    use across disciplines, and its critical evaluation. Explore where you can
+    find AI in our courses at the links below.
   heading: Study
 media_text_undergraduate:
   content: The University offers 30 undergraduate courses covering more than 65
@@ -141,7 +141,7 @@ courses_postgraduate:
       department: Economics
       link: https://www.postgraduate.study.cam.ac.uk/courses/directory/ececmpmec
       department_link: https://www.econ.cam.ac.uk/postgraduate-studies/mphil-economics
-    - name: Mathematical Statistics
+    - name: MASt in Mathematics (Mathematical Statistics)
       department: Faculty of Mathematics
       link: https://www.postgraduate.study.cam.ac.uk/courses/directory/mapmasmst
       department_link: https://www.maths.cam.ac.uk/postgrad/part-iii/prospective.html
