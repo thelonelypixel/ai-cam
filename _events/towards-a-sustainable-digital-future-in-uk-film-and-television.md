@@ -11,6 +11,7 @@ desc: Film and television production leads to a significant environmental
   sought. To help identify a path forward, this event will examine the
   industry’s current sustainability strategies, and explore how ambitious
   environmental and social policy can be developed.
+image: /assets/uploads/fly-d-vh91igy0fhw-unsplash.jpg
 link_to: https://www.eventbrite.co.uk/e/towards-a-sustainable-digital-future-in-uk-film-and-television-tickets-728756810237?aff=oddtdtcreator
 ---
 Film and television production leads to a significant environmental footprint due to carbon-intensive infrastructures, energy dependencies, and waste production. While the past two decades have seen a rise in stakeholder discourse around sustainability and in critical attention to the industry’s environmental impacts, there is still a way to go to reach the level of impact sought. 
