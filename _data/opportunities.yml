@@ -1,38 +1,25 @@
 hero:
   heading: Current Opportunities
-  content: AI@Cam’s mission is to drive a new wave of AI innovation that serves
-    science, citizens, and society.
+  content: Find out more about opportunities to join our programme or team.
   image: ""
 opportunities_team_one:
-  heading: Team 1 heading goes in here
-  content: >-
-    Curabitur risus urna, ornare sed pretium vel, mattis et metus. Sed
-    scelerisque elit nec euismod ultricies. Sed nisl leo, laoreet a mauris
-    vitae, ultrices varius augue. Fusce ac risus sollicitudin, posuere ante at,
-    faucibus odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-
-    In elementum consectetur ante, non rhoncus lorem vehicula eget. Pellentesque ac condimentum ex. Sed ultrices sapien sem. Pellentesque non diam massa. Vivamus viverra non turpis in porttitor. Nam gravida urna diam, non finibus felis blandit sit amet.
-  image: /assets/uploads/image-2.png
+  heading: Head of Operations
+  content: To bring our vision to life, we're looking for a Head of Operations to
+    provide management support to the Director on a wide range of general
+    operations within the AI@Cam Mission.
+  image: /assets/uploads/damian-zaleski-ryyr-k3ysqg-unsplash.jpg
 opportunities_team_two:
-  content: >-
-    Curabitur risus urna, ornare sed pretium vel, mattis et metus. Sed
-    scelerisque elit nec euismod ultricies. Sed nisl leo, laoreet a mauris
-    vitae, ultrices varius augue. Fusce ac risus sollicitudin, posuere ante at,
-    faucibus odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-
-    In elementum consectetur ante, non rhoncus lorem vehicula eget. Pellentesque ac condimentum ex. Sed ultrices sapien sem. Pellentesque non diam massa. Vivamus viverra non turpis in porttitor. Nam gravida urna diam, non finibus felis blandit sit amet.
-  heading: Team 2 heading goes in here
-  image: /assets/uploads/image-2.png
+  content: We're looking for a pro-active problem-solver, who is interested in the
+    opportunity to work across our intiatives to deliver impactful projects and
+    to shape how a new team develops.
+  heading: Programme Manager
+  image: /assets/uploads/damian-zaleski-ryyr-k3ysqg-unsplash.jpg
 opportunities_team_three:
-  content: >-
-    Curabitur risus urna, ornare sed pretium vel, mattis et metus. Sed
-    scelerisque elit nec euismod ultricies. Sed nisl leo, laoreet a mauris
-    vitae, ultrices varius augue. Fusce ac risus sollicitudin, posuere ante at,
-    faucibus odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-
-    In elementum consectetur ante, non rhoncus lorem vehicula eget. Pellentesque ac condimentum ex. Sed ultrices sapien sem. Pellentesque non diam massa. Vivamus viverra non turpis in porttitor. Nam gravida urna diam, non finibus felis blandit sit amet.
-  heading: Team 3 heading goes in here
-  image: /assets/uploads/image-2.png
+  content: "The AI@Cam Communications and Engagement Manager will play an
+    important role in bringing together the University community and external
+    partners to help deliver this vision. As a talented storyteller who can
+    enthuse a variety of audiences about the potential of AI at Cambridge,
+    you'll deliver an effective communications strategy that drives a
+    step-change in engagement with the AI@Cam Mission. "
+  heading: Communications and Events Manager
+  image: /assets/uploads/damian-zaleski-ryyr-k3ysqg-unsplash.jpg
