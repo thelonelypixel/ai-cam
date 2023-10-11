@@ -1,11 +1,13 @@
 hero:
-  content: AI@Cam’s mission is to drive a new wave of AI innovation that serves
-    science, citizens, and society.
-  heading: Contact
+  content: ""
+  heading: Contact us
 contact:
   get_in_touch:
     heading: Get in touch
-    content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam est purus, pretium vitae pharetra eu, fermentum quis est.
+    content: If you have any questions about our work or opportunities to get
+      involved, contact us using this form.
   website_update:
     heading: Suggest a website update
-    content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam est purus, pretium vitae pharetra eu, fermentum quis est.
+    content: Is there a University event or course we should be listing on our site?
+      Would you like to be added to the researcher page? Let us know using this
+      form.
