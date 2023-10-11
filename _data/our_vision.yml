@@ -3,41 +3,37 @@ hero:
   content: AI@Cam’s mission is to drive a new wave of AI innovation that serves
     science, citizens, and society.
 text_split:
-  heading: The University of Cambridge’s vision is of a dynamic research and
-    innovation community pursuing high-quality interdisciplinary collaborations
-    that deliver benefits for science and society through partnerships that take
-    AI from the lab to areas of need.
+  heading: The University of Cambridge is building a dynamic AI community,
+    pursuing high-quality interdisciplinary collaborations that deliver benefits
+    for science and society, taking AI from the lab to areas of need.
   content: >-
-    AI@Cam will build this infrastructure through research, education, and
-    innovation programmes that leverage the world-leading research already
-    taking place across the University and connecting this to real-world needs. 
+    Amidst fevered conversations about progress in AI, the foundational work to
+    connect technology development to public value is more important than ever.
+    Progress in AI research and innovation can provide tools to help tackle the
+    complex challenges society faces – in economic growth, health and social
+    care, environment and wellbeing, and more. To deliver on this promise, AI
+    research and development needs to connect to public interests, concerns, and
+    areas of need.
 
 
-    Check out our AI@Cam programmes to find out more about our work, or explore our website to find out more about research, teaching, and collaborations at the University of Cambridge. AI@Cam is launching over Summer 2023, and this site will be updated as we launch.
+    AI@Cam is creating an infrastructure for interdisciplinary AI innovation through research, education, and innovation programmes that leverage the world-leading research already taking place across the University and connecting this to real-world needs. Check out our AI@Cam programmes to find out more about our work, or explore our website to find out more about research, teaching, and collaborations at the University of Cambridge.
 slider:
   slider_items:
-    - heading: Programme 1
-      image: /assets/uploads/placeholder-1.jpg
+    - heading: AI to tackle grand challenges
+      image: /assets/uploads/lander-media-2.png
+      link: /ai-deas
+      content: "ai@cam is working with researchers across the University to develop
+        ambitious research programmes deploying AI in areas of social and
+        scientific need. "
+    - heading: Introducing ai@cam
+      image: /assets/uploads/ai-885.png
       link: /
-      content: AI@Cam is building an infrastructure for interdisciplinary innovation
-        that serves science and society through research, education, and
-        innovation programmes that leverage world- leading research from across
-        the University and connect this to real-world needs.
-    - heading: Programme 2
-      image: /assets/uploads/placeholder-2.jpg
-      link: /
-      content: AI@Cam is building an infrastructure for interdisciplinary innovation
-        that serves science and society through research, education, and
-        innovation programmes that leverage world- leading research from across
-        the University and connect this to real-world needs.
+      content: AI@Cam is a flagship mission that will support the University in
+        delivering its vision for world-leading AI research, innovative AI
+        education, and collaborations that translate AI research to real-world
+        benefits for business, civil society, and policy.
 media_text:
   heading: We need a new infrastructure for interdisciplinary AI innovation.
-  content: Amidst fevered conversations about progress in AI, the foundational
-    work to connect technology development to public value is more important
-    than ever. Progress in AI research and innovation can provide tools to help
-    tackle the complex challenges society faces – in economic growth, health and
-    social care, environment and wellbeing, and more. To deliver on this
-    promise, AI research and development needs to connect to public interests,
-    concerns, and areas of need.
+  content: Suggesting deleting this section.
   image: /assets/uploads/lander-media-2.png
   image_small: /assets/uploads/lander-media-1.png
