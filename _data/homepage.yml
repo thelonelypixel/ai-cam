@@ -2,16 +2,16 @@ hero_slider:
   - heading: AI that serves science, citizens, and society
     content: "AI@Cam is the University of Cambridge’s mission to drive a new wave of
       AI innovation that delivers public value "
-    image: /assets/uploads/placeholder-1.jpg
+    image: /assets/uploads/chris-boland-y-3pw0fhsyq-unsplash.jpg
     buttons:
-      - link: /
+      - link: /our-vision
         text: Read More
-  - content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fringilla
-      dapibus lectus vel pharetra. Integer condimentum malesuada condimentum.
-    heading: AI@CAM Mission Heading Goes Here
-    image: /assets/uploads/placeholder-2.jpg
+  - content: New Cambridge University AI challenges will deliver game-changing AI
+      innovations that benefit science and society.
+    heading: "Announcing AI-deas: AI that delivers public benefit"
+    image: /assets/uploads/image-2.png
     buttons:
-      - link: /
+      - link: /ai-deas
         text: Read More
 latest_overview:
   heading: ""
