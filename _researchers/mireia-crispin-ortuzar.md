@@ -7,6 +7,7 @@ job_title: Assistant Professor
 email: mc973@cam.ac.uk
 crsid: mc973
 image_link: https://drive.google.com/file/d/1-xT6iCF9ZMm2aDKl_k_H5CPYFGBLaBlv/view?usp=sharing
+image: Crispin-Ortuzar_Mireia.jpg
 website: http://www.crispinlab.com/
 ---
 

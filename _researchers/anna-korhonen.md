@@ -8,6 +8,7 @@ job_title: Professor
 email: alk23@cam.ac.uk
 crsid: alk23
 image_link: https://drive.google.com/file/d/18W9BkU9lZAyHItxalO1RKRbn-vE8_j4O/view?usp=share_link
+image: Korhonen_Anna.jpg
 website: https://sites.google.com/site/annakorhonen/
 ---
 

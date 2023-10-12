@@ -5,9 +5,10 @@ family: Neff
 department: Minderoo Centre for Technology & Democracy, Centre for Research in the
   Arts, Humanities and Social Sciences (CRASSH)
 job_title: Executive Director
-email: jph79@cam.ac.uk
-crsid: jph79
+email: gsn23@cam.ac.uk
+crsid: gsn23
 image_link: https://www.mctd.ac.uk/team-members/gina-neff/
+image: Neff_Gina.jpg
 website: https://www.mctd.ac.uk/team-members/gina-neff/
 ---
 
