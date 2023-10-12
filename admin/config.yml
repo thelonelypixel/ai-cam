@@ -2062,7 +2062,7 @@ collections:
         default: ""
         date_format: "YYYY-MM-DD" # Adjust to YYYY-MM-DD format
         time_format: "HH:mm" # e.g. 21:07
-        format: "LLL"
+        format: "YYYY-MM-DD" # Updated format to match desired format
         picker_utc: false
       - label: "End Date & Time"
         name: "end"
@@ -2070,7 +2070,7 @@ collections:
         default: ""
         date_format: "YYYY-MM-DD" # Adjust to YYYY-MM-DD format
         time_format: "HH:mm" # e.g. 21:07
-        format: "LLL"
+        format: "YYYY-MM-DD" # Adjust to YYYY-MM-DD format
         picker_utc: false
       - label: "Description"
         name: "desc"
