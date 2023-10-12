@@ -20,7 +20,7 @@ link_to: https://www.bennettinstitute.cam.ac.uk/events/digecon-workshop/
 
 DigEcon connects research about the Economics of Digitization to policy and managerial practice. The aim is to create a network that gets UK-based researchers and practitioners to talk to each other, by meeting once a year to do two things: 1) Present recent research and work in progress about the economics of digitization and 2) Receive feedback and input from practitioners where they would need more useful answers from the research community.
 
-A group with similar goals in the United States meets twice a year, at the National Bureau of Economic Research. In the UK, there are many researchers interested in Digitization, but a network has been sorely missing. We conceived this group in Spring 2022 and plan to make this an annual event. Currently, speakers from several universities (Cambridge, Oxford, Imperial, East Anglia) and the Competition and Markets Authority, have confirmed their attendance, with forthcoming acceptances from the Government’s Department for Digital, Culture, Media & Sport, and Ofcom.
+A group with similar goals in the United States meets twice a year, at the National Bureau of Economic Research. In the UK, there are many researchers interested in Digitization, but a network has been sorely missing. We conceived this group in Spring 2022 and plan to make this an annual event. Currently, speakers from several universities (Cambridge, Oxford, Imperial, East Anglia) and the Competition and Markets Authority, have confirmed their attendance, with forthcoming acceptances from the Government’s Department for Digital, Culture, Media & Sport, and Ofcom. 
 
 #### **Format** 
 
