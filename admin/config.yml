@@ -2315,6 +2315,14 @@ collections:
       - label: "Featured Image"
         name: "image"
         widget: "image"
+      - label: "Publish Date"
+        name: "date"
+        widget: "datetime"
+        default: ""
+        date_format: "DD/MM/YYYY" # e.g. 24.12.2021
+        time_format: "HH:mm" # e.g. 21:07
+        format: "LLL"
+        picker_utc: false
       - label: "Body"
         name: "body"
         widget: "markdown"
