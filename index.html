@@ -215,7 +215,7 @@ permalink: '/'
       {% endfor %}
     
       {% if hasUpcomingEvent %}
-        {% for post in upcomingEvents limit: 3 %}
+        {% for post in upcomingEvents limit: 5 %}
           {% assign eventStart = post.start | date: '%Y-%m-%d %H:%M %p' %}
           {% assign eventEnd = post.end | date: '%Y-%m-%d %H:%M %p' %}
           {% if eventEnd >= currentDate and eventStart >= currentTime %}
@@ -229,9 +229,7 @@ permalink: '/'
               </div>
     
               <div class="post__content">
-                {% if post.category != nil and post.category != '' %}
-                  <span class="category">{{ post.category | replace: "-", " " | replace: "[", "" | replace: "]", "" | replace: '"', "" }}</span>
-                {% endif %}
+                <span class="category">{{ post.start | date: "%b %-d, %Y" }}</span>
                 <h4>{{ post.title }}</h4>
                 <span class="button button--simple">Read more</span>
               </div>

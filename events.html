@@ -20,15 +20,14 @@ title: 'Events'
 <section class="block pt-0 block__posts">
   <div class="container">
     <div class="posts__grid">
-      {% assign currentTime = 'now' | date: '%H:%M %p' %}
-      {% assign currentDate = 'now' | date: '%Y-%m-%d' %}
+      {% assign currentTime = 'now' | date: '%Y-%m-%d %H:%M' %}
       {% assign upcomingEvents = site.events | sort: "start" %}
-
+      
       {% for event in upcomingEvents %}
-        {% assign eventStart = event.start | date: '%Y-%m-%d %H:%M %p' %}
-        {% assign eventEnd = event.end | date: '%Y-%m-%d %H:%M %p' %}
-
-        {% if eventEnd >= currentDate and eventStart >= currentTime %}
+        {% assign eventStart = event.start | date: '%Y-%m-%d %H:%M' %}
+        {% assign eventEnd = event.end | date: '%Y-%m-%d %H:%M' %}
+        
+        {% if eventStart >= currentTime %}
           <a class="posts__item posts__item--event" href="{{ event.url }}">
             <div class="posts__item-thumbnail">
               {% if event.image != nil %}
@@ -53,6 +52,7 @@ title: 'Events'
     </div>
   </div>
 </section>
+
 
 <section class="block block--bg-dark-blue block__posts">
   <div class="container">

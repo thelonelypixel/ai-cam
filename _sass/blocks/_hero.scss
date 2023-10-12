@@ -153,10 +153,10 @@
       height: 100%;
       @include animate(1s, 0, fadeIn);
       z-index: 0;
-      opacity: 0.3;
+      opacity: 0.1;
 
       @include bp(desktop) {
-        opacity: 0.5
+        opacity: 0.3
       }
 
       @include bp(desktop-xl) {
@@ -173,7 +173,7 @@
 
   &.block__hero--archive,
   &.block__hero--search {
-    padding: 10rem 0 5rem 0;
+    padding: 10rem 0 5rem 0;;
 
     @include bp(tablet) {
       padding: 15rem 0 10rem 0;
@@ -193,6 +193,15 @@
       right: 0;
       @include animate(1s, 0, fadeIn);
       z-index: -1;
+      opacity: 0.1;
+
+      @include bp(desktop) {
+        opacity: 0.3
+      }
+
+      @include bp(desktop-xl) {
+        opacity: 1;
+      }
     }
 
     .hero__content {

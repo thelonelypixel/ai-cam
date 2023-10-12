@@ -188,7 +188,7 @@
                 $('.slider__main').slick({
                     infinite: false,
                     loop: false,
-                    slidesToShow: 2,
+                    slidesToShow: 2.5,
                     slidesToScroll: 1,
                     draggable: true,
                     arrows: false,
