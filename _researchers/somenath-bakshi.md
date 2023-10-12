@@ -7,6 +7,7 @@ job_title: Associate Professor
 email: sb2330@cam.ac.uk
 crsid: sb2330
 image_link: https://www.bakshilab.net/members
+image: Bakshi_Somenath.png
 website: https://www.bakshilab.net/
 ---
 
