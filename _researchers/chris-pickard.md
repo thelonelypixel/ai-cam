@@ -1,34 +1,17 @@
 ---
 layout: person
-name: Chris Pickard
-prefix: Professor
-biography: >
-  My PhD research resulted in a first principles approach to the computation of
-  energy loss near edge structure (ELNES). Recent advances in energy loss
-  resolution, computational resources and structural prediction, mean that its
-  latest incarnation (OptaDOS) is increasingly used in the microscopy community.
-  With Francesco Mauri, I went on to develop a quantitative theory for the
-  prediction of magnetic response in the solid state, applicable to the whole
-  periodic table. Based on our gauge including projector augmented waves (GIPAW)
-  it enables the prediction of nuclear magnetic resonance (NMR) chemical shifts,
-  quadrupolar coupling constants, J-coupling constants, electron paramagnetic
-  resonance (EPR) g-tensors and hyperfine parameters. It has revolutionised the
-  interpretation of solid-state NMR spectra, and is an integral part of " NMR
-  Crystallography".
-
-
-  Material Structure Prediction
-
-
-  My strikingly simple response to the “grand” challenge of material structure prediction is based on a random sampling of structure space, and careful, first principles total energy minimisations. Ab initio Random Structure Searching (AIRSS) has been extended to search for compounds, defects, clusters, surfaces and interfaces and is now a standard tool for computational materials discovery.
-
-
-  High Pressure Research
-
-
-  Early applications (with Richard Needs) of AIRSS have been to the behaviour of materials under extreme compression. High profile results include an excellent candidate for the elusive phase III of solid hydrogen, along with the anticipation of the “mixed” graphene-like phase IV, and the prediction (since confirmed) that ammonia will adopt an ionic ammonium amide crystal structure at megabar pressures. The discovery that aluminium is expected to adopt a non-close packed incommensurate phase above 3TPa, significantly modifying the equation of state, has been held as to introducing a new paradigm in ultra-dense matter. Where it was assumed that extreme compression would lead to mundane close packed crystal structures, we have shown that the terapascal regime (and beyond) is to be expected to provide a rich playground of new physics for the latest dynamic compression experiments to explore.
-image: https://www.msm.cam.ac.uk/sites/default/files/uploads/research-profile-images/Pickard.jpg
-website: https://www.msm.cam.ac.uk/people/pickard
-department: Department of Materials Science and Metallurgy
-position: Sir Alan Cotterell Professor of Materials Science
+given: Chris
+family: Pickard
+department: Department of Materials Science & Metallurgy
+title: Prof
+job_title: Sir Alan Cottrell Professor of Materials Science
+email: cjp20@cam.ac.uk
+crsid: cjp20
+image_link: https://www.christs.cam.ac.uk/sites/default/files/2022-12/pickard-chris-img_0467sq.jpg
+webpage: https://www.msm.cam.ac.uk/people/pickard
+image: Pickard_Chris.jpg
 ---
+
+Chris studied Natural Sciences at Christ’s and went on to complete a PhD at the Cavendish Laboratory. He joined the University of St Andrews as Reader in 2006, and University College London as Professor in 2009. In 2015 he returned to Cambridge as the Sir Alan Cottrell Professor of Materials Science and established the Materials Theory Group in the Department of Materials Science & Metallurgy.
+
+Chris develops theoretical and computational approaches to the study of materials at the atomic scale. Starting from quantum mechanics, he writes computer codes to explore the structure and properties of these materials. Applications range from the design of better battery cathodes, pharmaceutical compounds, and high temperature superconductors to the depths of giant planets and other exotic dense matter.
