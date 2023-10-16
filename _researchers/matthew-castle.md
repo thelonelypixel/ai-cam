@@ -5,6 +5,7 @@ preferred: Matt
 family: Castle
 department: Department Of Genetics
 title: Dr
+image: Castle_Matt.jpg
 job_title: Head of Bioinformatics Training, Head of PSLS Biostatistics Initiative
 email: mdc31@cam.ac.uk
 crsid: mdc31
