@@ -108,6 +108,10 @@ nav.nav-mobile {
   position: relative;
   transform: translateY(-60px);
 
+  span {
+    font-size: 2.8rem;
+  }
+
   ul {
     margin: 0;
     padding: 0;
@@ -119,7 +123,9 @@ nav.nav-mobile {
 
     li {
       margin-bottom: 2rem;
+      width: 100%;
       text-align: center;
+      color: $lightest;
 
       &:last-child {
         margin-bottom: 0;
@@ -127,7 +133,7 @@ nav.nav-mobile {
       }
 
       a {
-        font-size: 2.3rem;
+        font-size: 2.8rem;
         line-height: 2rem;
         color: $lightest;
         text-decoration: none;
@@ -135,6 +141,42 @@ nav.nav-mobile {
       }
     }
   }
+}
+
+/* Hide submenus by default */
+.submenu {
+  display: none;
+  position: relative;
+  z-index: 1; /* Ensure the submenu appears above other content */
+  margin: 20px 0;
+
+  &.open {
+    display: block;
+  }
+}
+
+/* Style the submenu links */
+.submenu a {
+  display: block;
+  padding: 10px 15px; /* Adjust padding as needed */
+  font-size: 18px !important;
+  text-decoration: none;
+  color: #333; /* Text color of submenu items */
+}
+
+/* Style the submenu links on hover */
+.submenu a:hover {
+}
+
+/* Adjust submenu positioning to push content down */
+.nav-mobile li {
+  position: relative;
+}
+
+.submenu {
+  top: 100%; /* Position the submenu below the parent li */
+  left: 0;
+  width: 100%;
 }
 
 .menu-trigger {

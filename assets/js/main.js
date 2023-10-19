@@ -54,6 +54,18 @@
                     $('body, .nav-mobile').removeClass('mobile-menu-active');
                 });
 
+                // JavaScript
+                const menuItems = document.querySelectorAll(".nav-mobile li");
+
+                menuItems.forEach(function (item) {
+                    const submenu = item.querySelector(".submenu");
+
+                    // toggle the submenu open/closed when you click on the li
+                    item.addEventListener("click", function () {
+                        submenu.classList.toggle("open");
+                    });
+                });
+
                 // Submenu Functionality
                 $('.nav-primary > li').click(function () {
                     var $this = $(this),

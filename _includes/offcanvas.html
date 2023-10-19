@@ -3,10 +3,24 @@
     <nav class="nav-mobile">
         <ul>
             {% for item in site.data.nav.main_nav %}
-            <li>
-                <a href="{{ item.link }}">{{ item.label }}</a>
-            </li>
+              <li>
+                {% if item.link != nil and item.link != '' %}
+                  <a href="{{ item.link }}">{{ item.label }}</a>
+                {% else %}
+                  <span>{{ item.label }}</span>
+                {% endif %}
+                {% if item.submenu != nil %}
+                  <div class="submenu">
+                    {% if item.link != nil and item.link != '' %}
+                      <a href="{{ item.link }}">{{ item.label }}</a>
+                    {% endif %}
+                    {% for item in item.submenu. %}
+                      <a href="{{ item.link }}">{{ item.label }}</a>
+                    {% endfor %}
+                  </div>
+                {% endif %}
+              </li>
             {% endfor %}
-        </ul>
+          </ul>
     </nav>
 </div>
