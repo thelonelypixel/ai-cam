@@ -2,7 +2,7 @@
   .courses__table {
     width: auto;
     display: block;
-    overflow: scroll;
+    overflow: auto;
 
     @include bp(desktop) {
       width: 100%;
