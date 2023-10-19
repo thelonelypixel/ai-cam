@@ -177,6 +177,10 @@ nav.nav-mobile {
   top: 100%; /* Position the submenu below the parent li */
   left: 0;
   width: 100%;
+
+  @include bp(desktop) {
+    top: unset;
+  }
 }
 
 .menu-trigger {
