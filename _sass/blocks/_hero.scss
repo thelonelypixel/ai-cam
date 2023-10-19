@@ -353,7 +353,7 @@
     width: 100%;
     opacity: 0;
 
-    @include bp(desktop) {
+    @include bp(tablet) {
       width: 50%;
     }
 
@@ -407,10 +407,10 @@
 
     @include bp(tablet) {
       margin-top: 3rem;
+      width: calc(50% - 5rem);
     }
 
     @include bp(desktop) {
-      width: calc(50% - 5rem);
       margin-top: 0;
     }
 
@@ -430,8 +430,15 @@
 }
 
 .hero__filters {
+  position: relative;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 2;
+
+  @include bp(tablet) {
+    justify-content: flex-end;
+  }
 
   &.open {
     .hero__filters-selection {
@@ -496,7 +503,7 @@
     background-color: $lightest;
     border-radius: 10px;
     position: absolute;
-    right: 0;
+    left: 0;
     bottom: -1rem;
     transform: translateY(100%);
     z-index: 100;
@@ -507,6 +514,10 @@
     @include bp(tablet) {
       padding: 2rem 2.5rem;
       border-radius: 60px;
+    }
+
+    @include bp(desktop) {
+      right: 0;
     }
 
     @include bp(desktop-xl) {

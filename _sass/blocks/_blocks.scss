@@ -1,7 +1,6 @@
 .block {
   position: relative;
   padding: 3rem 0;
-  z-index: 1;
 
   @include bp(tablet) {
     padding: 4rem 0;
