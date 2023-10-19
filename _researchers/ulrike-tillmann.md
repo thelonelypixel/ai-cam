@@ -1,22 +1,22 @@
 ---
 layout: person
-name: "Ulrike Tillmann "
-prefix: Professor
-biography: >-
-  After finishing her early education in Germany, Ulrike Tillmann went to
-  Brandeis University as a Wien International Scholar and studied for her PhD
-  under Ralph Cohen at Stanford. This was followed by collaborations with Graeme
-  Segal in Cambridge before she took her current position in Oxford where she
-  is, amongst other roles, the co-director of the Centre for Topological Data
-  Analysis and a fellow of Merton College.
-
-
-  She was awarded the Whitehead Prize by the London Mathematical Society in 2004 and the Bessel Preis by the Humboldt Society in 2008. Elected a fellow of the Royal Society in 2008, she was an inaugural fellow of the American Mathematical Society in 2012, and became a member of the Leopoldina in 2017. She has also been a fellow of The Alan Turing Institute since its establishment in 2015, and serves on scientific boards of several international institutions, including the Fields Institute and the Austrian Science Foundation. At the end of 2020 she finished her term as a member of Council of the Royal Society where she also served as interim Vice President in 2018.
-
-
-  Ulrike has worked broadly in topology, K-theory, and non-commutative geometry. Her work on the moduli spaces of Riemann surfaces and manifolds of higher dimensions has been inspired by problems in quantum physics and string theory. Some of her most recent work has been motivated by new and developing challenges in data science.
-image: https://www.newton.ac.uk/wp-content/uploads/2021/02/ulrike-tillmann_john-cairns_ref2014-02-10_149-354x354.jpeg
-website: https://www.newton.ac.uk/about/prof-ulrike-tillmann/
-department: "Isaac Newton Institute "
-position: Director
+given: Ulrike
+family: Tillmann
+department: Isaac Newton Institute for Mathematical Sciences
+title: Dr
+job_title: Director
+email: ut213@cam.ac.uk
+crsid: ut213
+image_link: https://www.newton.ac.uk/wp-content/uploads/2021/02/ulrike-tillmann_john-cairns_ref2014-02-10_149-354x354.jpeg
+webpage: https://www.newton.ac.uk/about/prof-ulrike-tillmann/
+image: Tillman_Ulrike.jpeg
+email2: director@newton.ac.uk
 ---
+
+Ulrike Tillmann is a mathematician who has worked in topology, K-theory, and non-commutative geometry. Her well-known work on moduli spaces has been motivated by problems in quantum physics and string theory, while some of her recent work in applied topology addresses challenges in data science.
+
+Born in Germany, Tillmann attended her local grammar school. With the help of a Wien Scholarship she studied at Brandeis University and later received her PhD from Stanford University.  Following a post-doctoral position in Cambridge she spent most of her career in Oxford and Merton College. Currently she is the Rothschild & Sons Professor in Cambridge, Director of the Isaac Newton Institute,  President of the London Mathematical Society (LMS), and Vice-President of the International Mathematical Union (IMU).
+
+For her outstanding research Tillmann was awarded the Whitehead Prize by the LMS in 2004, the Bessel–Humboldt Forschungs Preis in 2008, elected an inaugural Fellow of the American Mathematical Society in 2012 and a Member of the Leopoldina in 2017. She has been a Fellow of the Alan Turing Institute since its establishment in 2015, and currently she serves on scientific boards of several international  institutions, including  the Austrian Science Foundation (FWF).
+
+A former member of  Council of the Royal Society 2017-20 during which time she also served as interim Vice-President, she has chaired the Royal Society's Education Committee since 2020.

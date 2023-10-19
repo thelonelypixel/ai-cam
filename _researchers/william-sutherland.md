@@ -1,17 +1,17 @@
 ---
 layout: person
-name: William Sutherland
-prefix: Professor
-biography: As well as a general interest in many aspects of conservation science
-  I am especially interested in improving the processes by which decisions are
-  made. This has involved horizon scanning to identify future issues to reduce
-  the surprises of future developments. My main work has been the
-  industrial-scale collation of evidence to determine which interventions are
-  effective and which are not and then establishing processes for embedding
-  evidence in decision making.  I am also interested in the processes of
-  decision making as this is often so clearly flawed.
-image: https://www.zoo.cam.ac.uk/sites/www.zoo.cam.ac.uk/files/styles/inline/public/images/profile/bill-sutherland.jpg?itok=oEI3LUfB
-website: https://www.zoo.cam.ac.uk/directory/bill-sutherland
+given: William
+preferred: Bill
+family: Sutherland
 department: Department of Zoology
-position: Miriam Rothschild Professor of Conservation Biology
+title: Prof
+job_title: Professor of Conservation Biology
+email: w.sutherland@zoo.cam.ac.uk
+image_link: https://www.zoo.cam.ac.uk/sites/www.zoo.cam.ac.uk/files/styles/leading/public/bill_sutherland_-_websiteb.jpg
+webpage: https://www.zoo.cam.ac.uk/directory/bill-sutherland
+image: Sutherland_Bill.jpg
 ---
+
+Professor Bill Sutherland holds the Miriam Rothschild Chair of Conservation Biology in the Zoology Department and is a professorial Fellow in the College. He has written seven books and edited another five. He started as a birdwatcher and his main research interest has been in combining field observations of behaviour with theoretical models to predict the consequences of environmental change, such as changes in agricultural practice and climate change. His main current interests involve collaborating with policy makers to improve global conservation practice. This includes identifying environmental issues that have attracted insufficient attention using horizon scanning, collaborating with practitioners to identify the key knowledge gaps and establishing evidence-based conservation as a standard approach. He regularly provides advice to government and practitioners.
+
+He teaches ecology and conservation biology.  He also teaches on the Masters in Public Policy and Masters in Conservation Leadership courses.

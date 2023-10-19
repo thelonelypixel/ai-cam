@@ -1,15 +1,19 @@
 ---
 layout: person
-name: Sjors Scheres
-biography: Sjors studied chemistry at Utrecht University, The Netherlands, where
-  he also obtained his PhD in protein crystallography. He was a post-doc in the
-  group of Jose-Maria Carazo in Madrid, before he started his group at the LMB
-  in 2010. Since 2018, Sjors is also joint Head of the Structural Studies
-  division. His main interests lie in the development of new methods for
-  high-resolution cryo-EM structure determination and their application to
-  amyloid filaments.
-image: https://apidyn.royalsociety.org/images/fellows/P109648-Sjors-Scheres.jpg?width=275
-website: https://www2.mrc-lmb.cam.ac.uk/groups/scheres/
+given: Sjors
+family: Scheres
 department: MRC Laboratory of Molecular Biology
-position: Group Leader
+title: Dr
+job_title: Group Leader
+email: shws2@cam.ac.uk
+crsid: shws2
+image_link: https://storage.knaw.nl/styles/320w/s3/2022-10/Sjors%20Scheres%20-%20Foto%20door%20Inge%20Hoogland%20-LOW%20-%2042.png
+webpage: https://www2.mrc-lmb.cam.ac.uk/group-leaders/n-to-s/sjors-scheres/
+image: Scheres_Sjors.png
 ---
+
+Sjors Scheres is a structural biologist who was born and educated in The Netherlands, where he obtained his PhD at Utrecht University in 2003. He has been a Programme Leader at the Medical Research Council Laboratory of Molecular Biology since 2010.
+
+Sjors made fundamental contributions to three-dimensional structure determination of protein complexes by electron cryo-microscopy (cryo-EM). He formulated a Bayesian framework for high-resolution reconstruction of cryo-EM images and their classification into distinct structural states, and implemented these methods in the RELION software package. He used these methods to reach a milestone in cryo-EM structure determination of protein complexes: reconstruction to atomic-resolution.
+
+In collaboration with Michel Goedert, Sjors also applied his methods to solve atomic structures of amyloid filaments from the brains of individuals with neurodegenerative disease, including tau filaments from Alzheimer's disease. Surprisingly, although different diseases are characterised by amyloid formation of the same protein, specific amyloid structures were observed for each disease.

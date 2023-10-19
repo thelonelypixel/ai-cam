@@ -1,15 +1,21 @@
 ---
 layout: person
-name: Alexei Lapkin
-prefix: Professor
-biography: >-
-  
-  Alexei Lapkin is a Professor of Sustainable Reaction Engineering at University of Cambridge. He is also a PI on three projects within Cambridge CARES. He studied chemistry at Novosibirsk State University (Russia), then obtained his PhD in chemical engineering at University of Bath (UK) under the supervision of Prof. W. J. Thomas and then was appointed as a Lecturer in Chemical Engineering at University of Bath in 2000. In 2009 he was appointed as Professor of Engineering at University of Warwick and since 2013 he has been in the Department of Chemical Engineering and Biotechnology at Cambridge. His work is mainly on methods of process intensification for chemical manufacturing, including machine learning and artificial intelligence, and methods of environmental assessment of new chemical processes, including life cycle assessment. 
-
-
-  Professor Lapkin is the Lead PI for the C4T IRP 1 programme, additionally running several projects under the Pharma Innovation Programme Singapore (PIPS), an industry-led platform which aims to strategically bring together public sector research capabilities and domain expertise to enhance productivity and operational efficiency within the pharmaceutical sector through leveraging novel manufacturing technologies and data analytics. He is also the Lead PI for the AMPLE project which aims to work together with industrial partners in the pharmaceutical, energy, and functional coatings sector to rapidly scale new material technologies for high quality and low cost. He was also a Lead PI on the now-complete eCO₂EP project. 
-image: https://intranet.cares.cam.ac.uk/wp-content/uploads/2022/05/Alexei-LAPKIN.png
-website: https://www.ceb.cam.ac.uk/directory/alexei-lapkin
+given: Alexei
+family: Lapkin
 department: Department of Chemical Engineering and Biotechnology
-position: Professor of Sustainable Reaction Engineering
+title: Prof
+job_title: Professor of Sustainable Reaction Engineering
+email: aal35@cam.ac.uk
+crsid: aal35
+image_link: https://www.nanodtc.cam.ac.uk/wp-content/uploads/sites/22/2020/08/Prof.-Alexei-Lapkin-300x300.jpg
+webpage: https://lapkingroup.com
+image: Lapkin_Alexei.jpg
 ---
+
+Alexei Lapkin is a Professor of Sustainable Reaction Engineering at University of Cambridge. He is also a PI on several projects within Cambridge CARES in Singapore.
+
+He obtained his PhD in chemical engineering at University of Bath (UK) and then was appointed as a Lecturer in Chemical Engineering at University of Bath in 2000. In 2009 he was appointed as Professor of Engineering at University of Warwick and since 2013 he has been in the Department of Chemical Engineering and Biotechnology at Cambridge.
+
+His work is mainly on sustainability aspects of manufacture of molecules and materials. This includes work on chemical data (chemoinformatics, data cleaning, data augmentation), digital twins in chemical manufacturing, machine learning and AI methods in chemical synthesis and process development, and methods of environmental assessment of new chemical processes.
+
+His group has spun out two companies: Accelerated Materials Ltd, which is adopting ML-assisted materials development strategies, and Chemical Data Intelligence (CDI) Pte Ltd, which is exploiting complex networks and ML methods for developing new chemical entities and synthesis planning. Links: <https://cdi-sg.com>; <https://acceleratedmaterials.co>

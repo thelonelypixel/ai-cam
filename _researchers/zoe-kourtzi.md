@@ -1,19 +1,15 @@
 ---
 layout: person
-name: Zoe Kourtzi
-prefix: Professor
-biography: My work aims to understand the role of learning and experience in
-  enabling humans of all ages to translate sensory experience into complex
-  decisions and adaptive behaviours. Adaptive cognitive abilities are critical
-  for survival and social interactions, yet extracting meaning from the complex,
-  and frequently ambiguous, input of the natural world is a computationally
-  demanding task that is far from understood. I address this challenge through
-  an interdisciplinary approach that combines behavioural paradigms with
-  multimodal brain imaging (MRI, EEG, MEG, TMS) and state-of-the-art
-  computational methods. I apply these techniques to study the young and ageing
-  brain and understand learning and cortical plasticity across the lifespan.
-image: https://www.psychol.cam.ac.uk/sites/www.psychol.cam.ac.uk/files/styles/inline/public/images/profile/zk240.jpg?itok=rZTLQbuP
-website: https://www.psychol.cam.ac.uk/staff/professor-zoe-kourtzi
-department: Department of Psychology
-position: Professor of Experimental Psychology
+given: Zoe
+family: Kourtzi
+department: Psychology
+title: Prof
+job_title: Professor of Cognitive Computational Neuroscience, Royal Society Industry
+  Fellow
+email: zk240@cam.ac.uk
+crsid: zk240
+image_link: https://www.abg.psychol.cam.ac.uk/directory/zoe-kourtzi
+website: https://www.abg.psychol.cam.ac.uk
 ---
+
+My research in cognitive computational neuroscience sits at the interface of computational science and neuroscience. My experimental work aims to understand the role of lifelong learning and brain plasticity in enabling individuals of all ages to flexibly adapt to new settings and challenges. My computational work aims to develop predictive AI-guided models of brain and mental health with translational impact in early diagnosis of neurocognitive disorders and personalised interventions. I am a Royal Society Industry Fellow, Co-director of Cambridge’s Centre for Data Driven Discovery, Fellow and Cambridge University Lead at the Alan Turing Institute.

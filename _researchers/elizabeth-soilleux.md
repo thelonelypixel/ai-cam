@@ -1,0 +1,16 @@
+---
+layout: person
+given: Elizabeth
+preferred: Liz
+family: Soilleux
+department: Pathology
+title: Prof
+job_title: Professor/ Group Leader/ Honorary Consultant
+email: ejs17@cam.ac.uk
+crsid: ejs17
+image_link: https://www.dropbox.com/scl/fi/zop8d333sltjbxeil2l11/IMG_7847-copy.jpeg?rlkey=grxjmb3rcysipwuchjiosrbl0&dl=0
+website: https://www.path.cam.ac.uk/directory/elizabeth-soilleux
+image: Soilleux_Elizabeth.jpg
+---
+
+Liz Soilleux is a professor and honorary consultant in pathology. Aside from her clinical practice and university teaching roles, her research interests lie in identifying novel methods for the diagnosis of coeliac disease and the early detection of cancer, with a particular focus on the application of novel mathematical algorithms to digital images and to bioinformatic data. Her research team’s aim is to improve the objectivity of diagnosis and efficiency of workflow, ideally with full automation of many aspects of diagnostic histopathology. She has received the bulk of her funding from Coeliac UK, Innovate UK, the Pathological Society of Great Britain and Ireland, the MRC and CRUK and has applied for an NIHR Product Development Award. She is the CEO of spinout company, Lyzeum Ltd (https://www.lyzeumltd.com/).
