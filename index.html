@@ -266,7 +266,7 @@ permalink: '/'
       {% if media_text.content != nil and media_text.content != '' %}
         {{ media_text.content | markdownify }}
       {% endif %}
-      {% if media_text.quick_links != nil and media_text.quick_links.size > 0 %}
+      <!-- {% if media_text.quick_links != nil and media_text.quick_links.size > 0 %}
         <ul class="media-text__content-quicklinks">
           {% for item in media_text.quick_links %}
             {% if item.link != nil and item.link != '' %}
@@ -291,7 +291,7 @@ permalink: '/'
             {% endif %}
           {% endfor %}
         </ul>
-      {% endif %}
+      {% endif %} -->
 
       {% if media_text.buttons != nil and media_text.buttons.size > 0 %}
         <div class="button-box">

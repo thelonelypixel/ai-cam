@@ -1,5 +1,5 @@
 ---
-layout: person
+layout: team-single
 name: Colm-cille Caulfield
 image: /assets/uploads/colm-cille-caulfield.jpeg
 position: Professor of Environmental and Industrial Fluid Dynamics, Head of the
