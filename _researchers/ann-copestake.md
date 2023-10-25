@@ -6,6 +6,6 @@ department: Department of Computer Science and Technology
 title: Prof
 job_title: Professor of Computational Linguistics
 crsid: aac10
-image: /assets/upload/
+image: /assets/upload/Copestake_Ann.jpg
 webpage: https://www.cst.cam.ac.uk/people/aac10
 ---
