@@ -1,6 +1,6 @@
 hero_slider:
   - heading: AI that serves science, citizens, and society
-    content: "AI@Cam is the University of Cambridge’s mission to drive a new wave of
+    content: "ai@cam is the University of Cambridge’s mission to drive a new wave of
       AI innovation that delivers public value "
     image: /assets/uploads/chris-boland-y-3pw0fhsyq-unsplash.jpg
     buttons:
@@ -18,12 +18,12 @@ latest_overview:
   content: ""
   buttons: []
 media_text:
-  heading: About AI@CAM
-  content: Curabitur risus urna, ornare sed pretium vel, mattis et metus. Sed
-    scelerisque elit nec euismod ultricies. Sed nisl leo, laoreet a mauris
-    vitae, ultrices varius augue. Fusce ac risus sollicitudin, posuere ante at,
-    faucibus odio. Nunc sollicitudin metus ut est pulvinar ultricies quis nec
-    sapien.
+  heading: About ai@cam
+  content: "ai@cam is a flagship mission with both inward ambition and outward
+    facing vision. It aims to connect the University’s AI capabilities,
+    facilitating productive engagement across the University and putting
+    Cambridge at the centre of a global discussion about the safe and ethical
+    deployment of AI technologies. "
   buttons:
     - link: /
       text: Read More
@@ -39,32 +39,32 @@ media_text:
 slider:
   slider_items:
     - heading: What we do
-      content: AI@Cam is building an infrastructure for interdisciplinary innovation
+      content: ai@cam is building an infrastructure for interdisciplinary innovation
         that serves science and society through research, education, and
         innovation programmes that leverage world-leading research from across
         the University and connect this to real-world needs.
       link: /
-      image: /assets/uploads/placeholder-1.jpg
-    - content: Challenge-led research initiatives from AI@Cam will work to galvanise
+      image: /assets/uploads/nasa-q1p7bh3shj8-unsplash.jpg
+    - content: Challenge-led research initiatives from ai@cam will work to galvanise
         the research community in support of national priorities, bringing in
         people, partnerships, and approaches that help build capacity in a
         critical area of need.
       link: /
-      image: /assets/uploads/placeholder-2.jpg
-      heading: Challenge-led AI innovation
-    - content: AI@Cam will provide a forum for convening policymakers and researchers,
+      image: /assets/uploads/ux-indonesia-qc2n6rqu4vw-unsplash.jpg
+      heading: Driving challenge-led AI innovation
+    - content: ai@cam will provide a forum for convening policymakers and researchers,
         identifying areas of policy need, and rapidly spinning-up collaborative
         projects to help deliver on that need.
       link: /
-      image: /assets/uploads/placeholder-1.jpg
-      heading: Challenge-led AI innovation
-    - heading: An AI innovation hub
-      content: Building on Cambridge’s strong history of innovation, AI@Cam will build
+      image: /assets/uploads/picture-1.jpg
+      heading: Bridging from research to policy
+    - heading: Building an AI innovation hub
+      content: Drawing on Cambridge’s strong history of innovation, ai@cam will build
         a hub brings together collaborators from different disciplines or
         sectors in an environment that encourages knowledge translation, while
         also connecting to social needs.
       link: /
-      image: /assets/uploads/placeholder-2.jpg
+      image: /assets/uploads/hal-gatewood-ogvqxgl7xo4-unsplash.jpg
   content: ""
-  heading: Explore AI@CAM
+  heading: Explore ai@cam
   buttons: []

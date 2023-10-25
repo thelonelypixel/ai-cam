@@ -1,14 +1,12 @@
 hero:
   heading: Our vision
-  content: AI@Cam’s mission is to drive a new wave of AI innovation that serves
+  content: ai@cam’s mission is to drive a new wave of AI innovation that serves
     science, citizens, and society.
 text_split:
   heading: The University of Cambridge is building a dynamic AI community,
     pursuing high-quality interdisciplinary collaborations that take AI from the
     lab to areas of need.
   content: >-
-    Amidst fevered conversations about progress in AI, the foundational work to
-    connect technology development to public value is more important than ever.
     Progress in AI research and innovation can provide tools to help tackle the
     complex challenges society faces – in economic growth, health and social
     care, environment and wellbeing, and more. To deliver on this promise, AI
@@ -16,7 +14,7 @@ text_split:
     areas of need.
 
 
-    AI@Cam is creating an infrastructure for interdisciplinary AI innovation through research, education, and innovation programmes that leverage the world-leading research already taking place across the University and connecting this to real-world needs. Check out our AI@Cam programmes to find out more about our work, or explore our website to find out more about research, teaching, and collaborations at the University of Cambridge.
+    AI@Cam is creating an infrastructure for interdisciplinary AI innovation through research, education, and innovation programmes that leverage the world-leading research already taking place across the University and connecting this to real-world needs. 
 slider:
   slider_items:
     - heading: AI to tackle grand challenges
@@ -34,6 +32,7 @@ slider:
         benefits for business, civil society, and policy.
     - heading: ai@cam Policy Lab
       content: Content to follow when page developed.
+      image: /assets/uploads/picture-1.jpg
 media_text:
   heading: We need a new infrastructure for interdisciplinary AI innovation.
   content: Suggesting deleting this section.
