@@ -40,22 +40,6 @@ title: "Research"
   </div>
 </section>
 
-{% assign text_split = site.data.research.text_split %}
-<section class="block block--bg-pink block--no-padding-bottom block__text block__text--split">
-  <div class="container">
-    {% if text_split.heading != nil and text_split.heading != '' %}
-      <div class="text__heading">
-        <h2>{{ text_split.heading }}</h2>
-      </div>
-    {% endif %}
-    {% if text_split.content != nil and text_split.content != '' %}
-      <div class="text__content">
-        {{ text_split.content | markdownify }}
-      </div>
-    {% endif %}
-  </div>
-</section>
-
 {% assign research_entries = site.research %}
 <section class="block block--bg-pink block__slider">
   <div class="container">
