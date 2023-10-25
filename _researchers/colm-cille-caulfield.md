@@ -1,51 +1,30 @@
 ---
 layout: person
-name: Colm-cille Caulfield
-prefix: Professor
-biography: >-
-  Career
-
-  1992-1994: Post-doctoral research fellow for the Japan-Canada Project in Weather and Climate of the Arctic, Department of Physics, University of Toronto
-
-  1992-1993: Senior Visitor, Department of Engineering Science, Hokkaido University
-
-  1995-1999: Lecturer, Department of Mathematics, University of Bristol
-
-  1999-2001: Assistant Professor of Environmental Engineering, Department of Mechanical and Aerospace Engineering, Irwin and Joan Jacobs School of Engineering, University of California, San Diego
-
-  2001-2005: Associate Professor (with tenure) of Environmental Engineering, Department of Mechanical and Aerospace Engineering, Irwin and Joan Jacobs School of Engineering, University of California, San Diego
-
-  2004-2005: Visiting Researcher (Poste Rouge au CNRS) in the Hydrodynamics Laboratory, (LaDyHX) Ecole Polytechnique-CNRS
-
-  2005-9: University Lecturer in Fluid Flow, BP Institute and the Department of Applied Mathematics and Theoretical Physics, University of Cambridge
-
-  2009-13: University Senior Lecturer in Fluid Flow, BP Institute and the Department of Applied Mathematics and Theoretical Physics, University of Cambridge
-
-  2013-15: Reader in Environmental and Industrial Fluid Dynamics, BP Institute and the Department of Applied Mathematics and Theoretical Physics, University of Cambridge
-
-  2015-: Professor of Environmental and Industrial Fluid Dynamics, BP Institute and the Department of Applied Mathematics and Theoretical Physics, University of Cambridge
-
-  2020-: Head of Department of Applied Mathematics and Theoretical Physics, University of Cambridge
-
-  2005-: Fellow and College Lecturer in Mathematics, Churchill College, University of Cambridge
+given: Colm-cille
+preferred: Colm
+family: Caulfied
+department: Department of Applied Maths and Theoretical Physics
+title: Prof
+job_title: Professor of Environmental and Industrial Fluid Dynamics
+crsid: cpc12
+image: /assets/upload/Caulfied_Colm-cille.jpg
+webpage: https://www.damtp.cam.ac.uk/person/cpc12
+biography: 'Professor Colm-cille Caulfield holds a joint appointment in the Department
+  of Applied Mathematics and Theoretical Physics and the Institute for Energy and
+  Environmental Flows. The IEEF is a multi-disciplinary research centre devoted to
+  fundamental studies of problems related to the energy industry and associated environmental
+  impacts, defined in the broadest sense. It brings together industrialists and academics
+  with expertise in applied mathematics, earth sciences, engineering and chemistry.
 
 
-  Research
-
-  - stratified flows
-
-  - turbulent mixing processes
-
-  - Generalised flow instability and transition
-
-  - turbulent plumes
-
-  - building ventilation
-image: /assets/uploads/colm-cille-caulfield.jpeg
-website: https://www.damtp.cam.ac.uk/person/cpc12
-department: Department of Applied Mathematics and Theoretical Physics
-position: Professor of Environmental and Industrial Fluid Dynamics; Head of the
-  Department of Applied Mathematics and Theoretical Physics, and co-Chair, C2D3
-category:
-  - steering-group
+  Professor Caulfield is interested in working as part of such diverse teams to study
+  various fluid flows in the environment, particularly in cases where density differences
+  play a dynamical role. Of course, density differences, (due to temperature or composition
+  variation) are ubiquitous in the environment. Understanding the fundamental properties
+  of the associated fluid dynamics is key to ensuring sustainable human activity.
+  To name just three important examples, understanding how density differences affect
+  fluid flows can allow strategies to be developed to model the climate system, to
+  deal with the dispersion of pollutants, or to minimise energy consumption within
+  buildings.'
+category: '[''steering-group'']'
 ---

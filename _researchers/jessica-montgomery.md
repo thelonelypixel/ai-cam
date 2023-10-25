@@ -5,15 +5,33 @@ family: Montgomery
 department: Research Office
 title: Ms
 job_title: AI@cam Director
-email: jkm40@cam.ac.uk
 crsid: jkm40
-image_link: https://www.csap.cam.ac.uk/media/uploads/files/3/jessica-montgomery.jpg
+image: /assets/upload/Montgomery_Jessica.jpg
 webpage: https://www.cst.cam.ac.uk/people/jkm40
-image: Montgomery_Jessica.jpg
+biography: 'Jessica is currently Director of AI@Cam, a new University of Cambridge
+  strategic mission to develop AI technologies that serve science, citizens, and society.
+
+
+  Alongside this role, she leads a variety of research and policy programmes tackling
+  the real-world challenges associated with developing and deploying AI for societal
+  benefit. These include: Accelerate Science, an initiative developing AI tools and
+  collaborations in support of research and innovation; the Data Trusts Initiative,
+  an incubator programme for pilot projects creating trustworthy data governance frameworks;
+  and strategic research agenda development for the ELISE/ELLIS network of European
+  AI research.
+
+
+  Her interests in AI and its consequences for science and society stem from her policy
+  career, in which she worked with parliamentarians, leading researchers and civil
+  society organisations to bring scientific evidence to bear on major policy issues.
+  At the Royal Society, Jessica established and led a wide-ranging programme of policy
+  development, public dialogue and international engagement that explored the frontiers
+  of AI technologies and their implications for society. She worked with senior researchers,
+  policymakers, civil society and industry to identify emerging policy needs and develop
+  policy frameworks to enable safe and rapid deployment of these technologies. In
+  her prior role as a Senior Clerk at the House of Commons, Jessica advised MPs on
+  parliamentary procedure and practice. While advising a number of select committees
+  – including Transport; Business, Innovation, and Skills; Regulatory Reform; and
+  Science and Technology – Jessica managed inquiries into a range of science and policy
+  issues, bringing evidence into the heart of political decision-making.'
 ---
-
-Jessica is currently Director of AI@Cam, a new University of Cambridge strategic mission to develop AI technologies that serve science, citizens, and society.
-
-Alongside this role, she leads a variety of research and policy programmes tackling the real-world challenges associated with developing and deploying AI for societal benefit. These include: Accelerate Science, an initiative developing AI tools and collaborations in support of research and innovation; the Data Trusts Initiative, an incubator programme for pilot projects creating trustworthy data governance frameworks; and strategic research agenda development for the ELISE/ELLIS network of European AI research.
-
-Her interests in AI and its consequences for science and society stem from her policy career, in which she worked with parliamentarians, leading researchers and civil society organisations to bring scientific evidence to bear on major policy issues. At the Royal Society, Jessica established and led a wide-ranging programme of policy development, public dialogue and international engagement that explored the frontiers of AI technologies and their implications for society. She worked with senior researchers, policymakers, civil society and industry to identify emerging policy needs and develop policy frameworks to enable safe and rapid deployment of these technologies. In her prior role as a Senior Clerk at the House of Commons, Jessica advised MPs on parliamentary procedure and practice. While advising a number of select committees – including Transport; Business, Innovation, and Skills; Regulatory Reform; and Science and Technology – Jessica managed inquiries into a range of science and policy issues, bringing evidence into the heart of political decision-making.
