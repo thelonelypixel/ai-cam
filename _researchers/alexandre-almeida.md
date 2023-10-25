@@ -5,11 +5,19 @@ preferred: Alex
 family: Almeida
 department: Veterinary Medicine
 job_title: Principal Investigator, MRC Career Development Fellow
-email: aa2369@cam.ac.uk
 crsid: aa2369
-image_link: https://www.vet.cam.ac.uk/sites/www.vet.cam.ac.uk/files/styles/inline/public/images/profile/aalmeida_0.jpeg?itok=0OiD0s1O
-website: https://www.vet.cam.ac.uk/staff/dr-alexandre-almeida
-image: Almeida_Alexandre.jpg
+image: /assets/upload/Almeida_Alexandre.jpg
+webpage: https://www.vet.cam.ac.uk/staff/dr-alexandre-almeida
+biography: Alex is a Principal Investigator at the University of Cambridge, leading
+  a research group aiming to understand the role that the hidden, uncultured microbiome
+  plays in human health and disease. Throughout his research career he has specialized
+  in the development and application of bioinformatics and genomic approaches to make
+  biological discoveries with relevance to human health. After completing his PhD
+  at the Institut Pasteur in Paris, he relocated to Cambridge as a Postdoctoral Fellow
+  to expand his research to metagenomic studies of the human gut microbiome. Using
+  large-scale computational methods, his work led to the discovery of thousands of
+  uncultivated bacterial species in the human gut microbiome, more than tripling the
+  number of gut-associated species previously known. Now, as a PI his research focus
+  is on characterizing the relevance of this huge novel microbial diversity for disease
+  prediction, diagnostic and treatment.
 ---
-
-Alex is a Principal Investigator at the University of Cambridge, leading a research group aiming to understand the role that the hidden, uncultured microbiome plays in human health and disease. Throughout his research career he has specialized in the development and application of bioinformatics and genomic approaches to make biological discoveries with relevance to human health. After completing his PhD at the Institut Pasteur in Paris, he relocated to Cambridge as a Postdoctoral Fellow to expand his research to metagenomic studies of the human gut microbiome. Using large-scale computational methods, his work led to the discovery of thousands of uncultivated bacterial species in the human gut microbiome, more than tripling the number of gut-associated species previously known. Now, as a PI his research focus is on characterizing the relevance of this huge novel microbial diversity for disease prediction, diagnostic and treatment.
