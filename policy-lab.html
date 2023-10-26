@@ -151,25 +151,28 @@ title: 'Policy Lab'
       <h3>AI News</h3>
       {% assign news_entries = site.news | sort: 'date' | reverse %}
       {% for post in news_entries limit:3 %}
-        <a href="{{ post.url }}" class="post post--small">
-          <div class="post__thumbnail">
-            {% if post.image != nil %}
-              <img src="{{ post.image }}">
-            {% else %}
-              <img alt="" src="../assets/images/placeholder-1.jpg"/>
-            {% endif %}
-          </div>
-
-          <div class="post__content">
-            {% if post.category != nil and post.category != '' %}
-              <span class="category">{{ post.category | replace: "-", " " | replace: "[", "" | replace: "]", "" | replace: '"', "" }}</span>
-            {% endif %}
-            <h4>{{ post.title }}</h4>
-            <span class="button button--simple">Read more</span>
-          </div>
-        </a>
+        {% if post.category == 'policy' %}
+          <a href="{{ post.url }}" class="post post--small">
+            <div class="post__thumbnail">
+              {% if post.image != nil %}
+                <img src="{{ post.image }}">
+              {% else %}
+                <img alt="" src="../assets/images/placeholder-1.jpg"/>
+              {% endif %}
+            </div>
+    
+            <div class="post__content">
+              {% if post.category != nil and post.category != '' %}
+                <span class="category">{{ post.category | replace: "-", " " | replace: "[", "" | replace: "]", "" | replace: '"', "" }}</span>
+              {% endif %}
+              <h4>{{ post.title }}</h4>
+              <span class="button button--simple">Read more</span>
+            </div>
+          </a>
+        {% endif %}
       {% endfor %}
     </div>
+    
     <div class="latest-overview__column latest-overview__column--events">
       <h3>Upcoming Events</h3>
       {% assign currentTime = 'now' | date: '%H:%M %p' %}

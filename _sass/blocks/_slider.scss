@@ -39,8 +39,12 @@
   }
 
   .slider__intro {
-    margin-bottom: 7.5rem;
+    margin-bottom: 2rem;
     max-width: 75%;
+
+    @include bp(desktop) {
+      margin-bottom: 7.5rem;
+    }
   }
 
   .slider__notice {

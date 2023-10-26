@@ -191,17 +191,9 @@
       position: absolute;
       top: 0;
       right: 0;
-      @include animate(1s, 0, fadeIn);
+      @include animate(1s, 0, slideInRight);
       z-index: -1;
       opacity: 0.1;
-
-      @include bp(desktop) {
-        opacity: 0.3
-      }
-
-      @include bp(desktop-xl) {
-        opacity: 1;
-      }
     }
 
     .hero__content {
@@ -430,7 +422,7 @@
 }
 
 .hero__filters {
-  position: relative;
+  // position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -503,7 +495,6 @@
     background-color: $lightest;
     border-radius: 10px;
     position: absolute;
-    left: 0;
     bottom: -1rem;
     transform: translateY(100%);
     z-index: 100;
