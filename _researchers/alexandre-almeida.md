@@ -6,7 +6,7 @@ family: Almeida
 department: Veterinary Medicine
 job_title: Principal Investigator, MRC Career Development Fellow
 crsid: aa2369
-image: /assets/upload/Almeida_Alexandre.jpg
+image: /assets/uploads/Almeida_Alexandre.jpg
 webpage: https://www.vet.cam.ac.uk/staff/dr-alexandre-almeida
 biography: Alex is a Principal Investigator at the University of Cambridge, leading
   a research group aiming to understand the role that the hidden, uncultured microbiome

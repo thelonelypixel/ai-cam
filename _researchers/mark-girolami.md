@@ -8,7 +8,7 @@ job_title: 'Sir Kirby Laing Professor of Civil Engineering
 
   '
 crsid: mag92
-image: /assets/upload/Girolami_Mark.jpeg
+image: /assets/uploads/Girolami_Mark.jpeg
 webpage: http://www.eng.cam.ac.uk/profiles/mag92
 biography: "Professor Mark Girolami is the Chief Scientist of The Alan Turing Institute,
   the UK’s National Institute for data science and artificial intelligence and took

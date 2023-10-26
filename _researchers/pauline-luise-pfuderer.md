@@ -5,7 +5,7 @@ family: Pfuderer
 department: Dept of Pathology & CRUK Cambridge Centre
 job_title: PhD student
 crsid: plp27
-image: /assets/upload/Pfuderer_Pauline-Luise.png
+image: /assets/uploads/Pfuderer_Pauline-Luise.png
 webpage: https://crukcambridgecentre.org.uk/users/plp2713921
 biography: m a research student in Cancer Biology within the CRUK MRes + PhD Programme.
   Previously I did a Master’s and Bachelor’s degree in Molecular Biotechnology at

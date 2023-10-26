@@ -6,7 +6,7 @@ family: Wardrop
 department: RegGenome
 title: Prof
 job_title: CEO
-image: /assets/upload/Wardrop_Robert.jpg
+image: /assets/uploads/Wardrop_Robert.jpg
 webpage: https://www.jbs.cam.ac.uk/people/robert-wardrop/
 biography: 'Bob led the spin-out of Regulatory Genome Development Ltd (RegGenome)
   from the University, and brings extensive experience in venture development and

@@ -6,7 +6,7 @@ department: Engineering
 title: Dr
 job_title: Director of Research in Machine Learning
 crsid: aw665
-image: /assets/upload/Weller_Adrian.png
+image: /assets/uploads/Weller_Adrian.jpg
 webpage: https://mlg.eng.cam.ac.uk/adrian/
 biography: Adrian Weller MBE is a Director of Research in Machine Learning at the
   University of Cambridge, and at the Leverhulme Centre for the Future of Intelligence

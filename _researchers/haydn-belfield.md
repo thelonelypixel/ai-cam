@@ -4,7 +4,7 @@ given: Haydn
 family: Belfield
 department: LCFI
 crsid: hb492
-image: /assets/upload/Belfield_Haydn.jpg
+image: /assets/uploads/Belfield_Haydn.jpg
 webpage: https://www.haydnbelfield.com/
 biography: Haydn has been a Research Associate and Academic Project Manager at the
   University of Cambridge's Centre for the Study of Existential Risk for the past

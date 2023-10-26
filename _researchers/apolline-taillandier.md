@@ -5,7 +5,7 @@ family: Taillandier
 department: LCFI/POLIS
 job_title: Postdoctoral Research Fellow
 crsid: amit3
-image: /assets/upload/Taillandier_Apolline.jpg
+image: /assets/uploads/Taillandier_Apolline.jpg
 webpage: http://lcfi.ac.uk/people/apolline-taillandier/
 biography: 'Dr Apolline Taillandier is a political theorist and historian specialising
   in the history of Anglo-American transhumanism, liberalism, and feminist thought

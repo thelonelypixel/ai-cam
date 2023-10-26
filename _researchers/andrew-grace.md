@@ -6,7 +6,7 @@ department: Biochemistry
 title: Prof
 job_title: Professor Experimental Cardiology
 crsid: aag1000
-image: /assets/upload/Grace_Andrew.jpg
+image: /assets/uploads/Grace_Andrew.jpg
 webpage: https://www.bioc.cam.ac.uk/research/grace
 biography: Andrew Grace is Professor of Experimental Cardiology at the University
   of Cambridge. He trained in cardiology in London and Cambridge and then delivered

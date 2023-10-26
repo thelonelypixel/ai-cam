@@ -6,7 +6,7 @@ family: Singh
 department: Computer Science & Technology
 job_title: Principal Researcher
 crsid: js573
-image: /assets/upload/Singh_Jatinder.jpg
+image: /assets/uploads/Singh_Jatinder.jpg
 webpage: https://www.cl.cam.ac.uk/~js573
 biography: Dr Jat Singh leads the Compliant and Accountable Systems research group,
   based in the Dept. of Computer Science & Technology, which works at the intersection

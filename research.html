@@ -41,6 +41,7 @@ title: "Research"
 </section>
 
 {% assign research_entries = site.research %}
+{% assign slider = site.data.research.slider %}
 <section class="block block--bg-pink block__slider">
   <div class="container">
     {% if (slider.heading != nil and slider.heading != '') or (slider.content != nil and slider.content != '') or (slider.buttons != nil and slider.buttons.size > 0) %}
@@ -104,7 +105,7 @@ title: "Research"
 </section>
 
 {% assign researchers = site.data.research.researchers %}
-<section class="block block__team block__team--basic">
+<section class="block block__team block__team--basic" id="researchers">
   <div class="container">
     <div class="team__intro">
       <div class="team__intro-content">
@@ -156,7 +157,7 @@ title: "Research"
             {% endif %}
           </div>
           <div class="team__member-content">
-            <h3>{{ post.name }}</h3>
+            <h3>{{ post.given }} {{ post.family }}</h3>
             <p>{{ post.position }}</p>
           </div>
         </a>

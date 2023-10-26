@@ -5,7 +5,7 @@ family: Chiodo
 department: The Centre for the Study of Existential Risk - CSER
 job_title: Research Associate
 crsid: mcc56
-image: /assets/upload/Chiodo_Maurice.jpg
+image: /assets/uploads/Chiodo_Maurice.jpg
 webpage: https://www.cser.ac.uk/team/maurice-chiodo/
 biography: I am a research associate in the Centre for the Study of Existential Risk
   at the University of Cambridge. I am the co-founder and principal investigator of

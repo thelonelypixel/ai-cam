@@ -6,7 +6,7 @@ department: Dept Engineering
 title: Prof
 job_title: Professor of robotics
 crsid: fi224
-image: /assets/upload/Iida_Fumiya.jpg
+image: /assets/uploads/Iida_Fumiya.jpg
 webpage: https://mi.eng.cam.ac.uk/Main/FI224
 biography: Fumiya Iida is a university lecturer at the University of Cambridge since
   2014. Previously he was an assistant professor for bio-inspired robotics at ETH

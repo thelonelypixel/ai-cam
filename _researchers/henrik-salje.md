@@ -6,7 +6,7 @@ department: Genetics
 title: Prof
 job_title: Professor
 crsid: hs743
-image: /assets/upload/Salje_Henrik.png
+image: /assets/uploads/Salje_Henrik.png
 webpage: https://www.pdg.gen.cam.ac.uk
 biography: Henrik is a professor in the department of genetics where he heads the
   Pathogen Dynamics Group. Dr. Salje works on the spread of infectious diseases. He

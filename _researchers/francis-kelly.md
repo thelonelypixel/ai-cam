@@ -7,7 +7,7 @@ department: DPMMS
 title: Prof
 job_title: Emeritus Professor of the Mathematics of Systems
 crsid: fpk1
-image: /assets/upload/Kelly_Francis.jpg
+image: /assets/uploads/Kelly_Francis.jpg
 webpage: https://www.statslab.cam.ac.uk/~frank/
 biography: Frank Kelly's main research interests are in random processes, networks
   and optimization. He is especially interested in applications to the design and

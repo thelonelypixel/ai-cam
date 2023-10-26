@@ -6,7 +6,7 @@ department: Research Office
 title: Ms
 job_title: AI@cam Director
 crsid: jkm40
-image: /assets/upload/Montgomery_Jessica.jpg
+image: /assets/uploads/Montgomery_Jessica.jpg
 webpage: https://www.cst.cam.ac.uk/people/jkm40
 biography: 'Jessica is currently Director of AI@Cam, a new University of Cambridge
   strategic mission to develop AI technologies that serve science, citizens, and society.

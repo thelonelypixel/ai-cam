@@ -6,7 +6,7 @@ department: Department of Genetics/DAMTP
 title: Prof
 job_title: Professor in Computation and Molecular Biology
 crsid: gm263
-image: /assets/upload/Micklem_Gos.png
+image: /assets/uploads/Micklem_Gos.png
 webpage: https://gmicklem.github.io
 biography: "Gos Micklem runs an interdisciplinary research group, using computational
   and molecular techniques to carry out basic and applied research related to biology.\n\nA

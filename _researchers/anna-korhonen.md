@@ -6,7 +6,7 @@ department: MMLL, Institute for Technlogy and Humanity
 title: Prof
 job_title: Professor
 crsid: alk23
-image: /assets/upload/Korhonen_Anna.jpg
+image: /assets/uploads/Korhonen_Anna.jpg
 webpage: https://sites.google.com/site/annakorhonen/
 biography: Anna is Professor of Natural Language Processing and the co-director of
   the Language Technology Laboratory (LTL) and director of the Centre for Human Inspired

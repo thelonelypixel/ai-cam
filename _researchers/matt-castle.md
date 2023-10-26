@@ -7,7 +7,7 @@ department: Department of Genetics
 title: Dr
 job_title: Head of Bioinformatics Training
 crsid: mdc31
-image: /assets/upload/Castle_Matt.jpg
+image: /assets/uploads/Castle_Matt.jpg
 webpage: https://www.c2d3.cam.ac.uk/directory/2311/dr-matt-castle
 biography: 'With a background in Mathematics and Epidemiological Modelling, Matt
 

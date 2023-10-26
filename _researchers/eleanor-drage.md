@@ -5,7 +5,7 @@ family: Drage
 department: 'The Centre for the Future of Intelligence '
 job_title: Senior Research Feloow
 crsid: ed575
-image: /assets/upload/Drage_Eleanor.jpeg 
+image: /assets/uploads/Drage_Eleanor.jpeg
 webpage: https://www.eleanordrage.com/
 biography: 'Eleanor is a Senior Research Fellow at the University of Cambridge. She
   is CO-I on the Desirable Digitalisations project and PI on the Ammagamma project,

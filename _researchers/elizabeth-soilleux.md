@@ -7,7 +7,7 @@ department: Pathology
 title: Prof
 job_title: Professor/ Group Leader/ Honorary Consultant
 crsid: ejs17
-image: /assets/upload/Soilleux_Elizabeth.jpg
+image: /assets/uploads/Soilleux_Elizabeth.jpg
 webpage: https://www.path.cam.ac.uk/directory/elizabeth-soilleux
 biography: Liz Soilleux is a professor and honorary consultant in pathology. Aside
   from her clinical practice and university teaching roles, her research interests

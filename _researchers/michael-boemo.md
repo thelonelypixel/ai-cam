@@ -5,7 +5,7 @@ family: Boemo
 department: Department of Pathology and Department of Genetics
 job_title: Assistant Professor of AI and Disease
 crsid: mb915
-image: /assets/upload/Boemo_Michael.jpg
+image: /assets/uploads/Boemo_Michael.jpg
 webpage: https://www.boemogroup.org/
 biography: Dr Boemo is interested in genomic instability, which is characterised by
   the rapid accumulation of mutations commonly observed in cancer cells. His particular

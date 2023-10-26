@@ -5,7 +5,7 @@ family: Bakshi
 department: Engineering
 job_title: Associate Professor
 crsid: sb2330
-image: /assets/upload/Bakshi_Somenath.png
+image: /assets/uploads/Bakshi_Somenath.png
 webpage: https://www.bakshilab.net/
 biography: Somenath Bakshi is an Associate Professor in the Department of Engineering
   at the University of Cambridge. He did his PhD in University of Wisconsin Madison

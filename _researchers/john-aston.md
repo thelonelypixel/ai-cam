@@ -6,7 +6,7 @@ department: Statistical Laboratory, Dept of Pure Maths and Mathematical Statisti
 title: Prof
 job_title: Harding Professor of Statistics in Public Life
 crsid: jada2
-image: /assets/upload/Aston_John.jpg
+image: /assets/uploads/Aston_John.jpg
 webpage: http://www.statslab.cam.ac.uk/~jada2
 biography: John is Harding Professor of Statistics in Public Life at the University
   of Cambridge, where he leads research into the use of quantitative evidence in public

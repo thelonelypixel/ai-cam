@@ -7,7 +7,7 @@ title: Prof
 job_title: Professor of Cognitive Computational Neuroscience, Royal Society Industry
   Fellow
 crsid: zk240
-image: /assets/upload/Kourtzi_Zoe.jpng
+image: /assets/uploads/Kourtzi_Zoe.png
 webpage: https://www.abg.psychol.cam.ac.uk
 biography: My research in cognitive computational neuroscience sits at the interface
   of computational science and neuroscience. My experimental work aims to understand

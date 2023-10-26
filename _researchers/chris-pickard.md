@@ -6,7 +6,7 @@ department: Department of Materials Science & Metallurgy
 title: Prof
 job_title: Sir Alan Cottrell Professor of Materials Science
 crsid: cjp20
-image: /assets/upload/Pickard_Chris.jpg
+image: /assets/uploads/Pickard_Chris.jpg
 webpage: https://www.msm.cam.ac.uk/people/pickard
 biography: 'Chris studied Natural Sciences at Christ’s and went on to complete a PhD
   at the Cavendish Laboratory. He joined the University of St Andrews as Reader in

@@ -6,7 +6,7 @@ department: Physiology Development and Neuroscience, and MRC LMB
 title: Prof
 job_title: Professor
 crsid: ac2040
-image: /assets/upload/Cardona_Albert.jpg
+image: /assets/uploads/Cardona_Albert.jpg
 webpage: https://neuroscience.cam.ac.uk/member/albertcardona/
 biography: Albert Cardona studied Biology at the University of Barcelona (1996-2000),
   where he also completed a PhD in Developmental Biology (2000-2005). After a short
