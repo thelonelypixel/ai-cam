@@ -10,6 +10,7 @@ desc: Professor Alondra Nelson, former deputy assistant to President Joe Biden,
   Technology Policy
 image: /assets/uploads/alondranelson.jpeg
 link_to: https://www.csap.cam.ac.uk/events/s-t-lee-public-policy-lecture-17-october-2023/
+category:
 ---
 ### Dr S T Lee Public Policy Lecture
 

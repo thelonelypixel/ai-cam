@@ -7,6 +7,7 @@ desc: Join Tim O’Reilly in conversation with John Naughton, to discuss how to
   make AI more accountable.
 image: /assets/uploads/minderoo.png
 link_to: https://www.mctd.ac.uk/events/ai-and-the-attention-economy-what-tech-companies-need-to-disclose/
+category:
 ---
 ## Join Tim O’Reilly in conversation with John Naughton, to discuss how to make AI more accountable.
 

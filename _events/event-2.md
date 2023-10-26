@@ -8,6 +8,7 @@ desc: Join Prof. Gina Neff at Thomson Reuters Foundation’s annual Trust
   Conference to discuss the ethics of artificial intelligence.
 image: /assets/uploads/minderoo.png
 link_to: https://event.trustconference.com/event/7fd73801-77ad-4c92-a091-6df31d1e07e0/summary
+category:
 ---
 ## Join Prof. Gina Neff at Thomson Reuters Foundation’s annual Trust Conference to discuss the ethics of artificial intelligence.
 

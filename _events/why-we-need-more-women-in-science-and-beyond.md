@@ -9,6 +9,7 @@ desc: What progress has been made, and what more is needed to bring more women
   from three such fields, physics, technology and economics.
 image: /assets/uploads/why-we-need-more-women-in-science-eventbrite3-1440x753.webp
 link_to: https://www.bennettinstitute.cam.ac.uk/events/why-we-need-more-women-in-science-and-beyond/
+category:
 ---
 **What progress has been made, and what more is needed to bring more women into science and other professions where they are under-represented? Explore the impacts of societal expectations and stereotyping with prominent experts from three such fields, physics, technology and economics.**
 

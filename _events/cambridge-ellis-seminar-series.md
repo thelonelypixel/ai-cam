@@ -8,6 +8,7 @@ desc: The Cambridge ELLIS Unit Seminar Series holds talks by leading researchers
   David Barber.
 image: /assets/uploads/ellis-seminar-series-27.06.23-horizontal.jpg
 link_to: https://www.ellis.eng.cam.ac.uk/cambridge-ellis-seminar-series-dr-david-barber-23-oct-23-1500/
+category:
 ---
 The Cambridge ELLIS Unit Seminar Series holds talks by leading researchers in the area of machine learning and AI. Our next speaker for 2023 will be Dr. David Barber. Details of his talk can be found below.
 

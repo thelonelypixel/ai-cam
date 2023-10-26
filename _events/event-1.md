@@ -12,6 +12,7 @@ desc: "Are you developing AI and ML as part of your research? Perhaps you’ve
   real-world impact. "
 image: /assets/uploads/commercialisation_of_ai_for_university_researchers_30_oct_23_0.png
 link_to: https://www.c2d3.cam.ac.uk/civicrm/event/info?reset=1&id=831
+category:
 ---
 Are you developing AI and ML as part of your research? Perhaps you’ve created a new software tool, platform or dataset which could be useful to beneficiaries or organisations outside of academic research? Maybe you’re interested in spinning out your discoveries?  
 

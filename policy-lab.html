@@ -177,10 +177,10 @@ title: 'Policy Lab'
       <h3>Upcoming Events</h3>
       {% assign currentTime = 'now' | date: '%H:%M %p' %}
       {% assign currentDate = 'now' | date: '%Y-%m-%d' %}
-      {% assign upcomingEvents = site.events | sort: "start" %}
-    
+      {% assign upcomingEvents = site.events | where: "category", "policy" | sort: "start" %}
+      
       {% assign hasUpcomingEvent = false %}
-    
+      
       {% for post in upcomingEvents %}
         {% assign eventStart = post.start | date: '%Y-%m-%d %H:%M %p' %}
         {% assign eventEnd = post.end | date: '%Y-%m-%d %H:%M %p' %}
@@ -188,28 +188,23 @@ title: 'Policy Lab'
           {% assign hasUpcomingEvent = true %}
         {% endif %}
       {% endfor %}
-    
+      
       {% if hasUpcomingEvent %}
         {% for post in upcomingEvents limit: 4 %}
-          {% assign eventStart = post.start | date: '%Y-%m-%d %H:%M %p' %}
-          {% assign eventEnd = post.end | date: '%Y-%m-%d %H:%M %p' %}
-          {% if eventEnd >= currentDate and eventStart >= currentTime %}
-            <a href="{{ post.url }}" class="post post--small">
-              <div class="post__thumbnail">
-                {% if post.image != nil %}
-                  <img src="{{ post.image }}">
-                {% else %}
-                  <img alt="" src="../assets/images/placeholder-1.jpg"/>
-                {% endif %}
-              </div>
-    
-              <div class="post__content">
-                <span class="category">{{ post.start | date: "%b %-d, %Y" }}</span>
-                <h4>{{ post.title }}</h4>
-                <span class="button button--simple">Read more</span>
-              </div>
-            </a>
-          {% endif %}
+          <a href="{{ post.url }}" class="post post--small">
+            <div class="post__thumbnail">
+              {% if post.image != nil %}
+                <img src="{{ post.image }}">
+              {% else %}
+                <img alt="" src="../assets/images/placeholder-1.jpg"/>
+              {% endif %}
+            </div>
+            <div class="post__content">
+              <span class="category">{{ post.start | date: "%b %-d, %Y" }}</span>
+              <h4>{{ post.title }}</h4>
+              <span class="button button--simple">Read more</span>
+            </div>
+          </a>
         {% endfor %}
       {% else %}
         <p>No upcoming events</p>

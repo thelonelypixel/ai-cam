@@ -11,6 +11,8 @@ desc: "DigEcon connects research about the Economics of Digitization to policy
   where they would need more useful answers from the research community."
 image: /assets/uploads/uk-digecon-asset-november-2023-1.png
 link_to: https://www.bennettinstitute.cam.ac.uk/events/digecon-workshop/
+category:
+  - policy
 ---
 #### **Confirmed participants**
 
