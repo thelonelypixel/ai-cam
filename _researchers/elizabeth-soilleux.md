@@ -4,7 +4,7 @@ layout: person
 title: Prof
 given: Elizabeth
 family: Soilleux
-department: Pathology
+department: Department of Pathology
 job_title: Professor/ Group Leader/ Honorary Consultant
 biography: Liz Soilleux is a professor and honorary consultant in pathology.
   Aside from her clinical practice and university teaching roles, her research
