@@ -115,11 +115,17 @@ permalink: '/'
               {% endif %}
             </div>
 
-            {% if item.image != nil and item.image != '' %}
-              <div class="hero__image">
-                <img alt="" src="{{ item.image }}"/>
-              </div>
-            {% endif %}
+            {% if (item.image != nil and item.image != '') or (item.image_small != nil and item.image_small != '') %}
+            <div class="hero__image {% if item.image_small != nil and item.image_small != '' %} hero__image--two {% endif %}">
+              {% if item.image != nil and item.image != '' %}
+                <img class="hero__image-image" src="{{ item.image }}"/>
+              {% endif %}
+      
+              {% if item.image_small != nil and item.image_small != '' %}
+                <img class="hero__image-image--floating" src="{{ item.image_small }}"/>
+              {% endif %}
+            </div>
+          {% endif %}
           </div>
         {% endfor %}
       </div>
