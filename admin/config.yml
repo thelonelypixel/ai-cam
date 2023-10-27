@@ -2295,10 +2295,6 @@ collections:
         name: "title"
         widget: "string"
         required: true
-      - label: "Prefix"
-        name: "prefix"
-        widget: "string"
-        required: false
       - label: "Given"
         name: "given"
         widget: "string"
