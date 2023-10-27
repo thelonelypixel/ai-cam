@@ -3,10 +3,8 @@ layout: person
 given: Mark
 family: Girolami
 department: Department of Engineering
-title: Prof
-job_title: 'Sir Kirby Laing Professor of Civil Engineering
-
-  '
+prefix: Prof
+job_title: 'Sir Kirby Laing Professor of Civil Engineering'
 crsid: mag92
 image: /assets/uploads/Girolami_Mark.jpeg
 webpage: http://www.eng.cam.ac.uk/profiles/mag92

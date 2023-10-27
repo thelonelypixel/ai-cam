@@ -2283,7 +2283,7 @@ collections:
     create: true
     output: true
     slug: "{{slug}}"
-    identifier_field: "name"
+    identifier_field: "family"
     editor:
       preview: false
     fields:
@@ -2295,6 +2295,10 @@ collections:
         name: "title"
         widget: "string"
         required: true
+      - label: "Prefix"
+        name: "prefix"
+        widget: "string"
+        required: false
       - label: "Given"
         name: "given"
         widget: "string"
