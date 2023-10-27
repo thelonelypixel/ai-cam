@@ -230,6 +230,10 @@ collections:
                 name: "image"
                 widget: "image"
                 required: false
+              - label: "Image (Small)"
+                name: "image_small"
+                widget: "image"
+                required: false
           # Latest Overview
           - label: "Latest Overview"
             name: "latest_overview"
