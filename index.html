@@ -215,7 +215,7 @@ permalink: '/'
       {% endfor %}
     
       {% if hasUpcomingEvent %}
-        {% for post in upcomingEvents limit: 4 %}
+        {% for post in upcomingEvents limit: 3 %}
           {% assign eventStart = post.start | date: '%Y-%m-%d %H:%M %p' %}
           {% assign eventEnd = post.end | date: '%Y-%m-%d %H:%M %p' %}
           {% if eventEnd >= currentDate and eventStart >= currentTime %}

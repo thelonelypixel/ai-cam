@@ -2042,9 +2042,11 @@ collections:
         widget: "select"
         multiple: true
         options:
-          - { label: "Category one", value: "category-one" }
-          - { label: "Category two", value: "category-two" }
-          - { label: "Category three", value: "category-three" }
+          - { label: "AI deas", value: "ai-deas" }
+          - { label: "Education", value: "education" }
+          - { label: "Events", value: "events" }
+          - { label: "Policy", value: "policy" }
+          - { label: "Research & Innovation", value: "research-and-innovation" }
       - label: "Featured Image"
         name: "image"
         widget: "image"
@@ -2151,6 +2153,16 @@ collections:
         time_format: "HH:mm" # e.g. 21:07
         format: "YYYY-MM-DD" # Adjust to YYYY-MM-DD format
         picker_utc: false
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        multiple: true
+        options:
+          - { label: "AI deas", value: "ai-deas" }
+          - { label: "Education", value: "education" }
+          - { label: "Events", value: "events" }
+          - { label: "Policy", value: "policy" }
+          - { label: "Research & Innovation", value: "research-and-innovation" }
       - label: "Description"
         name: "desc"
         widget: "text"
@@ -2410,8 +2422,11 @@ collections:
         widget: "select"
         multiple: true
         options:
-          - { label: "Category 1", value: "category-1" }
-          - { label: "Category 2", value: "category-2" }
+          - { label: "AI deas", value: "ai-deas" }
+          - { label: "Education", value: "education" }
+          - { label: "Events", value: "events" }
+          - { label: "Policy", value: "policy" }
+          - { label: "Research & Innovation", value: "research-and-innovation" }
       - label: "Featured Image"
         name: "image"
         widget: "image"

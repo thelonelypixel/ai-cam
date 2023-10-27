@@ -20,35 +20,50 @@ title: 'Events'
 <section class="block pt-0 block__posts">
   <div class="container">
     <div class="posts__grid">
-      {% assign currentTime = 'now' | date: '%Y-%m-%d %H:%M' %}
+      {% assign currentTime = 'now' | date: '%H:%M %p' %}
+      {% assign currentDate = 'now' | date: '%Y-%m-%d' %}
       {% assign upcomingEvents = site.events | sort: "start" %}
-      
-      {% for event in upcomingEvents %}
-        {% assign eventStart = event.start | date: '%Y-%m-%d %H:%M' %}
-        {% assign eventEnd = event.end | date: '%Y-%m-%d %H:%M' %}
+
+      {% assign hasUpcomingEvent = false %}
+    
+      {% for post in upcomingEvents %}
+        {% assign eventStart = post.start | date: '%Y-%m-%d %H:%M %p' %}
+        {% assign eventEnd = post.end | date: '%Y-%m-%d %H:%M %p' %}
+        {% if eventEnd >= currentDate and eventStart >= currentTime %}
+          {% assign hasUpcomingEvent = true %}
+        {% endif %}
+      {% endfor %}
+    
+      {% if hasUpcomingEvent %}
+        {% for post in upcomingEvents limit: 3 %}
+          {% assign eventStart = post.start | date: '%Y-%m-%d %H:%M %p' %}
+          {% assign eventEnd = post.end | date: '%Y-%m-%d %H:%M %p' %}
+          {% if eventEnd >= currentDate and eventStart >= currentTime %}
         
-        {% if eventStart >= currentTime %}
-          <a class="posts__item posts__item--event" href="{{ event.url }}">
+          <a class="posts__item posts__item--event" href="{{ post.url }}">
             <div class="posts__item-thumbnail">
-              {% if event.image != nil %}
-                <img src="{{ event.image }}">
+              {% if post.image != nil %}
+                <img src="{{ post.image }}">
               {% else %}
                 <img alt="" src="../assets/images/placeholder-1.jpg"/>
               {% endif %}
             </div>
             <div class="posts__item-content">
-              <h3>{{ event.title }}</h3>
+              <h3>{{ post.title }}</h3>
               <span class="button button--simple">Read more</span>
             </div>
             <div class="posts__item-date">
               <p>
-                {{ event.start | date: '%d' }}
-                <span>{{ event.start | date: '%b' }}</span>
+                {{ post.start | date: '%d' }}
+                <span>{{ post.start | date: '%b' }}</span>
               </p>
             </div>
           </a>
-        {% endif %}
-      {% endfor %}
+          {% endif %}
+        {% endfor %}
+      {% else %}
+        <p>No upcoming events</p>
+      {% endif %}
     </div>
   </div>
 </section>
