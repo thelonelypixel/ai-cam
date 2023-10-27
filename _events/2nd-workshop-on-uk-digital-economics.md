@@ -1,8 +1,8 @@
 ---
 layout: event-single
 title: 2nd workshop on UK digital economics
-start: 2023-10-24 09:30
-end: 2023-10-24 16:00
+start: 2023-11-24 09:30
+end: 2023-11-24 16:00
 category:
   - policy
 desc: "DigEcon connects research about the Economics of Digitization to policy
