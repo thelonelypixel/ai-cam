@@ -127,7 +127,7 @@ title: 'Policy Lab'
       <h3>Policy Blogs</h3>
       {% assign blog_entries = site.blog | sort: 'date' | reverse %}
       {% for post in blog_entries limit:3 %}
-        {% if post.category == 'policy' %}
+       {% if post.category contains 'policy' %}
           <a href="{{ post.url }}" class="post post--small">
             <div class="post__thumbnail">
               {% if post.image != nil %}
@@ -145,6 +145,8 @@ title: 'Policy Lab'
               <span class="button button--simple">Read more</span>
             </div>
           </a>
+        {% else %}
+          <p>No posts found</p>
         {% endif %}
       {% endfor %}
     </div>
@@ -152,7 +154,7 @@ title: 'Policy Lab'
       <h3>Policy News</h3>
       {% assign news_entries = site.news | sort: 'date' | reverse %}
       {% for post in news_entries limit:3 %}
-        {% if post.category == 'policy' %}
+        {% if post.category contains 'policy' %}
           <a href="{{ post.url }}" class="post post--small">
             <div class="post__thumbnail">
               {% if post.image != nil %}
@@ -170,9 +172,12 @@ title: 'Policy Lab'
               <span class="button button--simple">Read more</span>
             </div>
           </a>
+          {% else %}
+          <p>No posts found</p>
         {% endif %}
       {% endfor %}
     </div>
+    
     
     <div class="latest-overview__column latest-overview__column--events">
       <h3>Upcoming Policy Events</h3>
