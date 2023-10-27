@@ -3,11 +3,12 @@ layout: event-single
 title: "AI and the Attention Economy: What tech companies need to disclose"
 start: October 10, 2023 5:00 PM
 end: October 10, 2023 7:00 PM
+category:
+  - events
 desc: Join Tim O’Reilly in conversation with John Naughton, to discuss how to
   make AI more accountable.
-image: /assets/uploads/minderoo.png
+image: /assets/uploads/placeholder-2.jpg
 link_to: https://www.mctd.ac.uk/events/ai-and-the-attention-economy-what-tech-companies-need-to-disclose/
-category:
 ---
 ## Join Tim O’Reilly in conversation with John Naughton, to discuss how to make AI more accountable.
 
