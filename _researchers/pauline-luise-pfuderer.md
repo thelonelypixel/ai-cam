@@ -5,7 +5,7 @@ given: Pauline Luise
 family: Pfuderer
 department: Department of Pathology
 job_title: PhD student
-biography: m a research student in Cancer Biology within the CRUK MRes + PhD
+biography: I'm a research student in Cancer Biology within the CRUK MRes + PhD
   Programme. Previously I did a Master’s and Bachelor’s degree in Molecular
   Biotechnology at the University of Heidelberg (Germany), studying abroad at
   Harvard’s Graduate School of Arts and Sciences and researching cancer
