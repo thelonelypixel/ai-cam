@@ -30,13 +30,7 @@ media_text:
       text: Read More
   image: /assets/uploads/lander-media-2.png
   image_small: /assets/uploads/lander-media-1.png
-  quick_links:
-    - link: /
-      text: Quick Link 1
-    - text: Quick Link 2
-      link: /
-    - text: Quick Link 3
-      link: /
+  quick_links: []
 slider:
   slider_items:
     - heading: What we do
