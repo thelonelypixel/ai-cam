@@ -2350,19 +2350,27 @@ collections:
       - label: "Layout"
         name: "layout"
         widget: "hidden"
-        default: "team-single"
-      - label: "Name"
-        name: "name"
+        default: "person"
+      - label: "Title"
+        name: "title"
         widget: "string"
-      - label: Prefix
-        hint: "e.g. de, von, van"
-        name: prefix
+        required: true
+      - label: "Given"
+        name: "given"
+        widget: "string"
+        required: true
+      - label: Family
+        name: "family"
+        required: true
+        widget: string
+      - label: "Department"
+        name: "department"
+        widget: "string"
+        required: false
+      - label: Job Title
+        name: "job_title"
         required: false
         widget: string
-      - label: Suffix
-        name: suffix
-        widget: string
-        required: false
       - label: "Biography"
         name: "biography"
         widget: "text"
@@ -2375,12 +2383,8 @@ collections:
         name: "email"
         widget: "string"
         required: false
-      - label: "URL"
-        name: "url"
-        widget: "string"
-        required: false
       - label: "Website"
-        name: "website"
+        name: "webpage"
         widget: "string"
         required: false
       - label: "Twitter"
@@ -2405,30 +2409,6 @@ collections:
         required: false
       - label: "ORCID"
         name: "orcid"
-        widget: "string"
-        required: false
-      - label: "Start Date"
-        name: "start"
-        widget: "string"
-        required: false
-      - label: "End Date"
-        name: "end"
-        widget: "string"
-        required: false
-      - label: "Institution"
-        name: "institution"
-        widget: "string"
-        required: false
-      - label: "Department"
-        name: "department"
-        widget: "string"
-        required: false
-      - label: "Position"
-        name: "position"
-        widget: "string"
-        required: false
-      - label: "Supervisor"
-        name: "supervisor"
         widget: "string"
         required: false
 
