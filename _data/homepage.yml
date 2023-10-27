@@ -19,11 +19,12 @@ latest_overview:
   buttons: []
 media_text:
   heading: About ai@cam
-  content: "ai@cam is a flagship mission with both inward ambition and outward
-    facing vision. It aims to connect the University’s AI capabilities,
-    facilitating productive engagement across the University and putting
-    Cambridge at the centre of a global discussion about the safe and ethical
-    deployment of AI technologies. "
+  content: ai@cam is the University of Cambridge's flagship AI mission. Drawing
+    from Cambridge's world-leading research capabilities, it will drive the
+    development of AI technologies that serve science, citizens, and society.
+    Through research, teaching, and engagement across industry, policy, and
+    civil society, ai@cam will create an infrastructure for interdisciplinary
+    innovation that delivers public value.
   buttons:
     - link: /
       text: Read More
