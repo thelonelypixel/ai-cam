@@ -1,8 +1,8 @@
 ---
 layout: event-single
 title: "The Hopes and Fears Lab: AI edition (London)"
-start: 2023-11-01
-end: 2023-11-01
+start: 2023-11-01 10:00
+end: 2023-11-01 16:00
 category:
   - policy
 desc: The Hopes and Fears Lab connects scientists and the public in conversation
