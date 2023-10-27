@@ -3,11 +3,12 @@ layout: event-single
 title: "The Hopes and Fears Lab: AI edition (Cambridge)"
 start: 2023-10-26
 end: 2023-10-27
+category:
+  - policy
 desc: The Hopes and Fears Lab connects scientists and the public in conversation
   about the implications of AI for the future we all share.
 image: /assets/uploads/65328a3e48eaa3fc6842c984_the-ai-hopes-fears-lab_-ai-edition-london-and-cambridge-.jpeg
 link_to: https://aifringe.org/events/the-hopes-and-fears-lab-ai-edition-cambridge
-category:
 ---
 Join us in our pop-up conversation lab, to meet some of the people working on this technology every day. Do we feel hopeful about the benefits this technology could bring us? Or are there things that feel a bit scary?
 
