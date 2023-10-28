@@ -1,8 +1,8 @@
 ---
 layout: event-single
 title: "Earning public trust in evidence informed policy: Professor Alondra Nelson"
-start: October 17, 2023 5:30 PM
-end: October 17, 2023 7:30 PM
+start: 2023-10-17 17:30
+end: 2023-10-17 19:30
 desc: Professor Alondra Nelson, former deputy assistant to President Joe Biden,
   and acting director and principal deputy director for science and society of
   the White House Office of Science and Technology Policy (OSTP), will discuss
