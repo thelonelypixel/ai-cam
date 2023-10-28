@@ -12,7 +12,7 @@ desc: This in-person workshop will provide an accessible, non-technical
 image: /assets/uploads/christin-hume-hcfwew744z4-unsplash.jpg
 link_to: https://www.cdh.cam.ac.uk/events/37240/#description
 ---
-**Organiser:** Cambridge Digital Humanities
+**Organiser:** Cambridge Digital Humanities 
 
 Convenors: [Dr Anne Alexander](https://www.cdh.cam.ac.uk/about/people/dr-anne-alexander/) (CDH Director of Learning),[ Dr Emily Sandford](https://www.cai.cam.ac.uk/people/dr-emily-sandford) (Research Fellow, Gonville & Caius) and [Jarrah O’Neill](https://www.reprosoc.sociology.cam.ac.uk/directory/jarrah-oneill) (Reproductive Sociology Research Group)
 
