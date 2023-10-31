@@ -34,10 +34,10 @@ permalink: pretty
 collections:
   blog:
     output: true
-    permalink: /:categories/:title/
+    permalink: /:categories/:title.html
   news:
     output: true
-    permalink: /:categories/:title/
+    permalink: /:categories/:title.html
   events:
     output: true
   team:
