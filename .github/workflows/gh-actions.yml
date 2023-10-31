@@ -1,8 +1,8 @@
 name: Deploy Jekyll
 on:
-  # The workflow runs only on pushes to the <main> branch
+  # The workflow runs only on pushes to the <master> branch
   push:
-    branches: ["main"]
+    branches: ["master"]
     workflow_dispatch:
 jobs:
   build:
@@ -45,8 +45,8 @@ jobs:
       - name: Commit and push
       # Replace "<username>" with your GH org or user name
         run: |
-          git config user.name "<username>"
-          git config user.email "<username>@users.noreply.github.com"
+          git config user.name "<thelonelypixel>"
+          git config user.email "<thelonelypixel>@users.noreply.github.com"
           git pull origin deploy
           git add _site
           git commit -m "Auto generated from ${GITHUB_SHA::7}"
