@@ -11,51 +11,51 @@ main_nav:
     link: ""
     submenu:
       - label: Our Vision
-        link: /our-vision.html/
+        link: /our-vision.html
       - label: Team
         link: /team.html/
       - label: Current Opportunities
-        link: /opportunities.html/
+        link: /opportunities.html
       - label: Contact
-        link: /contact.html/
+        link: /contact.html
   - label: News & Events
     link: ""
     submenu:
       - label: News
-        link: /news.html/
+        link: /news.html
       - label: Events
-        link: /events.html/
+        link: /events.html
   - label: Initiatives
     link: ""
     submenu:
       - label: AI-deas
-        link: /ai-deas.html/
+        link: /ai-deas.html
       - label: Policy Lab
-        link: /policy-lab.html/
+        link: /policy-lab.html
   - label: AI@Cambridge
     link: ""
     submenu:
       - label: Research
-        link: /research.html/
+        link: /research.html
       - label: Study
         link: /study.html/
       - label: Collaborate
-        link: /collaborate.html/
+        link: /collaborate.html
   - label: Blog
     link: /blog/
 footer_nav:
   - label: About
-    link: /about.html/
+    link: /about.html
   - label: Research
-    link: /research.html/
+    link: /research.html
   - label: Connect
-    link: /connect.html/
+    link: /connect.html
   - label: Study
-    link: /study.html/
+    link: /study.html
   - label: Blog
-    link: /blog.html/
+    link: /blog.html
   - label: Community
-    link: /community.html/
+    link: /community.html
 uoc_footer_nav:
   information:
     - label: Contact the University
