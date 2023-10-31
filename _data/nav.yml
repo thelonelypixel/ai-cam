@@ -13,7 +13,7 @@ main_nav:
       - label: Our Vision
         link: /our-vision.html
       - label: Team
-        link: /team.html/
+        link: /team.html
       - label: Current Opportunities
         link: /opportunities.html
       - label: Contact
@@ -22,9 +22,9 @@ main_nav:
     link: ""
     submenu:
       - label: News
-        link: /news.html
+        link: /news/
       - label: Events
-        link: /events.html
+        link: /events/
   - label: Initiatives
     link: ""
     submenu:
@@ -38,7 +38,7 @@ main_nav:
       - label: Research
         link: /research.html
       - label: Study
-        link: /study.html/
+        link: /study.html
       - label: Collaborate
         link: /collaborate.html
   - label: Blog
@@ -53,7 +53,7 @@ footer_nav:
   - label: Study
     link: /study.html
   - label: Blog
-    link: /blog.html
+    link: /blog/
   - label: Community
     link: /community.html
 uoc_footer_nav:
