@@ -42,13 +42,11 @@ jobs:
         with:
           name: compiled-site
           path: _site
-      - name: Copy site contents to deploy branch
-        run: cp -r _site/* .
       - name: Commit and push
       # Replace "<username>" with your GH org or user name
         run: |
-          git config user.name "<thelonelypixel>"
-          git config user.email "<thelonelypixel>@users.noreply.github.com"
+          git config user.name "thelonelypixel"
+          git config user.email "thelonelypixel@users.noreply.github.com"
           git pull origin deploy
           git add _site
           git commit -m "Auto generated from ${GITHUB_SHA::7}"
