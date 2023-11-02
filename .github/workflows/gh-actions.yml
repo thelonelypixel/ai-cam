@@ -44,7 +44,7 @@ jobs:
           path: _site
       - name: Copy site contents to deploy branch
         run: |
-          rsync -a _site/ .
+          rsync -a _site/ deploy/
       - name: Commit and push
       # Replace "<username>" with your GH org or user name
         run: |
